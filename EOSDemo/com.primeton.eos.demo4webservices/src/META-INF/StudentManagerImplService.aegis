@@ -1,0 +1,7 @@
+<mapping>
+	<method name="addStudent">
+		<parameter index="0" 
+		type="commonj.sdo.DataObject" 
+		componentType="com.primeton.eos.demo4webservices.java2service.DataModel#Student" />
+	</method>
+</mapping>
