@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<relyList>
+  <rely>
+    <catalogID>-1</catalogID>
+    <processID>com.primeton.train.sample.sample_shanch</processID>
+  </rely>
+  <rely>
+    <catalogID>-1</catalogID>
+    <processID>com.primeton.train.sample.sample_shanch_for2</processID>
+  </rely>
+  <rely>
+    <catalogID>-1</catalogID>
+    <processID>com.primeton.train.sample.sample_shanch_forurl</processID>
+  </rely>
+  <rely>
+    <catalogID>-1</catalogID>
+    <processID>com.primeton.train.sample.bizformSample_shanch</processID>
+  </rely>
+  <rely>
+    <catalogID>0d2b6bb200434448855ce5040848d9b6</catalogID>
+    <processID>com.primeton.train.sample.sample_shanch_for1</processID>
+  </rely>
+</relyList>

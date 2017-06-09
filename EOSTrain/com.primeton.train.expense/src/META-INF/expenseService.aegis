@@ -1,0 +1,23 @@
+<mapping>
+	<method name="expenseAdd">
+		<parameter index="0" type="commonj.sdo.DataObject" name="trainexpenseinfo" componentType="com.primeton.train.expense.expensedataset#TrainExpenseinfo" />
+	</method>
+	<method name="expenseDelete">
+		<parameter index="0" type="commonj.sdo.DataObject[]" name="expenses" componentType="com.primeton.train.expense.expensedataset#TrainExpenseinfo" />
+	</method>
+	<method name="expenseQuery">
+		<parameter index="0" type="commonj.sdo.DataObject" name="criteria" componentType="com.primeton.das.criteria#criteriaType" />
+		<parameter index="1" type="commonj.sdo.DataObject" name="page" componentType="com.eos.foundation#PageCond" />
+		<parameter index="-1" type="commonj.sdo.DataObject[]" name="expenses" componentType="com.primeton.train.expense.expensedataset#TrainExpenseinfo" />
+		<parameter index="-2" name="total" />
+	</method>
+	<method name="expenseUpdate">
+		<parameter index="0" type="commonj.sdo.DataObject" name="trainexpenseinfo" componentType="com.primeton.train.expense.expensedataset#TrainExpenseinfo" />
+	</method>
+	<method name="queryOrg">
+		<parameter index="0" name="key" />
+		<parameter index="1" type="commonj.sdo.DataObject" name="page" componentType="com.eos.foundation#PageCond" />
+		<parameter index="-1" type="commonj.sdo.DataObject[]" name="orgs" componentType="com.primeton.train.expense.expensedataset#OrgOrganization" />
+		<parameter index="-2" name="total" />
+	</method>
+</mapping>

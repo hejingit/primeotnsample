@@ -1,0 +1,11 @@
+<list>
+  <library>
+    <path>FoundationLibrary#com.primeton.studio.workbench</path>
+    <kind>file</kind>
+    <type>4</type>
+    <isDefault>true</isDefault>
+    <loaded>false</loaded>
+    <displayName>基础构件库</displayName>
+    <name>FoundationLibrary</name>
+  </library>
+</list>

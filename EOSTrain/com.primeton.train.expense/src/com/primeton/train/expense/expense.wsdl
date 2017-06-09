@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="expenseServiceService" targetNamespace="http://www.primeton.com/expenseService" xmlns:ns2="com.eos.foundation" xmlns:ns1="com.primeton.das.criteria" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns0="com.primeton.train.expense.expensedataset" xmlns:nns="http://www.primeton.com/expenseService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.primeton.com/expenseService" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="com.primeton.train.expense.expensedataset"/>
+      <xsd:import namespace="com.primeton.das.criteria"/>
+      <xsd:import namespace="com.eos.foundation"/>
+      <xsd:element name="expenseAdd">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="trainexpenseinfo" nillable="true" type="ns0:TrainExpenseinfo"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="expenseAddResponse">
+        <xsd:complexType>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="expenseQuery">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="criteria" nillable="true" type="ns1:criteriaType"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="page" nillable="true" type="ns2:PageCond"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="expenseQueryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="expenses" nillable="true" type="ns0:TrainExpenseinfo"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="total" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="expenseUpdate">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="trainexpenseinfo" nillable="true" type="ns0:TrainExpenseinfo"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="expenseUpdateResponse">
+        <xsd:complexType>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="queryOrg">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="key" nillable="true" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="page" nillable="true" type="ns2:PageCond"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="queryOrgResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="orgs" nillable="true" type="ns0:OrgOrganization"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="total" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="expenseDelete">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="expenses" nillable="true" type="ns0:TrainExpenseinfo"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="expenseDeleteResponse">
+        <xsd:complexType>
+        </xsd:complexType>
+      </xsd:element>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="queryOrgResponse">
+    <wsdl:part name="queryOrgResponse" element="nns:queryOrgResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryOrg">
+    <wsdl:part name="queryOrg" element="nns:queryOrg">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="expenseQuery">
+    <wsdl:part name="expenseQuery" element="nns:expenseQuery">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="expenseUpdate">
+    <wsdl:part name="expenseUpdate" element="nns:expenseUpdate">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="expenseAddResponse">
+    <wsdl:part name="expenseAddResponse" element="nns:expenseAddResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="expenseAdd">
+    <wsdl:part name="expenseAdd" element="nns:expenseAdd">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="expenseDeleteResponse">
+    <wsdl:part name="expenseDeleteResponse" element="nns:expenseDeleteResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="expenseQueryResponse">
+    <wsdl:part name="expenseQueryResponse" element="nns:expenseQueryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="expenseUpdateResponse">
+    <wsdl:part name="expenseUpdateResponse" element="nns:expenseUpdateResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="expenseDelete">
+    <wsdl:part name="expenseDelete" element="nns:expenseDelete">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="expenseService">
+    <wsdl:operation name="expenseAdd">
+      <wsdl:input name="expenseAdd" message="nns:expenseAdd">
+    </wsdl:input>
+      <wsdl:output name="expenseAddResponse" message="nns:expenseAddResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="expenseQuery">
+      <wsdl:input name="expenseQuery" message="nns:expenseQuery">
+    </wsdl:input>
+      <wsdl:output name="expenseQueryResponse" message="nns:expenseQueryResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="expenseUpdate">
+      <wsdl:input name="expenseUpdate" message="nns:expenseUpdate">
+    </wsdl:input>
+      <wsdl:output name="expenseUpdateResponse" message="nns:expenseUpdateResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryOrg">
+      <wsdl:input name="queryOrg" message="nns:queryOrg">
+    </wsdl:input>
+      <wsdl:output name="queryOrgResponse" message="nns:queryOrgResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="expenseDelete">
+      <wsdl:input name="expenseDelete" message="nns:expenseDelete">
+    </wsdl:input>
+      <wsdl:output name="expenseDeleteResponse" message="nns:expenseDeleteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

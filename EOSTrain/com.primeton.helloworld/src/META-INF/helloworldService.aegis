@@ -1,0 +1,6 @@
+<mapping>
+	<method name="join">
+		<parameter index="0" name="myname" />
+		<parameter index="-1" name="info" />
+	</method>
+</mapping>

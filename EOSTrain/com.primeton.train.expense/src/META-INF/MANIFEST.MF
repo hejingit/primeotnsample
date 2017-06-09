@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Require-Bundle: com.primeton.eos.richweb,com.eos.foundation,com.eos.wo
+ rkflow
+eos-webCtxPath: expense
+Bundle-Vendor: train
+Bundle-Version: 1.0.0
+Bundle-Name: 报销单信息维护
+Bundle-Description: 
+Bundle-SymbolicName: com.primeton.train.expense
+

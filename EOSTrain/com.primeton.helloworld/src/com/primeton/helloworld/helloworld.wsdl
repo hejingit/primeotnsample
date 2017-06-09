@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="helloworldServiceService" targetNamespace="http://www.primeton.com/helloworldService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:nns="http://www.primeton.com/helloworldService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.primeton.com/helloworldService" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="join">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="myname" nillable="true" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="joinResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="info" nillable="true" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="joinResponse">
+    <wsdl:part name="joinResponse" element="nns:joinResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="join">
+    <wsdl:part name="join" element="nns:join">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="helloworldService">
+    <wsdl:operation name="join">
+      <wsdl:input name="join" message="nns:join">
+    </wsdl:input>
+      <wsdl:output name="joinResponse" message="nns:joinResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

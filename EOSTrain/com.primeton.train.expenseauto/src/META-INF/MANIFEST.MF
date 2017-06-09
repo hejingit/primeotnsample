@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Require-Bundle: com.primeton.train.expense,com.primeton.eos.richweb,co
+ m.eos.foundation,com.eos.workflow
+Bundle-Vendor: train
+eos-webCtxPath: expenseauto
+Bundle-Version: 1.0.0
+Bundle-Name: 单表维护功能向导
+Bundle-Description: 
+Bundle-SymbolicName: com.primeton.train.expenseauto
+
