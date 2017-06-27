@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="DefaultAuthPartyService" implementationType="file" modifier="public" name="DefaultAuthPartyService.class" order="32" version=""/>
+    <model description="" displayName="EmpAuthPartyService" implementationType="file" modifier="public" name="EmpAuthPartyService.class" order="32" version=""/>
+    <model description="" displayName="PositionAuthPartyService" implementationType="file" modifier="public" name="PositionAuthPartyService.class" order="32" version=""/>
+    <model description="" displayName="UserAuthPartyService" implementationType="file" modifier="public" name="UserAuthPartyService.class" order="32" version=""/>
+</metadata>

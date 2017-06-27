@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class dynamic-insert="true" dynamic-update="true" entity-name="org.gocom.components.coframe.policy.datas.IPAccessRules" table="COMP_IP_ACCESS_RULES">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id name="rulesId" type="string">
+            <column name="RULES_ID"/>
+            <generator class="uuid"/>
+        </id>
+        <property name="startIP" type="string">
+            <column name="START_IP"/>
+        </property>
+        <property name="endIP" type="string">
+            <column name="END_IP"/>
+        </property>
+        <property name="rulesType" type="string">
+            <column name="RULES_TYPE"/>
+        </property>
+        <property name="remark" type="string">
+            <column name="REMARK"/>
+        </property>
+        <property name="makersId" type="string">
+            <column name="MAKERS_ID"/>
+        </property>
+        <property name="addDate" type="string">
+            <column name="ADD_DATE"/>
+        </property>
+        <property name="enabled" type="string">
+            <column name="ENABLED"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scripts>	
+	<component name="coframe" index="2000" test-table="CAP_ROLE">
+		<group type="oracle">
+			<script uri="META-INF/scripts/coframe/Oracle/coframe.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe/Oracle/coframe_init_data.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe_sample/Oracle/coframe_sample_data.sql" encoding="UTF-8" />
+		</group>
+		<group type="db2">
+			<script uri="META-INF/scripts/coframe/DB2/coframe.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe/DB2/coframe_init_data.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe_sample/DB2/coframe_sample_data.sql" encoding="UTF-8" />
+		</group>
+		<group type="sybase">
+			<script uri="META-INF/scripts/coframe/Sybase/coframe.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe/Sybase/coframe_init_data.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe_sample/Sybase/coframe_sample_data.sql" encoding="UTF-8" />
+		</group>
+		<group type="sqlserver">
+			<script uri="META-INF/scripts/coframe/SQLServer/coframe.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe/SQLServer/coframe_init_data.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe_sample/SQLServer/coframe_sample_data.sql" encoding="UTF-8" />
+		</group>
+		<group type="mysql">
+			<script uri="META-INF/scripts/coframe/Mysql/coframe.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe/Mysql/coframe_init_data.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe_sample/Mysql/coframe_sample_data.sql" encoding="UTF-8" />
+		</group>
+		<group type="kingbasees">
+			<script uri="META-INF/scripts/coframe/KingbaseES/coframe.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe/KingbaseES/coframe_init_data.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe_sample/KingbaseES/coframe_sample_data.sql" encoding="UTF-8" />
+		</group>
+		<group type="DM">
+			<script uri="META-INF/scripts/coframe/DaMeng/coframe.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe/DaMeng/coframe_init_data.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe_sample/DaMeng/coframe_sample_data.sql" encoding="UTF-8" />
+		</group>
+		<group type="gbase">
+			<script uri="META-INF/scripts/coframe/GBase/coframe.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe/GBase/coframe_init_data.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe_sample/GBase/coframe_sample_data.sql" encoding="UTF-8" />
+		</group>
+		<group type="oscar">
+			<script uri="META-INF/scripts/coframe/Oscar/coframe.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe/Oscar/coframe_init_data.sql" encoding="UTF-8" />
+			<script uri="META-INF/scripts/coframe_sample/Oscar/coframe_sample_data.sql" encoding="UTF-8" />
+		</group>
+	</component>
+</scripts>

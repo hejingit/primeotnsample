@@ -1,0 +1,26 @@
+<map>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.deptselect.queryOrgsByName(String, com.eos.foundation.PageCond)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;queryOrgsByName&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;queryOrgsByName&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.participantselect.deptselect.queryOrgsByName&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;name(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;page(com.eos.foundation.PageCond):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(commonj.sdo.DataObject[]):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;page(com.eos.foundation.PageCond):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.deptselect.deptChildList(String, Boolean)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;deptChildList&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;deptChildList&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.participantselect.deptselect.deptChildList&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;orgid(String):&lt;/b&gt;机构编号&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;append(Boolean):&lt;/b&gt;1:添加对象本身&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(commonj.sdo.DataObject[]):&lt;/b&gt;&lt;/dd&gt;&lt;br&gt;&lt;b&gt;Description:&lt;/b&gt;查询机构下的一级机构&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.deptselect.deptList(String, String, String, String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;deptList&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;deptList&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.participantselect.deptselect.deptList&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;depttype(String):&lt;/b&gt;处理方式1：全局2：用户所在机构3:上级机构4：下级机构5：指定层级别6：机构范围&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;orgid(String):&lt;/b&gt;选择的机构&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;orglevel(String):&lt;/b&gt;指定显示的层级&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;orglists(String):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(java.util.ArrayList):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.deptselect.recentDeptList(String, String, String, String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;recentDeptList&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;recentUserList&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.participantselect.deptselect.recentDeptList&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;name(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;sortField(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;sortOrder(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;datatype(String):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(commonj.sdo.DataObject[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.deptselect.queryOrgsByEmpId(String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;queryOrgsByEmpId&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;queryOrgsByEmpId&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.participantselect.deptselect.queryOrgsByEmpId&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;empId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(commonj.sdo.DataObject[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>deptselect</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;deptselect.componentType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;deptselect&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.participantselect.deptselect&lt;/html&gt;</string>
+  </entry>
+</map>

@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="授权模型" implementationType="file" modifier="public" name="dataset.xsd" order="32" version="">
+        <properties>
+            <property name="eosModel_type" value="datasetx"/>
+        </properties>
+        <type description="" displayName="角色表" implementationType="file" modifier="public" name="CapRole" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="CAP_ROLE"/>
+            </properties>
+            <field description="" displayName="角色ID" implementationType="file" modifier="public" name="roleId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR2"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ROLE_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="租户ID" implementationType="file" modifier="public" name="tenantId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR2"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="TENANT_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="角色代码" implementationType="file" modifier="public" name="roleCode" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR2"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ROLE_CODE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="角色名" implementationType="file" modifier="public" name="roleName" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR2"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ROLE_NAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="角色描述" implementationType="file" modifier="public" name="roleDesc" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR2"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ROLE_DESC"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="创建者" implementationType="file" modifier="public" name="createuser" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR2"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="CREATEUSER"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="创建时间" implementationType="file" modifier="public" name="createtime" order="256" typeName="sdo:Date">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="TimeStamp"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="timestamp"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Date"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="TIMESTAMP"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="CREATETIME"/>
+                    <property name="columnProperty_javaType" value="java.util.Date"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="资源授权" implementationType="file" modifier="public" name="CapResauth" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="CAP_RESAUTH"/>
+            </properties>
+            <field description="" displayName="参与者ID" implementationType="file" modifier="public" name="partyId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR2"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="PARTY_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="参与者类型" implementationType="file" modifier="public" name="partyType" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR2"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="PARTY_TYPE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="资源ID" implementationType="file" modifier="public" name="resId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR2"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="RES_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="资源类型" implementationType="file" modifier="public" name="resType" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR2"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="RES_TYPE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="租户ID" implementationType="file" modifier="public" name="tenantId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR2"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="TENANT_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="资源状态" implementationType="file" modifier="public" name="resState" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR2"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="RES_STATE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="参与者范围" implementationType="file" modifier="public" name="partyScope" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="CHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="PARTY_SCOPE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="创建用户" implementationType="file" modifier="public" name="createuser" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR2"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="CREATEUSER"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="创建时间" implementationType="file" modifier="public" name="createtime" order="256" typeName="sdo:Date">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="TimeStamp"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="timestamp"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Date"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="TIMESTAMP"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="CREATETIME"/>
+                    <property name="columnProperty_javaType" value="java.util.Date"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="SSO用户" implementationType="file" modifier="public" name="CapSsouser" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="cap_ssouser"/>
+            </properties>
+            <field description="" displayName="操作员编号" implementationType="file" modifier="public" name="operatorId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="OPERATOR_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="租户ID" implementationType="file" modifier="public" name="tenantId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="TENANT_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="用户编号" implementationType="file" modifier="public" name="userId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="USER_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="密码" implementationType="file" modifier="public" name="password" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="PASSWORD"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="用户名" implementationType="file" modifier="public" name="userName" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="USER_NAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="邮箱" implementationType="file" modifier="public" name="email" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="EMAIL"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="正常，挂起，注销，锁定..." displayName="状态" implementationType="file" modifier="public" name="status" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="STATUS"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="解锁时间" implementationType="file" modifier="public" name="unlocktime" order="256" typeName="sdo:Date">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="TimeStamp"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="timestamp"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Date"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="TIMESTAMP"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="UNLOCKTIME"/>
+                    <property name="columnProperty_javaType" value="java.util.Date"/>
+                </properties>
+            </field>
+            <field description="" displayName="最后登录时间" implementationType="file" modifier="public" name="lastlogin" order="256" typeName="sdo:Date">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="TimeStamp"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="timestamp"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Date"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="TIMESTAMP"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="LASTLOGIN"/>
+                    <property name="columnProperty_javaType" value="java.util.Date"/>
+                </properties>
+            </field>
+            <field description="" displayName="登录错误次数" implementationType="file" modifier="public" name="errcount" order="256" typeName="sdo:Decimal">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Decimal"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="big_decimal"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Decimal"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="DECIMAL"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ERRCOUNT"/>
+                    <property name="columnProperty_javaType" value="java.math.BigDecimal"/>
+                </properties>
+            </field>
+            <field description="允许设置多个MAC" displayName="maccode" implementationType="file" modifier="public" name="maccode" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MACCODE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="登录IP" implementationType="file" modifier="public" name="ipaddress" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="IPADDRESS"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="创建用户" implementationType="file" modifier="public" name="createuser" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="CREATEUSER"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="创建时间" implementationType="file" modifier="public" name="createtime" order="256" typeName="sdo:Date">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="TimeStamp"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="timestamp"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Date"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="TIMESTAMP"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="CREATETIME"/>
+                    <property name="columnProperty_javaType" value="java.util.Date"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="用户表" implementationType="file" modifier="public" name="CapUser" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="cap_user"/>
+            </properties>
+            <field description="操作员ID" displayName="操作员ID" implementationType="file" modifier="public" name="operatorId" order="256" typeName="sdo:Decimal">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Decimal"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="big_decimal"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Decimal"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="DECIMAL"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="OPERATOR_ID"/>
+                    <property name="columnProperty_javaType" value="java.math.BigDecimal"/>
+                </properties>
+            </field>
+            <field description="租户ID" displayName="租户ID" implementationType="file" modifier="public" name="tenantId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="TENANT_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="登录用户名" displayName="登录用户名" implementationType="file" modifier="public" name="userId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="USER_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="密码" displayName="密码" implementationType="file" modifier="public" name="password" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="PASSWORD"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="密码失效日期" displayName="密码失效日期" implementationType="file" modifier="public" name="invaldate" order="256" typeName="sdo:Date">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Date"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="date"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Date"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="DATE"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="INVALDATE"/>
+                    <property name="columnProperty_javaType" value="java.util.Date"/>
+                </properties>
+            </field>
+            <field description="用户名称" displayName="用户名称" implementationType="file" modifier="public" name="userName" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="USER_NAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="本地密码认证、LDAP认证、等" displayName="本地密码认证、LDAP认证、等" implementationType="file" modifier="public" name="authmode" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="AUTHMODE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="正常，挂起，注销，锁定..." displayName="正常，挂起，注销，锁定..." implementationType="file" modifier="public" name="status" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="STATUS"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="当状态为锁定时，解锁的时间" displayName="当状态为锁定时，解锁的时间" implementationType="file" modifier="public" name="unlocktime" order="256" typeName="sdo:Date">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="TimeStamp"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="timestamp"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Date"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="TIMESTAMP"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="UNLOCKTIME"/>
+                    <property name="columnProperty_javaType" value="java.util.Date"/>
+                </properties>
+            </field>
+            <field description="用户登录后菜单的风格" displayName="用户登录后菜单的风格" implementationType="file" modifier="public" name="menutype" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MENUTYPE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="最后登录时间" displayName="最后登录时间" implementationType="file" modifier="public" name="lastlogin" order="256" typeName="sdo:Date">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="TimeStamp"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="timestamp"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Date"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="TIMESTAMP"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="LASTLOGIN"/>
+                    <property name="columnProperty_javaType" value="java.util.Date"/>
+                </properties>
+            </field>
+            <field description="密码错误次数" displayName="密码错误次数" implementationType="file" modifier="public" name="errcount" order="256" typeName="sdo:Decimal">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Decimal"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="big_decimal"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Decimal"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="DECIMAL"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ERRCOUNT"/>
+                    <property name="columnProperty_javaType" value="java.math.BigDecimal"/>
+                </properties>
+            </field>
+            <field description="有效开始时间" displayName="有效开始时间" implementationType="file" modifier="public" name="startdate" order="256" typeName="sdo:Date">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Date"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="date"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Date"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="DATE"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="STARTDATE"/>
+                    <property name="columnProperty_javaType" value="java.util.Date"/>
+                </properties>
+            </field>
+            <field description="有效截止时间" displayName="有效截止时间" implementationType="file" modifier="public" name="enddate" order="256" typeName="sdo:Date">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Date"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="date"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Date"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="DATE"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ENDDATE"/>
+                    <property name="columnProperty_javaType" value="java.util.Date"/>
+                </properties>
+            </field>
+            <field description="定义一个规则表达式，表示允许操作的有效时间范围" displayName="定义一个规则表达式，表示允许操作的有效时间范围" implementationType="file" modifier="public" name="validtime" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="VALIDTIME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="允许设置多个MAC" displayName="允许设置多个MAC" implementationType="file" modifier="public" name="maccode" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MACCODE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="允许设置多个IP地址" displayName="允许设置多个IP地址" implementationType="file" modifier="public" name="ipaddress" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="IPADDRESS"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="邮箱地址" displayName="邮箱地址" implementationType="file" modifier="public" name="email" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="EMAIL"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="创建人" displayName="创建人" implementationType="file" modifier="public" name="createuser" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="CREATEUSER"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="创建时间" displayName="创建时间" implementationType="file" modifier="public" name="createtime" order="256" typeName="sdo:Date">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="TimeStamp"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="timestamp"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Date"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="TIMESTAMP"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="CREATETIME"/>
+                    <property name="columnProperty_javaType" value="java.util.Date"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="参与者授权" implementationType="file" modifier="public" name="CapPartyauth" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="cap_partyauth"/>
+            </properties>
+            <field description="" displayName="租户ID" implementationType="file" modifier="public" name="tenantId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="TENANT_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="角色ID" implementationType="file" modifier="public" name="roleId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="true"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="property_src_fk" value="true"/>
+                    <property name="property_CodeAssist" value="false"/>
+                    <property name="columnProperty_columnName" value="ROLE_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="角色类型" implementationType="file" modifier="public" name="roleType" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ROLE_TYPE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="参与者ID" implementationType="file" modifier="public" name="partyId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="PARTY_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="参与者类型" implementationType="file" modifier="public" name="partyType" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="PARTY_TYPE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="创建用户" implementationType="file" modifier="public" name="createuser" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="CREATEUSER"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="创建时间" implementationType="file" modifier="public" name="createtime" order="256" typeName="sdo:Date">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="TimeStamp"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="timestamp"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Date"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="TIMESTAMP"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="CREATETIME"/>
+                    <property name="columnProperty_javaType" value="java.util.Date"/>
+                </properties>
+            </field>
+            <field description="" displayName="对应角色" implementationType="refSDO" modifier="public" name="capRole" order="256" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole">
+                <properties>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="property_type" value="property_type_entPojoProperty"/>
+                    <property name="entPojoProperty_refID" value="org.gocom.components.coframe.rights.dataset.CapRole"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="isMulti" value="false"/>
+                </properties>
+            </field>
+        </type>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.CapRole.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.dataset.CapRole.node_entity" order="4096" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.datasetx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.dataset.datasetx" order="4096" typeName="file:org.gocom.components.coframe.rights.dataset.datasetx"/>
+    </model>
+    <model description="" displayName="PartyManager" implementationType="file" modifier="public" name="PartyManager.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="queryPartyWithPartyId" implementationType="file" modifier="public" name="queryPartyWithPartyId" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="userId" implementationType="Primitive" modifier="public" name="userId" order="2048" typeName="file:String"/>
+            <result description="" displayName="roles" implementationType="Java" modifier="public" name="roles" order="1024" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.PartyManager.queryPartyWithPartyId.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.PartyManager.queryPartyWithPartyId.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.PartyManager.queryPartyWithPartyId.bizx"/>
+        <method description="" displayName="saveParty" implementationType="file" modifier="public" name="saveParty" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="roles" implementationType="Java" modifier="public" name="roles" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole[]"/>
+            <parameter description="" displayName="partyId" implementationType="Primitive" modifier="public" name="partyId" order="2048" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.PartyManager.saveParty.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.PartyManager.saveParty.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.PartyManager.saveParty.bizx"/>
+    </model>
+    <model description="" displayName="RoleManager" implementationType="file" modifier="public" name="RoleManager.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="增加角色" displayName="增加角色" implementationType="file" modifier="public" name="addRole" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="capRole" implementationType="Java" modifier="public" name="capRole" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.RoleManager.addRole.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.RoleManager.addRole.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.RoleManager.addRole.bizx"/>
+        <method description="检测输入的角色是否存在" displayName="checkRoleExist" implementationType="file" modifier="public" name="checkRoleExist" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <result description="" displayName="isRoleExist" implementationType="Primitive" modifier="public" name="isRoleExist" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.RoleManager.checkRoleExist.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.RoleManager.checkRoleExist.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.RoleManager.checkRoleExist.bizx"/>
+        <method description="获取可授权的角色" displayName="获取可授权的角色" implementationType="file" modifier="public" name="queryAuthorizedRole" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.RoleManager.queryAuthorizedRole.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.RoleManager.queryAuthorizedRole.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.RoleManager.queryAuthorizedRole.bizx"/>
+        <method description="" displayName="queryRole" implementationType="file" modifier="public" name="queryRole" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.RoleManager.queryRole.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.RoleManager.queryRole.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.RoleManager.queryRole.bizx"/>
+        <method description="删除角色，可批量删除" displayName="删除角色" implementationType="file" modifier="public" name="removeRoles" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="roles" implementationType="Java" modifier="public" name="roles" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.RoleManager.removeRoles.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.RoleManager.removeRoles.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.RoleManager.removeRoles.bizx"/>
+        <method description="" displayName="修改角色" implementationType="file" modifier="public" name="updateRole" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="capRole" implementationType="Java" modifier="public" name="capRole" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.RoleManager.updateRole.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.RoleManager.updateRole.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.RoleManager.updateRole.bizx"/>
+    </model>
+    <model description="" displayName="capuser" implementationType="file" modifier="public" name="UserManager.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="add" implementationType="file" modifier="public" name="addUser" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="user" implementationType="Java" modifier="public" name="user" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.UserManager.addUser.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.UserManager.addUser.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.UserManager.addUser.bizx"/>
+        <method description="" displayName="checkPassword" implementationType="file" modifier="public" name="checkPassword" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="user" implementationType="Java" modifier="public" name="user" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser"/>
+            <parameter description="" displayName="password" implementationType="Primitive" modifier="public" name="password" order="2048" typeName="file:String"/>
+            <result description="" displayName="retValue" implementationType="Primitive" modifier="public" name="retValue" order="1024" typeName="file:String"/>
+            <result description="" displayName="user" implementationType="Java" modifier="public" name="user" order="1024" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.UserManager.checkPassword.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.UserManager.checkPassword.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.UserManager.checkPassword.bizx"/>
+        <method description="" displayName="checkUser" implementationType="file" modifier="public" name="checkUser" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="userId" implementationType="Primitive" modifier="public" name="userId" order="2048" typeName="file:String"/>
+            <result description="" displayName="bool" implementationType="Primitive" modifier="public" name="bool" order="1024" typeName="file:Boolean"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.UserManager.checkUser.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.UserManager.checkUser.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.UserManager.checkUser.bizx"/>
+        <method description="" displayName="delete" implementationType="file" modifier="public" name="deleteUser" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="users" implementationType="Java" modifier="public" name="users" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.UserManager.deleteUser.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.UserManager.deleteUser.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.UserManager.deleteUser.bizx"/>
+        <method description="" displayName="getCapUser" implementationType="file" modifier="public" name="getCapUser" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="template" implementationType="Java" modifier="public" name="template" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser"/>
+            <result description="" displayName="user" implementationType="Java" modifier="public" name="user" order="1024" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.UserManager.getCapUser.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.UserManager.getCapUser.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.UserManager.getCapUser.bizx"/>
+        <method description="" displayName="get" implementationType="file" modifier="public" name="getUser" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="user" implementationType="Java" modifier="public" name="user" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser"/>
+            <result description="" displayName="user" implementationType="Java" modifier="public" name="user" order="1024" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.UserManager.getUser.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.UserManager.getUser.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.UserManager.getUser.bizx"/>
+        <method description="" displayName="query" implementationType="file" modifier="public" name="queryUser" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.UserManager.queryUser.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.UserManager.queryUser.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.UserManager.queryUser.bizx"/>
+        <method description="" displayName="updateUserByTemplate" implementationType="file" modifier="public" name="updatePasswords" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="users" implementationType="Java" modifier="public" name="users" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.UserManager.updatePasswords.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.UserManager.updatePasswords.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.UserManager.updatePasswords.bizx"/>
+        <method description="" displayName="update" implementationType="file" modifier="public" name="updateUser" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="user" implementationType="Java" modifier="public" name="user" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.UserManager.updateUser.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.UserManager.updateUser.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.UserManager.updateUser.bizx"/>
+    </model>
+</metadata>

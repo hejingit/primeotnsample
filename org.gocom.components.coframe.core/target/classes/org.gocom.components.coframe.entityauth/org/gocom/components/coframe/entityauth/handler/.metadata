@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="EntityAuthContributionHandler" implementationType="file" modifier="public" name="EntityAuthContributionHandler.class" order="32" version=""/>
+    <model description="" displayName="EntityAuthHandler" implementationType="file" modifier="public" name="EntityAuthHandler.class" order="32" version=""/>
+    <model description="" displayName="EntityContributionListener" implementationType="file" modifier="public" name="EntityContributionListener.class" order="32" version=""/>
+</metadata>

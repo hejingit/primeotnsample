@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<QueryEntityList>
+    <QueryEntity name="org.gocom.components.coframe.participantselect.dataset.QRecentUserSelect">
+        <config db="default" type="sql"><![CDATA[	select max(recent.LastTime) lasttime,
+	recent .target_id,emp.empname AS target_name,
+	org.orgname,org.orgid ,emp.mobileno,emp.pemail,recent.userid as createUserid,recent .target_type,emp.empid,
+	emp.userid
+	 from org_recent_visit recent , org_employee emp   ,org_organization org
+	WHERE recent .target_id=emp.empid
+	AND  org.orgid = emp.orgid
+	and recent .target_type='emp'
+	group by recent .target_id,emp.empname ,
+	org.orgname,org.orgid ,emp.mobileno,emp.pemail,recent.userid,recent .target_type,emp.empid,emp.userid]]></config>
+    </QueryEntity>
+    <QueryEntity name="org.gocom.components.coframe.participantselect.dataset.QRecentRoleSelect">
+        <config db="default" type="sql"><![CDATA[select max(recent.lasttime)  lasttime,
+recent .target_id,role.role_name AS target_name,'' as orgname, 0 as orgid ,recent.userid,recent.target_type
+ from org_recent_visit recent , cap_role role   
+WHERE recent .target_id=role.role_id
+ 
+and recent .target_type='role'
+group by 
+recent .target_id,role.role_name ,recent.userid,recent.target_type]]></config>
+    </QueryEntity>
+    <QueryEntity name="org.gocom.components.coframe.participantselect.dataset.QRecentDeptSelect">
+        <config db="default" type="sql"><![CDATA[select max(recent.lasttime) lasttime,
+recent .target_id,org.orgname AS target_name,org.orgname as orgname,org.orgcode, org.orgid as orgid ,recent.userid,recent.target_type
+ from org_recent_visit recent ,    org_organization org
+WHERE recent .target_id=org.orgid
+and recent.target_type='org'
+group by 
+recent .target_id,org.orgname ,org.orgname ,org.orgcode, org.orgid  ,recent.userid,recent.target_type
+
+]]></config>
+    </QueryEntity>
+    <QueryEntity name="org.gocom.components.coframe.participantselect.dataset.QueryUserByParty">
+        <config db="default" type="sql"><![CDATA[select b.role_id,b.ROLE_TYPE,b.PARTY_ID, b.party_type, a.empid , a.userid,a.empid as target_id, 
+a.empname as target_name, a.tenant_id ,org.orgname,a.orgid,a.mobileno,a.pemail
+from org_organization org,org_employee a left join cap_partyauth b 
+on b.party_id= a.userid  
+where a.tenant_id=b.tenant_id
+and org.orgid=a.orgid]]></config>
+    </QueryEntity>
+    <QueryEntity name="org.gocom.components.coframe.participantselect.dataset.QUserOrg">
+        <config db="default" type="sql"><![CDATA[select org.* ,emp.EMPID from org_organization org,org_emporg emp
+where emp.ORGID=org.ORGID
+and emp.TENANT_ID=org.TENANT_ID ]]></config>
+    </QueryEntity>
+    <QueryEntity name="org.gocom.components.coframe.participantselect.dataset.QOrgUsers">
+        <config db="default" type="sql"><![CDATA[select 
+emp.empid,emp.userid,
+emp.pemail,emp.mobileno,emp.empname as target_name,emp. empid as target_id,org.ORGNAME,org.orgcode,org.orgid
+ from org_employee emp,
+org_emporg emporg,org_organization org
+where emp.EMPID=emporg.EMPID
+and org.ORGID=emporg.ORGID]]></config>
+    </QueryEntity>
+    <QueryEntity name="org.gocom.components.coframe.participantselect.dataset.QUserByGroup">
+        <config db="default" type="sql"><![CDATA[select emp.PEMAIL,emp.MOBILENO,emp.empid as target_id,
+emp.EMPNAME as target_name,org.ORGID,
+org.ORGNAME,org.ORGCODE,empgroup.GROUPID,emp.empid,emp.userid
+ from org_empgroup empgroup ,org_organization org,org_employee emp
+where empgroup.EMPID=emp.EMPID and emp.ORGID=org.ORGID
+and emp.TENANT_ID=org.TENANT_ID
+and emp.TENANT_ID=empgroup.TENANT_ID]]></config>
+    </QueryEntity>
+    <QueryEntity name="org.gocom.components.coframe.participantselect.dataset.QOrgSelect">
+        <config db="default" type="sql"><![CDATA[select orgid,orgname,orgcode ,
+orgid as target_id,orgname as target_name,parentorgid,orgseq from  org_organization]]></config>
+    </QueryEntity>
+    <QueryEntity name="org.gocom.components.coframe.participantselect.dataset.QueryUsers">
+        <config db="default" type="sql"><![CDATA[select emp.USERID ,emp.empid as target_id,emp.EMPNAME as target_name ,emp.empid,emp.pemail,emp.mobileno
+,emp.EMPNAME,org.ORGID,org.ORGNAME,org.ORGCODE from org_employee emp,org_organization org
+where org.ORGID=emp.ORGID
+and org.TENANT_ID=emp.TENANT_ID]]></config>
+    </QueryEntity>
+    <QueryEntity name="org.gocom.components.coframe.participantselect.dataset.Role">
+        <config db="default" type="sql"><![CDATA[select * from cap_role]]></config>
+    </QueryEntity>
+</QueryEntityList>

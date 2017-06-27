@@ -1,0 +1,14 @@
+<map>
+  <entry>
+    <string>groupposi</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;groupposi.componentType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;groupposi&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.groupposi&lt;br&gt;&lt;b&gt;Description:&lt;/b&gt;工作组岗位&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.groupposi.queryGroupposi(com.primeton.das.criteria.criteriaType, com.eos.foundation.PageCond)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;queryGroupposi&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;queryOrg&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.groupposi.queryGroupposi&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;criteria(com.primeton.das.criteria.criteriaType):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;page(com.eos.foundation.PageCond):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;treeNodes(org.gocom.components.coframe.org.dataset.OrgTreeNode[]):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;total(Int):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.groupposi.addGroupposi(org.gocom.components.coframe.org.groupdataset.OrgGroupposi)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;addGroupposi&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;addOrg&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.groupposi.addGroupposi&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;groupposi(org.gocom.components.coframe.org.groupdataset.OrgGroupposi):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;response(org.gocom.components.coframe.org.util.OrgResponse):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+</map>

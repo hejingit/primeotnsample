@@ -1,0 +1,86 @@
+<map>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.getPrimaryKey(commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;void org.gocom.components.coframe.tools.DasEntityHelper.getPrimaryKey(DataObject entity)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;getPrimaryKey&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity(commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;DataObject[] org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity(DataObject criteria)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;queryEntitiesByCriteriaEntity&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.deleteEntity(commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;void org.gocom.components.coframe.tools.DasEntityHelper.deleteEntity(DataObject entity)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;deleteEntity&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.deleteEntityBatch(commonj.sdo.DataObject[])</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;void org.gocom.components.coframe.tools.DasEntityHelper.deleteEntityBatch(DataObject[] entities)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;deleteEntityBatch&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage(commonj.sdo.DataObject, commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;DataObject[] org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage(DataObject criteria, DataObject pagecond)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;queryEntitiesByCriteriaEntityWithPage&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.deleteByTemplate(commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;int org.gocom.components.coframe.tools.DasEntityHelper.deleteByTemplate(DataObject template)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;deleteByTemplate&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.insertEntityBatch(commonj.sdo.DataObject[])</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;void org.gocom.components.coframe.tools.DasEntityHelper.insertEntityBatch(DataObject[] entities)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;insertEntityBatch&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.expandEntitiesRelation(commonj.sdo.DataObject[], java.lang.String)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;void org.gocom.components.coframe.tools.DasEntityHelper.expandEntitiesRelation(DataObject[] dataObjects, String property)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;expandEntitiesRelation&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.updateEntityByCriteriaEntity(commonj.sdo.DataObject, commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;int org.gocom.components.coframe.tools.DasEntityHelper.updateEntityByCriteriaEntity(DataObject updateValue, DataObject criteria)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;updateEntityByCriteriaEntity&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.saveEntity(commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;void org.gocom.components.coframe.tools.DasEntityHelper.saveEntity(DataObject entity)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;saveEntity&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.expandEntityByTemplate(commonj.sdo.DataObject, commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;int org.gocom.components.coframe.tools.DasEntityHelper.expandEntityByTemplate(DataObject template, DataObject entity)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;expandEntityByTemplate&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>DasEntityHelper [数据实体辅助类]</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;org.gocom.components.coframe.tools.DasEntityHelper&lt;/b&gt;&lt;br/&gt;&lt;p&gt; 数据实体辅助类&#x0D; &#x0D; &lt;dl&gt;&lt;dt&gt;作者:&lt;/dt&gt;&lt;dd&gt;Administrator&lt;/dd&gt;&lt;/dl&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.insertEntity(commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;void org.gocom.components.coframe.tools.DasEntityHelper.insertEntity(DataObject entity)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;insertEntity&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.count(commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;int org.gocom.components.coframe.tools.DasEntityHelper.count(DataObject criteria)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;count&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.saveEntities(commonj.sdo.DataObject[])</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;void org.gocom.components.coframe.tools.DasEntityHelper.saveEntities(DataObject[] entities)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;saveEntities&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.queryByNamedSql(java.lang.String, java.lang.Object)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;Object[] org.gocom.components.coframe.tools.DasEntityHelper.queryByNamedSql(String nameSqlId, Object parameterObject)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;queryByNamedSql&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.deleteByCriteriaEntity(commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;int org.gocom.components.coframe.tools.DasEntityHelper.deleteByCriteriaEntity(DataObject criteria)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;deleteByCriteriaEntity&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.updateEntity(commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;void org.gocom.components.coframe.tools.DasEntityHelper.updateEntity(DataObject entity)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;updateEntity&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByTemplateWithPage(commonj.sdo.DataObject, commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;DataObject[] org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByTemplateWithPage(DataObject template, DataObject pagecond)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;queryEntitiesByTemplateWithPage&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.expandEntity(commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;int org.gocom.components.coframe.tools.DasEntityHelper.expandEntity(DataObject entity)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;expandEntity&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByTemplate(commonj.sdo.DataObject)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;DataObject[] org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByTemplate(DataObject template)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;queryEntitiesByTemplate&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+</map>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class dynamic-insert="true" dynamic-update="true" entity-name="org.gocom.components.coframe.dict.dict.EosDictEntry" table="eos_dict_entry">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <composite-id>
+            <key-property name="dictid" type="string">
+                <column length="128" name="DICTID"/>
+            </key-property>
+            <key-many-to-one entity-name="org.gocom.components.coframe.dict.dict.EosDictType" foreign-key="eos_dict_entry_ibfk_1" lazy="false" name="eosDictType">
+                <column length="128" name="DICTTYPEID"/>
+            </key-many-to-one>
+        </composite-id>
+        <property name="dictname" type="string">
+            <column length="255" name="DICTNAME"/>
+        </property>
+        <property name="status" type="int">
+            <column length="11" name="STATUS"/>
+        </property>
+        <property name="sortno" type="int">
+            <column length="11" name="SORTNO"/>
+        </property>
+        <property name="rank" type="int">
+            <column length="11" name="RANK"/>
+        </property>
+        <property name="parentid" type="string">
+            <column length="255" name="PARENTID"/>
+        </property>
+        <property name="seqno" type="string">
+            <column length="255" name="SEQNO"/>
+        </property>
+        <property name="filter1" type="string">
+            <column length="255" name="FILTER1"/>
+        </property>
+        <property name="filter2" type="string">
+            <column length="255" name="FILTER2"/>
+        </property>
+    </class>
+    <class dynamic-insert="true" dynamic-update="true" entity-name="org.gocom.components.coframe.dict.dict.EosDictEntryI18n" table="eos_dict_entry_i18n">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <composite-id>
+            <key-property name="dicttypeid" type="string">
+                <column length="128" name="DICTTYPEID"/>
+            </key-property>
+            <key-property name="dictid" type="string">
+                <column length="128" name="DICTID"/>
+            </key-property>
+            <key-property name="locale" type="string">
+                <column length="10" name="LOCALE"/>
+            </key-property>
+        </composite-id>
+        <property name="dictname" type="string">
+            <column length="255" name="DICTNAME"/>
+        </property>
+    </class>
+    <class dynamic-insert="true" dynamic-update="true" entity-name="org.gocom.components.coframe.dict.dict.EosDictType" table="eos_dict_type">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id name="dicttypeid" type="string">
+            <column length="128" name="DICTTYPEID"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="dicttypename" type="string">
+            <column length="255" name="DICTTYPENAME"/>
+        </property>
+        <property name="rank" type="int">
+            <column length="11" name="RANK"/>
+        </property>
+        <property name="parentid" type="string">
+            <column length="255" name="PARENTID"/>
+        </property>
+        <property name="seqno" type="string">
+            <column length="255" name="SEQNO"/>
+        </property>
+    </class>
+    <class dynamic-insert="true" dynamic-update="true" entity-name="org.gocom.components.coframe.dict.dict.EosDictTypeI18n" table="eos_dict_type_i18n">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <composite-id>
+            <key-property name="dicttypeid" type="string">
+                <column length="128" name="DICTTYPEID"/>
+            </key-property>
+            <key-property name="locale" type="string">
+                <column length="10" name="LOCALE"/>
+            </key-property>
+        </composite-id>
+        <property name="dicttypename" type="string">
+            <column length="255" name="DICTTYPENAME"/>
+        </property>
+    </class>
+    <class entity-name="org.gocom.components.coframe.dict.dict.DictExport" table="$QueryEntity[org.gocom.components.coframe.dict.dict.DictExport]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <composite-id>
+            <key-property column="DICTTYPEID" name="dicttypeid" type="string"/>
+            <key-property column="DICTID" name="dictid" type="string"/>
+        </composite-id>
+        <property column="DICTTYPENAME" insert="false" name="dicttypename" type="string" update="false"/>
+        <property column="TYPE_PARENTID" insert="false" name="typeParentid" type="string" update="false"/>
+        <property column="TYPE_RANK" insert="false" name="typeRank" type="int" update="false"/>
+        <property column="TYPE_SEQNO" insert="false" name="typeSeqno" type="string" update="false"/>
+        <property column="DICTNAME" insert="false" name="dictname" type="string" update="false"/>
+        <property column="ENTRY_PARENTID" insert="false" name="entryParentid" type="string" update="false"/>
+        <property column="STATUS" insert="false" name="status" type="int" update="false"/>
+        <property column="SORTNO" insert="false" name="sortno" type="int" update="false"/>
+        <property column="ENTRY_RANK" insert="false" name="entryRank" type="int" update="false"/>
+        <property column="ENTRY_SEQNO" insert="false" name="entrySeqno" type="string" update="false"/>
+    </class>
+</hibernate-mapping>

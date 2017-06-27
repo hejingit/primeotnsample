@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="CoframeDASDaoSupport" implementationType="file" modifier="public" name="CoframeDASDaoSupport.class" order="32" version=""/>
+    <model description="" displayName="DasEntityHelper" implementationType="file" modifier="public" name="DasEntityHelper.class" order="32" version="">
+        <type description="" displayName="DasEntityHelper [数据实体辅助类]" implementationType="bizlet" modifier="public" name="DasEntityHelper" order="128" variable="false">
+            <properties>
+                <property name="displayName" value="数据实体辅助类"/>
+                <property name="className" value="org.gocom.components.coframe.tools.DasEntityHelper"/>
+            </properties>
+            <method description="count" displayName="count" implementationType="bizlet" modifier="public" name="count" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="count"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="count"/>
+                    <property name="returnType" value="int"/>
+                </properties>
+                <parameter description="" displayName="criteria" implementationType="java" modifier="public" name="criteria" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="criteria"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="criteria"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="int" displayName="int" implementationType="java" modifier="public" name="int" order="1024" typeName="file:int">
+                    <properties>
+                        <property name="full_type_name_string" value="int"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="getPrimaryKey" displayName="getPrimaryKey" implementationType="bizlet" modifier="public" name="getPrimaryKey" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="getPrimaryKey"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="getPrimaryKey"/>
+                    <property name="returnType" value="void"/>
+                </properties>
+                <parameter description="" displayName="entity" implementationType="java" modifier="public" name="entity" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="entity"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="entity"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="void" displayName="void" implementationType="java" modifier="public" name="void" order="1024" typeName="file:void">
+                    <properties>
+                        <property name="full_type_name_string" value="void"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="expandEntity" displayName="expandEntity" implementationType="bizlet" modifier="public" name="expandEntity" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="expandEntity"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="expandEntity"/>
+                    <property name="returnType" value="int"/>
+                </properties>
+                <parameter description="" displayName="entity" implementationType="java" modifier="public" name="entity" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="entity"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="entity"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="int" displayName="int" implementationType="java" modifier="public" name="int" order="1024" typeName="file:int">
+                    <properties>
+                        <property name="full_type_name_string" value="int"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="insertEntity" displayName="insertEntity" implementationType="bizlet" modifier="public" name="insertEntity" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="insertEntity"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="insertEntity"/>
+                    <property name="returnType" value="void"/>
+                </properties>
+                <parameter description="" displayName="entity" implementationType="java" modifier="public" name="entity" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="entity"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="entity"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="void" displayName="void" implementationType="java" modifier="public" name="void" order="1024" typeName="file:void">
+                    <properties>
+                        <property name="full_type_name_string" value="void"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="insertEntityBatch" displayName="insertEntityBatch" implementationType="bizlet" modifier="public" name="insertEntityBatch" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="insertEntityBatch"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="insertEntityBatch"/>
+                    <property name="returnType" value="void"/>
+                </properties>
+                <parameter description="" displayName="entities" implementationType="java" modifier="public" name="entities" order="2048" typeName="file:commonj.sdo.DataObject[]">
+                    <properties>
+                        <property name="paramCategory" value="JavaObject"/>
+                        <property name="paramAlias" value="entities"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="entities"/>
+                        <property name="paramType" value="commonj.sdo.DataObject[]"/>
+                    </properties>
+                </parameter>
+                <result description="void" displayName="void" implementationType="java" modifier="public" name="void" order="1024" typeName="file:void">
+                    <properties>
+                        <property name="full_type_name_string" value="void"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="updateEntity" displayName="updateEntity" implementationType="bizlet" modifier="public" name="updateEntity" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="updateEntity"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="updateEntity"/>
+                    <property name="returnType" value="void"/>
+                </properties>
+                <parameter description="" displayName="entity" implementationType="java" modifier="public" name="entity" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="entity"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="entity"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="void" displayName="void" implementationType="java" modifier="public" name="void" order="1024" typeName="file:void">
+                    <properties>
+                        <property name="full_type_name_string" value="void"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="updateEntityByCriteriaEntity" displayName="updateEntityByCriteriaEntity" implementationType="bizlet" modifier="public" name="updateEntityByCriteriaEntity" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="updateEntityByCriteriaEntity"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="updateEntityByCriteriaEntity"/>
+                    <property name="returnType" value="int"/>
+                </properties>
+                <parameter description="" displayName="updateValue" implementationType="java" modifier="public" name="updateValue" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="updateValue"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="updateValue"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <parameter description="" displayName="criteria" implementationType="java" modifier="public" name="criteria" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="criteria"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="criteria"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="int" displayName="int" implementationType="java" modifier="public" name="int" order="1024" typeName="file:int">
+                    <properties>
+                        <property name="full_type_name_string" value="int"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="saveEntity" displayName="saveEntity" implementationType="bizlet" modifier="public" name="saveEntity" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="saveEntity"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="saveEntity"/>
+                    <property name="returnType" value="void"/>
+                </properties>
+                <parameter description="" displayName="entity" implementationType="java" modifier="public" name="entity" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="entity"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="entity"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="void" displayName="void" implementationType="java" modifier="public" name="void" order="1024" typeName="file:void">
+                    <properties>
+                        <property name="full_type_name_string" value="void"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="saveEntities" displayName="saveEntities" implementationType="bizlet" modifier="public" name="saveEntities" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="saveEntities"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="saveEntities"/>
+                    <property name="returnType" value="void"/>
+                </properties>
+                <parameter description="" displayName="entities" implementationType="java" modifier="public" name="entities" order="2048" typeName="file:commonj.sdo.DataObject[]">
+                    <properties>
+                        <property name="paramCategory" value="JavaObject"/>
+                        <property name="paramAlias" value="entities"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="entities"/>
+                        <property name="paramType" value="commonj.sdo.DataObject[]"/>
+                    </properties>
+                </parameter>
+                <result description="void" displayName="void" implementationType="java" modifier="public" name="void" order="1024" typeName="file:void">
+                    <properties>
+                        <property name="full_type_name_string" value="void"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="deleteEntity" displayName="deleteEntity" implementationType="bizlet" modifier="public" name="deleteEntity" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="deleteEntity"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="deleteEntity"/>
+                    <property name="returnType" value="void"/>
+                </properties>
+                <parameter description="" displayName="entity" implementationType="java" modifier="public" name="entity" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="entity"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="entity"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="void" displayName="void" implementationType="java" modifier="public" name="void" order="1024" typeName="file:void">
+                    <properties>
+                        <property name="full_type_name_string" value="void"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="deleteEntityBatch" displayName="deleteEntityBatch" implementationType="bizlet" modifier="public" name="deleteEntityBatch" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="deleteEntityBatch"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="deleteEntityBatch"/>
+                    <property name="returnType" value="void"/>
+                </properties>
+                <parameter description="" displayName="entities" implementationType="java" modifier="public" name="entities" order="2048" typeName="file:commonj.sdo.DataObject[]">
+                    <properties>
+                        <property name="paramCategory" value="JavaObject"/>
+                        <property name="paramAlias" value="entities"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="entities"/>
+                        <property name="paramType" value="commonj.sdo.DataObject[]"/>
+                    </properties>
+                </parameter>
+                <result description="void" displayName="void" implementationType="java" modifier="public" name="void" order="1024" typeName="file:void">
+                    <properties>
+                        <property name="full_type_name_string" value="void"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="deleteByTemplate" displayName="deleteByTemplate" implementationType="bizlet" modifier="public" name="deleteByTemplate" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="deleteByTemplate"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="deleteByTemplate"/>
+                    <property name="returnType" value="int"/>
+                </properties>
+                <parameter description="" displayName="template" implementationType="java" modifier="public" name="template" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="template"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="template"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="int" displayName="int" implementationType="java" modifier="public" name="int" order="1024" typeName="file:int">
+                    <properties>
+                        <property name="full_type_name_string" value="int"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="deleteByCriteriaEntity" displayName="deleteByCriteriaEntity" implementationType="bizlet" modifier="public" name="deleteByCriteriaEntity" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="deleteByCriteriaEntity"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="deleteByCriteriaEntity"/>
+                    <property name="returnType" value="int"/>
+                </properties>
+                <parameter description="" displayName="criteria" implementationType="java" modifier="public" name="criteria" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="criteria"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="criteria"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="int" displayName="int" implementationType="java" modifier="public" name="int" order="1024" typeName="file:int">
+                    <properties>
+                        <property name="full_type_name_string" value="int"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="queryByNamedSql" displayName="queryByNamedSql" implementationType="bizlet" modifier="public" name="queryByNamedSql" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="queryByNamedSql"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="queryByNamedSql"/>
+                    <property name="returnType" value="java.lang.Object[]"/>
+                </properties>
+                <parameter description="" displayName="nameSqlId" implementationType="java" modifier="public" name="nameSqlId" order="2048" typeName="file:java.lang.String">
+                    <properties>
+                        <property name="paramCategory" value="JavaObject"/>
+                        <property name="paramAlias" value="nameSqlId"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="nameSqlId"/>
+                        <property name="paramType" value="java.lang.String"/>
+                    </properties>
+                </parameter>
+                <parameter description="" displayName="parameterObject" implementationType="java" modifier="public" name="parameterObject" order="2048" typeName="file:java.lang.Object">
+                    <properties>
+                        <property name="paramCategory" value="JavaObject"/>
+                        <property name="paramAlias" value="parameterObject"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="parameterObject"/>
+                        <property name="paramType" value="java.lang.Object"/>
+                    </properties>
+                </parameter>
+                <result description="java.lang.Object[]" displayName="java.lang.Object[]" implementationType="java" modifier="public" name="java.lang.Object[]" order="1024" typeName="file:java.lang.Object[]">
+                    <properties>
+                        <property name="full_type_name_string" value="java.lang.Object[]"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="queryEntitiesByTemplate" displayName="queryEntitiesByTemplate" implementationType="bizlet" modifier="public" name="queryEntitiesByTemplate" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="queryEntitiesByTemplate"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="queryEntitiesByTemplate"/>
+                    <property name="returnType" value="commonj.sdo.DataObject[]"/>
+                </properties>
+                <parameter description="" displayName="template" implementationType="java" modifier="public" name="template" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="template"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="template"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="commonj.sdo.DataObject[]" displayName="commonj.sdo.DataObject[]" implementationType="java" modifier="public" name="commonj.sdo.DataObject[]" order="1024" typeName="file:commonj.sdo.DataObject[]">
+                    <properties>
+                        <property name="full_type_name_string" value="commonj.sdo.DataObject[]"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="queryEntitiesByCriteriaEntity" displayName="queryEntitiesByCriteriaEntity" implementationType="bizlet" modifier="public" name="queryEntitiesByCriteriaEntity" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="queryEntitiesByCriteriaEntity"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="queryEntitiesByCriteriaEntity"/>
+                    <property name="returnType" value="commonj.sdo.DataObject[]"/>
+                </properties>
+                <parameter description="" displayName="criteria" implementationType="java" modifier="public" name="criteria" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="criteria"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="criteria"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="commonj.sdo.DataObject[]" displayName="commonj.sdo.DataObject[]" implementationType="java" modifier="public" name="commonj.sdo.DataObject[]" order="1024" typeName="file:commonj.sdo.DataObject[]">
+                    <properties>
+                        <property name="full_type_name_string" value="commonj.sdo.DataObject[]"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="queryEntitiesByTemplateWithPage" displayName="queryEntitiesByTemplateWithPage" implementationType="bizlet" modifier="public" name="queryEntitiesByTemplateWithPage" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="queryEntitiesByTemplateWithPage"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="queryEntitiesByTemplateWithPage"/>
+                    <property name="returnType" value="commonj.sdo.DataObject[]"/>
+                </properties>
+                <parameter description="" displayName="template" implementationType="java" modifier="public" name="template" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="template"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="template"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <parameter description="" displayName="pagecond" implementationType="java" modifier="public" name="pagecond" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="pagecond"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="pagecond"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="commonj.sdo.DataObject[]" displayName="commonj.sdo.DataObject[]" implementationType="java" modifier="public" name="commonj.sdo.DataObject[]" order="1024" typeName="file:commonj.sdo.DataObject[]">
+                    <properties>
+                        <property name="full_type_name_string" value="commonj.sdo.DataObject[]"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="queryEntitiesByCriteriaEntityWithPage" displayName="queryEntitiesByCriteriaEntityWithPage" implementationType="bizlet" modifier="public" name="queryEntitiesByCriteriaEntityWithPage" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="queryEntitiesByCriteriaEntityWithPage"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="queryEntitiesByCriteriaEntityWithPage"/>
+                    <property name="returnType" value="commonj.sdo.DataObject[]"/>
+                </properties>
+                <parameter description="" displayName="criteria" implementationType="java" modifier="public" name="criteria" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="criteria"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="criteria"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <parameter description="" displayName="pagecond" implementationType="java" modifier="public" name="pagecond" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="pagecond"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="pagecond"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="commonj.sdo.DataObject[]" displayName="commonj.sdo.DataObject[]" implementationType="java" modifier="public" name="commonj.sdo.DataObject[]" order="1024" typeName="file:commonj.sdo.DataObject[]">
+                    <properties>
+                        <property name="full_type_name_string" value="commonj.sdo.DataObject[]"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="expandEntitiesRelation" displayName="expandEntitiesRelation" implementationType="bizlet" modifier="public" name="expandEntitiesRelation" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="expandEntitiesRelation"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="expandEntitiesRelation"/>
+                    <property name="returnType" value="void"/>
+                </properties>
+                <parameter description="" displayName="dataObjects" implementationType="java" modifier="public" name="dataObjects" order="2048" typeName="file:commonj.sdo.DataObject[]">
+                    <properties>
+                        <property name="paramCategory" value="JavaObject"/>
+                        <property name="paramAlias" value="dataObjects"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="dataObjects"/>
+                        <property name="paramType" value="commonj.sdo.DataObject[]"/>
+                    </properties>
+                </parameter>
+                <parameter description="" displayName="property" implementationType="java" modifier="public" name="property" order="2048" typeName="file:java.lang.String">
+                    <properties>
+                        <property name="paramCategory" value="JavaObject"/>
+                        <property name="paramAlias" value="property"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="property"/>
+                        <property name="paramType" value="java.lang.String"/>
+                    </properties>
+                </parameter>
+                <result description="void" displayName="void" implementationType="java" modifier="public" name="void" order="1024" typeName="file:void">
+                    <properties>
+                        <property name="full_type_name_string" value="void"/>
+                    </properties>
+                </result>
+            </method>
+            <method description="expandEntityByTemplate" displayName="expandEntityByTemplate" implementationType="bizlet" modifier="public" name="expandEntityByTemplate" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="expandEntityByTemplate"/>
+                    <property name="isStatic" value="true"/>
+                    <property name="methodName" value="expandEntityByTemplate"/>
+                    <property name="returnType" value="int"/>
+                </properties>
+                <parameter description="" displayName="template" implementationType="java" modifier="public" name="template" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="template"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="template"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <parameter description="" displayName="entity" implementationType="java" modifier="public" name="entity" order="2048" typeName="file:commonj.sdo.DataObject">
+                    <properties>
+                        <property name="paramCategory" value="DataObject"/>
+                        <property name="paramAlias" value="entity"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="entity"/>
+                        <property name="paramType" value="commonj.sdo.DataObject"/>
+                    </properties>
+                </parameter>
+                <result description="int" displayName="int" implementationType="java" modifier="public" name="int" order="1024" typeName="file:int">
+                    <properties>
+                        <property name="full_type_name_string" value="int"/>
+                    </properties>
+                </result>
+            </method>
+        </type>
+    </model>
+    <model description="" displayName="IAuthConstants" implementationType="file" modifier="public" name="IAuthConstants.class" order="32" version=""/>
+    <model description="" displayName="IconCls" implementationType="file" modifier="public" name="IconCls.class" order="32" version=""/>
+    <model description="" displayName="IConstants" implementationType="file" modifier="public" name="IConstants.class" order="32" version=""/>
+    <model description="" displayName="LoggerFactory" implementationType="file" modifier="public" name="LoggerFactory.class" order="32" version=""/>
+</metadata>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="CapPartyauthService" implementationType="file" modifier="public" name="CapPartyauthService.class" order="32" version=""/>
+    <model description="" displayName="DefaultPartyManager" implementationType="file" modifier="public" name="DefaultPartyManager.class" order="32" version=""/>
+    <model description="" displayName="ICapPartyauthService" implementationType="file" modifier="public" name="ICapPartyauthService.class" order="32" version=""/>
+</metadata>

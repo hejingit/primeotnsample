@@ -1,0 +1,22 @@
+<map>
+  <entry>
+    <string>org.gocom.components.coframe.policy.ipRuleComponent.getAccessRules()</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;getAccessRules&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;getAccessRules&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.policy.ipRuleComponent.getAccessRules&lt;dl&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;rules(org.gocom.components.coframe.policy.datas.IPAccessRules[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.policy.ipRuleComponent.editAccessRules(org.gocom.components.coframe.policy.datas.IPAccessRules)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;editAccessRules&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;addAccessRules&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.policy.ipRuleComponent.editAccessRules&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;rules(org.gocom.components.coframe.policy.datas.IPAccessRules):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.policy.ipRuleComponent.deleteAccessRules(org.gocom.components.coframe.policy.datas.IPAccessRules[])</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;deleteAccessRules&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;deleteAccessRules&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.policy.ipRuleComponent.deleteAccessRules&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;select_objs(org.gocom.components.coframe.policy.datas.IPAccessRules[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>ipRuleComponent</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;ipRuleComponent.componentType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;ipRuleComponent&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.policy.ipRuleComponent&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.policy.ipRuleComponent.verificationIp(org.gocom.components.coframe.policy.datas.IPAccessRules)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;verificationIp&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;verificationIp&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.policy.ipRuleComponent.verificationIp&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;rules(org.gocom.components.coframe.policy.datas.IPAccessRules):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;flag(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+</map>

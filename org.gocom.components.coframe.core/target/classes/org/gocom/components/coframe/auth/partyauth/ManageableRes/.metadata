@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="getManageableGroup" implementationType="file" modifier="public" name="getManageableGroup.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <method description="" displayName="getManageableGroup" implementationType="file" modifier="public" name="getManageableGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="treeNodes" implementationType="Java" modifier="public" name="treeNodes" order="1024" typeName="file:commonj.sdo.DataObject[]"/>
+        </method>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+    </model>
+    <model description="" displayName="getManageableOrg" implementationType="file" modifier="public" name="getManageableOrg.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="getManageableOrg" implementationType="file" modifier="public" name="getManageableOrg" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="treeNodes" implementationType="Java" modifier="public" name="treeNodes" order="1024" typeName="file:commonj.sdo.DataObject[]"/>
+        </method>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+    </model>
+    <model description="" displayName="ManageableRes.eosComponentType" implementationType="file" modifier="public" name="ManageableRes.eosComponentType" order="32" version=""/>
+</metadata>

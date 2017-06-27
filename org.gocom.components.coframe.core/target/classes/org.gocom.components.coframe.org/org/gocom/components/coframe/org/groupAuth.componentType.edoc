@@ -1,0 +1,18 @@
+<map>
+  <entry>
+    <string>org.gocom.components.coframe.org.groupAuth.getGroupAuth(com.primeton.das.criteria.criteriaType, com.eos.foundation.PageCond, String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;getGroupAuth&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;获得机构授权状态&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.groupAuth.getGroupAuth&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;criteria(com.primeton.das.criteria.criteriaType):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;page(com.eos.foundation.PageCond):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;roleId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(java.util.List):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;total(Int):&lt;/b&gt;&lt;/dd&gt;&lt;br&gt;&lt;b&gt;Description:&lt;/b&gt;获得机构授权状态&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.groupAuth.saveGroupAuth(String[], String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;saveGroupAuth&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;saveGroupAuth&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.groupAuth.saveGroupAuth&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;groups(String[]):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;roleId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(Boolean):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.groupAuth.getManagedGroupByRoleId(String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;getManagedGroupByRoleId&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;getManagedGroupByRoleId&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.groupAuth.getManagedGroupByRoleId&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;roleId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;groups(org.gocom.components.coframe.org.groupdataset.OrgGroup[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>groupAuth</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;groupAuth.componentType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;groupAuth&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.groupAuth&lt;br&gt;&lt;b&gt;Description:&lt;/b&gt;工作组权限&lt;/html&gt;</string>
+  </entry>
+</map>

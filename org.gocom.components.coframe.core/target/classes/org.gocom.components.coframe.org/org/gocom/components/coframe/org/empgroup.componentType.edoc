@@ -1,0 +1,18 @@
+<map>
+  <entry>
+    <string>org.gocom.components.coframe.org.empgroup.deleteEmpgroup(org.gocom.components.coframe.org.groupdataset.OrgEmpgroup[])</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;deleteEmpgroup&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;deleteOrg&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.empgroup.deleteEmpgroup&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;empGroups(org.gocom.components.coframe.org.groupdataset.OrgEmpgroup[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>empgroup</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;empgroup.componentType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;empgroup&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.empgroup&lt;br&gt;&lt;b&gt;Description:&lt;/b&gt;人员工作组信息&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.empgroup.queryEmpInGroup(String, String, String, com.eos.foundation.PageCond)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;queryEmpInGroup&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;queryEmpByPosition&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.empgroup.queryEmpInGroup&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;userid(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;empname(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;groupid(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;page(com.eos.foundation.PageCond):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;emps(org.gocom.components.coframe.org.groupdataset.OrgEmpgroup[]):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;total(Int):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.empgroup.addEmpgroup(org.gocom.components.coframe.org.groupdataset.OrgEmpgroup[])</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;addEmpgroup&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;addOrg&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.empgroup.addEmpgroup&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;empPositions(org.gocom.components.coframe.org.groupdataset.OrgEmpgroup[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+</map>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- author:朱惠 -->
+<sqlMap>
+	<select id="select_org" parameterClass="java.util.HashMap" resultClass="org.gocom.components.coframe.org.dataset.OrgOrganization">
+		select * from org_organization where orgid in ($ORGLIST$) 
+	</select>   
+</sqlMap>

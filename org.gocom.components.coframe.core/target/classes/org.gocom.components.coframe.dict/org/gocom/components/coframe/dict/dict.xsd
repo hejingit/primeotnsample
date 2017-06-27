@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="org.gocom.components.coframe.dict.dict" xmlns:sdo="commonj.sdo" xmlns:sdoJava="commonj.sdo/java" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="org.gocom.components.coframe.dict.dict">
+    <xs:complexType name="EosDictEntry" sdoJava:instanceClass="org.gocom.components.coframe.dict.impl.EosDictEntryImpl">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="dictid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="dictname" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="status" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="sortno" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="rank" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="parentid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="seqno" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="filter1" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="filter2" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="eosDictType" nillable="true" type="EosDictType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EosDictEntryI18n" sdoJava:instanceClass="org.gocom.components.coframe.dict.impl.EosDictEntryI18nImpl">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="dicttypeid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="dictid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="dictname" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="locale" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EosDictType" sdoJava:instanceClass="org.gocom.components.coframe.dict.impl.EosDictTypeImpl">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="dicttypeid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="dicttypename" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="rank" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="parentid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="seqno" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EosDictTypeI18n" sdoJava:instanceClass="org.gocom.components.coframe.dict.impl.EosDictTypeI18nImpl">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="dicttypeid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="dicttypename" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="locale" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DictExport">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="dicttypeid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="dicttypename" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="typeParentid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="typeRank" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="typeSeqno" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="dictid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="dictname" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="entryParentid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="status" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="sortno" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="entryRank" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="entrySeqno" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

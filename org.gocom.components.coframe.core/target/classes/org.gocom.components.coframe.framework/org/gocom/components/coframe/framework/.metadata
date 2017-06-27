@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="AppApplicationService" implementationType="file" modifier="public" name="AppApplicationService.class" order="32" version=""/>
+    <model description="" displayName="AppFuncgroupService" implementationType="file" modifier="public" name="AppFuncgroupService.class" order="32" version=""/>
+    <model description="" displayName="AppFuncresourceService" implementationType="file" modifier="public" name="AppFuncresourceService.class" order="32" version=""/>
+    <model description="" displayName="AppFunctionService" implementationType="file" modifier="public" name="AppFunctionService.class" order="32" version=""/>
+    <model description="" displayName="application" implementationType="file" modifier="public" name="application.xsd" order="32" version="">
+        <properties>
+            <property name="eosModel_type" value="datasetx"/>
+        </properties>
+        <type description="" displayName="AppFuncgroup" implementationType="file" modifier="public" name="AppFuncgroup" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="app_funcgroup"/>
+            </properties>
+            <field description="" displayName="功能组编号" implementationType="file" modifier="public" name="funcgroupid" order="256" typeName="sdo:Decimal">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Decimal"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="big_decimal"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Decimal"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="DECIMAL"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="FUNCGROUPID"/>
+                    <property name="columnProperty_javaType" value="java.math.BigDecimal"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用程序编号" implementationType="file" modifier="public" name="appid" order="256" typeName="sdo:Decimal">
+                <properties>
+                    <property name="property_fk" value="true"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Decimal"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="big_decimal"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Decimal"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="DECIMAL"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="property_src_fk" value="true"/>
+                    <property name="property_CodeAssist" value="false"/>
+                    <property name="columnProperty_columnName" value="APPID"/>
+                    <property name="columnProperty_javaType" value="java.math.BigDecimal"/>
+                </properties>
+            </field>
+            <field description="" displayName="功能组名称" implementationType="file" modifier="public" name="funcgroupname" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="FUNCGROUPNAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="父功能组" implementationType="file" modifier="public" name="parentgroup" order="256" typeName="sdo:Decimal">
+                <properties>
+                    <property name="property_fk" value="true"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Decimal"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="big_decimal"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Decimal"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="DECIMAL"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="property_src_fk" value="true"/>
+                    <property name="property_CodeAssist" value="false"/>
+                    <property name="columnProperty_columnName" value="PARENTGROUP"/>
+                    <property name="columnProperty_javaType" value="java.math.BigDecimal"/>
+                </properties>
+            </field>
+            <field description="" displayName="功能组层次" implementationType="file" modifier="public" name="grouplevel" order="256" typeName="sdo:Int">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Int"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="int"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Int"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="INT"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="GROUPLEVEL"/>
+                    <property name="columnProperty_javaType" value="int"/>
+                </properties>
+            </field>
+            <field description="" displayName="功能组序号" implementationType="file" modifier="public" name="funcgroupseq" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="FUNCGROUPSEQ"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="是否为叶子" implementationType="file" modifier="public" name="isleaf" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="CHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ISLEAF"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="subcount" implementationType="file" modifier="public" name="subcount" order="256" typeName="sdo:Decimal">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Decimal"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="big_decimal"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Decimal"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="DECIMAL"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="SUBCOUNT"/>
+                    <property name="columnProperty_javaType" value="java.math.BigDecimal"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用信息" implementationType="file" modifier="public" name="app_id" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="APP_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="租户信息" implementationType="file" modifier="public" name="tenant_id" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="TENANT_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="" implementationType="refSDO" modifier="public" name="appFuncgroup" order="256" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup">
+                <properties>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="property_type" value="property_type_entPojoProperty"/>
+                    <property name="entPojoProperty_refID" value="org.gocom.components.coframe.framework.application.AppFuncgroup"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="isMulti" value="false"/>
+                </properties>
+            </field>
+            <field description="" displayName="" implementationType="refSDO" modifier="public" name="appApplication" order="256" typeName="file:org.gocom.components.coframe.framework.application.AppApplication">
+                <properties>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="property_type" value="property_type_entPojoProperty"/>
+                    <property name="entPojoProperty_refID" value="org.gocom.components.coframe.framework.application.AppApplication"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="isMulti" value="false"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="AppMenu" implementationType="file" modifier="public" name="AppMenu" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="app_menu"/>
+            </properties>
+            <field description="" displayName="菜单编号" implementationType="file" modifier="public" name="menuid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MENUID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="菜单名称" implementationType="file" modifier="public" name="menuname" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MENUNAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="菜单显示名称" implementationType="file" modifier="public" name="menulabel" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MENULABEL"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="菜单代码" implementationType="file" modifier="public" name="menucode" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MENUCODE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="是否叶子菜单" implementationType="file" modifier="public" name="isleaf" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="CHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ISLEAF"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="冗余字段" displayName="菜单url" implementationType="file" modifier="public" name="menuaction" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="false"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="冗余字段" displayName="菜单参数" implementationType="file" modifier="public" name="parameter" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="PARAMETER"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="针对EXT模式提供，例如abf_auth/function/module.xml" displayName="uientry" implementationType="file" modifier="public" name="uientry" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="UIENTRY"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="菜单层次" implementationType="file" modifier="public" name="menulevel" order="256" typeName="sdo:Short">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Short"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="short"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Short"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="SMALLINT"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MENULEVEL"/>
+                    <property name="columnProperty_javaType" value="short"/>
+                </properties>
+            </field>
+            <field description="" displayName="rootid" implementationType="file" modifier="public" name="rootid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ROOTID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="父菜单id" implementationType="file" modifier="public" name="parentsid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="true"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="property_src_fk" value="true"/>
+                    <property name="property_CodeAssist" value="false"/>
+                    <property name="columnProperty_columnName" value="PARENTSID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="显示顺序" implementationType="file" modifier="public" name="displayorder" order="256" typeName="sdo:Short">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Short"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="short"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Short"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="SMALLINT"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DISPLAYORDER"/>
+                    <property name="columnProperty_javaType" value="short"/>
+                </properties>
+            </field>
+            <field description="" displayName="菜单闭合图片路径" implementationType="file" modifier="public" name="imagepath" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="IMAGEPATH"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="菜单展开图片路径" implementationType="file" modifier="public" name="expandpath" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="EXPANDPATH"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="菜单序号" implementationType="file" modifier="public" name="menuseq" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MENUSEQ"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="主窗口打开、弹出窗口打开..." displayName="打开方式" implementationType="file" modifier="public" name="openmode" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="OPENMODE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="子菜单数" implementationType="file" modifier="public" name="subcount" order="256" typeName="sdo:Decimal">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Decimal"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="big_decimal"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Decimal"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="DECIMAL"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="SUBCOUNT"/>
+                    <property name="columnProperty_javaType" value="java.math.BigDecimal"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用程序编号" implementationType="file" modifier="public" name="appid" order="256" typeName="sdo:Decimal">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Decimal"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="big_decimal"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Decimal"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="DECIMAL"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="APPID"/>
+                    <property name="columnProperty_javaType" value="java.math.BigDecimal"/>
+                </properties>
+            </field>
+            <field description="" displayName="功能代码" implementationType="file" modifier="public" name="funccode" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="FUNCCODE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用信息" implementationType="file" modifier="public" name="app_id" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="APP_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="租户信息" implementationType="file" modifier="public" name="tenant_id" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="TENANT_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="" implementationType="refSDO" modifier="public" name="appMenu" order="256" typeName="file:org.gocom.components.coframe.framework.application.AppMenu">
+                <properties>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="property_type" value="property_type_entPojoProperty"/>
+                    <property name="entPojoProperty_refID" value="org.gocom.components.coframe.framework.application.AppMenu"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="isMulti" value="false"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="AppFunction" implementationType="file" modifier="public" name="AppFunction" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="app_function"/>
+            </properties>
+            <field description="" displayName="功能编码" implementationType="file" modifier="public" name="funccode" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="FUNCCODE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="功能组编号" implementationType="file" modifier="public" name="funcgroupid" order="256" typeName="sdo:Decimal">
+                <properties>
+                    <property name="property_fk" value="true"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Decimal"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="big_decimal"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Decimal"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="DECIMAL"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="property_src_fk" value="true"/>
+                    <property name="property_CodeAssist" value="false"/>
+                    <property name="columnProperty_columnName" value="FUNCGROUPID"/>
+                    <property name="columnProperty_javaType" value="java.math.BigDecimal"/>
+                </properties>
+            </field>
+            <field description="" displayName="功能名称" implementationType="file" modifier="public" name="funcname" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="FUNCNAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="功能描述" implementationType="file" modifier="public" name="funcdesc" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="FUNCDESC"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="功能URL" implementationType="file" modifier="public" name="funcaction" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="FUNCACTION"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="需要定义参数规范" displayName="功能参数信息" implementationType="file" modifier="public" name="parainfo" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="PARAINFO"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="ischeck" implementationType="file" modifier="public" name="ischeck" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="CHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ISCHECK"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="前台功能、后台服务、报表功能..." displayName="功能类型" implementationType="file" modifier="public" name="functype" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="FUNCTYPE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="该功能是否可以作为菜单入口" displayName="是否菜单" implementationType="file" modifier="public" name="ismenu" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="CHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ISMENU"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用信息" implementationType="file" modifier="public" name="app_id" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="APP_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="租户信息" implementationType="file" modifier="public" name="tenant_id" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="TENANT_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="" implementationType="refSDO" modifier="public" name="appFuncgroup" order="256" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup">
+                <properties>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="property_type" value="property_type_entPojoProperty"/>
+                    <property name="entPojoProperty_refID" value="org.gocom.components.coframe.framework.application.AppFuncgroup"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="isMulti" value="false"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="AppFuncresource" implementationType="file" modifier="public" name="AppFuncresource" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="app_funcresource"/>
+            </properties>
+            <field description="" displayName="资源编号" implementationType="file" modifier="public" name="resid" order="256" typeName="sdo:Decimal">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Decimal"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="big_decimal"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Decimal"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="DECIMAL"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="RESID"/>
+                    <property name="columnProperty_javaType" value="java.math.BigDecimal"/>
+                </properties>
+            </field>
+            <field description="" displayName="功能编号" implementationType="file" modifier="public" name="funccode" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="true"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="property_src_fk" value="true"/>
+                    <property name="property_CodeAssist" value="false"/>
+                    <property name="columnProperty_columnName" value="FUNCCODE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="JSP、页面流、逻辑流等" displayName="资源类型" implementationType="file" modifier="public" name="restype" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="RESTYPE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="资源路径" implementationType="file" modifier="public" name="respath" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="RESPATH"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="所属构件包" implementationType="file" modifier="public" name="compackname" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="COMPACKNAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="资源名称" implementationType="file" modifier="public" name="resname" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="RESNAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用信息" implementationType="file" modifier="public" name="app_id" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="APP_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="租户信息" implementationType="file" modifier="public" name="tenant_id" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="TENANT_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="" implementationType="refSDO" modifier="public" name="appFunction" order="256" typeName="file:org.gocom.components.coframe.framework.application.AppFunction">
+                <properties>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="property_type" value="property_type_entPojoProperty"/>
+                    <property name="entPojoProperty_refID" value="org.gocom.components.coframe.framework.application.AppFunction"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="isMulti" value="false"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="AppApplication" implementationType="file" modifier="public" name="AppApplication" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="app_application"/>
+            </properties>
+            <field description="" displayName="应用程序编号" implementationType="file" modifier="public" name="appid" order="256" typeName="sdo:Decimal">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Decimal"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="big_decimal"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Decimal"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="DECIMAL"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="APPID"/>
+                    <property name="columnProperty_javaType" value="java.math.BigDecimal"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用程序代码" implementationType="file" modifier="public" name="appcode" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="APPCODE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用程序名称" implementationType="file" modifier="public" name="appname" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="APPNAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用程序类型" implementationType="file" modifier="public" name="apptype" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="APPTYPE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="是否开通" implementationType="file" modifier="public" name="isopen" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="CHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ISOPEN"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="开通日期" implementationType="file" modifier="public" name="opendate" order="256" typeName="sdo:Date">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Date"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="date"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Date"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="DATE"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="OPENDATE"/>
+                    <property name="columnProperty_javaType" value="java.util.Date"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用上下文" implementationType="file" modifier="public" name="url" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="URL"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用程序描述" implementationType="file" modifier="public" name="appdesc" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="APPDESC"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="maintenance" implementationType="file" modifier="public" name="maintenance" order="256" typeName="sdo:Decimal">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Decimal"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="big_decimal"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Decimal"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="DECIMAL"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MAINTENANCE"/>
+                    <property name="columnProperty_javaType" value="java.math.BigDecimal"/>
+                </properties>
+            </field>
+            <field description="" displayName="manarole" implementationType="file" modifier="public" name="manarole" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MANAROLE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="demo" implementationType="file" modifier="public" name="demo" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DEMO"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="0:否,1:是" displayName="iniwp" implementationType="file" modifier="public" name="iniwp" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="CHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="INIWP"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="0:否,1:是" displayName="intaskcenter" implementationType="file" modifier="public" name="intaskcenter" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="CHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="INTASKCENTER"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用程序IP" implementationType="file" modifier="public" name="ipaddr" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="IPADDR"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用程序端口" implementationType="file" modifier="public" name="ipport" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="IPPORT"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="应用信息" implementationType="file" modifier="public" name="app_id" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="APP_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="租户信息" implementationType="file" modifier="public" name="tenant_id" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="TENANT_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="协议类型" implementationType="file" modifier="public" name="protocoltype" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="varchar"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="protocol_type"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+        </type>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppMenu.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.application.AppMenu.node_entity" order="4096" typeName="file:org.gocom.components.coframe.framework.application.AppMenu.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.datasetx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.application.datasetx" order="4096" typeName="file:org.gocom.components.coframe.framework.application.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFunction.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.application.AppFunction.node_entity" order="4096" typeName="file:org.gocom.components.coframe.framework.application.AppFunction.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFuncgroup.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.application.AppFuncgroup.node_entity" order="4096" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppApplication.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.application.AppApplication.node_entity" order="4096" typeName="file:org.gocom.components.coframe.framework.application.AppApplication.node_entity"/>
+    </model>
+    <model description="" displayName="ApplicationManager" implementationType="file" modifier="public" name="ApplicationManager.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="deleteApplicaiton" implementationType="file" modifier="public" name="deleteApplication" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodeId" implementationType="Primitive" modifier="public" name="nodeId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="nodeType" implementationType="Primitive" modifier="public" name="nodeType" order="2048" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.deleteApplication.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.deleteApplication.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.deleteApplication.bizx"/>
+        <method description="" displayName="deleteApplication" implementationType="file" modifier="public" name="deleteApplicationNodes" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodes" implementationType="Java" modifier="public" name="nodes" order="2048" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.deleteApplicationNodes.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.deleteApplicationNodes.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.deleteApplicationNodes.bizx"/>
+        <method description="" displayName="deleteApplication" implementationType="file" modifier="public" name="deleteApplications" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodes" implementationType="Java" modifier="public" name="nodes" order="2048" typeName="file:commonj.sdo.DataObject[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.deleteApplications.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.deleteApplications.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.deleteApplications.bizx"/>
+        <method description="" displayName="getApplication" implementationType="file" modifier="public" name="getApplication" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="template" implementationType="Java" modifier="public" name="template" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppApplication"/>
+            <result description="" displayName="appapplication" implementationType="Java" modifier="public" name="appapplication" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppApplication"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.getApplication.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.getApplication.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.getApplication.bizx"/>
+        <method description="" displayName="queryApplication" implementationType="file" modifier="public" name="queryApplication" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppApplication[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.queryApplication.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.queryApplication.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.queryApplication.bizx"/>
+        <method description="" displayName="queryApplicationTree" implementationType="file" modifier="public" name="queryApplicationTree" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.queryApplicationTree.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.queryApplicationTree.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.queryApplicationTree.bizx"/>
+        <method description="" displayName="queryApplicationTreeNode" implementationType="file" modifier="public" name="queryApplicationTreeNode" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodeType" implementationType="Primitive" modifier="public" name="nodeType" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="nodeId" implementationType="Primitive" modifier="public" name="nodeId" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.queryApplicationTreeNode.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.queryApplicationTreeNode.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.queryApplicationTreeNode.bizx"/>
+        <method description="" displayName="saveApplication" implementationType="file" modifier="public" name="saveApplication" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appapplication" implementationType="Java" modifier="public" name="appapplication" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppApplication"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.saveApplication.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.saveApplication.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.saveApplication.bizx"/>
+        <method description="" displayName="updateApplication" implementationType="file" modifier="public" name="updateApplication" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appapplication" implementationType="Java" modifier="public" name="appapplication" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppApplication"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.updateApplication.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.updateApplication.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.updateApplication.bizx"/>
+    </model>
+    <model description="" displayName="AppMenuService" implementationType="file" modifier="public" name="AppMenuService.class" order="32" version=""/>
+    <model description="" displayName="FuncGroupManager" implementationType="file" modifier="public" name="FuncGroupManager.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="getFuncGroup" implementationType="file" modifier="public" name="getFuncGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="template" implementationType="Java" modifier="public" name="template" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup"/>
+            <result description="" displayName="appfuncgroup" implementationType="Java" modifier="public" name="appfuncgroup" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FuncGroupManager.getFuncGroup.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FuncGroupManager.getFuncGroup.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FuncGroupManager.getFuncGroup.bizx"/>
+        <method description="" displayName="queryFunctionGroup" implementationType="file" modifier="public" name="queryFuncGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="appid" implementationType="Primitive" modifier="public" name="appid" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FuncGroupManager.queryFuncGroup.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FuncGroupManager.queryFuncGroup.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FuncGroupManager.queryFuncGroup.bizx"/>
+        <method description="" displayName="querySubFuncGroup" implementationType="file" modifier="public" name="querySubFuncGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="parentgroupid" implementationType="Primitive" modifier="public" name="parentgroupid" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FuncGroupManager.querySubFuncGroup.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FuncGroupManager.querySubFuncGroup.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FuncGroupManager.querySubFuncGroup.bizx"/>
+        <method description="" displayName="saveFuncGroup" implementationType="file" modifier="public" name="saveFuncGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appfuncgroup" implementationType="Java" modifier="public" name="appfuncgroup" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FuncGroupManager.saveFuncGroup.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FuncGroupManager.saveFuncGroup.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FuncGroupManager.saveFuncGroup.bizx"/>
+        <method description="" displayName="saveFuncGroup" implementationType="file" modifier="public" name="saveSubFuncGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appfuncgroup" implementationType="Java" modifier="public" name="appfuncgroup" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FuncGroupManager.saveSubFuncGroup.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FuncGroupManager.saveSubFuncGroup.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FuncGroupManager.saveSubFuncGroup.bizx"/>
+        <method description="" displayName="updateFuncGroup" implementationType="file" modifier="public" name="updateFuncGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appfuncgroup" implementationType="Java" modifier="public" name="appfuncgroup" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FuncGroupManager.updateFuncGroup.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FuncGroupManager.updateFuncGroup.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FuncGroupManager.updateFuncGroup.bizx"/>
+        <method description="" displayName="updateFuncGroupRelation" implementationType="file" modifier="public" name="updateFuncGroupRelation" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodeId" implementationType="Primitive" modifier="public" name="nodeId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="nodeType" implementationType="Primitive" modifier="public" name="nodeType" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="targetNodeId" implementationType="Primitive" modifier="public" name="targetNodeId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="targetNodeType" implementationType="Primitive" modifier="public" name="targetNodeType" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Primitive" modifier="public" name="data" order="1024" typeName="file:Boolean"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FuncGroupManager.updateFuncGroupRelation.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FuncGroupManager.updateFuncGroupRelation.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FuncGroupManager.updateFuncGroupRelation.bizx"/>
+    </model>
+    <model description="" displayName="AuthFunction" implementationType="file" modifier="public" name="FunctionAuth.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="getAuthFunctionTree" implementationType="file" modifier="public" name="getFunctionAuthTree" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="roleId" implementationType="Primitive" modifier="public" name="roleId" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FunctionAuth.getFunctionAuthTree.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FunctionAuth.getFunctionAuthTree.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FunctionAuth.getFunctionAuthTree.bizx"/>
+        <method description="" displayName="saveFunctionAuths" implementationType="file" modifier="public" name="saveFunctionAuths" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="functions" implementationType="Java" modifier="public" name="functions" order="2048" typeName="file:commonj.sdo.DataObject[]"/>
+            <parameter description="" displayName="roleId" implementationType="Primitive" modifier="public" name="roleId" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Primitive" modifier="public" name="data" order="1024" typeName="file:Boolean"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FunctionAuth.saveFunctionAuths.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FunctionAuth.saveFunctionAuths.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FunctionAuth.saveFunctionAuths.bizx"/>
+    </model>
+    <model description="" displayName="FunctionManager" implementationType="file" modifier="public" name="FunctionManager.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="getFuncGroup" implementationType="file" modifier="public" name="getFunction" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="template" implementationType="Java" modifier="public" name="template" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppFunction"/>
+            <result description="" displayName="appfunction" implementationType="Java" modifier="public" name="appfunction" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppFunction"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FunctionManager.getFunction.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FunctionManager.getFunction.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FunctionManager.getFunction.bizx"/>
+        <method description="" displayName="queryFunctionGroup" implementationType="file" modifier="public" name="queryFunction" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="funcgroupid" implementationType="Primitive" modifier="public" name="funcgroupid" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppFunction[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FunctionManager.queryFunction.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FunctionManager.queryFunction.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FunctionManager.queryFunction.bizx"/>
+        <method description="" displayName="saveFuncGroup" implementationType="file" modifier="public" name="saveFunction" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appfunction" implementationType="Java" modifier="public" name="appfunction" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppFunction"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FunctionManager.saveFunction.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FunctionManager.saveFunction.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FunctionManager.saveFunction.bizx"/>
+        <method description="" displayName="updateFuncGroup" implementationType="file" modifier="public" name="updateFunction" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appfunction" implementationType="Java" modifier="public" name="appfunction" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppFunction"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FunctionManager.updateFunction.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FunctionManager.updateFunction.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FunctionManager.updateFunction.bizx"/>
+        <method description="" displayName="validateFunction" implementationType="file" modifier="public" name="validateFunction" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="template" implementationType="Java" modifier="public" name="template" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppFunction"/>
+            <result description="" displayName="data" implementationType="Primitive" modifier="public" name="data" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.FunctionManager.validateFunction.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.FunctionManager.validateFunction.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.FunctionManager.validateFunction.bizx"/>
+    </model>
+    <model description="" displayName="IAppApplicationService" implementationType="file" modifier="public" name="IAppApplicationService.class" order="32" version=""/>
+    <model description="" displayName="IAppFuncgroupService" implementationType="file" modifier="public" name="IAppFuncgroupService.class" order="32" version=""/>
+    <model description="" displayName="IAppFuncresourceService" implementationType="file" modifier="public" name="IAppFuncresourceService.class" order="32" version=""/>
+    <model description="" displayName="IAppFunctionService" implementationType="file" modifier="public" name="IAppFunctionService.class" order="32" version=""/>
+    <model description="" displayName="IAppMenuService" implementationType="file" modifier="public" name="IAppMenuService.class" order="32" version=""/>
+    <model description="" displayName="MenuManager" implementationType="file" modifier="public" name="MenuManager.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="deleteFuncGroup" implementationType="file" modifier="public" name="deleteMenu" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="menuid" implementationType="Primitive" modifier="public" name="menuid" order="2048" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.deleteMenu.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.deleteMenu.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.deleteMenu.bizx"/>
+        <method description="" displayName="deleteNodes" implementationType="file" modifier="public" name="deleteMenuNodes" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodeList" implementationType="Java" modifier="public" name="nodeList" order="2048" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.deleteMenuNodes.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.deleteMenuNodes.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.deleteMenuNodes.bizx"/>
+        <method description="" displayName="deleteMenus" implementationType="file" modifier="public" name="deleteMenus" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodes" implementationType="Java" modifier="public" name="nodes" order="2048" typeName="file:commonj.sdo.DataObject[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.deleteMenus.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.deleteMenus.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.deleteMenus.bizx"/>
+        <method description="" displayName="getFuncGroup" implementationType="file" modifier="public" name="getMenu" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="template" implementationType="Java" modifier="public" name="template" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppMenu"/>
+            <result description="" displayName="appmenu" implementationType="Java" modifier="public" name="appmenu" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppMenu"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.getMenu.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.getMenu.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.getMenu.bizx"/>
+        <method description="" displayName="queryMenu" implementationType="file" modifier="public" name="queryMenu" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="parentmenuid" implementationType="Primitive" modifier="public" name="parentmenuid" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppMenu[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.queryMenu.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.queryMenu.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.queryMenu.bizx"/>
+        <method description="" displayName="queryMenuTreeNode" implementationType="file" modifier="public" name="queryMenuTreeNode" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodeId" implementationType="Primitive" modifier="public" name="nodeId" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.queryMenuTreeNode.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.queryMenuTreeNode.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.queryMenuTreeNode.bizx"/>
+        <method description="" displayName="saveFuncGroup" implementationType="file" modifier="public" name="saveMenu" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appmenu" implementationType="Java" modifier="public" name="appmenu" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppMenu"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.saveMenu.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.saveMenu.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.saveMenu.bizx"/>
+        <method description="" displayName="updateMenu" implementationType="file" modifier="public" name="updateMenu" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appmenu" implementationType="Java" modifier="public" name="appmenu" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppMenu"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.updateMenu.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.updateMenu.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.updateMenu.bizx"/>
+        <method description="" displayName="modifyMenuRelation" implementationType="file" modifier="public" name="updateMenuRelation" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodeId" implementationType="Primitive" modifier="public" name="nodeId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="nodeType" implementationType="Primitive" modifier="public" name="nodeType" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="targetNodeId" implementationType="Primitive" modifier="public" name="targetNodeId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="targetNodeType" implementationType="Primitive" modifier="public" name="targetNodeType" order="2048" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.updateMenuRelation.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.updateMenuRelation.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.updateMenuRelation.bizx"/>
+        <method description="" displayName="validateMenu" implementationType="file" modifier="public" name="validateMenu" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="template" implementationType="Java" modifier="public" name="template" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppMenu"/>
+            <result description="" displayName="data" implementationType="Primitive" modifier="public" name="data" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.validateMenu.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.validateMenu.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.validateMenu.bizx"/>
+    </model>
+</metadata>

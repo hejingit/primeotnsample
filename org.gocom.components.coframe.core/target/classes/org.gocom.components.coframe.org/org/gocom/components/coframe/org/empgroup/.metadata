@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="addOrg" implementationType="file" modifier="public" name="addEmpgroup.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.org.groupdataset.orgempgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.groupdataset.orgempgroup.java" order="4096" typeName="java:org.gocom.components.coframe.org.groupdataset.orgempgroup.java"/>
+        <method description="" displayName="addOrg" implementationType="file" modifier="public" name="addEmpgroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="empPositions" implementationType="Java" modifier="public" name="empPositions" order="2048" typeName="file:org.gocom.components.coframe.org.groupdataset.OrgEmpgroup[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.org.groupdataset.OrgEmpgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.groupdataset.OrgEmpgroup.java" order="4096" typeName="java:org.gocom.components.coframe.org.groupdataset.OrgEmpgroup.java"/>
+    </model>
+    <model description="" displayName="deleteOrg" implementationType="file" modifier="public" name="deleteEmpgroup.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="deleteOrg" implementationType="file" modifier="public" name="deleteEmpgroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="empGroups" implementationType="Java" modifier="public" name="empGroups" order="2048" typeName="file:org.gocom.components.coframe.org.groupdataset.OrgEmpgroup[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.org.groupdataset.orgempgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.groupdataset.orgempgroup.java" order="4096" typeName="java:org.gocom.components.coframe.org.groupdataset.orgempgroup.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.groupdataset.OrgEmpgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.groupdataset.OrgEmpgroup.java" order="4096" typeName="java:org.gocom.components.coframe.org.groupdataset.OrgEmpgroup.java"/>
+    </model>
+    <model description="人员工作组信息" displayName="empgroup.eosComponentType" implementationType="file" modifier="public" name="empgroup.eosComponentType" order="32" version=""/>
+    <model description="" displayName="queryEmpByPosition" implementationType="file" modifier="public" name="queryEmpInGroup.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.org.groupdataset.orgempgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.groupdataset.orgempgroup.java" order="4096" typeName="java:org.gocom.components.coframe.org.groupdataset.orgempgroup.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.PageCond.java" order="4096" typeName="java:com.eos.foundation.PageCond.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="java.lang.integer.java" implementationType="java" modifier="public" name="java:java.lang.integer.java" order="4096" typeName="java:java.lang.integer.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <method description="" displayName="queryEmpByPosition" implementationType="file" modifier="public" name="queryEmpInGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="userid" implementationType="Primitive" modifier="public" name="userid" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="empname" implementationType="Primitive" modifier="public" name="empname" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="groupid" implementationType="Primitive" modifier="public" name="groupid" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="emps" implementationType="Java" modifier="public" name="emps" order="1024" typeName="file:org.gocom.components.coframe.org.groupdataset.OrgEmpgroup[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="java.lang.Integer.java" implementationType="java" modifier="public" name="java:java.lang.Integer.java" order="4096" typeName="java:java.lang.Integer.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.groupdataset.OrgEmpgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.groupdataset.OrgEmpgroup.java" order="4096" typeName="java:org.gocom.components.coframe.org.groupdataset.OrgEmpgroup.java"/>
+        <importReference description="" displayName="com.eos.foundation.pagecond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.pagecond.java" order="4096" typeName="java:com.eos.foundation.pagecond.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+</metadata>

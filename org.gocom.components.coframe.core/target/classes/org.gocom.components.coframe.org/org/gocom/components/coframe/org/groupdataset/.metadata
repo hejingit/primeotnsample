@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="OrgEmpgroup" implementationType="file" modifier="public" name="OrgEmpgroup.class" order="32" version=""/>
+    <model description="" displayName="OrgGroup" implementationType="file" modifier="public" name="OrgGroup.class" order="32" version=""/>
+    <model description="" displayName="OrgGroupposi" implementationType="file" modifier="public" name="OrgGroupposi.class" order="32" version=""/>
+</metadata>

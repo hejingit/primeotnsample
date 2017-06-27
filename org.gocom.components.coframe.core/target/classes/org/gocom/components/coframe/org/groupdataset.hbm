@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class dynamic-insert="true" dynamic-update="true" entity-name="org.gocom.components.coframe.org.groupdataset.OrgEmpgroup" table="org_empgroup">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <composite-id>
+            <key-property name="groupid" type="big_decimal">
+                <column length="10" name="GROUPID" precision="10" scale="0"/>
+            </key-property>
+            <key-many-to-one entity-name="org.gocom.components.coframe.org.dataset.OrgEmployee" foreign-key="OrgEmpgroup_OrgEmployee" lazy="false" name="orgEmployee">
+                <column length="10" name="EMPID" precision="10" scale="0"/>
+            </key-many-to-one>
+        </composite-id>
+        <property name="ismain" type="string">
+            <column length="1" name="ISMAIN"/>
+        </property>
+        <property name="tenantId" type="string">
+            <column length="64" name="TENANT_ID" not-null="true"/>
+        </property>
+        <property name="appId" type="string">
+            <column length="64" name="APP_ID"/>
+        </property>
+    </class>
+    <class dynamic-insert="true" dynamic-update="true" entity-name="org.gocom.components.coframe.org.groupdataset.OrgGroup" table="org_group">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id name="groupid" type="big_decimal">
+            <column length="10" name="GROUPID" precision="10" scale="0"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="orgid" type="big_decimal">
+            <column length="10" name="ORGID" precision="10" scale="0"/>
+        </property>
+        <property name="grouplevel" type="int">
+            <column length="11" name="GROUPLEVEL"/>
+        </property>
+        <property name="groupname" type="string">
+            <column length="50" name="GROUPNAME"/>
+        </property>
+        <property name="groupdesc" type="string">
+            <column length="512" name="GROUPDESC"/>
+        </property>
+        <property name="grouptype" type="string">
+            <column length="255" name="GROUPTYPE"/>
+        </property>
+        <property name="groupseq" type="string">
+            <column length="256" name="GROUPSEQ"/>
+        </property>
+        <property name="startdate" type="date">
+            <column name="STARTDATE"/>
+        </property>
+        <property name="enddate" type="date">
+            <column name="ENDDATE"/>
+        </property>
+        <property name="groupstatus" type="string">
+            <column length="255" name="GROUPSTATUS"/>
+        </property>
+        <property name="manager" type="string">
+            <column length="30" name="MANAGER"/>
+        </property>
+        <property name="createtime" type="timestamp">
+            <column name="CREATETIME" not-null="true"/>
+        </property>
+        <property name="lastupdate" type="date">
+            <column name="LASTUPDATE"/>
+        </property>
+        <property name="updator" type="big_decimal">
+            <column length="10" name="UPDATOR" precision="10" scale="0"/>
+        </property>
+        <property name="isleaf" type="string">
+            <column length="1" name="ISLEAF"/>
+        </property>
+        <property name="subcount" type="big_decimal">
+            <column length="10" name="SUBCOUNT" precision="10" scale="0"/>
+        </property>
+        <property name="tenantId" type="string">
+            <column length="64" name="TENANT_ID" not-null="true"/>
+        </property>
+        <property name="appId" type="string">
+            <column length="64" name="APP_ID"/>
+        </property>
+        <many-to-one cascade="none" entity-name="org.gocom.components.coframe.org.groupdataset.OrgGroup" fetch="join" foreign-key="FK_F_GROUP_GROUP" lazy="false" name="orgGroup">
+            <column length="10" name="PARENTGROUPID" precision="10" scale="0"/>
+        </many-to-one>
+    </class>
+    <class dynamic-insert="true" dynamic-update="true" entity-name="org.gocom.components.coframe.org.groupdataset.OrgGroupposi" table="org_groupposi">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <composite-id>
+            <key-many-to-one entity-name="org.gocom.components.coframe.org.groupdataset.OrgGroup" foreign-key="FK_F_GROUP_POS" lazy="false" name="orgGroup">
+                <column length="10" name="GROUPID" precision="10" scale="0"/>
+            </key-many-to-one>
+            <key-many-to-one entity-name="org.gocom.components.coframe.org.dataset.OrgPosition" foreign-key="OrgGroupposi_OrgPosition" lazy="false" name="orgPosition">
+                <column length="10" name="POSITIONID" precision="10" scale="0"/>
+            </key-many-to-one>
+        </composite-id>
+        <property name="ismain" type="string">
+            <column length="1" name="ISMAIN"/>
+        </property>
+        <property name="tenantId" type="string">
+            <column length="64" name="TENANT_ID" not-null="true"/>
+        </property>
+        <property name="appId" type="string">
+            <column length="64" name="APP_ID"/>
+        </property>
+    </class>
+</hibernate-mapping>

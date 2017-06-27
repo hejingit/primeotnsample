@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace="org.gocom.components.coframe.org.orgRoleEmp">
+    <select id="select_orgRoleEmp" parameterClass="java.util.HashMap" resultClass="org.gocom.components.coframe.org.dataset.OrgEmployee"><![CDATA[
+	    	select t.* from org_employee t, org_emporg eo where eo.empid=t.empid and t.tenant_id=#tenantid# and eo.orgid=#orgid# 
+	    	and exists(select 1 from cap_partyauth t2 where t2.role_id=#roleid# and t2.party_type='emp' and eo.empid=t2.party_id and t2.tenant_id=#tenantid#)
+	    	
+	    	and exists(select 1 from cap_partyauth t2 where t2.role_id=#roleid# and t2.tenant_id=#tenantid# 
+			and ((t2.party_type='emp' and eo.empid=t2.party_id) or 
+				(t2.party_type='org' and t2.party_id=eo.orgid) or 
+				(t2.party_type='position' and 
+					exists(select 1 from org_empposition t3 where t3.tenant_id='default' and t3.empid=eo.empid and t3.positionid=t2.party_id) 
+				)
+			) ) 
+	    ]]></select>
+</sqlMap>

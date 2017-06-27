@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="AuthPartyRuntimeService" implementationType="file" modifier="public" name="AuthPartyRuntimeService.class" order="32" version=""/>
+    <model description="" displayName="IAuthPartyService" implementationType="file" modifier="public" name="IAuthPartyService.class" order="32" version=""/>
+    <model description="" displayName="PartyAuthModel" implementationType="file" modifier="public" name="PartyAuthModel.class" order="32" version=""/>
+</metadata>

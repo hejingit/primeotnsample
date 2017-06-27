@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="EmpUserRefDataService" implementationType="file" modifier="public" name="EmpUserRefDataService.class" order="32" version=""/>
+    <model description="" displayName="OrgRoleEmpRefDataService" implementationType="file" modifier="public" name="OrgRoleEmpRefDataService.class" order="32" version=""/>
+    <model description="" displayName="RoleEmpRefDataService" implementationType="file" modifier="public" name="RoleEmpRefDataService.class" order="32" version=""/>
+    <model description="" displayName="RoleGroupRefDataService" implementationType="file" modifier="public" name="RoleGroupRefDataService.class" order="32" version=""/>
+    <model description="" displayName="RoleOrgRefDataService" implementationType="file" modifier="public" name="RoleOrgRefDataService.class" order="32" version=""/>
+    <model description="" displayName="RolePositionRefDataService" implementationType="file" modifier="public" name="RolePositionRefDataService.class" order="32" version=""/>
+    <model description="" displayName="RoleUserRefDataService" implementationType="file" modifier="public" name="RoleUserRefDataService.class" order="32" version=""/>
+</metadata>

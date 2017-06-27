@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<viewModelSet author="zhangjiaxiong" displayName="datas" id="org.gocom.components.coframe.policy.datas">
+    <viewModel author="james" displayName="Entity" entityName="org.gocom.components.coframe.policy.datas.IPAccessRules" id="IPAccessRules">
+        <field dataType="String" dict="false" entityField="rulesId" id="rulesId" label="规则ID">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="startIP" id="startIP" label="起始IP">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="endIP" id="endIP" label="结束IP">
+            <view type="write"/>
+            <edit name="property1" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="rulesType" id="rulesType" label="规则类型">
+            <view type="write"/>
+            <edit name="property2" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="remark" id="remark" label="备注">
+            <view type="write"/>
+            <edit name="property4" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="makersId" id="makersId" label="制定者ID">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="addDate" id="addDate" label="添加日期">
+            <view type="write"/>
+            <edit name="property2" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="enabled" id="enabled" label="是否启用">
+            <view type="write"/>
+            <edit name="property3" type="text"/>
+        </field>
+    </viewModel>
+</viewModelSet>

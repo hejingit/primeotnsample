@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class dynamic-insert="true" dynamic-update="true" entity-name="org.gocom.components.coframe.participantselect.dataset.RecentVisit" table="org_recent_visit">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id name="id" type="string">
+            <column length="32" name="id"/>
+            <generator class="uuid"/>
+        </id>
+        <property name="targetId" type="string">
+            <column length="32" name="target_id" not-null="true"/>
+        </property>
+        <property name="userid" type="string">
+            <column length="32" name="UserID" not-null="true"/>
+        </property>
+        <property name="frequency" type="int">
+            <column default="1" length="10" name="Frequency" not-null="true"/>
+        </property>
+        <property name="lasttime" type="timestamp">
+            <column name="LastTime" not-null="true"/>
+        </property>
+        <property name="targetType" type="string">
+            <column length="32" name="target_type" not-null="true"/>
+        </property>
+    </class>
+    <class entity-name="org.gocom.components.coframe.participantselect.dataset.QRecentUserSelect" table="$QueryEntity[org.gocom.components.coframe.participantselect.dataset.QRecentUserSelect]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="target_id" insert="false" name="targetId" type="string" update="false"/>
+        <property column="orgname" insert="false" name="orgname" type="string" update="false"/>
+        <property column="orgid" insert="false" name="orgid" type="big_decimal" update="false"/>
+        <property column="target_name" insert="false" name="targetName" type="string" update="false"/>
+        <property column="lasttime" insert="false" name="lasttime" type="date" update="false"/>
+        <property column="mobileno" insert="false" name="mobileno" type="string" update="false"/>
+        <property column="pemail" insert="false" name="pemail" type="string" update="false"/>
+        <property column="target_type" insert="false" name="targetType" type="string" update="false"/>
+        <property column="empid" insert="false" name="empid" type="big_decimal" update="false"/>
+        <property column="createUserid" insert="false" name="createUserid" type="string" update="false"/>
+        <property column="userid" insert="false" name="userid" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.participantselect.dataset.QRecentRoleSelect" table="$QueryEntity[org.gocom.components.coframe.participantselect.dataset.QRecentRoleSelect]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="target_id" insert="false" name="targetId" type="string" update="false"/>
+        <property column="orgname" insert="false" name="orgname" type="string" update="false"/>
+        <property column="orgid" insert="false" name="orgid" type="long" update="false"/>
+        <property column="userid" insert="false" name="userid" type="string" update="false"/>
+        <property column="target_name" insert="false" name="targetName" type="string" update="false"/>
+        <property column="target_type" insert="false" name="targetType" type="string" update="false"/>
+        <property column="lasttime" insert="false" name="lasttime" type="date" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.participantselect.dataset.QRecentDeptSelect" table="$QueryEntity[org.gocom.components.coframe.participantselect.dataset.QRecentDeptSelect]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="target_id" insert="false" name="targetId" type="string" update="false"/>
+        <property column="orgname" insert="false" name="orgname" type="string" update="false"/>
+        <property column="orgid" insert="false" name="orgid" type="big_decimal" update="false"/>
+        <property column="userid" insert="false" name="userid" type="string" update="false"/>
+        <property column="target_name" insert="false" name="targetName" type="string" update="false"/>
+        <property column="lasttime" insert="false" name="lasttime" type="date" update="false"/>
+        <property column="orgcode" insert="false" name="orgcode" type="string" update="false"/>
+        <property column="target_type" insert="false" name="targetType" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.participantselect.dataset.QueryUserByParty" table="$QueryEntity[org.gocom.components.coframe.participantselect.dataset.QueryUserByParty]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="role_id" insert="false" name="roleId" type="string" update="false"/>
+        <property column="PARTY_ID" insert="false" name="partyId" type="string" update="false"/>
+        <property column="party_type" insert="false" name="partyType" type="string" update="false"/>
+        <property column="empid" insert="false" name="empid" type="big_decimal" update="false"/>
+        <property column="target_id" insert="false" name="targetId" type="big_decimal" update="false"/>
+        <property column="target_name" insert="false" name="targetName" type="string" update="false"/>
+        <property column="tenant_id" insert="false" name="tenantId" type="string" update="false"/>
+        <property column="orgname" insert="false" name="orgname" type="string" update="false"/>
+        <property column="orgid" insert="false" name="orgid" type="big_decimal" update="false"/>
+        <property column="ROLE_TYPE" insert="false" name="roleType" type="string" update="false"/>
+        <property column="mobileno" insert="false" name="mobileno" type="string" update="false"/>
+        <property column="pemail" insert="false" name="pemail" type="string" update="false"/>
+        <property column="userid" insert="false" name="userid" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.participantselect.dataset.QUserOrg" table="$QueryEntity[org.gocom.components.coframe.participantselect.dataset.QUserOrg]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="ORGID" insert="false" name="orgid" type="big_decimal" update="false"/>
+        <property column="ORGCODE" insert="false" name="orgcode" type="string" update="false"/>
+        <property column="ORGNAME" insert="false" name="orgname" type="string" update="false"/>
+        <property column="ORGLEVEL" insert="false" name="orglevel" type="big_decimal" update="false"/>
+        <property column="ORGDEGREE" insert="false" name="orgdegree" type="string" update="false"/>
+        <property column="ORGSEQ" insert="false" name="orgseq" type="string" update="false"/>
+        <property column="ORGTYPE" insert="false" name="orgtype" type="string" update="false"/>
+        <property column="ORGADDR" insert="false" name="orgaddr" type="string" update="false"/>
+        <property column="ZIPCODE" insert="false" name="zipcode" type="string" update="false"/>
+        <property column="MANAPOSITION" insert="false" name="manaposition" type="big_decimal" update="false"/>
+        <property column="MANAGERID" insert="false" name="managerid" type="big_decimal" update="false"/>
+        <property column="ORGMANAGER" insert="false" name="orgmanager" type="string" update="false"/>
+        <property column="LINKMAN" insert="false" name="linkman" type="string" update="false"/>
+        <property column="LINKTEL" insert="false" name="linktel" type="string" update="false"/>
+        <property column="EMAIL" insert="false" name="email" type="string" update="false"/>
+        <property column="WEBURL" insert="false" name="weburl" type="string" update="false"/>
+        <property column="STARTDATE" insert="false" name="startdate" type="date" update="false"/>
+        <property column="ENDDATE" insert="false" name="enddate" type="date" update="false"/>
+        <property column="STATUS" insert="false" name="status" type="string" update="false"/>
+        <property column="AREA" insert="false" name="area" type="string" update="false"/>
+        <property column="CREATETIME" insert="false" name="createtime" type="date" update="false"/>
+        <property column="LASTUPDATE" insert="false" name="lastupdate" type="date" update="false"/>
+        <property column="UPDATOR" insert="false" name="updator" type="big_decimal" update="false"/>
+        <property column="SORTNO" insert="false" name="sortno" type="int" update="false"/>
+        <property column="ISLEAF" insert="false" name="isleaf" type="string" update="false"/>
+        <property column="SUBCOUNT" insert="false" name="subcount" type="big_decimal" update="false"/>
+        <property column="REMARK" insert="false" name="remark" type="string" update="false"/>
+        <property column="TENANT_ID" insert="false" name="tenantId" type="string" update="false"/>
+        <property column="APP_ID" insert="false" name="appId" type="string" update="false"/>
+        <property column="PARENTORGID" insert="false" name="parentorgid" type="big_decimal" update="false"/>
+        <property column="EMPID" insert="false" name="empid" type="big_decimal" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.participantselect.dataset.QOrgUsers" table="$QueryEntity[org.gocom.components.coframe.participantselect.dataset.QOrgUsers]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="ORGNAME" insert="false" name="orgname" type="string" update="false"/>
+        <property column="orgcode" insert="false" name="orgcode" type="string" update="false"/>
+        <property column="pemail" insert="false" name="pemail" type="string" update="false"/>
+        <property column="mobileno" insert="false" name="mobileno" type="string" update="false"/>
+        <property column="orgid" insert="false" name="orgid" type="big_decimal" update="false"/>
+        <property column="empid" insert="false" name="empid" type="big_decimal" update="false"/>
+        <property column="target_name" insert="false" name="targetName" type="string" update="false"/>
+        <property column="target_id" insert="false" name="targetId" type="big_decimal" update="false"/>
+        <property column="userid" insert="false" name="userid" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.participantselect.dataset.QUserByGroup" table="$QueryEntity[org.gocom.components.coframe.participantselect.dataset.QUserByGroup]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="PEMAIL" insert="false" name="pemail" type="string" update="false"/>
+        <property column="MOBILENO" insert="false" name="mobileno" type="string" update="false"/>
+        <property column="target_id" insert="false" name="targetId" type="big_decimal" update="false"/>
+        <property column="target_name" insert="false" name="targetName" type="string" update="false"/>
+        <property column="ORGID" insert="false" name="orgid" type="big_decimal" update="false"/>
+        <property column="ORGNAME" insert="false" name="orgname" type="string" update="false"/>
+        <property column="ORGCODE" insert="false" name="orgcode" type="string" update="false"/>
+        <property column="GROUPID" insert="false" name="groupid" type="big_decimal" update="false"/>
+        <property column="empid" insert="false" name="empid" type="big_decimal" update="false"/>
+        <property column="userid" insert="false" name="userid" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.participantselect.dataset.QOrgSelect" table="$QueryEntity[org.gocom.components.coframe.participantselect.dataset.QOrgSelect]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="orgid" insert="false" name="orgid" type="big_decimal" update="false"/>
+        <property column="orgname" insert="false" name="orgname" type="string" update="false"/>
+        <property column="orgcode" insert="false" name="orgcode" type="string" update="false"/>
+        <property column="target_id" insert="false" name="targetId" type="big_decimal" update="false"/>
+        <property column="target_name" insert="false" name="targetName" type="string" update="false"/>
+        <property column="parentorgid" insert="false" name="parentorgid" type="big_decimal" update="false"/>
+        <property column="orgseq" insert="false" name="orgseq" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.participantselect.dataset.QueryUsers" table="$QueryEntity[org.gocom.components.coframe.participantselect.dataset.QueryUsers]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="USERID" insert="false" name="userid" type="string" update="false"/>
+        <property column="target_id" insert="false" name="targetId" type="big_decimal" update="false"/>
+        <property column="target_name" insert="false" name="targetName" type="string" update="false"/>
+        <property column="EMPNAME" insert="false" name="empname" type="string" update="false"/>
+        <property column="ORGID" insert="false" name="orgid" type="big_decimal" update="false"/>
+        <property column="ORGNAME" insert="false" name="orgname" type="string" update="false"/>
+        <property column="ORGCODE" insert="false" name="orgcode" type="string" update="false"/>
+        <property column="empid" insert="false" name="empid" type="big_decimal" update="false"/>
+        <property column="pemail" insert="false" name="pemail" type="string" update="false"/>
+        <property column="mobileno" insert="false" name="mobileno" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.participantselect.dataset.Role" table="$QueryEntity[org.gocom.components.coframe.participantselect.dataset.Role]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="ROLE_ID" insert="false" name="roleId" type="string" update="false"/>
+        <property column="TENANT_ID" insert="false" name="tenantId" type="string" update="false"/>
+        <property column="ROLE_CODE" insert="false" name="roleCode" type="string" update="false"/>
+        <property column="ROLE_NAME" insert="false" name="roleName" type="string" update="false"/>
+        <property column="ROLE_DESC" insert="false" name="roleDesc" type="string" update="false"/>
+        <property column="CREATEUSER" insert="false" name="createuser" type="string" update="false"/>
+        <property column="CREATETIME" insert="false" name="createtime" type="date" update="false"/>
+    </class>
+</hibernate-mapping>

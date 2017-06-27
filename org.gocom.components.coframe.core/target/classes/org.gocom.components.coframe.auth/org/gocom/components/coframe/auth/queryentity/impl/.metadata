@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="PartyDataObjectImpl" implementationType="file" modifier="public" name="PartyDataObjectImpl.class" order="32" version=""/>
+    <model description="" displayName="QueryEmpAndUserByUserImpl" implementationType="file" modifier="public" name="QueryEmpAndUserByUserImpl.class" order="32" version=""/>
+    <model description="" displayName="QueryEmpByOrgRoleImpl" implementationType="file" modifier="public" name="QueryEmpByOrgRoleImpl.class" order="32" version=""/>
+    <model description="" displayName="QueryEmpByRoleImpl" implementationType="file" modifier="public" name="QueryEmpByRoleImpl.class" order="32" version=""/>
+    <model description="" displayName="QueryGroupByRoleImpl" implementationType="file" modifier="public" name="QueryGroupByRoleImpl.class" order="32" version=""/>
+    <model description="" displayName="QueryOrgByRoleImpl" implementationType="file" modifier="public" name="QueryOrgByRoleImpl.class" order="32" version=""/>
+    <model description="" displayName="QueryPositionByRoleImpl" implementationType="file" modifier="public" name="QueryPositionByRoleImpl.class" order="32" version=""/>
+    <model description="" displayName="QueryUserByEmpImpl" implementationType="file" modifier="public" name="QueryUserByEmpImpl.class" order="32" version=""/>
+    <model description="" displayName="QueryUserByRoleImpl" implementationType="file" modifier="public" name="QueryUserByRoleImpl.class" order="32" version=""/>
+</metadata>

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Require-Bundle: org.gocom.components.coframe.tools
+eos-webCtxPath: coframe/dict
+Bundle-Vendor: 陈鹏
+Bundle-Version: 1.0.0
+Bundle-Name: 业务字典配置
+Bundle-Description: 
+Bundle-SymbolicName: org.gocom.components.coframe.dict
+

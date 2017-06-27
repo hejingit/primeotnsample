@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="authentication" implementationType="file" modifier="public" name="authentication.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.CapUser.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.CapUser.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.CapUser.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.LoginManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.LoginManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.auth.LoginManager.componentType"/>
+        <method description="" displayName="authentication" implementationType="file" modifier="public" name="authentication" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="userId" implementationType="Primitive" modifier="public" name="userId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="password" implementationType="Primitive" modifier="public" name="password" order="2048" typeName="file:String"/>
+            <result description="" displayName="returnValue" implementationType="Primitive" modifier="public" name="returnValue" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.LoginManager.isend.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.LoginManager.isend.bizx" order="4096" typeName="file:org.gocom.components.coframe.auth.LoginManager.isend.bizx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.CapUser.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.dataset.CapUser.node_entity" order="4096" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.capuser.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.capuser.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.capuser.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.datasetx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.dataset.datasetx" order="4096" typeName="file:org.gocom.components.coframe.rights.dataset.datasetx"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="getMenuData" implementationType="file" modifier="public" name="getMenuData.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="getMenuData" implementationType="file" modifier="public" name="getMenuData" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appCode" implementationType="Primitive" modifier="public" name="appCode" order="2048" typeName="file:String"/>
+            <result description="" displayName="treeNodes" implementationType="Java" modifier="public" name="treeNodes" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="getMenuList" implementationType="file" modifier="public" name="getMenuList.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <method description="" displayName="getMenuList" implementationType="file" modifier="public" name="getMenuList" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="treeNodes" implementationType="Java" modifier="public" name="treeNodes" order="1024" typeName="file:commonj.sdo.DataObject[]"/>
+        </method>
+    </model>
+    <model description="" displayName="isend" implementationType="file" modifier="public" name="isend.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.CapUser.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.dataset.CapUser.node_entity" order="4096" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.datasetx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.dataset.datasetx" order="4096" typeName="file:org.gocom.components.coframe.rights.dataset.datasetx"/>
+        <method description="" displayName="isend" implementationType="file" modifier="public" name="isend" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="capuser" implementationType="DataObject" modifier="public" name="capuser" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser"/>
+            <result description="" displayName="isend" implementationType="Primitive" modifier="public" name="isend" order="1024" typeName="file:Int"/>
+        </method>
+    </model>
+    <model description="" displayName="login" implementationType="file" modifier="public" name="login.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.eos.data.datacontext.userobject.java" implementationType="java" modifier="public" name="java:com.eos.data.datacontext.userobject.java" order="4096" typeName="java:com.eos.data.datacontext.userobject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.LoginManager.authentication.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.LoginManager.authentication.bizx" order="4096" typeName="file:org.gocom.components.coframe.auth.LoginManager.authentication.bizx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.LoginManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.LoginManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.auth.LoginManager.componentType"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <method description="" displayName="login" implementationType="file" modifier="public" name="login" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="userId" implementationType="Primitive" modifier="public" name="userId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="password" implementationType="Primitive" modifier="public" name="password" order="2048" typeName="file:String"/>
+            <result description="" displayName="retCode" implementationType="Primitive" modifier="public" name="retCode" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+        <importReference description="" displayName="com.eos.data.datacontext.UserObject.java" implementationType="java" modifier="public" name="java:com.eos.data.datacontext.UserObject.java" order="4096" typeName="java:com.eos.data.datacontext.UserObject.java"/>
+    </model>
+    <model description="" displayName="LoginManager.eosComponentType" implementationType="file" modifier="public" name="LoginManager.eosComponentType" order="32" version=""/>
+    <model description="" displayName="logout" implementationType="file" modifier="public" name="logout.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.eos.data.datacontext.userobject.java" implementationType="java" modifier="public" name="java:com.eos.data.datacontext.userobject.java" order="4096" typeName="java:com.eos.data.datacontext.userobject.java"/>
+        <method description="" displayName="logout" implementationType="file" modifier="public" name="logout" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="uniqueId" implementationType="Primitive" modifier="public" name="uniqueId" order="2048" typeName="file:String"/>
+            <result description="" displayName="userObject" implementationType="Java" modifier="public" name="userObject" order="1024" typeName="file:com.eos.data.datacontext.UserObject"/>
+        </method>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="com.eos.data.datacontext.UserObject.java" implementationType="java" modifier="public" name="java:com.eos.data.datacontext.UserObject.java" order="4096" typeName="java:com.eos.data.datacontext.UserObject.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+</metadata>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="org.gocom.components.coframe.skins.win7.data" xmlns:sdo="commonj.sdo" xmlns:sdoJava="commonj.sdo/java" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="org.gocom.components.coframe.skins.win7.data">
+    <xs:complexType name="Win7Config">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="configId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="bgPicturePath" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="configData" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="openType" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="defaultMax" nillable="true" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="defaultWidth" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="defaultHeight" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="deskStyle" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="ext1" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="ext2" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="ext3" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Win7Icons">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="iconId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="iconName" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="iconText" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="iconPath" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="iconTitle" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="menuId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="iconOrder" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="iconDesc" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Win7AutoStart">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="startId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="menuId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="startDesc" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Win7CustomPictures">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="customId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="fileName" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="uploadTime" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

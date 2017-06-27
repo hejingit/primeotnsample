@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Require-Bundle: org.gocom.components.coframe.auth,org.gocom.components
+ .coframe.org,org.gocom.components.coframe.tools
+eos-webCtxPath: participantselect
+Bundle-Vendor: 朱惠
+Build-Number: 
+Implementation-Version: 3.2.2
+Bundle-Version: 3.2.2
+Bundle-Name: 选择参与者
+Bundle-Description: 参与者选择
+Bundle-SymbolicName: org.gocom.components.coframe.participantselect
+Build-Date: 
+Build-By: Primeton RD Team
+

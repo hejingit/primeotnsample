@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<QueryEntityList>
+    <QueryEntity name="org.gocom.components.coframe.org.dataset.QueryPositionEmp">
+        <config db="default" type="sql"><![CDATA[select emp.*, emppos.positionid
+from org_empposition emppos inner join org_employee emp
+on emppos.empid = emp.empid]]></config>
+    </QueryEntity>
+    <QueryEntity name="org.gocom.components.coframe.org.dataset.QueryEmpUser">
+        <config db="default" type="sql"><![CDATA[select emp.empid,emp.empcode,emp.operatorid,emp.userid,emp.empname,emp.realname,emp.gender,emp.birthdate,emp.position,emp.empstatus,emp.cardtype,emp.cardno,emp.indate,emp.outdate,emp.otel,emp.oaddress,emp.ozipcode,emp.oemail,emp.faxno,emp.mobileno,emp.htel,emp.haddress,emp.hzipcode,emp.pemail,emp.party,emp.degree,emp.major,emp.specialty,emp.workexp,emp.regdate,emp.createtime,emp.lastmodytime,emp.orgidlist,emp.remark,emp.tenant_id,emp.app_id,emp.qq,emp.weibo,emp.sortno,cap_user.status,emporg.orgid 
+from org_employee emp left join cap_user 
+on emp.operatorid=cap_user.operator_id 
+inner join org_emporg emporg on emporg.empid=emp.empid]]></config>
+    </QueryEntity>
+    <QueryEntity name="org.gocom.components.coframe.org.dataset.QueryEmpOrg">
+        <config db="default" type="sql"><![CDATA[
+SELECT ORG.ORGID,
+       ORG.ORGNAME,
+       ORG.ORGSEQ,
+       EMP.EMPID,
+       EMP.EMPCODE,
+       EMP.OPERATORID,
+       EMP.USERID,
+       EMP.EMPNAME,
+       EMP.REALNAME,
+       EMP.GENDER,
+       EMP.BIRTHDATE,
+       EMP.POSITION,
+       EMP.EMPSTATUS,
+       EMP.CARDTYPE,
+       EMP.CARDNO,
+       EMP.INDATE,
+       EMP.OUTDATE,
+       EMP.OTEL,
+       EMP.OADDRESS,
+       EMP.OZIPCODE,
+       EMP.OEMAIL,
+       EMP.FAXNO,
+       EMP.MOBILENO,
+       EMP.HTEL,
+       EMP.HADDRESS,
+       EMP.HZIPCODE,
+       EMP.PEMAIL,
+       EMP.PARTY,
+       EMP.DEGREE,
+       EMP.MAJOR,
+       EMP.SPECIALTY,
+       EMP.WORKEXP,
+       EMP.REGDATE,
+       EMP.CREATETIME,
+       EMP.LASTMODYTIME,
+       EMP.ORGIDLIST,
+       EMP.REMARK,
+       EMP.TENANT_ID,
+       EMP.APP_ID,
+       EMP.QQ,
+       EMP.WEIBO,
+       EMP.SORTNO
+  FROM ORG_EMPLOYEE EMP, ORG_EMPORG EMPORG, ORG_ORGANIZATION ORG
+ WHERE EMP.EMPID = EMPORG.EMPID
+   AND EMPORG.ORGID = ORG.ORGID
+]]></config>
+    </QueryEntity>
+</QueryEntityList>

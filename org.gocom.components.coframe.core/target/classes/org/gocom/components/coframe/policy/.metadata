@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="CoframePolicyContributionListener" implementationType="file" modifier="public" name="CoframePolicyContributionListener.class" order="32" version=""/>
+    <model description="" displayName="datas" implementationType="file" modifier="public" name="datas.xsd" order="32" version="">
+        <properties>
+            <property name="eosModel_type" value="datasetx"/>
+        </properties>
+        <type description="" displayName="Entity" implementationType="file" modifier="public" name="IPAccessRules" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="COMP_IP_ACCESS_RULES"/>
+            </properties>
+            <field description="" displayName="规则ID" implementationType="file" modifier="public" name="rulesId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="RULES_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="起始IP" implementationType="file" modifier="public" name="startIP" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="START_IP"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="结束IP" implementationType="file" modifier="public" name="endIP" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="END_IP"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="规则类型" implementationType="file" modifier="public" name="rulesType" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="RULES_TYPE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="备注" implementationType="file" modifier="public" name="remark" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="REMARK"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="制定者ID" implementationType="file" modifier="public" name="makersId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MAKERS_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="添加日期" implementationType="file" modifier="public" name="addDate" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ADD_DATE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="是否启用" implementationType="file" modifier="public" name="enabled" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ENABLED"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+        </type>
+    </model>
+    <model description="" displayName="ipRuleComponent" implementationType="file" modifier="public" name="ipRuleComponent.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="deleteAccessRules" implementationType="file" modifier="public" name="deleteAccessRules" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="select_objs" implementationType="DataObject" modifier="public" name="select_objs" order="2048" typeName="file:org.gocom.components.coframe.policy.datas.IPAccessRules[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.policy.ipRuleComponent.deleteAccessRules.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.policy.ipRuleComponent.deleteAccessRules.bizx" order="4096" typeName="file:org.gocom.components.coframe.policy.ipRuleComponent.deleteAccessRules.bizx"/>
+        <method description="" displayName="addAccessRules" implementationType="file" modifier="public" name="editAccessRules" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="rules" implementationType="DataObject" modifier="public" name="rules" order="2048" typeName="file:org.gocom.components.coframe.policy.datas.IPAccessRules"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.policy.ipRuleComponent.editAccessRules.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.policy.ipRuleComponent.editAccessRules.bizx" order="4096" typeName="file:org.gocom.components.coframe.policy.ipRuleComponent.editAccessRules.bizx"/>
+        <method description="" displayName="getAccessRules" implementationType="file" modifier="public" name="getAccessRules" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="rules" implementationType="DataObject" modifier="public" name="rules" order="1024" typeName="file:org.gocom.components.coframe.policy.datas.IPAccessRules[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.policy.ipRuleComponent.getAccessRules.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.policy.ipRuleComponent.getAccessRules.bizx" order="4096" typeName="file:org.gocom.components.coframe.policy.ipRuleComponent.getAccessRules.bizx"/>
+        <method description="" displayName="verificationIp" implementationType="file" modifier="public" name="verificationIp" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="rules" implementationType="DataObject" modifier="public" name="rules" order="2048" typeName="file:org.gocom.components.coframe.policy.datas.IPAccessRules"/>
+            <result description="" displayName="flag" implementationType="Primitive" modifier="public" name="flag" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.policy.ipRuleComponent.verificationIp.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.policy.ipRuleComponent.verificationIp.bizx" order="4096" typeName="file:org.gocom.components.coframe.policy.ipRuleComponent.verificationIp.bizx"/>
+    </model>
+    <model description="" displayName="RulesIpFilter" implementationType="file" modifier="public" name="RulesIpFilter.class" order="32" version=""/>
+    <model description="" displayName="VerificationIpService" implementationType="file" modifier="public" name="VerificationIpService.class" order="32" version=""/>
+</metadata>

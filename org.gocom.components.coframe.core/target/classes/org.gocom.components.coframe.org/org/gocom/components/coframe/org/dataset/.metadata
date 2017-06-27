@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="OrgDuty" implementationType="file" modifier="public" name="OrgDuty.class" order="32" version=""/>
+    <model description="" displayName="OrgEmployee" implementationType="file" modifier="public" name="OrgEmployee.class" order="32" version=""/>
+    <model description="" displayName="OrgEmporg" implementationType="file" modifier="public" name="OrgEmporg.class" order="32" version=""/>
+    <model description="" displayName="OrgEmpposition" implementationType="file" modifier="public" name="OrgEmpposition.class" order="32" version=""/>
+    <model description="" displayName="OrgOrganization" implementationType="file" modifier="public" name="OrgOrganization.class" order="32" version=""/>
+    <model description="" displayName="OrgPartyDataObject" implementationType="file" modifier="public" name="OrgPartyDataObject.class" order="32" version=""/>
+    <model description="" displayName="OrgPosition" implementationType="file" modifier="public" name="OrgPosition.class" order="32" version=""/>
+    <model description="" displayName="OrgTreeNode" implementationType="file" modifier="public" name="OrgTreeNode.class" order="32" version=""/>
+    <model description="" displayName="QueryEmpOrg" implementationType="file" modifier="public" name="QueryEmpOrg.class" order="32" version=""/>
+    <model description="" displayName="QueryEmpUser" implementationType="file" modifier="public" name="QueryEmpUser.class" order="32" version=""/>
+    <model description="" displayName="QueryPositionEmp" implementationType="file" modifier="public" name="QueryPositionEmp.class" order="32" version=""/>
+</metadata>

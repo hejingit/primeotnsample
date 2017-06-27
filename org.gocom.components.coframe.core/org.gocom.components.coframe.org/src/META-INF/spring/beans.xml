@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:sca="http://www.springframework.org/schema/sca" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd   http://www.springframework.org/schema/sca http://www.osoa.org/xmlns/sca/1.0/spring-sca.xsd">
+    <bean id="OrgOrganizationBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list>
+                <value>org.gocom.components.coframe.org.IOrgOrganizationService</value>
+            </list>
+        </property>
+        <property name="target" ref="OrgOrganizationService"/>
+    </bean>
+    <bean id="OrgPositionBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list>
+                <value>org.gocom.components.coframe.org.IOrgPositionService</value>
+            </list>
+        </property>
+        <property name="target" ref="OrgPositionService">
+        </property>
+    </bean>
+    <bean id="OrgEmployeeBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list>
+                <value>org.gocom.components.coframe.org.IOrgEmployeeService</value>
+            </list>
+        </property>
+        <property name="target" ref="OrgEmployeeService">
+        </property>
+    </bean>
+    <bean id="OrgEmporgBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list>
+                <value>org.gocom.components.coframe.org.IOrgEmporgService</value>
+            </list>
+        </property>
+        <property name="target" ref="OrgEmporgService">
+        </property>
+    </bean>
+    <bean id="OrgEmppositionBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list>
+                <value>org.gocom.components.coframe.org.IOrgEmppositionService</value>
+            </list>
+        </property>
+        <property name="target" ref="OrgEmppositionService">
+        </property>
+    </bean>
+    <bean id="OrgTreeBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list>
+                <value>org.gocom.components.coframe.org.IOrgTreeService</value>
+            </list>
+        </property>
+        <property name="target" ref="OrgTreeService">
+        </property>
+    </bean>
+    <bean id="GroupTreeBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list>
+                <value>org.gocom.components.coframe.org.IGroupTreeService</value>
+            </list>
+        </property>
+        <property name="target" ref="GroupTreeService">
+        </property>
+    </bean>
+    <bean id="DefaultOrgRoleManagerBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list/>
+        </property>
+        <property name="target">
+            <bean class="org.gocom.components.coframe.org.party.manager.DefaultOrgRoleManager">
+                <property name="dataSource" ref="DefaultDataSource"/>
+            </bean>
+        </property>
+	</bean>
+    
+    <bean class="org.gocom.components.coframe.org.OrgPositionService" id="OrgPositionService">
+        <property name="dataSource" ref="DefaultDataSource"/>
+        <property name="empPositionService" ref="OrgEmppositionBean"/>
+    </bean>
+    <bean class="org.gocom.components.coframe.org.OrgOrganizationService" id="OrgOrganizationService">
+        <property name="dataSource" ref="DefaultDataSource"/>
+        <property name="positionService" ref="OrgPositionBean"/>
+        <property name="employeeService" ref="OrgEmployeeBean"/>
+    </bean>
+    <bean class="org.gocom.components.coframe.org.OrgEmployeeService" id="OrgEmployeeService">
+        <property name="dataSource" ref="DefaultDataSource"/>
+        <property name="userService" ref="CapUserBean"/>
+        <property name="emporgService" ref="OrgEmporgBean"/>
+        <property name="empPositionService" ref="OrgEmppositionBean"/>
+    </bean>
+    <bean class="org.gocom.components.coframe.org.OrgEmporgService" id="OrgEmporgService">
+        <property name="dataSource" ref="DefaultDataSource"/>
+        <property name="empPositionService" ref="OrgEmppositionBean"/>
+    </bean>
+    <bean class="org.gocom.components.coframe.org.OrgEmppositionService" id="OrgEmppositionService">
+        <property name="dataSource" ref="DefaultDataSource"/>
+    </bean>
+    <bean class="org.gocom.components.coframe.org.OrgTreeService" id="OrgTreeService">
+        <property name="dataSource" ref="DefaultDataSource"/>
+        <property name="organizationService" ref="OrgOrganizationBean"/>
+        <property name="positionService" ref="OrgPositionBean"/>
+    </bean>
+     <bean class="org.gocom.components.coframe.org.GroupTreeService" id="GroupTreeService">
+        <property name="dataSource" ref="DefaultDataSource"/>
+        <property name="groupService" ref="OrgGroupServiceBean"/>
+        <property name="positionService" ref="OrgPositionBean"/>
+    </bean>
+    
+    <bean class="org.gocom.components.coframe.org.OrgGroupposiService" id="OrgGroupposiService">
+        <property name="dataSource" ref="DefaultDataSource"/>
+    </bean>
+    <bean class="org.gocom.components.coframe.org.OrgEmpgroupService" id="OrgEmpgroupService">
+        <property name="dataSource" ref="DefaultDataSource"/>
+    </bean>
+    
+    <bean class="org.gocom.components.coframe.org.util.OrgTreeNodeHelper" id="OrgTreeNodeHelperBean">
+    	<property name="organizationService" ref="OrgOrganizationBean"/>
+    </bean>
+    <bean class="org.gocom.components.coframe.org.util.OrgTreeNodeConvertor" id="OrgTreeNodeConvertorBean"/>
+    <!-- Party实现相关的Bean -->
+    <bean id="DefaultOrgManagerBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list/>
+        </property>
+        <property name="target">
+            <bean class="org.gocom.components.coframe.org.party.manager.DefaultOrgManager">
+                <property name="dataSource" ref="DefaultDataSource"/>
+            </bean>
+        </property>
+    </bean>
+    
+    <bean id="DefaultGroupManagerBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list/>
+        </property>
+        <property name="target">
+            <bean class="org.gocom.components.coframe.org.party.manager.DefaultGroupManager">
+                <property name="dataSource" ref="DefaultDataSource"/>
+            </bean>
+        </property>
+    </bean>
+    
+    <bean id="DefaultPositionManagerBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list/>
+        </property>
+        <property name="target">
+            <bean class="org.gocom.components.coframe.org.party.manager.DefaultPositionManager">
+                <property name="dataSource" ref="DefaultDataSource"/>
+            </bean>
+        </property>
+    </bean>
+    <bean id="DefaultEmpManagerBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list/>
+        </property>
+        <property name="target">
+            <bean class="org.gocom.components.coframe.org.party.manager.DefaultEmpManager">
+                <property name="dataSource" ref="DefaultDataSource"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="org.gocom.components.coframe.org.EmployeeAuthService" id="employeeAuthService">
+    </bean>
+    <bean id="employeeAuthServiceBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list>
+                <value>org.gocom.components.coframe.org.IEmployeeAuthService</value>
+            </list>
+        </property>
+        <property name="target" ref="employeeAuthService"/>
+    </bean>
+    <bean class="org.gocom.components.coframe.org.OrganizationAuthService" id="orgAuthService">
+    </bean>
+    <bean class="org.gocom.components.coframe.org.GroupAuthService" id="groupAuthService">
+    </bean>
+    <bean id="orgAuthServiceBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list>
+                <value>org.gocom.components.coframe.org.IOrganizationAuthService</value>
+            </list>
+        </property>
+        <property name="target" ref="orgAuthService"/>
+    </bean>
+    <bean class="org.gocom.components.coframe.org.PositionAuthService" id="positionAuthService">
+    </bean>
+    <bean id="positionAuthServiceBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list>
+                <value>org.gocom.components.coframe.org.IPositionAuthService</value>
+            </list>
+        </property>
+        <property name="target" ref="positionAuthService"/>
+    </bean>
+    <bean class="org.gocom.components.coframe.org.PartyAuthService" id="partyAuthService">
+    </bean>
+    <bean id="partyAuthServiceBean" parent="DefaultBaseTransactionProxy">
+        <property name="proxyInterfaces">
+            <list>
+                <value>org.gocom.components.coframe.org.IPartyAuthService</value>
+            </list>
+        </property>
+        <property name="target" ref="partyAuthService"/>
+    </bean>
+    <bean class="org.gocom.components.coframe.org.GradeAuthOrgService" id="GradeAuthOrgService"/>
+    <bean class="org.gocom.components.coframe.org.OrgGroupService" id="OrgGroupServiceBean">
+    	<property name="dataSource" ref="DefaultDataSource"/>
+    	<property name="groupposiService" ref="OrgGroupposiService"/>
+        <property name="empgroupService" ref="OrgEmpgroupService"/>
+   	</bean>
+</beans>

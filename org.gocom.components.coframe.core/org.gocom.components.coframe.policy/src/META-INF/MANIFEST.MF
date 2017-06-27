@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Require-Bundle: org.gocom.components.coframe.tools
+Bundle-Vendor: zhangjiaxiong
+eos-webCtxPath: policy
+Bundle-Version: 1.0.0
+Bundle-Name: org.gocom.components.coframe.policy
+Bundle-Description: 
+Bundle-SymbolicName: org.gocom.components.coframe.policy
+

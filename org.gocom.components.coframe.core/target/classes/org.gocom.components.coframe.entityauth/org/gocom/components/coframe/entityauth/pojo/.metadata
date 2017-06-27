@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="Condition" implementationType="file" modifier="public" name="Condition.class" order="32" version=""/>
+    <model description="" displayName="ConditionModel" implementationType="file" modifier="public" name="ConditionModel.class" order="32" version=""/>
+    <model description="" displayName="ConstantPool" implementationType="file" modifier="public" name="ConstantPool.class" order="32" version=""/>
+    <model description="" displayName="ConValue" implementationType="file" modifier="public" name="ConValue.class" order="32" version=""/>
+    <model description="" displayName="RightValue" implementationType="file" modifier="public" name="RightValue.class" order="32" version=""/>
+    <model description="" displayName="RuleAndAuth" implementationType="file" modifier="public" name="RuleAndAuth.class" order="32" version=""/>
+</metadata>

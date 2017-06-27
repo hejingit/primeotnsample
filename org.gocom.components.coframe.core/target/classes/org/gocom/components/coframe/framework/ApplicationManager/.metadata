@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="ApplicationManager.eosComponentType" implementationType="file" modifier="public" name="ApplicationManager.eosComponentType" order="32" version=""/>
+    <model description="" displayName="deleteApplicaiton" implementationType="file" modifier="public" name="deleteApplication.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.queryApplicationTreeNode.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.queryApplicationTreeNode.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.queryApplicationTreeNode.bizx"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.deleteMenus.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.deleteMenus.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.deleteMenus.bizx"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <importReference description="" displayName="java.util.map.java" implementationType="java" modifier="public" name="java:java.util.map.java" order="4096" typeName="java:java.util.map.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appmenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appmenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appmenu.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.deleteApplicationNodes.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.deleteApplicationNodes.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.deleteApplicationNodes.bizx"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppMenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppMenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppMenu.java"/>
+        <method description="" displayName="deleteApplicaiton" implementationType="file" modifier="public" name="deleteApplication" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodeId" implementationType="Primitive" modifier="public" name="nodeId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="nodeType" implementationType="Primitive" modifier="public" name="nodeType" order="2048" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="java.util.Map.java" implementationType="java" modifier="public" name="java:java.util.Map.java" order="4096" typeName="java:java.util.Map.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.componentType"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.componentType"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+    </model>
+    <model description="" displayName="deleteApplication" implementationType="file" modifier="public" name="deleteApplicationNodes.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="java.util.map.java" implementationType="java" modifier="public" name="java:java.util.map.java" order="4096" typeName="java:java.util.map.java"/>
+        <importReference description="" displayName="java.util.Map.java" implementationType="java" modifier="public" name="java:java.util.Map.java" order="4096" typeName="java:java.util.Map.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.componentType"/>
+        <method description="" displayName="deleteApplication" implementationType="file" modifier="public" name="deleteApplicationNodes" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodes" implementationType="Java" modifier="public" name="nodes" order="2048" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.deleteApplication.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.deleteApplication.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.deleteApplication.bizx"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+    </model>
+    <model description="" displayName="deleteApplication" implementationType="file" modifier="public" name="deleteApplications.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="deleteApplication" implementationType="file" modifier="public" name="deleteApplications" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodes" implementationType="Java" modifier="public" name="nodes" order="2048" typeName="file:commonj.sdo.DataObject[]"/>
+        </method>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.componentType"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.ApplicationManager.deleteApplication.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.ApplicationManager.deleteApplication.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.ApplicationManager.deleteApplication.bizx"/>
+    </model>
+    <model description="" displayName="getApplication" implementationType="file" modifier="public" name="getApplication.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="getApplication" implementationType="file" modifier="public" name="getApplication" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="template" implementationType="Java" modifier="public" name="template" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppApplication"/>
+            <result description="" displayName="appapplication" implementationType="Java" modifier="public" name="appapplication" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppApplication"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appapplication.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appapplication.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appapplication.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppApplication.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppApplication.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppApplication.java"/>
+    </model>
+    <model description="" displayName="queryApplication" implementationType="file" modifier="public" name="queryApplication.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.PageCond.java" order="4096" typeName="java:com.eos.foundation.PageCond.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appapplication.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appapplication.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appapplication.java"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppApplication.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppApplication.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppApplication.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+        <importReference description="" displayName="com.eos.foundation.pagecond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.pagecond.java" order="4096" typeName="java:com.eos.foundation.pagecond.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+        <method description="" displayName="queryApplication" implementationType="file" modifier="public" name="queryApplication" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppApplication[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+    </model>
+    <model description="" displayName="queryApplicationTree" implementationType="file" modifier="public" name="queryApplicationTree.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFunction.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppFunction.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppFunction.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppApplication.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppApplication.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppApplication.java"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appfunction.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appfunction.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appfunction.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+        <method description="" displayName="queryApplicationTree" implementationType="file" modifier="public" name="queryApplicationTree" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appapplication.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appapplication.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appapplication.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appfuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appfuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appfuncgroup.java"/>
+    </model>
+    <model description="" displayName="queryApplicationTreeNode" implementationType="file" modifier="public" name="queryApplicationTreeNode.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFunction.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppFunction.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppFunction.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppApplication.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppApplication.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppApplication.java"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appfunction.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appfunction.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appfunction.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <method description="" displayName="queryApplicationTreeNode" implementationType="file" modifier="public" name="queryApplicationTreeNode" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodeType" implementationType="Primitive" modifier="public" name="nodeType" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="nodeId" implementationType="Primitive" modifier="public" name="nodeId" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appapplication.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appapplication.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appapplication.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appfuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appfuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appfuncgroup.java"/>
+    </model>
+    <model description="" displayName="saveApplication" implementationType="file" modifier="public" name="saveApplication.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="saveApplication" implementationType="file" modifier="public" name="saveApplication" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appapplication" implementationType="Java" modifier="public" name="appapplication" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppApplication"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appapplication.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appapplication.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appapplication.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppApplication.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppApplication.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppApplication.java"/>
+    </model>
+    <model description="" displayName="updateApplication" implementationType="file" modifier="public" name="updateApplication.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="updateApplication" implementationType="file" modifier="public" name="updateApplication" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appapplication" implementationType="Java" modifier="public" name="appapplication" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppApplication"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appapplication.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appapplication.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appapplication.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppApplication.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppApplication.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppApplication.java"/>
+    </model>
+</metadata>

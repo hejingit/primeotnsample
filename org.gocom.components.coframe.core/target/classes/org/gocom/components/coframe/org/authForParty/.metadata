@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="Party授权" displayName="authForParty.eosComponentType" implementationType="file" modifier="public" name="authForParty.eosComponentType" order="32" version=""/>
+    <model description="" displayName="保存Party授权信息" implementationType="file" modifier="public" name="storePartyAuth.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.primeton.cap.party.Party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.Party.java" order="4096" typeName="java:com.primeton.cap.party.Party.java"/>
+        <importReference description="" displayName="boolean.java" implementationType="java" modifier="public" name="java:boolean.java" order="4096" typeName="java:boolean.java"/>
+        <importReference description="" displayName="com.primeton.cap.party.party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.party.java" order="4096" typeName="java:com.primeton.cap.party.party.java"/>
+        <method description="保存Party授权信息" displayName="保存Party授权信息" implementationType="file" modifier="public" name="storePartyAuth" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="roleId" implementationType="Primitive" modifier="public" name="roleId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="partyWithAuth" implementationType="Java" modifier="public" name="partyWithAuth" order="2048" typeName="file:com.primeton.cap.party.Party[]"/>
+            <parameter description="" displayName="partyNoAuth" implementationType="Java" modifier="public" name="partyNoAuth" order="2048" typeName="file:com.primeton.cap.party.Party[]"/>
+            <result description="" displayName="saveResult" implementationType="Primitive" modifier="public" name="saveResult" order="1024" typeName="file:Boolean"/>
+        </method>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+</metadata>

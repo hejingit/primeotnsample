@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="addOrg" implementationType="file" modifier="public" name="addEmployee.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.CapUser.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.CapUser.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.CapUser.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.util.orgresponse.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.util.orgresponse.java" order="4096" typeName="java:org.gocom.components.coframe.org.util.orgresponse.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.util.OrgResponse.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.util.OrgResponse.java" order="4096" typeName="java:org.gocom.components.coframe.org.util.OrgResponse.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgemployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgemployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgemployee.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgorganization.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgorganization.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgorganization.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgOrganization.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgOrganization.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgOrganization.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.capuser.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.capuser.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.capuser.java"/>
+        <method description="" displayName="addOrg" implementationType="file" modifier="public" name="addEmployee" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="employee" implementationType="Java" modifier="public" name="employee" order="2048" typeName="file:org.gocom.components.coframe.org.dataset.OrgEmployee"/>
+            <parameter description="" displayName="user" implementationType="Java" modifier="public" name="user" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser"/>
+            <parameter description="" displayName="org" implementationType="Java" modifier="public" name="org" order="2048" typeName="file:org.gocom.components.coframe.org.dataset.OrgOrganization"/>
+            <result description="" displayName="response" implementationType="Java" modifier="public" name="response" order="1024" typeName="file:org.gocom.components.coframe.org.util.OrgResponse"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgEmployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java"/>
+    </model>
+    <model description="" displayName="deleteOrg" implementationType="file" modifier="public" name="deleteEmployee.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgemployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgemployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgemployee.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgEmployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java"/>
+        <method description="" displayName="deleteOrg" implementationType="file" modifier="public" name="deleteEmployee" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="employees" implementationType="Java" modifier="public" name="employees" order="2048" typeName="file:org.gocom.components.coframe.org.dataset.OrgEmployee[]"/>
+        </method>
+    </model>
+    <model description="" displayName="employee.eosComponentType" implementationType="file" modifier="public" name="employee.eosComponentType" order="32" version=""/>
+    <model description="" displayName="getOrg" implementationType="file" modifier="public" name="getEmployee.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgemployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgemployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgemployee.java"/>
+        <method description="" displayName="getOrg" implementationType="file" modifier="public" name="getEmployee" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="template" implementationType="Java" modifier="public" name="template" order="2048" typeName="file:org.gocom.components.coframe.org.dataset.OrgEmployee"/>
+            <result description="" displayName="employee" implementationType="Java" modifier="public" name="employee" order="1024" typeName="file:org.gocom.components.coframe.org.dataset.OrgEmployee"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgEmployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java"/>
+    </model>
+    <model description="" displayName="queryEmpByPosition" implementationType="file" modifier="public" name="QueryEmpAllowAddInGroup.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgemployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgemployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgemployee.java"/>
+        <method description="" displayName="queryEmpByPosition" implementationType="file" modifier="public" name="QueryEmpAllowAddInGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="userid" implementationType="Primitive" modifier="public" name="userid" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="empname" implementationType="Primitive" modifier="public" name="empname" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="positionid" implementationType="Primitive" modifier="public" name="positionid" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.org.dataset.OrgEmployee[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="com.eos.foundation.PageCond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.PageCond.java" order="4096" typeName="java:com.eos.foundation.PageCond.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="java.lang.integer.java" implementationType="java" modifier="public" name="java:java.lang.integer.java" order="4096" typeName="java:java.lang.integer.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.lang.Integer.java" implementationType="java" modifier="public" name="java:java.lang.Integer.java" order="4096" typeName="java:java.lang.Integer.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgEmployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java"/>
+        <importReference description="" displayName="com.eos.foundation.pagecond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.pagecond.java" order="4096" typeName="java:com.eos.foundation.pagecond.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="queryEmpByPosition" implementationType="file" modifier="public" name="queryEmpAllowAddInPosition.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="queryEmpByPosition" implementationType="file" modifier="public" name="queryEmpAllowAddInPosition" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="userid" implementationType="Primitive" modifier="public" name="userid" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="empname" implementationType="Primitive" modifier="public" name="empname" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="positionid" implementationType="Primitive" modifier="public" name="positionid" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.org.dataset.OrgEmployee[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgemployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgemployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgemployee.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.PageCond.java" order="4096" typeName="java:com.eos.foundation.PageCond.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgEmployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java"/>
+        <importReference description="" displayName="com.eos.foundation.pagecond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.pagecond.java" order="4096" typeName="java:com.eos.foundation.pagecond.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="queryEmpByPosition" implementationType="file" modifier="public" name="queryEmpInPosition.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="queryEmpByPosition" implementationType="file" modifier="public" name="queryEmpInPosition" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="userid" implementationType="Primitive" modifier="public" name="userid" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="empname" implementationType="Primitive" modifier="public" name="empname" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="positionid" implementationType="Primitive" modifier="public" name="positionid" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="emps" implementationType="Java" modifier="public" name="emps" order="1024" typeName="file:org.gocom.components.coframe.org.dataset.OrgEmployee[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgemployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgemployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgemployee.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.PageCond.java" order="4096" typeName="java:com.eos.foundation.PageCond.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgEmployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java"/>
+        <importReference description="" displayName="com.eos.foundation.pagecond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.pagecond.java" order="4096" typeName="java:com.eos.foundation.pagecond.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="queryOrg" implementationType="file" modifier="public" name="queryEmployee.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.QueryEmpOrg.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.QueryEmpOrg.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.QueryEmpOrg.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <method description="" displayName="queryOrg" implementationType="file" modifier="public" name="queryEmployee" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="treeNodes" implementationType="Java" modifier="public" name="treeNodes" order="1024" typeName="file:org.gocom.components.coframe.org.dataset.OrgTreeNode[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgTreeNode.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgTreeNode.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgTreeNode.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.PageCond.java" order="4096" typeName="java:com.eos.foundation.PageCond.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+        <importReference description="" displayName="com.eos.foundation.pagecond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.pagecond.java" order="4096" typeName="java:com.eos.foundation.pagecond.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.queryemporg.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.queryemporg.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.queryemporg.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgtreenode.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgtreenode.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgtreenode.java"/>
+    </model>
+    <model description="" displayName="queryEmpUsers" implementationType="file" modifier="public" name="queryEmpUsers.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="queryEmpUsers" implementationType="file" modifier="public" name="queryEmpUsers" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+            <result description="" displayName="treeNodes" implementationType="Java" modifier="public" name="treeNodes" order="1024" typeName="file:org.gocom.components.coframe.org.dataset.OrgTreeNode[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.queryempuser.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.queryempuser.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.queryempuser.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.QueryEmpUser.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.QueryEmpUser.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.QueryEmpUser.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgTreeNode.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgTreeNode.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgTreeNode.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.PageCond.java" order="4096" typeName="java:com.eos.foundation.PageCond.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+        <importReference description="" displayName="com.eos.foundation.pagecond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.pagecond.java" order="4096" typeName="java:com.eos.foundation.pagecond.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgtreenode.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgtreenode.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgtreenode.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+    </model>
+    <model description="" displayName="updateEmpDetaiInfo" implementationType="file" modifier="public" name="updateEmpDetaiInfo.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="updateEmpDetaiInfo" implementationType="file" modifier="public" name="updateEmpDetaiInfo" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="employee" implementationType="Java" modifier="public" name="employee" order="2048" typeName="file:org.gocom.components.coframe.org.dataset.OrgEmployee"/>
+            <result description="" displayName="response" implementationType="Java" modifier="public" name="response" order="1024" typeName="file:org.gocom.components.coframe.org.util.OrgResponse"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.org.util.orgresponse.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.util.orgresponse.java" order="4096" typeName="java:org.gocom.components.coframe.org.util.orgresponse.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.util.OrgResponse.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.util.OrgResponse.java" order="4096" typeName="java:org.gocom.components.coframe.org.util.OrgResponse.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgemployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgemployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgemployee.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgEmployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java"/>
+    </model>
+    <model description="" displayName="updateOrg" implementationType="file" modifier="public" name="updateEmployee.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.CapUser.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.CapUser.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.CapUser.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.util.orgresponse.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.util.orgresponse.java" order="4096" typeName="java:org.gocom.components.coframe.org.util.orgresponse.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.util.OrgResponse.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.util.OrgResponse.java" order="4096" typeName="java:org.gocom.components.coframe.org.util.OrgResponse.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgemployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgemployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgemployee.java"/>
+        <method description="" displayName="updateOrg" implementationType="file" modifier="public" name="updateEmployee" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="employee" implementationType="Java" modifier="public" name="employee" order="2048" typeName="file:org.gocom.components.coframe.org.dataset.OrgEmployee"/>
+            <parameter description="" displayName="user" implementationType="Java" modifier="public" name="user" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapUser"/>
+            <result description="" displayName="response" implementationType="Java" modifier="public" name="response" order="1024" typeName="file:org.gocom.components.coframe.org.util.OrgResponse"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.capuser.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.capuser.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.capuser.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgEmployee.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgEmployee.java"/>
+    </model>
+</metadata>

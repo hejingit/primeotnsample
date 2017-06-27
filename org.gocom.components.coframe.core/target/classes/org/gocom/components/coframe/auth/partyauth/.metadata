@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="IPartyAuthService" implementationType="file" modifier="public" name="IPartyAuthService.class" order="32" version=""/>
+    <model description="" displayName="ManageableRes" implementationType="file" modifier="public" name="ManageableRes.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="getManageableGroup" implementationType="file" modifier="public" name="getManageableGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="treeNodes" implementationType="Java" modifier="public" name="treeNodes" order="1024" typeName="file:commonj.sdo.DataObject[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.partyauth.ManageableRes.getManageableGroup.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.partyauth.ManageableRes.getManageableGroup.bizx" order="4096" typeName="file:org.gocom.components.coframe.auth.partyauth.ManageableRes.getManageableGroup.bizx"/>
+        <method description="" displayName="getManageableOrg" implementationType="file" modifier="public" name="getManageableOrg" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="treeNodes" implementationType="Java" modifier="public" name="treeNodes" order="1024" typeName="file:commonj.sdo.DataObject[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.partyauth.ManageableRes.getManageableOrg.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.partyauth.ManageableRes.getManageableOrg.bizx" order="4096" typeName="file:org.gocom.components.coframe.auth.partyauth.ManageableRes.getManageableOrg.bizx"/>
+    </model>
+    <model description="" displayName="ManageableResService" implementationType="file" modifier="public" name="ManageableResService.class" order="32" version=""/>
+    <model description="" displayName="partyauth" implementationType="file" modifier="public" name="partyauth.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="addPartyAuth" implementationType="file" modifier="public" name="addPartyAuth" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="roleList" implementationType="Java" modifier="public" name="roleList" order="2048" typeName="file:com.primeton.cap.party.Party[]"/>
+            <parameter description="" displayName="party" implementationType="Java" modifier="public" name="party" order="2048" typeName="file:com.primeton.cap.party.Party"/>
+            <result description="" displayName="result" implementationType="Primitive" modifier="public" name="result" order="1024" typeName="file:Boolean"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.partyauth.partyauth.addPartyAuth.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.partyauth.partyauth.addPartyAuth.bizx" order="4096" typeName="file:org.gocom.components.coframe.auth.partyauth.partyauth.addPartyAuth.bizx"/>
+        <method description="" displayName="addPartyAuth" implementationType="file" modifier="public" name="deletePartyAuth" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="roleList" implementationType="Java" modifier="public" name="roleList" order="2048" typeName="file:com.primeton.cap.party.Party[]"/>
+            <parameter description="" displayName="party" implementationType="Java" modifier="public" name="party" order="2048" typeName="file:com.primeton.cap.party.Party"/>
+            <result description="" displayName="result" implementationType="Primitive" modifier="public" name="result" order="1024" typeName="file:Boolean"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.partyauth.partyauth.deletePartyAuth.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.partyauth.partyauth.deletePartyAuth.bizx" order="4096" typeName="file:org.gocom.components.coframe.auth.partyauth.partyauth.deletePartyAuth.bizx"/>
+        <method description="" displayName="getAuthorizedRoleList" implementationType="file" modifier="public" name="getAuthorizedRoleList" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="partyId" implementationType="Primitive" modifier="public" name="partyId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="partyType" implementationType="Primitive" modifier="public" name="partyType" order="2048" typeName="file:String"/>
+            <result description="" displayName="authorizedRoleList" implementationType="Java" modifier="public" name="authorizedRoleList" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.partyauth.partyauth.getAuthorizedRoleList.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.partyauth.partyauth.getAuthorizedRoleList.bizx" order="4096" typeName="file:org.gocom.components.coframe.auth.partyauth.partyauth.getAuthorizedRoleList.bizx"/>
+        <method description="" displayName="getAuthorizedRoleList" implementationType="file" modifier="public" name="getUnauthorizedRoleList" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="partyId" implementationType="Primitive" modifier="public" name="partyId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="partyType" implementationType="Primitive" modifier="public" name="partyType" order="2048" typeName="file:String"/>
+            <result description="" displayName="unauthorizedRoleList" implementationType="Java" modifier="public" name="unauthorizedRoleList" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.partyauth.partyauth.getUnauthorizedRoleList.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.partyauth.partyauth.getUnauthorizedRoleList.bizx" order="4096" typeName="file:org.gocom.components.coframe.auth.partyauth.partyauth.getUnauthorizedRoleList.bizx"/>
+    </model>
+    <model description="" displayName="PartyAuthService" implementationType="file" modifier="public" name="PartyAuthService.class" order="32" version=""/>
+</metadata>

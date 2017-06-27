@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="获取功能菜单图形" implementationType="file" modifier="public" name="getFunctionMenuGraph.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <method description="" displayName="获取功能菜单图形" implementationType="file" modifier="public" name="getFunctionMenuGraph" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="partyId" implementationType="Primitive" modifier="public" name="partyId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="partyType" implementationType="Primitive" modifier="public" name="partyType" order="2048" typeName="file:String"/>
+            <result description="" displayName="nodes" implementationType="Java" modifier="public" name="nodes" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="获取参与者授权计算情况" implementationType="file" modifier="public" name="getPartyAuthGraph.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+        <method description="" displayName="获取参与者授权计算情况" implementationType="file" modifier="public" name="getPartyAuthGraph" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="partyId" implementationType="Primitive" modifier="public" name="partyId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="partyType" implementationType="Primitive" modifier="public" name="partyType" order="2048" typeName="file:String"/>
+            <result description="" displayName="nodes" implementationType="Java" modifier="public" name="nodes" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="service.eosComponentType" implementationType="file" modifier="public" name="service.eosComponentType" order="32" version=""/>
+</metadata>

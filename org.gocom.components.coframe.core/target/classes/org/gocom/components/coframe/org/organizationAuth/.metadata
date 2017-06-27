@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="getManagerOrgByRole" implementationType="file" modifier="public" name="getManagerOrgByRole.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgorganization.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgorganization.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgorganization.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgOrganization.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgOrganization.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgOrganization.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <method description="" displayName="getManagerOrgByRole" implementationType="file" modifier="public" name="getManagerOrgByRole" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="roleId" implementationType="Primitive" modifier="public" name="roleId" order="2048" typeName="file:String"/>
+            <result description="" displayName="orgs" implementationType="Java" modifier="public" name="orgs" order="1024" typeName="file:org.gocom.components.coframe.org.dataset.OrgOrganization[]"/>
+        </method>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="获得机构授权状态" implementationType="file" modifier="public" name="getOrganizationAuth.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgorganization.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgorganization.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgorganization.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.PageCond.java" order="4096" typeName="java:com.eos.foundation.PageCond.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgOrganization.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgOrganization.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgOrganization.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+        <importReference description="" displayName="com.eos.foundation.pagecond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.pagecond.java" order="4096" typeName="java:com.eos.foundation.pagecond.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+        <method description="获得机构授权状态" displayName="获得机构授权状态" implementationType="file" modifier="public" name="getOrganizationAuth" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <parameter description="" displayName="roleId" implementationType="Primitive" modifier="public" name="roleId" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:java.util.List"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+    </model>
+    <model description="机构授权" displayName="organizationAuth.eosComponentType" implementationType="file" modifier="public" name="organizationAuth.eosComponentType" order="32" version=""/>
+    <model description="" displayName="saveOrganizationAuth" implementationType="file" modifier="public" name="saveOrganizationAuth.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="boolean.java" implementationType="java" modifier="public" name="java:boolean.java" order="4096" typeName="java:boolean.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <method description="" displayName="saveOrganizationAuth" implementationType="file" modifier="public" name="saveOrganizationAuth" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="orgs" implementationType="Primitive" modifier="public" name="orgs" order="2048" typeName="file:String[]"/>
+            <parameter description="" displayName="roleId" implementationType="Primitive" modifier="public" name="roleId" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Primitive" modifier="public" name="data" order="1024" typeName="file:Boolean"/>
+        </method>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+</metadata>

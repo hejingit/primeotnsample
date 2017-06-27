@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="CapUserService" implementationType="file" modifier="public" name="CapUserService.class" order="32" version=""/>
+    <model description="" displayName="DefaultUserManager" implementationType="file" modifier="public" name="DefaultUserManager.class" order="32" version=""/>
+    <model description="" displayName="ICapUserService" implementationType="file" modifier="public" name="ICapUserService.class" order="32" version=""/>
+</metadata>

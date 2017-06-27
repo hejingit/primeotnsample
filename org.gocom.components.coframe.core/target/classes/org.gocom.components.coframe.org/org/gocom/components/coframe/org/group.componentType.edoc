@@ -1,0 +1,54 @@
+<map>
+  <entry>
+    <string>org.gocom.components.coframe.org.group.addGroup(org.gocom.components.coframe.org.groupdataset.OrgGroup)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;addGroup&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;addGroup&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.group.addGroup&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;orgGroup(org.gocom.components.coframe.org.groupdataset.OrgGroup):&lt;/b&gt;工作组&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;ret(org.gocom.components.coframe.org.util.OrgResponse):&lt;/b&gt;返回对象&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.group.moveNode(String, String, String, String, String, String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;moveNode&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;moveEmpToOrg&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.group.moveNode&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;dragNodeId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;dragNodeType(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;dragParentNodeId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;dragParentNodeType(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;dropNodeId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;dropNodeType(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.group.queryTreeChildNodes(String, String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;queryTreeChildNodes&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;queryRoot&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.group.queryTreeChildNodes&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;nodeId(String):&lt;/b&gt;结点id，机构或岗位的id&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;nodeType(String):&lt;/b&gt;结点类型：机构或岗位&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;treeNodes(commonj.sdo.DataObject[]):&lt;/b&gt;&lt;/dd&gt;&lt;br&gt;&lt;b&gt;Description:&lt;/b&gt;查询某机构下的子机构、岗位、人员&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.group.deleteCurrentNode(String, String, String, String, String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;deleteCurrentNode&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;deleteCurrentNode&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.group.deleteCurrentNode&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;nodeId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;nodeType(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;parentId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;parentType(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;isDeleteCascade(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.group.deleteNode(String, String, String, String, String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;deleteNode&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;删除机构树节点&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.group.deleteNode&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;nodeId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;nodeType(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;parentId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;parentType(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;isDeleteCascade(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.group.updateGroup(org.gocom.components.coframe.org.groupdataset.OrgGroup)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;updateGroup&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;updateOrg&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.group.updateGroup&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;orgGroup(org.gocom.components.coframe.org.groupdataset.OrgGroup):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;response(org.gocom.components.coframe.org.util.OrgResponse):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.group.deleteNodes(commonj.sdo.DataObject[], String, String, String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;deleteNodes&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;删除机构树节点&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.group.deleteNodes&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;childs(commonj.sdo.DataObject[]):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;parentId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;parentType(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;isDeleteCascade(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.group.queryGroup(com.primeton.das.criteria.criteriaType, com.eos.foundation.PageCond)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;queryGroup&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;queryOrg&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.group.queryGroup&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;criteria(com.primeton.das.criteria.criteriaType):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;page(com.eos.foundation.PageCond):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;treeNodes(org.gocom.components.coframe.org.dataset.OrgTreeNode[]):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;total(Int):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.group.getGroupWithParent(org.gocom.components.coframe.org.groupdataset.OrgGroup)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;getGroupWithParent&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;getOrgWithParent&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.group.getGroupWithParent&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;template(org.gocom.components.coframe.org.groupdataset.OrgGroup):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;orgGroup(org.gocom.components.coframe.org.groupdataset.OrgGroup):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>group</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;group.componentType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;group&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.group&lt;br&gt;&lt;b&gt;Description:&lt;/b&gt;工作组&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.group.querySubGroup(String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;querySubGroup&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;querySubGroup&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.group.querySubGroup&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;nodeId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;treeNodes(commonj.sdo.DataObject[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.group.queryAllChildNodes(String, String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;queryAllChildNodes&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;queryRoot&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.group.queryAllChildNodes&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;nodeId(String):&lt;/b&gt;结点id，机构或岗位的id&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;nodeType(String):&lt;/b&gt;结点类型：机构或岗位&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;treeNodes(commonj.sdo.DataObject[]):&lt;/b&gt;&lt;/dd&gt;&lt;br&gt;&lt;b&gt;Description:&lt;/b&gt;查询某工作组下的子工作组、岗位、人员&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.org.group.copyNode(String, String, String, String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;copyNode&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;moveEmpToOrg&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.org.group.copyNode&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;dragNodeId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;dragNodeType(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;dropNodeId(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;dropNodeType(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+</map>

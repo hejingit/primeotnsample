@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="DESedeUserPasswordCipher" implementationType="file" modifier="public" name="DESedeUserPasswordCipher.class" order="32" version=""/>
+    <model description="" displayName="IUserPasswordCipher" implementationType="file" modifier="public" name="IUserPasswordCipher.class" order="32" version=""/>
+    <model description="" displayName="MD5UserPasswordCipher" implementationType="file" modifier="public" name="MD5UserPasswordCipher.class" order="32" version=""/>
+    <model description="" displayName="SHAUserPasswordCipher" implementationType="file" modifier="public" name="SHAUserPasswordCipher.class" order="32" version=""/>
+    <model description="" displayName="update_passwork" implementationType="file" modifier="public" name="update_password.flow" order="32" version="">
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.CapUser.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.CapUser.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.CapUser.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.UserManager.checkPassword.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.UserManager.checkPassword.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.UserManager.checkPassword.bizx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.UserManager.updateUser.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.UserManager.updateUser.bizx" order="4096" typeName="file:org.gocom.components.coframe.rights.UserManager.updateUser.bizx"/>
+        <importReference description="" displayName="coframe.rights.user.update_password.jsp" implementationType="file" modifier="public" name="file:coframe.rights.user.update_password.jsp" order="4096" typeName="file:coframe.rights.user.update_password.jsp"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.capuser.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.capuser.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.capuser.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.UserManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.rights.UserManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.rights.UserManager.componentType"/>
+    </model>
+    <model description="" displayName="UserPasswordCipherListener" implementationType="file" modifier="public" name="UserPasswordCipherListener.class" order="32" version=""/>
+    <model description="" displayName="UserPasswordCipherUtils" implementationType="file" modifier="public" name="UserPasswordCipherUtils.class" order="32" version=""/>
+</metadata>

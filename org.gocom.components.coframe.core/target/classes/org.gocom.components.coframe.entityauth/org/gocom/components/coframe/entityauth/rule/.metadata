@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="delRules" implementationType="file" modifier="public" name="delRules.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.primeton.cap.spi.auth.rule.Rule.java" implementationType="java" modifier="public" name="java:com.primeton.cap.spi.auth.rule.Rule.java" order="4096" typeName="java:com.primeton.cap.spi.auth.rule.Rule.java"/>
+        <method description="" displayName="delRules" implementationType="file" modifier="public" name="delRules" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="rules" implementationType="Java" modifier="public" name="rules" order="2048" typeName="file:com.primeton.cap.spi.auth.rule.Rule[]"/>
+            <result description="" displayName="flag" implementationType="Primitive" modifier="public" name="flag" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="com.primeton.cap.spi.auth.rule.rule.java" implementationType="java" modifier="public" name="java:com.primeton.cap.spi.auth.rule.rule.java" order="4096" typeName="java:com.primeton.cap.spi.auth.rule.rule.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="getConValues" implementationType="file" modifier="public" name="getConValues.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.pojo.ConValue.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.entityauth.pojo.ConValue.java" order="4096" typeName="java:org.gocom.components.coframe.entityauth.pojo.ConValue.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.pojo.convalue.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.entityauth.pojo.convalue.java" order="4096" typeName="java:org.gocom.components.coframe.entityauth.pojo.convalue.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <method description="" displayName="getConValues" implementationType="file" modifier="public" name="getConValues" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="namespace" implementationType="Primitive" modifier="public" name="namespace" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="entityName" implementationType="Primitive" modifier="public" name="entityName" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="propertyName" implementationType="Primitive" modifier="public" name="propertyName" order="2048" typeName="file:String"/>
+            <result description="" displayName="conValues" implementationType="Java" modifier="public" name="conValues" order="1024" typeName="file:org.gocom.components.coframe.entityauth.pojo.ConValue[]"/>
+        </method>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="queryCapRules" implementationType="file" modifier="public" name="getEntityCapRules.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.primeton.cap.party.Party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.Party.java" order="4096" typeName="java:com.primeton.cap.party.Party.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.pojo.RuleAndAuth.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.entityauth.pojo.RuleAndAuth.java" order="4096" typeName="java:org.gocom.components.coframe.entityauth.pojo.RuleAndAuth.java"/>
+        <importReference description="" displayName="com.primeton.cap.party.party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.party.java" order="4096" typeName="java:com.primeton.cap.party.party.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.pojo.ruleandauth.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.entityauth.pojo.ruleandauth.java" order="4096" typeName="java:org.gocom.components.coframe.entityauth.pojo.ruleandauth.java"/>
+        <method description="" displayName="queryCapRules" implementationType="file" modifier="public" name="getEntityCapRules" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="namespace" implementationType="Primitive" modifier="public" name="namespace" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="searchType" implementationType="Primitive" modifier="public" name="searchType" order="2048" typeName="file:Int"/>
+            <parameter description="" displayName="ruleName" implementationType="Primitive" modifier="public" name="ruleName" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="party" implementationType="Java" modifier="public" name="party" order="2048" typeName="file:com.primeton.cap.party.Party"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.entityauth.pojo.RuleAndAuth[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="getRightValues" implementationType="file" modifier="public" name="getRightValues.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="getRightValues" implementationType="file" modifier="public" name="getRightValues" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="namespace" implementationType="Primitive" modifier="public" name="namespace" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="entityName" implementationType="Primitive" modifier="public" name="entityName" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="propertyName" implementationType="Primitive" modifier="public" name="propertyName" order="2048" typeName="file:String"/>
+            <result description="" displayName="rightValues" implementationType="Java" modifier="public" name="rightValues" order="1024" typeName="file:org.gocom.components.coframe.entityauth.pojo.RightValue[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.pojo.rightvalue.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.entityauth.pojo.rightvalue.java" order="4096" typeName="java:org.gocom.components.coframe.entityauth.pojo.rightvalue.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.pojo.RightValue.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.entityauth.pojo.RightValue.java" order="4096" typeName="java:org.gocom.components.coframe.entityauth.pojo.RightValue.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="getRuleCondition" implementationType="file" modifier="public" name="getRuleCondition.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.pojo.Condition.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.entityauth.pojo.Condition.java" order="4096" typeName="java:org.gocom.components.coframe.entityauth.pojo.Condition.java"/>
+        <method description="" displayName="getRuleCondition" implementationType="file" modifier="public" name="getRuleCondition" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="ruleId" implementationType="Primitive" modifier="public" name="ruleId" order="2048" typeName="file:String"/>
+            <result description="" displayName="conditions" implementationType="Java" modifier="public" name="conditions" order="1024" typeName="file:org.gocom.components.coframe.entityauth.pojo.Condition[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.pojo.condition.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.entityauth.pojo.condition.java" order="4096" typeName="java:org.gocom.components.coframe.entityauth.pojo.condition.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="rule.eosComponentType" implementationType="file" modifier="public" name="rule.eosComponentType" order="32" version=""/>
+    <model description="" displayName="saveRule" implementationType="file" modifier="public" name="saveRule.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.pojo.Condition.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.entityauth.pojo.Condition.java" order="4096" typeName="java:org.gocom.components.coframe.entityauth.pojo.Condition.java"/>
+        <method description="" displayName="saveRule" implementationType="file" modifier="public" name="saveRule" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="ruleName" implementationType="Primitive" modifier="public" name="ruleName" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="namespace" implementationType="Primitive" modifier="public" name="namespace" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="ruleExpression" implementationType="Java" modifier="public" name="ruleExpression" order="2048" typeName="file:org.gocom.components.coframe.entityauth.pojo.Condition[]"/>
+            <parameter description="" displayName="party" implementationType="Java" modifier="public" name="party" order="2048" typeName="file:com.primeton.cap.party.Party"/>
+            <result description="" displayName="flag" implementationType="Primitive" modifier="public" name="flag" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="com.primeton.cap.party.Party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.Party.java" order="4096" typeName="java:com.primeton.cap.party.Party.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.pojo.condition.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.entityauth.pojo.condition.java" order="4096" typeName="java:org.gocom.components.coframe.entityauth.pojo.condition.java"/>
+        <importReference description="" displayName="com.primeton.cap.party.party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.party.java" order="4096" typeName="java:com.primeton.cap.party.party.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="保存Party授权信息" implementationType="file" modifier="public" name="storePartyAuth.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.primeton.cap.party.Party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.Party.java" order="4096" typeName="java:com.primeton.cap.party.Party.java"/>
+        <importReference description="" displayName="boolean.java" implementationType="java" modifier="public" name="java:boolean.java" order="4096" typeName="java:boolean.java"/>
+        <importReference description="" displayName="com.primeton.cap.party.party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.party.java" order="4096" typeName="java:com.primeton.cap.party.party.java"/>
+        <method description="保存Party授权信息" displayName="保存Party授权信息" implementationType="file" modifier="public" name="storePartyAuth" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="party" implementationType="Java" modifier="public" name="party" order="2048" typeName="file:com.primeton.cap.party.Party"/>
+            <parameter description="" displayName="partyWithAuth" implementationType="Primitive" modifier="public" name="partyWithAuth" order="2048" typeName="file:String[]"/>
+            <parameter description="" displayName="partyNoAuth" implementationType="Primitive" modifier="public" name="partyNoAuth" order="2048" typeName="file:String[]"/>
+            <result description="" displayName="saveResult" implementationType="Primitive" modifier="public" name="saveResult" order="1024" typeName="file:Boolean"/>
+        </method>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="saveRule" implementationType="file" modifier="public" name="updateRule.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.pojo.Condition.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.entityauth.pojo.Condition.java" order="4096" typeName="java:org.gocom.components.coframe.entityauth.pojo.Condition.java"/>
+        <method description="" displayName="saveRule" implementationType="file" modifier="public" name="updateRule" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="ruleId" implementationType="Primitive" modifier="public" name="ruleId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="ruleName" implementationType="Primitive" modifier="public" name="ruleName" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="ruleExpression" implementationType="Java" modifier="public" name="ruleExpression" order="2048" typeName="file:org.gocom.components.coframe.entityauth.pojo.Condition[]"/>
+            <parameter description="" displayName="party" implementationType="Java" modifier="public" name="party" order="2048" typeName="file:com.primeton.cap.party.Party"/>
+            <result description="" displayName="flag" implementationType="Primitive" modifier="public" name="flag" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="com.primeton.cap.party.Party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.Party.java" order="4096" typeName="java:com.primeton.cap.party.Party.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.pojo.condition.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.entityauth.pojo.condition.java" order="4096" typeName="java:org.gocom.components.coframe.entityauth.pojo.condition.java"/>
+        <importReference description="" displayName="com.primeton.cap.party.party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.party.java" order="4096" typeName="java:com.primeton.cap.party.party.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+</metadata>

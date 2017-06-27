@@ -1,0 +1,410 @@
+html, body 
+{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    border:0;
+    
+}
+
+.mini-desktop
+{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:relative;
+    z-index:1;
+}
+.mini-desktop-viewport
+{
+	background-color:#3CC8FA;
+	position:relative;
+    width:100%;
+    overflow:hidden;
+    height:100%;
+}
+.mini-desktop-taskbar
+{
+    background:url(images/taskbar.gif) repeat-x 0 0;
+    position:absolute;    
+    height:40px;
+    left:0;
+    bottom:0;
+    width:100%;
+    z-index:99999999;
+    overflow:hidden;
+}
+.mini-desktop-startbutton
+{
+    position:absolute;left:2px;top:2px;width:38px;height:38px;
+    background:url(images/start.jpg) no-repeat 50% 50%;
+    cursor:hand;
+    cursor:pointer;display:block;
+}
+.mini-desktop-show-desktop
+{
+    position:absolute;right:0px;top:0px;width:15px;height:40px;
+    background:url(images/show-desktop.png) no-repeat;
+     cursor:hand;
+    cursor:pointer;display:block;
+    z-index:1;
+}
+.mini-desktop-show-desktop:hover
+{
+    position:absolute;right:0px;top:0px;width:15px;height:40px;
+    background:url(images/show-desktop-hover.png) no-repeat;
+    cursor:pointer;display:block;
+     z-index:1;
+}
+a.mini-desktop-startbutton:hover
+{
+    background:url(images/starth.jpg) no-repeat 50% 50%;
+}
+.mini-desktop-taskbar-inner
+{
+    position:relative;overflow:hidden;   height:100%;
+    margin-left:55px;
+}
+.mini-desktop-bars
+{
+    width:2000px;position:relative;
+}
+.mini-desktop-taskbar-showarrow .mini-desktop-taskbar-inner
+{
+    margin-right:80px;
+}
+.mini-desktop-bars-leftarrow, .mini-desktop-bars-rightarrow
+{
+    position:absolute;right:0;top:0;width:30px;height:40px;display:none;
+    cursor:pointer;
+    background:url(images/btn_right.png) no-repeat 50% 50%;
+}
+.mini-desktop-bars-leftarrow
+{
+    right:35px;
+    background:url(images/btn_left.png) no-repeat 50% 50%;
+}
+.mini-desktop-taskbar-showarrow .mini-desktop-bars-leftarrow,
+.mini-desktop-taskbar-showarrow .mini-desktop-bars-rightarrow
+{
+    display:block;
+}
+
+.mini-desktop-modules
+{
+    margin:20px;
+}
+.mini-desktop-modules-list
+{
+    float:left;
+    padding-right:20px;
+}
+.mini-desktop-module
+{
+    width:75px;
+    height:80px;
+    margin-bottom:15px;
+    cursor:pointer;
+    overflow:hidden;
+    background:none;
+}
+.mini-desktop-module-icon
+{
+    width:50px;
+    height:45px;
+    margin:auto;
+    background:url(images/deskicon.png) no-repeat 50% 50%;
+    margin-bottom:3px;
+}
+.mini-desktop-module-text
+{
+    text-align:center;
+    font-family:Tahoma,Verdana,宋体;
+    font-size:12px;    
+    color:White;
+    line-height:16px;
+}
+
+.mini-desktop-bar
+{
+    float:left;
+    width:120px;
+    height:40px;
+    background:url(images/btn.gif) no-repeat right 0;
+    cursor:pointer;
+    overflow:hidden;
+    text-decoration:none;
+    outline:none;
+}
+a:hover.mini-desktop-bar
+{
+    background:url(images/btn-over.gif) no-repeat right 0;    
+}
+.mini-desktop-bar-active
+{
+    background:url(images/btn-active.gif) no-repeat right 0;    
+}
+.mini-desktop-bar-text
+{
+    line-height:40px;
+    font-family:Tahoma,Verdana,宋体;
+    font-size:12px;    
+    color:White;
+}
+
+
+.mini-desktop-proxy
+{
+    position:absolute;
+    overflow:hidden;
+    z-index:100000000;
+    background:gray;
+    opacity: .2;-moz-opacity: .2;filter: alpha(opacity=20);    
+}
+
+
+/* mini-ux-window */
+.mini-ux-window
+{
+    border:solid 1px #333;
+}
+.mini-ux-window .mini-panel-header
+{
+    height:29px;
+    overflow:hidden;
+    position:relative;
+    background:url(images/header.gif) repeat-x 0 0;
+    border-bottom:solid 1px #b6bec5;
+    font-size:14px;
+}
+.mini-ux-window .mini-tools
+{
+    top:7px;
+    right:6px;
+}
+
+
+.ux-start-menu {
+	background:transparent none !important;
+	border:0px none !important;
+	padding:0 !important;
+}
+
+.ux-start-menu-tl .x-window-header {
+	color:#f1f1f1;
+	font:bold 14px tahoma,arial,verdana,sans-serif;
+    padding:5px 0 4px 0;
+}
+
+.x-window-header-text {
+	color:#f1f1f1;
+	font:bold 12px tahoma,arial,verdana,sans-serif;
+    padding:5px 0 4px 0;
+}
+
+.x-panel-tl .x-panel-icon, .ux-start-menu-tl .x-panel-icon {
+	background-position:0pt 4px;
+	background-repeat:no-repeat;
+	padding-left:20px !important;
+}
+
+.ux-start-menu-tl {
+	background: transparent url(images/startmenu/start-menu-left-corners.png) no-repeat 0 0;
+	padding-left:6px;
+    zoom:1;
+    z-index:1;
+    position:relative;
+}
+
+.ux-start-menu-tr {
+	background: transparent url(images/startmenu/start-menu-right-corners.png) no-repeat right 0;
+	padding-right:6px;
+}
+
+.ux-start-menu-tc {
+	background: transparent url(images/startmenu/start-menu-top-bottom.png) repeat-x 0 0;
+	overflow:hidden;
+    zoom:1;
+}
+
+.ux-start-menu-ml {
+	background: transparent url(images/startmenu/start-menu-left-right.png) repeat-y 0 0;
+	padding-left:6px;
+    zoom:1;
+}
+
+.ux-start-menu-bc {
+	background: transparent url(images/startmenu/start-menu-top-bottom.png) repeat-x 0 bottom;
+    zoom:1;
+}
+
+.ux-start-menu-bc .x-window-footer {
+    padding-bottom:6px;
+    zoom:1;
+    font-size:0;
+    line-height:0;
+}
+
+.ux-start-menu-bl {
+	background: transparent url(images/startmenu/start-menu-left-corners.png) no-repeat 0 bottom;
+	padding-left:6px;
+    zoom:1;
+}
+
+.ux-start-menu-br {
+	background: transparent url(images/startmenu/start-menu-right-corners.png) no-repeat right bottom;
+	padding-right:6px;
+    zoom:1;
+}
+
+.x-panel-nofooter .ux-start-menu-bc {
+	height:6px;
+}
+
+.ux-start-menu-splitbar-h {
+	background-color:#d0d0d0;
+}
+
+
+.ux-start-menu-bwrap {
+	background:transparent none !important;
+	border:0px none;
+}
+
+.ux-start-menu-body {
+	border:0px none;
+}
+
+.ux-start-menu-apps-panel {
+	background:#ffffff none;
+	border:1px solid #1e2124;
+}
+
+.ux-start-menu-tools-panel {
+	border:0px none;
+	background:transparent url(images/startmenu/start-menu-right.png) repeat-y scroll right 0pt;
+}
+.user {
+	padding-left:20px;
+	height:25px;
+    background:url(images/member.png) no-repeat !important;
+}
+
+.ux-menu-item{
+	height:33px;
+	width:138px;
+	color:white;
+	cursor:hand;
+	cursor:pointer;
+	padding-left:5px;
+	padding-top:8px;
+}
+.ux-menu-item-text{
+	color:#f1f1f1;
+	font:12px tahoma,arial,verdana,sans-serif;
+    padding-left:10px;
+}
+.ux-menu-item:hover{
+	background:transparent url(images/startmenu/btn-bg.png) no-repeat;	
+}
+
+.search-container{
+	background:transparent url(images/startmenu/search-bg.gif) repeat-x;
+}
+
+
+.opacity-window{
+	filter:alpha(Opacity=70);
+	-moz-opacity:0.7;
+	opacity: 0.7;
+}
+/* You can customize to your needs  */
+.start-window{
+    box-shadow: 0px 0px 20px #999;
+    /* CSS3 */
+        -moz-box-shadow: 0px 0px 20px #999;
+    /* Firefox */
+        -webkit-box-shadow: 0px 0px 20px #999;
+    /* Safari, Chrome */
+	border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    /* Firefox */
+        -webkit-border-radius: 3px;
+    /* Safari, Chrome */;
+}
+
+
+.window-min  {
+	background: url(images/icons/minimize.gif) no-repeat;
+	width:26px !important;
+	height:18px !important;
+}
+.window-min:hover  {
+	background: url(images/icons/minimize_mouseover.gif) no-repeat;
+}
+.window-normal  {
+	background: url(images/icons/maximize.gif) no-repeat;
+	width:26px !important;
+	height:18px !important;
+}
+.window-normal:hover  {
+	background: url(images/icons/maximize_mouseover.gif) no-repeat;
+}
+.window-max  {
+	background: url(images/icons/normal.gif) no-repeat;
+	width:26px !important;
+	height:18px !important;
+}
+.window-max:hover  {
+	background: url(images/icons/normal_mouseover.gif) no-repeat;
+}
+.window-close  {
+	background: url(images/icons/close.gif) no-repeat;
+	width:45px !important;
+	height:18px !important;
+}
+.window-close:hover  {
+	background: url(images/icons/close_mouseover.gif) no-repeat;
+}
+
+.person-picture{
+	width: 75px;
+	height: 75px;
+	padding: 1px;
+	border:0;
+}
+.search-float{
+	width:310px;
+	height:43px;
+	background: url(images/widgets/search-bg1.png) no-repeat;
+	position:relative;
+}
+.search-type{
+	width:139px;
+	height:53px;
+	background: url(images/widgets/search-type-normal.png) no-repeat;
+	position:absolute;
+	top:0px;
+	left:10px;
+}
+.search-type:hover{
+	width:139px;
+	height:53px;
+	background: url(images/widgets/search-type-hover.png) no-repeat;
+	position:absolute;
+	top:0px;
+	left:10px;
+}
+
+.mini-desktop-taskbar
+{
+    position:absolute;    
+    height:40px;
+    left:0;
+    bottom:0;
+    width:100%;
+    z-index:99999999;
+    overflow:hidden;
+}

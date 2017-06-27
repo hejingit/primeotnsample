@@ -1,0 +1,10 @@
+<map>
+  <entry>
+    <string>groupselect</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;groupselect.componentType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;groupselect&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.participantselect.groupselect&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.groupselect.groupList(String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;groupList&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;groupList&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.participantselect.groupselect.groupList&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;groupid(String):&lt;/b&gt;选择的机构&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(java.util.ArrayList):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+</map>

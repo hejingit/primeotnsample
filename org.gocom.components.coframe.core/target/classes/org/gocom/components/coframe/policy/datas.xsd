@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="org.gocom.components.coframe.policy.datas" xmlns:sdo="commonj.sdo" xmlns:sdoJava="commonj.sdo/java" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="org.gocom.components.coframe.policy.datas">
+    <xs:complexType name="IPAccessRules" sdoJava:instanceClass="org.gocom.components.coframe.policy.datas.impl.IPAccessRulesImpl">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="rulesId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="startIP" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="endIP" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="rulesType" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="remark" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="makersId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="addDate" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="enabled" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

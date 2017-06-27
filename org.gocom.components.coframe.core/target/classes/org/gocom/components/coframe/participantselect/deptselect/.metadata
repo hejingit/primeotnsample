@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="deptChildList" implementationType="file" modifier="public" name="deptChildList.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.dasentityhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.dasentityhelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.dasentityhelper.java"/>
+        <method description="查询机构下的一级机构" displayName="deptChildList" implementationType="file" modifier="public" name="deptChildList" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="机构编号" displayName="orgid" implementationType="Primitive" modifier="public" name="orgid" order="2048" typeName="file:String"/>
+            <parameter description="1:添加对象本身" displayName="append" implementationType="Primitive" modifier="public" name="append" order="2048" typeName="file:Boolean"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:commonj.sdo.DataObject[]"/>
+        </method>
+    </model>
+    <model description="" displayName="deptList" implementationType="file" modifier="public" name="deptList.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="java.util.arraylist.java" implementationType="java" modifier="public" name="java:java.util.arraylist.java" order="4096" typeName="java:java.util.arraylist.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgRootPartyList.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgRootPartyList.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgRootPartyList.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetParentOrgByUserIdPartyList.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetParentOrgByUserIdPartyList.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetParentOrgByUserIdPartyList.bizlet_method"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetChildOrgByUserIdPartyList.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetChildOrgByUserIdPartyList.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetChildOrgByUserIdPartyList.bizlet_method"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.deptselect.queryOrgsByEmpId.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.participantselect.deptselect.queryOrgsByEmpId.bizx" order="4096" typeName="file:org.gocom.components.coframe.participantselect.deptselect.queryOrgsByEmpId.bizx"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.partymanagerhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.participantselect.partymanagerhelper.java" order="4096" typeName="java:org.gocom.components.coframe.participantselect.partymanagerhelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.deptselect.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.participantselect.deptselect.componentType" order="4096" typeName="file:org.gocom.components.coframe.participantselect.deptselect.componentType"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgorganization.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgorganization.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgorganization.java"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.PartyManagerHelper.getOrgLevelByUserPartList.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.getOrgLevelByUserPartList.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.getOrgLevelByUserPartList.bizlet_method"/>
+        <importReference description="" displayName="java.util.HashMap.java" implementationType="java" modifier="public" name="java:java.util.HashMap.java" order="4096" typeName="java:java.util.HashMap.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetUserOrgPartyList.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetUserOrgPartyList.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetUserOrgPartyList.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryByNamedSql.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryByNamedSql.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryByNamedSql.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.dasentityhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.dasentityhelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.dasentityhelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgsPartyList.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgsPartyList.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgsPartyList.bizlet_method"/>
+        <importReference description="" displayName="java.util.hashmap.java" implementationType="java" modifier="public" name="java:java.util.hashmap.java" order="4096" typeName="java:java.util.hashmap.java"/>
+        <importReference description="" displayName="java.lang.Object.java" implementationType="java" modifier="public" name="java:java.lang.Object.java" order="4096" typeName="java:java.lang.Object.java"/>
+        <importReference description="" displayName="java.util.ArrayList.java" implementationType="java" modifier="public" name="java:java.util.ArrayList.java" order="4096" typeName="java:java.util.ArrayList.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgChlidPartyList.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgChlidPartyList.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgChlidPartyList.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.PartyManagerHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.java" order="4096" typeName="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="java.lang.object.java" implementationType="java" modifier="public" name="java:java.lang.object.java" order="4096" typeName="java:java.lang.object.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgOrganization.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgOrganization.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgOrganization.java"/>
+        <method description="" displayName="deptList" implementationType="file" modifier="public" name="deptList" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="处理方式1：全局2：用户所在机构3:上级机构4：下级机构5：指定层级别6：机构范围" displayName="depttype" implementationType="Primitive" modifier="public" name="depttype" order="2048" typeName="file:String"/>
+            <parameter description="选择的机构" displayName="orgid" implementationType="Primitive" modifier="public" name="orgid" order="2048" typeName="file:String"/>
+            <parameter description="指定显示的层级" displayName="orglevel" implementationType="Primitive" modifier="public" name="orglevel" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="orglists" implementationType="Primitive" modifier="public" name="orglists" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:java.util.ArrayList"/>
+        </method>
+    </model>
+    <model description="" displayName="deptselect.eosComponentType" implementationType="file" modifier="public" name="deptselect.eosComponentType" order="32" version=""/>
+    <model description="" displayName="queryOrgsByEmpId" implementationType="file" modifier="public" name="queryOrgsByEmpId.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.dasentityhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.dasentityhelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.dasentityhelper.java"/>
+        <method description="" displayName="queryOrgsByEmpId" implementationType="file" modifier="public" name="queryOrgsByEmpId" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="empId" implementationType="Primitive" modifier="public" name="empId" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:commonj.sdo.DataObject[]"/>
+        </method>
+    </model>
+    <model description="" displayName="queryOrgsByName" implementationType="file" modifier="public" name="queryOrgsByName.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage.bizlet_method"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.dasentityhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.dasentityhelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.dasentityhelper.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+        <method description="" displayName="queryOrgsByName" implementationType="file" modifier="public" name="queryOrgsByName" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="name" implementationType="Primitive" modifier="public" name="name" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:commonj.sdo.DataObject[]"/>
+            <result description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="1024" typeName="file:com.eos.foundation.PageCond"/>
+        </method>
+    </model>
+    <model description="" displayName="recentUserList" implementationType="file" modifier="public" name="recentDeptList.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage.bizlet_method"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.dasentityhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.dasentityhelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.dasentityhelper.java"/>
+        <method description="" displayName="recentUserList" implementationType="file" modifier="public" name="recentDeptList" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="name" implementationType="Primitive" modifier="public" name="name" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="sortField" implementationType="Primitive" modifier="public" name="sortField" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="sortOrder" implementationType="Primitive" modifier="public" name="sortOrder" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="datatype" implementationType="Primitive" modifier="public" name="datatype" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:commonj.sdo.DataObject[]"/>
+        </method>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+    </model>
+</metadata>

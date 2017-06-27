@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="addPartyAuth" implementationType="file" modifier="public" name="addPartyAuth.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.primeton.cap.party.Party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.Party.java" order="4096" typeName="java:com.primeton.cap.party.Party.java"/>
+        <importReference description="" displayName="boolean.java" implementationType="java" modifier="public" name="java:boolean.java" order="4096" typeName="java:boolean.java"/>
+        <importReference description="" displayName="com.primeton.cap.party.party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.party.java" order="4096" typeName="java:com.primeton.cap.party.party.java"/>
+        <method description="" displayName="addPartyAuth" implementationType="file" modifier="public" name="addPartyAuth" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="roleList" implementationType="Java" modifier="public" name="roleList" order="2048" typeName="file:com.primeton.cap.party.Party[]"/>
+            <parameter description="" displayName="party" implementationType="Java" modifier="public" name="party" order="2048" typeName="file:com.primeton.cap.party.Party"/>
+            <result description="" displayName="result" implementationType="Primitive" modifier="public" name="result" order="1024" typeName="file:Boolean"/>
+        </method>
+    </model>
+    <model description="" displayName="addPartyAuth" implementationType="file" modifier="public" name="deletePartyAuth.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.primeton.cap.party.Party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.Party.java" order="4096" typeName="java:com.primeton.cap.party.Party.java"/>
+        <method description="" displayName="addPartyAuth" implementationType="file" modifier="public" name="deletePartyAuth" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="roleList" implementationType="Java" modifier="public" name="roleList" order="2048" typeName="file:com.primeton.cap.party.Party[]"/>
+            <parameter description="" displayName="party" implementationType="Java" modifier="public" name="party" order="2048" typeName="file:com.primeton.cap.party.Party"/>
+            <result description="" displayName="result" implementationType="Primitive" modifier="public" name="result" order="1024" typeName="file:Boolean"/>
+        </method>
+        <importReference description="" displayName="boolean.java" implementationType="java" modifier="public" name="java:boolean.java" order="4096" typeName="java:boolean.java"/>
+        <importReference description="" displayName="com.primeton.cap.party.party.java" implementationType="java" modifier="public" name="java:com.primeton.cap.party.party.java" order="4096" typeName="java:com.primeton.cap.party.party.java"/>
+    </model>
+    <model description="" displayName="getAuthorizedRoleList" implementationType="file" modifier="public" name="getAuthorizedRoleList.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="getAuthorizedRoleList" implementationType="file" modifier="public" name="getAuthorizedRoleList" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="partyId" implementationType="Primitive" modifier="public" name="partyId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="partyType" implementationType="Primitive" modifier="public" name="partyType" order="2048" typeName="file:String"/>
+            <result description="" displayName="authorizedRoleList" implementationType="Java" modifier="public" name="authorizedRoleList" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="getAuthorizedRoleList" implementationType="file" modifier="public" name="getUnauthorizedRoleList.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="getAuthorizedRoleList" implementationType="file" modifier="public" name="getUnauthorizedRoleList" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="partyId" implementationType="Primitive" modifier="public" name="partyId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="partyType" implementationType="Primitive" modifier="public" name="partyType" order="2048" typeName="file:String"/>
+            <result description="" displayName="unauthorizedRoleList" implementationType="Java" modifier="public" name="unauthorizedRoleList" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="partyauth.eosComponentType" implementationType="file" modifier="public" name="partyauth.eosComponentType" order="32" version=""/>
+</metadata>

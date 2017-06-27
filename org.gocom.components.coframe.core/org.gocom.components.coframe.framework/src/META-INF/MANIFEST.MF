@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Require-Bundle: org.gocom.components.coframe.rights,org.gocom.componen
+ ts.coframe.tools,com.primeton.eos.richweb,com.eos.foundation,com.prim
+ eton.workflow.core,com.eos.workflow
+Bundle-Vendor: 曹宗伟
+eos-webCtxPath: coframe/framework
+Bundle-Version: 3.0.1
+Bundle-Name: 应用框架
+Bundle-Description: 基础应用框架，包括功能、菜单管理
+Bundle-SymbolicName: org.gocom.components.coframe.framework
+

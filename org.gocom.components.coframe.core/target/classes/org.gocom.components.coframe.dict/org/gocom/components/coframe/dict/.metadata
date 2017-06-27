@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="dict" implementationType="file" modifier="public" name="dict.xsd" order="32" version="">
+        <properties>
+            <property name="eosModel_type" value="datasetx"/>
+        </properties>
+        <type description="" displayName="EosDictEntry" implementationType="file" modifier="public" name="EosDictEntry" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="eos_dict_entry"/>
+            </properties>
+            <field description="" displayName="dicttypeid" implementationType="file" modifier="public" name="dicttypeid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="true"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="property_src_fk" value="true"/>
+                    <property name="property_CodeAssist" value="false"/>
+                    <property name="columnProperty_columnName" value="DICTTYPEID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="dictid" implementationType="file" modifier="public" name="dictid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DICTID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="dictname" implementationType="file" modifier="public" name="dictname" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DICTNAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="status" implementationType="file" modifier="public" name="status" order="256" typeName="sdo:Int">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Int"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="int"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Int"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="INT"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="STATUS"/>
+                    <property name="columnProperty_javaType" value="int"/>
+                </properties>
+            </field>
+            <field description="" displayName="sortno" implementationType="file" modifier="public" name="sortno" order="256" typeName="sdo:Int">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Int"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="int"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Int"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="INT"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="SORTNO"/>
+                    <property name="columnProperty_javaType" value="int"/>
+                </properties>
+            </field>
+            <field description="" displayName="rank" implementationType="file" modifier="public" name="rank" order="256" typeName="sdo:Int">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Int"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="int"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Int"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="INT"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="RANK"/>
+                    <property name="columnProperty_javaType" value="int"/>
+                </properties>
+            </field>
+            <field description="" displayName="parentid" implementationType="file" modifier="public" name="parentid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="PARENTID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="seqno" implementationType="file" modifier="public" name="seqno" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="SEQNO"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="filter1" implementationType="file" modifier="public" name="filter1" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="FILTER1"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="filter2" implementationType="file" modifier="public" name="filter2" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="FILTER2"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="" implementationType="refSDO" modifier="public" name="eosDictType" order="256" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType">
+                <properties>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="property_type" value="property_type_entPojoProperty"/>
+                    <property name="entPojoProperty_refID" value="org.gocom.components.coframe.dict.dict.EosDictType"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="isMulti" value="false"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="EosDictEntryI18n" implementationType="file" modifier="public" name="EosDictEntryI18n" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="eos_dict_entry_i18n"/>
+            </properties>
+            <field description="" displayName="dicttypeid" implementationType="file" modifier="public" name="dicttypeid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DICTTYPEID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="dictid" implementationType="file" modifier="public" name="dictid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DICTID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="dictname" implementationType="file" modifier="public" name="dictname" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DICTNAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="locale" implementationType="file" modifier="public" name="locale" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="LOCALE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="EosDictType" implementationType="file" modifier="public" name="EosDictType" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="eos_dict_type"/>
+            </properties>
+            <field description="" displayName="dicttypeid" implementationType="file" modifier="public" name="dicttypeid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DICTTYPEID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="dicttypename" implementationType="file" modifier="public" name="dicttypename" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DICTTYPENAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="rank" implementationType="file" modifier="public" name="rank" order="256" typeName="sdo:Int">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Int"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="int"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Int"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="INT"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="RANK"/>
+                    <property name="columnProperty_javaType" value="int"/>
+                </properties>
+            </field>
+            <field description="" displayName="parentid" implementationType="file" modifier="public" name="parentid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="PARENTID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="seqno" implementationType="file" modifier="public" name="seqno" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="SEQNO"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="EosDictTypeI18n" implementationType="file" modifier="public" name="EosDictTypeI18n" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="eos_dict_type_i18n"/>
+            </properties>
+            <field description="" displayName="dicttypeid" implementationType="file" modifier="public" name="dicttypeid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DICTTYPEID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="dicttypename" implementationType="file" modifier="public" name="dicttypename" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DICTTYPENAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="locale" implementationType="file" modifier="public" name="locale" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="LOCALE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="DictExport" implementationType="file" modifier="public" name="DictExport" order="4" variable="false">
+            <properties>
+                <property name="spentity_view" value=""/>
+                <property name="spentity_sql" value="SELECT B.DICTTYPEID AS DICTTYPEID,&#10;       B.DICTTYPENAME AS DICTTYPENAME,&#10;       B.PARENTID AS TYPE_PARENTID,&#10;       B.RANK AS TYPE_RANK,&#10;       B.SEQNO AS TYPE_SEQNO,&#10;       A.DICTID AS DICTID,&#10;       A.DICTNAME AS DICTNAME,&#10;       A.PARENTID AS ENTRY_PARENTID,&#10;       A.STATUS AS STATUS,&#10;       A.SORTNO AS SORTNO,&#10;       A.RANK AS ENTRY_RANK,&#10;       A.SEQNO AS ENTRY_SEQNO&#10;  FROM EOS_DICT_ENTRY A, EOS_DICT_TYPE B&#10; WHERE A.DICTTYPEID = B.DICTTYPEID"/>
+                <property name="entity_type" value="entity_type_spentity"/>
+                <property name="schema" value=""/>
+                <property name="spentity_use_sql" value="true"/>
+            </properties>
+            <field description="" displayName="dicttypeid" implementationType="file" modifier="public" name="dicttypeid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="true"/>
+                    <property name="columnProperty_columnName" value="DICTTYPEID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="dicttypename" implementationType="file" modifier="public" name="dicttypename" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DICTTYPENAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="typeParentid" implementationType="file" modifier="public" name="typeParentid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="TYPE_PARENTID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="typeRank" implementationType="file" modifier="public" name="typeRank" order="256" typeName="sdo:Int">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Int"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="int"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Int"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="INTEGER"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="TYPE_RANK"/>
+                    <property name="columnProperty_javaType" value="int"/>
+                </properties>
+            </field>
+            <field description="" displayName="typeSeqno" implementationType="file" modifier="public" name="typeSeqno" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="TYPE_SEQNO"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="dictid" implementationType="file" modifier="public" name="dictid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="true"/>
+                    <property name="columnProperty_columnName" value="DICTID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="dictname" implementationType="file" modifier="public" name="dictname" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DICTNAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="entryParentid" implementationType="file" modifier="public" name="entryParentid" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ENTRY_PARENTID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="status" implementationType="file" modifier="public" name="status" order="256" typeName="sdo:Int">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Int"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="int"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Int"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="INTEGER"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="STATUS"/>
+                    <property name="columnProperty_javaType" value="int"/>
+                </properties>
+            </field>
+            <field description="" displayName="sortno" implementationType="file" modifier="public" name="sortno" order="256" typeName="sdo:Int">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Int"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="int"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Int"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="INTEGER"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="SORTNO"/>
+                    <property name="columnProperty_javaType" value="int"/>
+                </properties>
+            </field>
+            <field description="" displayName="entryRank" implementationType="file" modifier="public" name="entryRank" order="256" typeName="sdo:Int">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Int"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="int"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Int"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="INTEGER"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ENTRY_RANK"/>
+                    <property name="columnProperty_javaType" value="int"/>
+                </properties>
+            </field>
+            <field description="" displayName="entrySeqno" implementationType="file" modifier="public" name="entrySeqno" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="false"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value="VARCHAR"/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ENTRY_SEQNO"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+        </type>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.datasetx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.datasetx" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.EosDictType.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.EosDictType.node_entity" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType.node_entity"/>
+    </model>
+    <model description="" displayName="业务字典配置" implementationType="file" modifier="public" name="DictManager.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="导出业务字典" implementationType="file" modifier="public" name="exportDict" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="dicttypeid" implementationType="Primitive" modifier="public" name="dicttypeid" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="dicttypename" implementationType="Primitive" modifier="public" name="dicttypename" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Primitive" modifier="public" name="data" order="1024" typeName="file:Byte[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.exportDict.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.exportDict.bizx" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.exportDict.bizx"/>
+        <method description="" displayName="导入业务字典" implementationType="file" modifier="public" name="importDict" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="上传后的Excel文件名" displayName="excelFile" implementationType="Primitive" modifier="public" name="excelFile" order="2048" typeName="file:String"/>
+            <result description="" displayName="reCode" implementationType="Primitive" modifier="public" name="reCode" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.importDict.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.importDict.bizx" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.importDict.bizx"/>
+        <method description="" displayName="查询业务字典项" implementationType="file" modifier="public" name="queryDict" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <parameter description="" displayName="sortField" implementationType="Primitive" modifier="public" name="sortField" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="sortOrder" implementationType="Primitive" modifier="public" name="sortOrder" order="2048" typeName="file:String"/>
+            <parameter description="类型代码" displayName="dicttypeid" implementationType="Primitive" modifier="public" name="dicttypeid" order="2048" typeName="file:String"/>
+            <parameter description="父节点ID" displayName="dictid" implementationType="Primitive" modifier="public" name="dictid" order="2048" typeName="file:String"/>
+            <parameter description="父节点类型ID" displayName="parenttypeid" implementationType="Primitive" modifier="public" name="parenttypeid" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="DataObject" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.queryDict.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.queryDict.bizx" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.queryDict.bizx"/>
+        <method description="" displayName="查询业务字典类型" implementationType="file" modifier="public" name="queryDictType" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <parameter description="" displayName="sortField" implementationType="Primitive" modifier="public" name="sortField" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="sortOrder" implementationType="Primitive" modifier="public" name="sortOrder" order="2048" typeName="file:String"/>
+            <parameter description="类型代码" displayName="id" implementationType="Primitive" modifier="public" name="id" order="2048" typeName="file:String"/>
+            <parameter description="类型名称" displayName="name" implementationType="Primitive" modifier="public" name="name" order="2048" typeName="file:String"/>
+            <parameter description="父节点ID" displayName="dicttypeid" implementationType="Primitive" modifier="public" name="dicttypeid" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="DataObject" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.queryDictType.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.queryDictType.bizx" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.queryDictType.bizx"/>
+        <method description="" displayName="刷新业务字典缓存" implementationType="file" modifier="public" name="refreshDictCache" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="status" implementationType="Primitive" modifier="public" name="status" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.refreshDictCache.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.refreshDictCache.bizx" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.refreshDictCache.bizx"/>
+        <method description="" displayName="删除业务字典项" implementationType="file" modifier="public" name="removeDict" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="业务字典项" displayName="data" implementationType="DataObject" modifier="public" name="data" order="2048" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry[]"/>
+            <result description="业务字典项" displayName="data" implementationType="DataObject" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry[]"/>
+            <result description="" displayName="status" implementationType="Primitive" modifier="public" name="status" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.removeDict.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.removeDict.bizx" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.removeDict.bizx"/>
+        <method description="" displayName="删除业务字典类型" implementationType="file" modifier="public" name="removeDictType" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="业务字典类型" displayName="data" implementationType="DataObject" modifier="public" name="data" order="2048" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType[]"/>
+            <result description="业务字典类型" displayName="data" implementationType="DataObject" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType[]"/>
+            <result description="" displayName="status" implementationType="Primitive" modifier="public" name="status" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.removeDictType.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.removeDictType.bizx" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.removeDictType.bizx"/>
+        <method description="" displayName="级联删除字典类型" implementationType="file" modifier="public" name="removeDictTypeCascade" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="业务字典类型" displayName="data" implementationType="DataObject" modifier="public" name="data" order="2048" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.removeDictTypeCascade.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.removeDictTypeCascade.bizx" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.removeDictTypeCascade.bizx"/>
+        <method description="" displayName="保存业务字典项" implementationType="file" modifier="public" name="saveDict" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="业务字典项" displayName="data" implementationType="DataObject" modifier="public" name="data" order="2048" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry"/>
+            <result description="业务字典项" displayName="data" implementationType="DataObject" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry"/>
+            <result description="" displayName="status" implementationType="Primitive" modifier="public" name="status" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.saveDict.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.saveDict.bizx" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.saveDict.bizx"/>
+        <method description="" displayName="保存业务字典类型" implementationType="file" modifier="public" name="saveDictType" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="业务字典类型" displayName="data" implementationType="DataObject" modifier="public" name="data" order="2048" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType"/>
+            <result description="业务字典类型" displayName="data" implementationType="DataObject" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType"/>
+            <result description="" displayName="status" implementationType="Primitive" modifier="public" name="status" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.saveDictType.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.saveDictType.bizx" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.saveDictType.bizx"/>
+    </model>
+    <model description="" displayName="EosDictEntry" implementationType="file" modifier="public" name="EosDictEntry.class" order="32" version=""/>
+    <model description="" displayName="EosDictEntryI18n" implementationType="file" modifier="public" name="EosDictEntryI18n.class" order="32" version=""/>
+    <model description="" displayName="EosDictType" implementationType="file" modifier="public" name="EosDictType.class" order="32" version=""/>
+    <model description="" displayName="EosDictTypeI18n" implementationType="file" modifier="public" name="EosDictTypeI18n.class" order="32" version=""/>
+</metadata>

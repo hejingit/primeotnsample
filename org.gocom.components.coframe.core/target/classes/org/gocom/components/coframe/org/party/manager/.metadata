@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="DefaultEmpManager" implementationType="file" modifier="public" name="DefaultEmpManager.class" order="32" version=""/>
+    <model description="" displayName="DefaultGroupManager" implementationType="file" modifier="public" name="DefaultGroupManager.class" order="32" version=""/>
+    <model description="" displayName="DefaultOrgManager" implementationType="file" modifier="public" name="DefaultOrgManager.class" order="32" version=""/>
+    <model description="" displayName="DefaultOrgRoleManager" implementationType="file" modifier="public" name="DefaultOrgRoleManager.class" order="32" version=""/>
+    <model description="" displayName="DefaultPositionManager" implementationType="file" modifier="public" name="DefaultPositionManager.class" order="32" version=""/>
+</metadata>

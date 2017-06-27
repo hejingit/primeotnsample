@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="PartyManager.eosComponentType" implementationType="file" modifier="public" name="PartyManager.eosComponentType" order="32" version=""/>
+    <model description="" displayName="queryPartyWithPartyId" implementationType="file" modifier="public" name="queryPartyWithPartyId.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.caprole.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.caprole.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.caprole.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.CapRole.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.CapRole.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.CapRole.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+        <method description="" displayName="queryPartyWithPartyId" implementationType="file" modifier="public" name="queryPartyWithPartyId" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="userId" implementationType="Primitive" modifier="public" name="userId" order="2048" typeName="file:String"/>
+            <result description="" displayName="roles" implementationType="Java" modifier="public" name="roles" order="1024" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole[]"/>
+        </method>
+    </model>
+    <model description="" displayName="saveParty" implementationType="file" modifier="public" name="saveParty.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.caprole.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.caprole.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.caprole.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.CapRole.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.CapRole.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.CapRole.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <method description="" displayName="saveParty" implementationType="file" modifier="public" name="saveParty" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="roles" implementationType="Java" modifier="public" name="roles" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole[]"/>
+            <parameter description="" displayName="partyId" implementationType="Primitive" modifier="public" name="partyId" order="2048" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+</metadata>

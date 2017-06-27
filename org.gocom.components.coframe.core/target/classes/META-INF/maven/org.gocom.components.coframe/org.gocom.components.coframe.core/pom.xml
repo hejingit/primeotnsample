@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.gocom.components.coframe</groupId>
+		<artifactId>parent.eos</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../org.gocom.components.coframe.pom.parents/pom-eos.xml</relativePath>
+	</parent>
+	<artifactId>org.gocom.components.coframe.core</artifactId>
+	<version>${coframe.version}</version>
+	<packaging>pom</packaging>
+	<properties>
+		<packages>
+			org.gocom.components.coframe.tools,
+			org.gocom.components.coframe.rights,
+			org.gocom.components.coframe.org,
+			org.gocom.components.coframe.framework,
+			org.gocom.components.coframe.auth,
+			org.gocom.components.coframe.participantselect,
+			org.gocom.components.coframe.policy,
+			org.gocom.components.coframe.dict,
+			org.gocom.components.coframe.skins.win7,
+			org.gocom.components.coframe.entityauth
+		</packages>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.primeton.eos.extension</groupId>
+			<artifactId>com.eos.foundation</artifactId>
+			<version>${eos.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gocom.components.coframe</groupId>
+			<artifactId>com.primeton.components.coframe.base</artifactId>
+			<version>${coframe.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.primeton.components.sso</groupId>
+			<artifactId>sso-client-java</artifactId>
+			<version>${sso.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.primeton.ptp.server</groupId>
+			<artifactId>ptp-server-commons</artifactId>
+			<version>${ptp.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.primeton.3rd.apache</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.0.2.FINAL</version>
+		</dependency>
+	</dependencies>
+</project>

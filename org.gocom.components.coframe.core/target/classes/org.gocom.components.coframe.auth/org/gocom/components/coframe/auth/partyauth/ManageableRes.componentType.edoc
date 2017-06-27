@@ -1,0 +1,14 @@
+<map>
+  <entry>
+    <string>org.gocom.components.coframe.auth.partyauth.ManageableRes.getManageableGroup()</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;getManageableGroup&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;getManageableGroup&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.auth.partyauth.ManageableRes.getManageableGroup&lt;dl&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;treeNodes(commonj.sdo.DataObject[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.auth.partyauth.ManageableRes.getManageableOrg()</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;getManageableOrg&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;getManageableOrg&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.auth.partyauth.ManageableRes.getManageableOrg&lt;dl&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;treeNodes(commonj.sdo.DataObject[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>ManageableRes</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;ManageableRes.componentType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;ManageableRes&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.auth.partyauth.ManageableRes&lt;/html&gt;</string>
+  </entry>
+</map>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>org.gocom.components.coframe.core</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.primeton.studio.builder</name>
+			<arguments>
+				<dictionary>
+					<key>application</key>
+					<value>jhb</value>
+				</dictionary>
+				<dictionary>
+					<key>database</key>
+					<value>mysql</value>
+				</dictionary>
+				<dictionary>
+					<key>server</key>
+					<value>localserver</value>
+				</dictionary>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.primeton.studio.nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+	</natures>
+</projectDescription>

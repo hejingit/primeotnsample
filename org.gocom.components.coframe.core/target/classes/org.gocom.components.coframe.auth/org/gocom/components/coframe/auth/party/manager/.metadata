@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="DefaultOrgRoleMananger" implementationType="file" modifier="public" name="DefaultOrgRoleMananger.class" order="32" version=""/>
+    <model description="" displayName="DefaultRoleManager" implementationType="file" modifier="public" name="DefaultRoleManager.class" order="32" version=""/>
+    <model description="" displayName="DefaultUserManager" implementationType="file" modifier="public" name="DefaultUserManager.class" order="32" version=""/>
+</metadata>

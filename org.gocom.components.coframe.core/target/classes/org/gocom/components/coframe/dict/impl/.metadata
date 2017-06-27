@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="DictService" implementationType="file" modifier="public" name="DictService.class" order="32" version=""/>
+    <model description="" displayName="DictTypeService" implementationType="file" modifier="public" name="DictTypeService.class" order="32" version=""/>
+    <model description="" displayName="EosDictEntryI18nImpl" implementationType="file" modifier="public" name="EosDictEntryI18nImpl.class" order="32" version=""/>
+    <model description="" displayName="EosDictEntryImpl" implementationType="file" modifier="public" name="EosDictEntryImpl.class" order="32" version=""/>
+    <model description="" displayName="EosDictTypeI18nImpl" implementationType="file" modifier="public" name="EosDictTypeI18nImpl.class" order="32" version=""/>
+    <model description="" displayName="EosDictTypeImpl" implementationType="file" modifier="public" name="EosDictTypeImpl.class" order="32" version=""/>
+    <model description="" displayName="导出业务字典" implementationType="file" modifier="public" name="exportDict.flow" order="32" version="">
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.exportDict.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.exportDict.bizx" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.exportDict.bizx"/>
+        <importReference description="" displayName="coframe.dict.export_dict.jsp" implementationType="file" modifier="public" name="file:coframe.dict.export_dict.jsp" order="4096" typeName="file:coframe.dict.export_dict.jsp"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.componentType"/>
+    </model>
+    <model description="" displayName="导入业务字典" implementationType="file" modifier="public" name="importDict.flow" order="32" version="">
+        <importReference description="" displayName="com.primeton.ext.access.http.IUploadFile.java" implementationType="java" modifier="public" name="java:com.primeton.ext.access.http.IUploadFile.java" order="4096" typeName="java:com.primeton.ext.access.http.IUploadFile.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.componentType"/>
+        <importReference description="" displayName="coframe.dict.dict_manager.jsp" implementationType="file" modifier="public" name="file:coframe.dict.dict_manager.jsp" order="4096" typeName="file:coframe.dict.dict_manager.jsp"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.importDict.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.importDict.bizx" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.importDict.bizx"/>
+        <importReference description="" displayName="com.primeton.ext.access.http.iuploadfile.java" implementationType="java" modifier="public" name="java:com.primeton.ext.access.http.iuploadfile.java" order="4096" typeName="java:com.primeton.ext.access.http.iuploadfile.java"/>
+    </model>
+</metadata>

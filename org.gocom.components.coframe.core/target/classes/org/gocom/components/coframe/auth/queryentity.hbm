@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class entity-name="org.gocom.components.coframe.auth.queryentity.QueryUserByEmp" table="$QueryEntity[org.gocom.components.coframe.auth.queryentity.QueryUserByEmp]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="empid" insert="false" name="empid" type="big_decimal" update="false"/>
+        <property column="tenant_id" insert="false" name="tenantId" type="string" update="false"/>
+        <property column="user_id" insert="false" name="userId" type="string" update="false"/>
+        <property column="user_name" insert="false" name="userName" type="string" update="false"/>
+        <property column="email" insert="false" name="email" type="string" update="false"/>
+        <property column="operator_id" insert="false" name="operatorId" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.auth.queryentity.QueryUserByRole" table="$QueryEntity[org.gocom.components.coframe.auth.queryentity.QueryUserByRole]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="ROLE_ID" insert="false" name="roleId" type="string" update="false"/>
+        <property column="PARTY_TYPE" insert="false" name="partyType" type="string" update="false"/>
+        <property column="USER_ID" insert="false" name="userId" type="string" update="false"/>
+        <property column="USER_NAME" insert="false" name="userName" type="string" update="false"/>
+        <property column="TENANT_ID" insert="false" name="tenantId" type="string" update="false"/>
+        <property column="OPERATOR_ID" insert="false" name="operatorId" type="string" update="false"/>
+        <property column="EMAIL" insert="false" name="email" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.auth.queryentity.QueryEmpByRole" table="$QueryEntity[org.gocom.components.coframe.auth.queryentity.QueryEmpByRole]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="role_id" insert="false" name="roleId" type="string" update="false"/>
+        <property column="party_type" insert="false" name="partyType" type="string" update="false"/>
+        <property column="empid" insert="false" name="empid" type="big_decimal" update="false"/>
+        <property column="empcode" insert="false" name="empcode" type="string" update="false"/>
+        <property column="empname" insert="false" name="empname" type="string" update="false"/>
+        <property column="sortno" insert="false" name="sortno" type="int" update="false"/>
+        <property column="tenant_id" insert="false" name="tenantId" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.auth.queryentity.QueryEmpByOrgRole" table="$QueryEntity[org.gocom.components.coframe.auth.queryentity.QueryEmpByOrgRole]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="ROLE_ID" insert="false" name="roleId" type="string" update="false"/>
+        <property column="PARTY_TYPE" insert="false" name="partyType" type="string" update="false"/>
+        <property column="ORGID" insert="false" name="orgid" type="big_decimal" update="false"/>
+        <property column="EMPID" insert="false" name="empid" type="big_decimal" update="false"/>
+        <property column="EMPCODE" insert="false" name="empcode" type="string" update="false"/>
+        <property column="EMPNAME" insert="false" name="empname" type="string" update="false"/>
+        <property column="TENANT_ID" insert="false" name="tenantId" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.auth.queryentity.QueryEmpAndUserByUser" table="$QueryEntity[org.gocom.components.coframe.auth.queryentity.QueryEmpAndUserByUser]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="userId" insert="false" name="userid" type="string" update="false"/>
+        <property column="user_name" insert="false" name="userName" type="string" update="false"/>
+        <property column="empid" insert="false" name="empid" type="big_decimal" update="false"/>
+        <property column="empcode" insert="false" name="empcode" type="string" update="false"/>
+        <property column="empname" insert="false" name="empname" type="string" update="false"/>
+        <property column="tenant_id" insert="false" name="tenantId" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.auth.queryentity.QueryOrgByRole" table="$QueryEntity[org.gocom.components.coframe.auth.queryentity.QueryOrgByRole]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="ROLE_ID" insert="false" name="roleId" type="string" update="false"/>
+        <property column="PARTY_TYPE" insert="false" name="partyType" type="string" update="false"/>
+        <property column="ORGID" insert="false" name="orgid" type="big_decimal" update="false"/>
+        <property column="ORGCODE" insert="false" name="orgcode" type="string" update="false"/>
+        <property column="ORGNAME" insert="false" name="orgname" type="string" update="false"/>
+        <property column="TENANT_ID" insert="false" name="tenantId" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.auth.queryentity.QueryPositionByRole" table="$QueryEntity[org.gocom.components.coframe.auth.queryentity.QueryPositionByRole]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="ROLE_ID" insert="false" name="roleId" type="string" update="false"/>
+        <property column="PARTY_TYPE" insert="false" name="partyType" type="string" update="false"/>
+        <property column="POSITIONID" insert="false" name="positionid" type="big_decimal" update="false"/>
+        <property column="POSICODE" insert="false" name="posicode" type="string" update="false"/>
+        <property column="POSINAME" insert="false" name="posiname" type="string" update="false"/>
+        <property column="TENANT_ID" insert="false" name="tenantId" type="string" update="false"/>
+    </class>
+    <class entity-name="org.gocom.components.coframe.auth.queryentity.QueryGroupByRole" table="$QueryEntity[org.gocom.components.coframe.auth.queryentity.QueryGroupByRole]$">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id column="$queryEntityId$" name="queryEntityId" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property column="ROLE_ID" insert="false" name="roleId" type="string" update="false"/>
+        <property column="PARTY_TYPE" insert="false" name="partyType" type="string" update="false"/>
+        <property column="GROUPID" insert="false" name="groupid" type="big_decimal" update="false"/>
+        <property column="GROUPNAME" insert="false" name="groupname" type="string" update="false"/>
+        <property column="TENANT_ID" insert="false" name="tenantId" type="string" update="false"/>
+    </class>
+</hibernate-mapping>

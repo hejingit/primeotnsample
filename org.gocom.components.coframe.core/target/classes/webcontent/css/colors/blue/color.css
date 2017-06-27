@@ -1,0 +1,247 @@
+.mini-desktop-taskbar
+{
+    background:url(images/taskbar.gif) repeat-x 0 0;
+    position:absolute;    
+    height:40px;
+    left:0;
+    bottom:0;
+    width:100%;
+    z-index:99999999;
+    overflow:hidden;
+}
+.mini-desktop-show-desktop
+{
+    position:absolute;right:0px;top:0px;width:15px;height:40px;
+    background:url(images/show-desktop.png) no-repeat;
+     cursor:hand;
+    cursor:pointer;display:block;
+    z-index:1;
+}
+.mini-desktop-show-desktop:hover
+{
+    position:absolute;right:0px;top:0px;width:15px;height:40px;
+    background:url(images/show-desktop-hover.png) no-repeat;
+    cursor:pointer;display:block;
+     z-index:1;
+}
+.mini-desktop-bar
+{
+    float:left;
+    width:120px;
+    height:40px;
+    background:url(images/btn.gif) no-repeat right 0;
+    cursor:pointer;
+    overflow:hidden;
+    text-decoration:none;
+    outline:none;
+}
+a:hover.mini-desktop-bar
+{
+    background:url(images/btn-over.gif) no-repeat right 0;    
+}
+.mini-desktop-bar-active
+{
+    background:url(images/btn-active.gif) no-repeat right 0;    
+}
+.mini-desktop-bar-text
+{
+    line-height:40px;
+    font-family:Tahoma,Verdana,ËÎÌו;
+    font-size:12px;    
+    color:White;
+}
+
+
+
+/* mini-ux-window */
+.mini-ux-window
+{
+    border:solid 1px #333;
+}
+.mini-ux-window .mini-panel-header
+{
+    height:29px;
+    overflow:hidden;
+    position:relative;
+    background:url(images/header.gif) repeat-x 0 0;
+    border-bottom:solid 1px #b6bec5;
+    font-size:14px;
+}
+.mini-ux-window .mini-tools
+{
+    top:7px;
+    right:6px;
+}
+
+
+.ux-start-menu {
+	background:transparent none !important;
+	border:0px none !important;
+	padding:0 !important;
+}
+
+.ux-start-menu-tl .x-window-header {
+	color:#f1f1f1;
+	font:bold 14px tahoma,arial,verdana,sans-serif;
+    padding:5px 0 4px 0;
+}
+
+.x-window-header-text {
+	color:#f1f1f1;
+	font:bold 12px tahoma,arial,verdana,sans-serif;
+    padding:5px 0 4px 0;
+}
+
+.x-panel-tl .x-panel-icon, .ux-start-menu-tl .x-panel-icon {
+	background-position:0pt 4px;
+	background-repeat:no-repeat;
+	padding-left:20px !important;
+}
+
+.ux-start-menu-tl {
+	background: transparent url(images/startmenu/start-menu-left-corners.png) no-repeat 0 0;
+	padding-left:6px;
+    zoom:1;
+    z-index:1;
+    position:relative;
+}
+
+.ux-start-menu-tr {
+	background: transparent url(images/startmenu/start-menu-right-corners.png) no-repeat right 0;
+	padding-right:6px;
+}
+
+.ux-start-menu-tc {
+	background: transparent url(images/startmenu/start-menu-top-bottom.png) repeat-x 0 0;
+	overflow:hidden;
+    zoom:1;
+}
+
+.ux-start-menu-ml {
+	background: transparent url(images/startmenu/start-menu-left-right.png) repeat-y 0 0;
+	padding-left:6px;
+    zoom:1;
+}
+
+.ux-start-menu-bc {
+	background: transparent url(images/startmenu/start-menu-top-bottom.png) repeat-x 0 bottom;
+    zoom:1;
+}
+
+.ux-start-menu-bc .x-window-footer {
+    padding-bottom:6px;
+    zoom:1;
+    font-size:0;
+    line-height:0;
+}
+
+.ux-start-menu-bl {
+	background: transparent url(images/startmenu/start-menu-left-corners.png) no-repeat 0 bottom;
+	padding-left:6px;
+    zoom:1;
+}
+
+.ux-start-menu-br {
+	background: transparent url(images/startmenu/start-menu-right-corners.png) no-repeat right bottom;
+	padding-right:6px;
+    zoom:1;
+}
+
+.x-panel-nofooter .ux-start-menu-bc {
+	height:6px;
+}
+
+.ux-start-menu-splitbar-h {
+	background-color:#d0d0d0;
+}
+
+
+.ux-start-menu-bwrap {
+	background:transparent none !important;
+	border:0px none;
+}
+
+.ux-start-menu-body {
+	border:0px none;
+}
+
+.ux-start-menu-apps-panel {
+	background:#ffffff none;
+	border:1px solid #1e2124;
+}
+
+.ux-start-menu-tools-panel {
+	border:0px none;
+	background:transparent url(images/startmenu/start-menu-right.png) repeat-y scroll right 0pt;
+}
+.ux-menu-item{
+	height:33px;
+	width:138px;
+	color:white;
+	cursor:hand;
+	cursor:pointer;
+	padding-left:5px;
+	padding-top:8px;
+}
+.ux-menu-item-text{
+	color:#f1f1f1;
+	font:12px tahoma,arial,verdana,sans-serif;
+    padding-left:10px;
+}
+.ux-menu-item:hover{
+	background:transparent url(images/startmenu/btn-bg.png) no-repeat;	
+}
+.opacity-window{
+	filter:alpha(Opacity=70);
+	-moz-opacity:0.7;
+	opacity: 0.7;
+}
+/* You can customize to your needs  */
+.start-window{
+    box-shadow: 0px 0px 20px #999;
+    /* CSS3 */
+        -moz-box-shadow: 0px 0px 20px #999;
+    /* Firefox */
+        -webkit-box-shadow: 0px 0px 20px #999;
+    /* Safari, Chrome */
+	border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    /* Firefox */
+        -webkit-border-radius: 3px;
+    /* Safari, Chrome */;
+}
+
+
+
+.window-min  {
+	background: url(images/icons/minimize.gif) no-repeat;
+	width:26px !important;
+	height:18px !important;
+}
+.window-min:hover  {
+	background: url(images/icons/minimize_mouseover.gif) no-repeat;
+}
+.window-normal  {
+	background: url(images/icons/maximize.gif) no-repeat;
+	width:26px !important;
+	height:18px !important;
+}
+.window-normal:hover  {
+	background: url(images/icons/maximize_mouseover.gif) no-repeat;
+}
+.window-max  {
+	background: url(images/icons/normal.gif) no-repeat;
+	width:26px !important;
+	height:18px !important;
+}
+.window-max:hover  {
+	background: url(images/icons/normal_mouseover.gif) no-repeat;
+}
+.window-close  {
+	background: url(images/icons/close.gif) no-repeat;
+	width:45px !important;
+	height:18px !important;
+}
+.window-close:hover  {
+	background: url(images/icons/close_mouseover.gif) no-repeat;
+}

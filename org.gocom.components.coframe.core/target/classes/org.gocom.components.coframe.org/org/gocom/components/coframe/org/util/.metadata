@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="IOrgConstants" implementationType="file" modifier="public" name="IOrgConstants.class" order="32" version=""/>
+    <model description="" displayName="OrgHelper" implementationType="file" modifier="public" name="OrgHelper.class" order="32" version=""/>
+    <model description="" displayName="OrgPartyAdaptUtil" implementationType="file" modifier="public" name="OrgPartyAdaptUtil.class" order="32" version=""/>
+    <model description="" displayName="OrgResponse" implementationType="file" modifier="public" name="OrgResponse.class" order="32" version=""/>
+    <model description="" displayName="OrgTreeNodeConvertor" implementationType="file" modifier="public" name="OrgTreeNodeConvertor.class" order="32" version=""/>
+    <model description="" displayName="OrgTreeNodeHelper" implementationType="file" modifier="public" name="OrgTreeNodeHelper.class" order="32" version=""/>
+</metadata>

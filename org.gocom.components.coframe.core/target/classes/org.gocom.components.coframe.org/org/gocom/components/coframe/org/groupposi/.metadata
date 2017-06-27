@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="addOrg" implementationType="file" modifier="public" name="addGroupposi.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.org.groupdataset.OrgGroupposi.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.groupdataset.OrgGroupposi.java" order="4096" typeName="java:org.gocom.components.coframe.org.groupdataset.OrgGroupposi.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.util.orgresponse.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.util.orgresponse.java" order="4096" typeName="java:org.gocom.components.coframe.org.util.orgresponse.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.util.OrgResponse.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.util.OrgResponse.java" order="4096" typeName="java:org.gocom.components.coframe.org.util.OrgResponse.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.groupdataset.orggroupposi.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.groupdataset.orggroupposi.java" order="4096" typeName="java:org.gocom.components.coframe.org.groupdataset.orggroupposi.java"/>
+        <method description="" displayName="addOrg" implementationType="file" modifier="public" name="addGroupposi" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="groupposi" implementationType="Java" modifier="public" name="groupposi" order="2048" typeName="file:org.gocom.components.coframe.org.groupdataset.OrgGroupposi"/>
+            <result description="" displayName="response" implementationType="Java" modifier="public" name="response" order="1024" typeName="file:org.gocom.components.coframe.org.util.OrgResponse"/>
+        </method>
+    </model>
+    <model description="工作组岗位" displayName="groupposi.eosComponentType" implementationType="file" modifier="public" name="groupposi.eosComponentType" order="32" version=""/>
+    <model description="" displayName="queryOrg" implementationType="file" modifier="public" name="queryGroupposi.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgPosition.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgPosition.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgPosition.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.OrgTreeNode.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.OrgTreeNode.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.OrgTreeNode.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.PageCond.java" order="4096" typeName="java:com.eos.foundation.PageCond.java"/>
+        <method description="" displayName="queryOrg" implementationType="file" modifier="public" name="queryGroupposi" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="treeNodes" implementationType="Java" modifier="public" name="treeNodes" order="1024" typeName="file:org.gocom.components.coframe.org.dataset.OrgTreeNode[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgposition.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgposition.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgposition.java"/>
+        <importReference description="" displayName="com.eos.foundation.pagecond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.pagecond.java" order="4096" typeName="java:com.eos.foundation.pagecond.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.org.dataset.orgtreenode.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.org.dataset.orgtreenode.java" order="4096" typeName="java:org.gocom.components.coframe.org.dataset.orgtreenode.java"/>
+    </model>
+</metadata>

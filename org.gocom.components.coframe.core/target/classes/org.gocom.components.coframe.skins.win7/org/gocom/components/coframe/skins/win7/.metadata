@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="桌面数据模型" implementationType="file" modifier="public" name="data.xsd" order="32" version="">
+        <properties>
+            <property name="eosModel_type" value="datasetx"/>
+        </properties>
+        <type description="" displayName="Windows桌面配置" implementationType="file" modifier="public" name="Win7Config" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="COMP_WIN7_CONFIG"/>
+            </properties>
+            <field description="" displayName="配置主键" implementationType="file" modifier="public" name="configId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="CONFIG_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="背景图片路径" implementationType="file" modifier="public" name="bgPicturePath" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="BG_PICTURE_PATH"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="用户ID" implementationType="file" modifier="public" name="userId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="USER_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="配置数据" implementationType="file" modifier="public" name="configData" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="ClobString"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="com.primeton.das.entity.impl.lob.type.ClobStringType"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="CONFIG_DATA"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="窗口打开方式" implementationType="file" modifier="public" name="openType" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="OPEN_TYPE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="默认最大化" implementationType="file" modifier="public" name="defaultMax" order="256" typeName="sdo:Boolean">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Boolean"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="boolean"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Boolean"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DEFAULT_MAX"/>
+                    <property name="columnProperty_javaType" value="boolean"/>
+                </properties>
+            </field>
+            <field description="" displayName="默认宽度" implementationType="file" modifier="public" name="defaultWidth" order="256" typeName="sdo:Int">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Int"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="int"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Int"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DEFAULT_WIDTH"/>
+                    <property name="columnProperty_javaType" value="int"/>
+                </properties>
+            </field>
+            <field description="" displayName="默认高度" implementationType="file" modifier="public" name="defaultHeight" order="256" typeName="sdo:Int">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="Int"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="int"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="Int"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DEFAULT_HEIGHT"/>
+                    <property name="columnProperty_javaType" value="int"/>
+                </properties>
+            </field>
+            <field description="" displayName="桌面样式" implementationType="file" modifier="public" name="deskStyle" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="DESK_STYLE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="扩展配置1" implementationType="file" modifier="public" name="ext1" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="EXT1"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="扩展配置2" implementationType="file" modifier="public" name="ext2" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="EXT2"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="扩展配置3" implementationType="file" modifier="public" name="ext3" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="EXT3"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="Windows桌面图标" implementationType="file" modifier="public" name="Win7Icons" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="COMP_WIN7_ICONS"/>
+            </properties>
+            <field description="" displayName="图标主键" implementationType="file" modifier="public" name="iconId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ICON_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="名称" implementationType="file" modifier="public" name="iconName" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ICON_NAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="图标文本" implementationType="file" modifier="public" name="iconText" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ICON_TEXT"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="图标路径" implementationType="file" modifier="public" name="iconPath" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ICON_PATH"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="标题" implementationType="file" modifier="public" name="iconTitle" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ICON_TITLE"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="菜单ID" implementationType="file" modifier="public" name="menuId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MENU_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="顺序" implementationType="file" modifier="public" name="iconOrder" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ICON_INDEX"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="描述" implementationType="file" modifier="public" name="iconDesc" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="ICON_DESC"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="用户ID" implementationType="file" modifier="public" name="userId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="USER_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="Windows自动启动" implementationType="file" modifier="public" name="Win7AutoStart" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="COMP_WIN7_AUTO_START"/>
+            </properties>
+            <field description="" displayName="图标主键" implementationType="file" modifier="public" name="startId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="START_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="菜单ID" implementationType="file" modifier="public" name="menuId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="MENU_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="描述" implementationType="file" modifier="public" name="startDesc" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="START_DESC"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="用户ID" implementationType="file" modifier="public" name="userId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="USER_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+        </type>
+        <type description="" displayName="自定义背景图片" implementationType="file" modifier="public" name="Win7CustomPictures" order="8" variable="false">
+            <properties>
+                <property name="entity_type" value="entity_type_pentity"/>
+                <property name="schema" value=""/>
+                <property name="pentity_table_name" value="COMP_WIN7_CUSTOM_PICTURES"/>
+            </properties>
+            <field description="" displayName="自定义主键ID" implementationType="file" modifier="public" name="customId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="true"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="CUSTOM_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="自定义背景图片名称" implementationType="file" modifier="public" name="fileName" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="FILE_NAME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="自定义背景用户ID" implementationType="file" modifier="public" name="userId" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="USER_ID"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+            <field description="" displayName="自定义图片上传时间" implementationType="file" modifier="public" name="uploadTime" order="256" typeName="sdo:String">
+                <properties>
+                    <property name="property_fk" value="false"/>
+                    <property name="columnProperty_persistent" value="true"/>
+                    <property name="columnProperty_showType" value="String"/>
+                    <property name="property_type" value="property_type_columnProperty"/>
+                    <property name="columnProperty_dasType" value="string"/>
+                    <property name="property_userdefined" value="true"/>
+                    <property name="isMulti" value="false"/>
+                    <property name="columnProperty_sdoType" value="String"/>
+                    <property name="property_pk" value="false"/>
+                    <property name="columnProperty_columnType" value=""/>
+                    <property name="property_queryId" value="false"/>
+                    <property name="columnProperty_columnName" value="UPLOAD_TIME"/>
+                    <property name="columnProperty_javaType" value="java.lang.String"/>
+                </properties>
+            </field>
+        </type>
+    </model>
+    <model description="" displayName="win7桌面服务" implementationType="file" modifier="public" name="win7Service.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="addUserBg" implementationType="file" modifier="public" name="addUserBg" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="files" implementationType="Primitive" modifier="public" name="files" order="2048" typeName="file:String[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.skins.win7.win7Service.addUserBg.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.skins.win7.win7Service.addUserBg.bizx" order="4096" typeName="file:org.gocom.components.coframe.skins.win7.win7Service.addUserBg.bizx"/>
+        <method description="" displayName="delUserBg" implementationType="file" modifier="public" name="delUserBg" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="selectedPic" implementationType="Primitive" modifier="public" name="selectedPic" order="2048" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.skins.win7.win7Service.delUserBg.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.skins.win7.win7Service.delUserBg.bizx" order="4096" typeName="file:org.gocom.components.coframe.skins.win7.win7Service.delUserBg.bizx"/>
+        <method description="" displayName="获取我的配置" implementationType="file" modifier="public" name="getMyConfig" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="config" implementationType="DataObject" modifier="public" name="config" order="1024" typeName="file:org.gocom.components.coframe.skins.win7.data.Win7Config"/>
+            <result description="" displayName="icons" implementationType="DataObject" modifier="public" name="icons" order="1024" typeName="file:org.gocom.components.coframe.skins.win7.data.Win7Icons[]"/>
+            <result description="" displayName="autoStarts" implementationType="DataObject" modifier="public" name="autoStarts" order="1024" typeName="file:org.gocom.components.coframe.skins.win7.data.Win7AutoStart[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.skins.win7.win7Service.getMyConfig.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.skins.win7.win7Service.getMyConfig.bizx" order="4096" typeName="file:org.gocom.components.coframe.skins.win7.win7Service.getMyConfig.bizx"/>
+        <method description="" displayName="getSysBgPicture" implementationType="file" modifier="public" name="getUserBg" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="userbgs" implementationType="DataObject" modifier="public" name="userbgs" order="1024" typeName="file:org.gocom.components.coframe.skins.win7.data.Win7CustomPictures[]"/>
+            <result description="" displayName="userconfig" implementationType="DataObject" modifier="public" name="userconfig" order="1024" typeName="file:org.gocom.components.coframe.skins.win7.data.Win7Config"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.skins.win7.win7Service.getUserBg.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.skins.win7.win7Service.getUserBg.bizx" order="4096" typeName="file:org.gocom.components.coframe.skins.win7.win7Service.getUserBg.bizx"/>
+        <method description="" displayName="setUserBg" implementationType="file" modifier="public" name="setUserBg" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="custompic" implementationType="DataObject" modifier="public" name="custompic" order="2048" typeName="file:org.gocom.components.coframe.skins.win7.data.Win7Config"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.skins.win7.win7Service.setUserBg.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.skins.win7.win7Service.setUserBg.bizx" order="4096" typeName="file:org.gocom.components.coframe.skins.win7.win7Service.setUserBg.bizx"/>
+        <method description="" displayName="更新自动启动配置" implementationType="file" modifier="public" name="updateAutoStartConfig" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="autoStarts" implementationType="DataObject" modifier="public" name="autoStarts" order="2048" typeName="file:org.gocom.components.coframe.skins.win7.data.Win7AutoStart[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.skins.win7.win7Service.updateAutoStartConfig.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.skins.win7.win7Service.updateAutoStartConfig.bizx" order="4096" typeName="file:org.gocom.components.coframe.skins.win7.win7Service.updateAutoStartConfig.bizx"/>
+        <method description="" displayName="更新桌面配置" implementationType="file" modifier="public" name="updateDesktopConfig" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="config" implementationType="DataObject" modifier="public" name="config" order="2048" typeName="file:org.gocom.components.coframe.skins.win7.data.Win7Config"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.skins.win7.win7Service.updateDesktopConfig.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.skins.win7.win7Service.updateDesktopConfig.bizx" order="4096" typeName="file:org.gocom.components.coframe.skins.win7.win7Service.updateDesktopConfig.bizx"/>
+        <method description="" displayName="更新桌面图标配置" implementationType="file" modifier="public" name="updateIconsConfig" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="icons" implementationType="DataObject" modifier="public" name="icons" order="2048" typeName="file:org.gocom.components.coframe.skins.win7.data.Win7Icons[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.skins.win7.win7Service.updateIconsConfig.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.skins.win7.win7Service.updateIconsConfig.bizx" order="4096" typeName="file:org.gocom.components.coframe.skins.win7.win7Service.updateIconsConfig.bizx"/>
+    </model>
+</metadata>

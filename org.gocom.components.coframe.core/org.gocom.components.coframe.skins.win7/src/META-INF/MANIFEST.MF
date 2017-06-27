@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Require-Bundle: org.gocom.components.coframe.tools
+Bundle-Vendor: caozw
+eos-webCtxPath: skins/win7
+Bundle-Version: 3.0.1
+Bundle-Name: win7桌面风格
+Bundle-Description: 
+Bundle-SymbolicName: org.gocom.components.coframe.skins.win7
+

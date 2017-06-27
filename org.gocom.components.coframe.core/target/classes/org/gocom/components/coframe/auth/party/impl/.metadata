@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="OrgRolePartyTypeDataService" implementationType="file" modifier="public" name="OrgRolePartyTypeDataService.class" order="32" version=""/>
+    <model description="" displayName="RolePartyTypeDataService" implementationType="file" modifier="public" name="RolePartyTypeDataService.class" order="32" version=""/>
+    <model description="" displayName="UserPartyTypeDataService" implementationType="file" modifier="public" name="UserPartyTypeDataService.class" order="32" version=""/>
+</metadata>

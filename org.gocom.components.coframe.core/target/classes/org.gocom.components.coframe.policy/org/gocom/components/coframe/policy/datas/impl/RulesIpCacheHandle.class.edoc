@@ -1,0 +1,10 @@
+<map>
+  <entry>
+    <string>RulesIpCacheHandle [Ip规则缓存处理]</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;org.gocom.components.coframe.policy.datas.impl.RulesIpCacheHandle&lt;/b&gt;&lt;br/&gt;&lt;p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.policy.datas.impl.RulesIpCacheHandle.updateCache(commonj.sdo.DataObject[])</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;void org.gocom.components.coframe.policy.datas.impl.RulesIpCacheHandle.updateCache(DataObject[] rules)&lt;/b&gt;&lt;br/&gt;&lt;p&gt;更新缓存&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+</map>

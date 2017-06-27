@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Require-Bundle: org.gocom.components.coframe.rights,org.gocom.componen
+ ts.coframe.tools,com.primeton.eos.richweb,com.eos.foundation,com.prim
+ eton.workflow.core,com.eos.workflow
+Bundle-Vendor: 曹宗伟
+eos-webCtxPath: coframe/org
+Bundle-Version: 3.0.1
+Bundle-Name: 机构管理
+Bundle-Description: 组织机构维护与管理
+Bundle-SymbolicName: org.gocom.components.coframe.org
+

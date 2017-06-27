@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="login" implementationType="file" modifier="public" name="login.flow" order="32" version="">
+        <importReference description="" displayName="coframe.auth.login.login.jsp" implementationType="file" modifier="public" name="file:coframe.auth.login.login.jsp" order="4096" typeName="file:coframe.auth.login.login.jsp"/>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.LoginManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.LoginManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.auth.LoginManager.componentType"/>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.LoginManager.login.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.LoginManager.login.bizx" order="4096" typeName="file:org.gocom.components.coframe.auth.LoginManager.login.bizx"/>
+        <importReference description="" displayName="coframe.auth.login.redirect.jsp" implementationType="file" modifier="public" name="file:coframe.auth.login.redirect.jsp" order="4096" typeName="file:coframe.auth.login.redirect.jsp"/>
+    </model>
+    <model description="" displayName="LoginService" implementationType="file" modifier="public" name="LoginService.class" order="32" version=""/>
+</metadata>

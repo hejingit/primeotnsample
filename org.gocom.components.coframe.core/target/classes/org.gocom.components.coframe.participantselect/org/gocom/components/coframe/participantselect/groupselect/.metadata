@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="groupList" implementationType="file" modifier="public" name="groupList.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="java.util.ArrayList.java" implementationType="java" modifier="public" name="java:java.util.ArrayList.java" order="4096" typeName="java:java.util.ArrayList.java"/>
+        <importReference description="" displayName="java.util.arraylist.java" implementationType="java" modifier="public" name="java:java.util.arraylist.java" order="4096" typeName="java:java.util.arraylist.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.PartyManagerHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.java" order="4096" typeName="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.java"/>
+        <method description="" displayName="groupList" implementationType="file" modifier="public" name="groupList" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="选择的机构" displayName="groupid" implementationType="Primitive" modifier="public" name="groupid" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:java.util.ArrayList"/>
+        </method>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetGroupRootPartyList.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetGroupRootPartyList.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetGroupRootPartyList.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetGroupChlidPartyList.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetGroupChlidPartyList.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetGroupChlidPartyList.bizlet_method"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.util.HashMap.java" implementationType="java" modifier="public" name="java:java.util.HashMap.java" order="4096" typeName="java:java.util.HashMap.java"/>
+        <importReference description="" displayName="java.util.hashmap.java" implementationType="java" modifier="public" name="java:java.util.hashmap.java" order="4096" typeName="java:java.util.hashmap.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.participantselect.partymanagerhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.participantselect.partymanagerhelper.java" order="4096" typeName="java:org.gocom.components.coframe.participantselect.partymanagerhelper.java"/>
+    </model>
+    <model description="" displayName="groupselect.eosComponentType" implementationType="file" modifier="public" name="groupselect.eosComponentType" order="32" version=""/>
+</metadata>

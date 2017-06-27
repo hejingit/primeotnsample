@@ -1,0 +1,10 @@
+<map>
+  <entry>
+    <string>recentvisit</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;recentvisit.componentType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;recentvisit&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.participantselect.recentvisit&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.recentvisit.add(org.gocom.components.coframe.participantselect.dataset.RecentVisit[])</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;add&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;add&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.participantselect.recentvisit.add&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;dataList(org.gocom.components.coframe.participantselect.dataset.RecentVisit[]):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;retCode(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+</map>

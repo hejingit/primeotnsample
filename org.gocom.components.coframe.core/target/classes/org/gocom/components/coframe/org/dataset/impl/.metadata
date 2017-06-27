@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="OrgDutyImpl" implementationType="file" modifier="public" name="OrgDutyImpl.class" order="32" version=""/>
+    <model description="" displayName="OrgEmployeeImpl" implementationType="file" modifier="public" name="OrgEmployeeImpl.class" order="32" version=""/>
+    <model description="" displayName="OrgEmporgImpl" implementationType="file" modifier="public" name="OrgEmporgImpl.class" order="32" version=""/>
+    <model description="" displayName="OrgEmppositionImpl" implementationType="file" modifier="public" name="OrgEmppositionImpl.class" order="32" version=""/>
+    <model description="" displayName="OrgOrganizationImpl" implementationType="file" modifier="public" name="OrgOrganizationImpl.class" order="32" version=""/>
+    <model description="" displayName="OrgPartyDataObjectImpl" implementationType="file" modifier="public" name="OrgPartyDataObjectImpl.class" order="32" version=""/>
+    <model description="" displayName="OrgPositionImpl" implementationType="file" modifier="public" name="OrgPositionImpl.class" order="32" version=""/>
+    <model description="" displayName="OrgTreeNodeImpl" implementationType="file" modifier="public" name="OrgTreeNodeImpl.class" order="32" version=""/>
+    <model description="" displayName="QueryEmpOrgImpl" implementationType="file" modifier="public" name="QueryEmpOrgImpl.class" order="32" version=""/>
+    <model description="" displayName="QueryEmpUserImpl" implementationType="file" modifier="public" name="QueryEmpUserImpl.class" order="32" version=""/>
+    <model description="" displayName="QueryPositionEmpImpl" implementationType="file" modifier="public" name="QueryPositionEmpImpl.class" order="32" version=""/>
+</metadata>

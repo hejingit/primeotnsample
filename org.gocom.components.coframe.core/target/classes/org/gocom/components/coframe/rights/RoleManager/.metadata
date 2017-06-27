@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="增加角色" implementationType="file" modifier="public" name="addRole.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.caprole.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.caprole.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.caprole.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.CapRole.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.CapRole.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.CapRole.java"/>
+        <method description="增加角色" displayName="增加角色" implementationType="file" modifier="public" name="addRole" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="capRole" implementationType="Java" modifier="public" name="capRole" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole"/>
+        </method>
+    </model>
+    <model description="" displayName="checkRoleExist" implementationType="file" modifier="public" name="checkRoleExist.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="检测输入的角色是否存在" displayName="checkRoleExist" implementationType="file" modifier="public" name="checkRoleExist" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <result description="" displayName="isRoleExist" implementationType="Primitive" modifier="public" name="isRoleExist" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+    </model>
+    <model description="" displayName="获取可授权的角色" implementationType="file" modifier="public" name="queryAuthorizedRole.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <method description="获取可授权的角色" displayName="获取可授权的角色" implementationType="file" modifier="public" name="queryAuthorizedRole" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+    </model>
+    <model description="" displayName="queryRole" implementationType="file" modifier="public" name="queryRole.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.caprole.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.caprole.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.caprole.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.CapRole.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.CapRole.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.CapRole.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.PageCond.java" order="4096" typeName="java:com.eos.foundation.PageCond.java"/>
+        <method description="" displayName="queryRole" implementationType="file" modifier="public" name="queryRole" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+        <importReference description="" displayName="com.eos.foundation.pagecond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.pagecond.java" order="4096" typeName="java:com.eos.foundation.pagecond.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+    </model>
+    <model description="" displayName="删除角色" implementationType="file" modifier="public" name="removeRoles.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.caprole.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.caprole.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.caprole.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.CapRole.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.CapRole.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.CapRole.java"/>
+        <method description="删除角色，可批量删除" displayName="删除角色" implementationType="file" modifier="public" name="removeRoles" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="roles" implementationType="Java" modifier="public" name="roles" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole[]"/>
+        </method>
+    </model>
+    <model description="" displayName="RoleManager.eosComponentType" implementationType="file" modifier="public" name="RoleManager.eosComponentType" order="32" version=""/>
+    <model description="" displayName="修改角色" implementationType="file" modifier="public" name="updateRole.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.caprole.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.caprole.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.caprole.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.rights.dataset.CapRole.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.rights.dataset.CapRole.java" order="4096" typeName="java:org.gocom.components.coframe.rights.dataset.CapRole.java"/>
+        <method description="" displayName="修改角色" implementationType="file" modifier="public" name="updateRole" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="capRole" implementationType="Java" modifier="public" name="capRole" order="2048" typeName="file:org.gocom.components.coframe.rights.dataset.CapRole"/>
+        </method>
+    </model>
+</metadata>

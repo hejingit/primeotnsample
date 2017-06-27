@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="DefaultRuleCondition" implementationType="file" modifier="public" name="DefaultRuleCondition.class" order="32" version=""/>
+    <model description="" displayName="RuleAdaptor" implementationType="file" modifier="public" name="RuleAdaptor.class" order="32" version=""/>
+    <model description="" displayName="RuleHelper" implementationType="file" modifier="public" name="RuleHelper.class" order="32" version=""/>
+</metadata>

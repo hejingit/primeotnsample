@@ -1,0 +1,60 @@
+.icon-black {
+	background:url(black-style.png) no-repeat;
+	width:150px;
+	height:120px;
+	margin-top:15px;
+	margin-left:15px;
+}
+.icon-green {
+	background:url(green-style.png) no-repeat;
+	width:150px;
+	height:120px;
+	margin-top:15px;
+	margin-left:15px;
+}
+.icon-red {
+	background:url(red-style.png) no-repeat;
+	width:150px;
+	height:120px;
+	margin-top:15px;
+	margin-left:15px;
+}
+.icon-blue {
+	background:url(blue-style.png) no-repeat;
+	width:150px;
+	height:120px;
+	margin-top:15px;
+	margin-left:15px;
+}
+.style-button:hover{
+	background: #e2f2fe;
+	border: solid 1px #80a4d0;
+}
+.style-button{
+	padding: 0;
+	border: 1px solid #A9ACB5;
+	background: #EBEDF2;
+	font-size: 9pt;
+	font-family: Tahoma,Verdana,宋体;
+	line-height: 22px;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	zoom: 1;
+	cursor: pointer;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	vertical-align: middle;
+	outline: none;
+	width:180px;
+	height:150px;
+}
+
+.style-button:hover{
+	background: #e2f2fe;
+	border: solid 1px #80a4d0;
+}
+.style-button-select{	
+	background: #bacee4 !important;
+	border-color: #7a9ac4 !important;
+}

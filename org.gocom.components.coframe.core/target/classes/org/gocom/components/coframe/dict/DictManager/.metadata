@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="DictManager.eosComponentType" implementationType="file" modifier="public" name="DictManager.eosComponentType" order="32" version=""/>
+    <model description="" displayName="导出业务字典" implementationType="file" modifier="public" name="exportDict.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.DictExport.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.DictExport.node_entity" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.DictExport.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.datasetx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.datasetx" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.EosDictType.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.EosDictType.node_entity" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="byte.java" implementationType="java" modifier="public" name="java:byte.java" order="4096" typeName="java:byte.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.dasentityhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.dasentityhelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.dasentityhelper.java"/>
+        <method description="" displayName="导出业务字典" implementationType="file" modifier="public" name="exportDict" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="dicttypeid" implementationType="Primitive" modifier="public" name="dicttypeid" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="dicttypename" implementationType="Primitive" modifier="public" name="dicttypename" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Primitive" modifier="public" name="data" order="1024" typeName="file:Byte[]"/>
+        </method>
+    </model>
+    <model description="" displayName="导入业务字典" implementationType="file" modifier="public" name="importDict.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="导入业务字典" implementationType="file" modifier="public" name="importDict" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="上传后的Excel文件名" displayName="excelFile" implementationType="Primitive" modifier="public" name="excelFile" order="2048" typeName="file:String"/>
+            <result description="" displayName="reCode" implementationType="Primitive" modifier="public" name="reCode" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="查询业务字典项" implementationType="file" modifier="public" name="queryDict.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.datasetx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.datasetx" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.datasetx"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage.bizlet_method"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.dasentityhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.dasentityhelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.dasentityhelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.EosDictEntry.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.EosDictEntry.node_entity" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry.node_entity"/>
+        <method description="" displayName="查询业务字典项" implementationType="file" modifier="public" name="queryDict" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <parameter description="" displayName="sortField" implementationType="Primitive" modifier="public" name="sortField" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="sortOrder" implementationType="Primitive" modifier="public" name="sortOrder" order="2048" typeName="file:String"/>
+            <parameter description="类型代码" displayName="dicttypeid" implementationType="Primitive" modifier="public" name="dicttypeid" order="2048" typeName="file:String"/>
+            <parameter description="父节点ID" displayName="dictid" implementationType="Primitive" modifier="public" name="dictid" order="2048" typeName="file:String"/>
+            <parameter description="父节点类型ID" displayName="parenttypeid" implementationType="Primitive" modifier="public" name="parenttypeid" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="DataObject" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.count.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.count.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.count.bizlet_method"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.expandEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.expandEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.expandEntity.bizlet_method"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+    </model>
+    <model description="" displayName="查询业务字典类型" implementationType="file" modifier="public" name="queryDictType.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.datasetx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.datasetx" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.EosDictType.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.EosDictType.node_entity" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.count.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.count.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.count.bizlet_method"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntityWithPage.bizlet_method"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <method description="" displayName="查询业务字典类型" implementationType="file" modifier="public" name="queryDictType" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <parameter description="" displayName="sortField" implementationType="Primitive" modifier="public" name="sortField" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="sortOrder" implementationType="Primitive" modifier="public" name="sortOrder" order="2048" typeName="file:String"/>
+            <parameter description="类型代码" displayName="id" implementationType="Primitive" modifier="public" name="id" order="2048" typeName="file:String"/>
+            <parameter description="类型名称" displayName="name" implementationType="Primitive" modifier="public" name="name" order="2048" typeName="file:String"/>
+            <parameter description="父节点ID" displayName="dicttypeid" implementationType="Primitive" modifier="public" name="dicttypeid" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="DataObject" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.dasentityhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.dasentityhelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.dasentityhelper.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+    </model>
+    <model description="" displayName="刷新业务字典缓存" implementationType="file" modifier="public" name="refreshDictCache.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.eos.foundation.eoscommon.BusinessDictUtil.java" implementationType="java" modifier="public" name="java:com.eos.foundation.eoscommon.BusinessDictUtil.java" order="4096" typeName="java:com.eos.foundation.eoscommon.BusinessDictUtil.java"/>
+        <importReference description="" displayName="com.eos.foundation.eoscommon.BusinessDictUtil.reLoad.bizlet_method" implementationType="java" modifier="public" name="java:com.eos.foundation.eoscommon.BusinessDictUtil.reLoad.bizlet_method" order="4096" typeName="java:com.eos.foundation.eoscommon.BusinessDictUtil.reLoad.bizlet_method"/>
+        <method description="" displayName="刷新业务字典缓存" implementationType="file" modifier="public" name="refreshDictCache" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="status" implementationType="Primitive" modifier="public" name="status" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="com.eos.foundation.eoscommon.businessdictutil.java" implementationType="java" modifier="public" name="java:com.eos.foundation.eoscommon.businessdictutil.java" order="4096" typeName="java:com.eos.foundation.eoscommon.businessdictutil.java"/>
+    </model>
+    <model description="" displayName="删除业务字典项" implementationType="file" modifier="public" name="removeDict.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.datasetx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.datasetx" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.datasetx"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.deleteEntityBatch.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.deleteEntityBatch.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.deleteEntityBatch.bizlet_method"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <method description="" displayName="删除业务字典项" implementationType="file" modifier="public" name="removeDict" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="业务字典项" displayName="data" implementationType="DataObject" modifier="public" name="data" order="2048" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry[]"/>
+            <result description="业务字典项" displayName="data" implementationType="DataObject" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry[]"/>
+            <result description="" displayName="status" implementationType="Primitive" modifier="public" name="status" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.EosDictEntry.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.EosDictEntry.node_entity" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.dasentityhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.dasentityhelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.dasentityhelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.deleteEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.deleteEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.deleteEntity.bizlet_method"/>
+    </model>
+    <model description="" displayName="删除业务字典类型" implementationType="file" modifier="public" name="removeDictType.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.datasetx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.datasetx" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.datasetx"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.componentType"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.dasentityhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.dasentityhelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.dasentityhelper.java"/>
+        <method description="" displayName="删除业务字典类型" implementationType="file" modifier="public" name="removeDictType" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="业务字典类型" displayName="data" implementationType="DataObject" modifier="public" name="data" order="2048" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType[]"/>
+            <result description="业务字典类型" displayName="data" implementationType="DataObject" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType[]"/>
+            <result description="" displayName="status" implementationType="Primitive" modifier="public" name="status" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.EosDictType.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.EosDictType.node_entity" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.DictManager.removeDictTypeCascade.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.DictManager.removeDictTypeCascade.bizx" order="4096" typeName="file:org.gocom.components.coframe.dict.DictManager.removeDictTypeCascade.bizx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.EosDictType[].node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.EosDictType[].node_entity" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType[].node_entity"/>
+    </model>
+    <model description="" displayName="级联删除字典类型" implementationType="file" modifier="public" name="removeDictTypeCascade.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.queryEntitiesByCriteriaEntity.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.datasetx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.datasetx" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.EosDictType.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.EosDictType.node_entity" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType.node_entity"/>
+        <method description="" displayName="级联删除字典类型" implementationType="file" modifier="public" name="removeDictTypeCascade" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="业务字典类型" displayName="data" implementationType="DataObject" modifier="public" name="data" order="2048" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType[]"/>
+        </method>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.deleteEntityBatch.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.deleteEntityBatch.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.deleteEntityBatch.bizlet_method"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.EosDictEntry.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.EosDictEntry.node_entity" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.dasentityhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.dasentityhelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.dasentityhelper.java"/>
+    </model>
+    <model description="" displayName="保存业务字典项" implementationType="file" modifier="public" name="saveDict.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.datasetx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.datasetx" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.insertEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.insertEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.insertEntity.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.expandEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.expandEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.expandEntity.bizlet_method"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <method description="" displayName="保存业务字典项" implementationType="file" modifier="public" name="saveDict" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="业务字典项" displayName="data" implementationType="DataObject" modifier="public" name="data" order="2048" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry"/>
+            <result description="业务字典项" displayName="data" implementationType="DataObject" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry"/>
+            <result description="" displayName="status" implementationType="Primitive" modifier="public" name="status" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.EosDictEntry.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.EosDictEntry.node_entity" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.EosDictEntry.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.updateEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.updateEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.updateEntity.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.dasentityhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.dasentityhelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.dasentityhelper.java"/>
+    </model>
+    <model description="" displayName="保存业务字典类型" implementationType="file" modifier="public" name="saveDictType.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.datasetx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.datasetx" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.insertEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.insertEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.insertEntity.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.dict.dict.EosDictType.node_entity" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.dict.dict.EosDictType.node_entity" order="4096" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType.node_entity"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.expandEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.expandEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.expandEntity.bizlet_method"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.DasEntityHelper.updateEntity.bizlet_method" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.DasEntityHelper.updateEntity.bizlet_method" order="4096" typeName="java:org.gocom.components.coframe.tools.DasEntityHelper.updateEntity.bizlet_method"/>
+        <importReference description="" displayName="org.gocom.components.coframe.tools.dasentityhelper.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.tools.dasentityhelper.java" order="4096" typeName="java:org.gocom.components.coframe.tools.dasentityhelper.java"/>
+        <method description="" displayName="保存业务字典类型" implementationType="file" modifier="public" name="saveDictType" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="业务字典类型" displayName="data" implementationType="DataObject" modifier="public" name="data" order="2048" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType"/>
+            <result description="业务字典类型" displayName="data" implementationType="DataObject" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.dict.dict.EosDictType"/>
+            <result description="" displayName="status" implementationType="Primitive" modifier="public" name="status" order="1024" typeName="file:String"/>
+        </method>
+    </model>
+</metadata>

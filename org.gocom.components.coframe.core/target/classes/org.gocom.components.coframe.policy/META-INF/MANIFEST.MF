@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Require-Bundle: org.gocom.components.coframe.tools
+eos-webCtxPath: policy
+Bundle-Vendor: zhangjiaxiong
+Build-Number: 
+Implementation-Version: 3.2.2
+Bundle-Version: 3.2.2
+Bundle-Name: org.gocom.components.coframe.policy
+Bundle-Description: 
+Bundle-SymbolicName: org.gocom.components.coframe.policy
+Build-Date: 
+Build-By: Primeton RD Team
+

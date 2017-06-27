@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Require-Bundle: org.gocom.components.coframe.tools,com.primeton.eos.ri
+ chweb,com.eos.foundation,com.primeton.workflow.core,com.eos.workflow
+eos-webCtxPath: coframe/rights
+Bundle-Vendor: 曹宗伟
+Build-Number: 
+Implementation-Version: 3.2.2
+Bundle-Version: 3.2.2
+Bundle-Name: 权限管理
+Bundle-Description: 基于角色的权限管理
+Bundle-SymbolicName: org.gocom.components.coframe.rights
+Build-Date: 
+Build-By: Primeton RD Team
+

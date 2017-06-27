@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<viewModelSet author="caozw" displayName="桌面数据模型" id="org.gocom.components.coframe.skins.win7.data">
+    <viewModel author="caozw" displayName="Windows桌面配置" entityName="org.gocom.components.coframe.skins.win7.data.Win7Config" id="Win7Config">
+        <field dataType="String" dict="false" entityField="configId" id="configId" label="配置主键">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="bgPicturePath" id="bgPicturePath" label="背景图片路径">
+            <view type="write"/>
+            <edit name="property1" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userId" id="userId" label="用户ID">
+            <view type="write"/>
+            <edit name="property2" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="configData" id="configData" label="配置数据">
+            <view type="write"/>
+            <edit name="property3" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="openType" id="openType" label="窗口打开方式">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="Boolean" dict="false" entityField="defaultMax" id="defaultMax" label="默认最大化">
+            <view type="write"/>
+            <edit name="property1" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="defaultWidth" id="defaultWidth" label="默认宽度">
+            <view type="write"/>
+            <edit name="property2" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="defaultHeight" id="defaultHeight" label="默认高度">
+            <view type="write"/>
+            <edit name="property3" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="deskStyle" id="deskStyle" label="桌面样式">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="ext1" id="ext1" label="扩展配置1">
+            <view type="write"/>
+            <edit name="property4" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="ext2" id="ext2" label="扩展配置2">
+            <view type="write"/>
+            <edit name="property5" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="ext3" id="ext3" label="扩展配置3">
+            <view type="write"/>
+            <edit name="property6" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="caozw" displayName="Windows桌面图标" entityName="org.gocom.components.coframe.skins.win7.data.Win7Icons" id="Win7Icons">
+        <field dataType="String" dict="false" entityField="iconId" id="iconId" label="图标主键">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="iconName" id="iconName" label="名称">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="iconText" id="iconText" label="图标文本">
+            <view type="write"/>
+            <edit name="property1" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="iconPath" id="iconPath" label="图标路径">
+            <view type="write"/>
+            <edit name="property2" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="iconTitle" id="iconTitle" label="标题">
+            <view type="write"/>
+            <edit name="property3" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="menuId" id="menuId" label="菜单ID">
+            <view type="write"/>
+            <edit name="property4" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="iconOrder" id="iconOrder" label="顺序">
+            <view type="write"/>
+            <edit name="property5" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="iconDesc" id="iconDesc" label="描述">
+            <view type="write"/>
+            <edit name="property6" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userId" id="userId" label="用户ID">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="caozw" displayName="Windows自动启动" entityName="org.gocom.components.coframe.skins.win7.data.Win7AutoStart" id="Win7AutoStart">
+        <field dataType="String" dict="false" entityField="startId" id="startId" label="图标主键">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="menuId" id="menuId" label="菜单ID">
+            <view type="write"/>
+            <edit name="property4" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="startDesc" id="startDesc" label="描述">
+            <view type="write"/>
+            <edit name="property6" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userId" id="userId" label="用户ID">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="james" displayName="自定义背景图片" entityName="org.gocom.components.coframe.skins.win7.data.Win7CustomPictures" id="Win7CustomPictures">
+        <field dataType="String" dict="false" entityField="customId" id="customId" label="自定义主键ID">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="fileName" id="fileName" label="自定义背景图片名称">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userId" id="userId" label="自定义背景用户ID">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="uploadTime" id="uploadTime" label="自定义图片上传时间">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+    </viewModel>
+</viewModelSet>

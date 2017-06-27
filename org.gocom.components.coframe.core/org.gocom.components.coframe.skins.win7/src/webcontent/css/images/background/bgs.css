@@ -1,0 +1,61 @@
+.style-button{
+	padding: 0;
+	border: 1px solid #A9ACB5;
+	background: #EBEDF2;
+	font-size: 9pt;
+	font-family: Tahoma,Verdana,宋体;
+	line-height: 22px;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	zoom: 1;
+	cursor: pointer;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	vertical-align: middle;
+	outline: none;
+	width:140px;
+	height:75px;
+}
+.style-button:hover{
+	background: #e2f2fe;
+	border: solid 1px #80a4d0;
+}
+.style-button-select{	
+	background: #bacee4 !important;
+	border-color: #7a9ac4 !important;
+}
+.bg-div {
+	width:120px;
+	height:55px;
+	margin-top:10px;
+	margin-left:10px;
+}
+.bg-img {
+	width:120px;
+	height:55px;
+	text-align:center;
+}
+.delbtn{
+display: "none";
+position: absolute;
+margin-left: 1px;
+margin-top: -1px;
+cursor: pointer;
+right:0px;
+top:0px;
+}
+.delbtn:hover{
+	display: "block";
+}
+.delbtn-div{
+    position:relative;
+    float:right;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+    -moz-opacity: 0.5;
+}
+.delbtn-div：hover{
+	background:red;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+	-moz-opacity: 1;
+}

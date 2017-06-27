@@ -1,0 +1,22 @@
+.search-float{
+	width:310px;
+	height:43px;
+	background: url(images/widgets/search-bg1.png) no-repeat;
+	position:relative;
+}
+.search-type{
+	width:139px;
+	height:53px;
+	background: url(images/widgets/search-type-normal.png) no-repeat;
+	position:absolute;
+	top:0px;
+	left:10px;
+}
+.search-type:hover{
+	width:139px;
+	height:53px;
+	background: url(images/widgets/search-type-hover.png) no-repeat;
+	position:absolute;
+	top:0px;
+	left:10px;
+}

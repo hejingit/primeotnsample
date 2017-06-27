@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="AppApplication" implementationType="file" modifier="public" name="AppApplication.class" order="32" version=""/>
+    <model description="" displayName="AppFuncgroup" implementationType="file" modifier="public" name="AppFuncgroup.class" order="32" version=""/>
+    <model description="" displayName="AppFuncresource" implementationType="file" modifier="public" name="AppFuncresource.class" order="32" version=""/>
+    <model description="" displayName="AppFunction" implementationType="file" modifier="public" name="AppFunction.class" order="32" version=""/>
+    <model description="" displayName="AppMenu" implementationType="file" modifier="public" name="AppMenu.class" order="32" version=""/>
+</metadata>

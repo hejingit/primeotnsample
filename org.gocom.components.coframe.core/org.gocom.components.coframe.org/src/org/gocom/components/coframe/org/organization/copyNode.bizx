@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process:tBusinessLogic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://com.primeton.emf.core" xmlns:process="http://primeton.com/emf/core/process" name="copyNode" detailDescription="" demonstration="" urls="" gridVisibility="false" rulerVisibility="true" snapToGeometry="true" productVersion="6.3">
+  <nodes xsi:type="process:tStart" id="start0" name="开始" displayName="开始" type="start">
+    <sourceConnections xsi:type="process:tLink" description="" id="link2" name="link2" displayName="连接线" isDefault="false" type="transition">
+      <sourceNode>start0</sourceNode>
+      <targetNode>invokeSpring0</targetNode>
+      <process:transitionCondition>
+        <process:complexCondition>
+          <process:code>&quot;OrgOrganization&quot;.equals(dragNodeType) &amp;&amp; &#xD;
+&quot;OrgOrganization&quot;.equals(dropNodeType)</process:code>
+        </process:complexCondition>
+      </process:transitionCondition>
+    </sourceConnections>
+    <sourceConnections xsi:type="process:tLink" description="" id="link0" name="link0" displayName="连接线" isDefault="false" type="transition">
+      <sourceNode>start0</sourceNode>
+      <targetNode>invokeSpring1</targetNode>
+      <process:transitionCondition>
+        <process:complexCondition>
+          <process:code>&quot;OrgEmployee&quot;.equals(dragNodeType) &amp;&amp; &#xD;
+&quot;OrgOrganization&quot;.equals(dropNodeType)</process:code>
+        </process:complexCondition>
+      </process:transitionCondition>
+    </sourceConnections>
+    <sourceConnections xsi:type="process:tLink" description="" id="link1" name="link1" displayName="连接线" isDefault="false" type="transition">
+      <sourceNode>start0</sourceNode>
+      <targetNode>invokeSpring2</targetNode>
+      <process:transitionCondition>
+        <process:complexCondition>
+          <process:code>&quot;OrgEmployee&quot;.equals(dragNodeType) &amp;&amp; &#xD;
+&quot;OrgPosition&quot;.equals(dropNodeType)</process:code>
+        </process:complexCondition>
+      </process:transitionCondition>
+    </sourceConnections>
+    <sourceConnections xsi:type="process:tLink" description="" id="link8" name="link8" displayName="连接线" isDefault="false" type="transition">
+      <sourceNode>start0</sourceNode>
+      <targetNode>invokeSpring3</targetNode>
+      <process:transitionCondition>
+        <process:complexCondition>
+          <process:code>&quot;OrgPosition&quot;.equals(dragNodeType) &amp;&amp; &#xD;
+&quot;OrgOrganization&quot;.equals(dropNodeType)</process:code>
+        </process:complexCondition>
+      </process:transitionCondition>
+    </sourceConnections>
+    <sourceConnections xsi:type="process:tLink" description="" id="link10" name="link10" displayName="连接线" isDefault="false" type="transition">
+      <sourceNode>start0</sourceNode>
+      <targetNode>invokeSpring4</targetNode>
+      <process:transitionCondition>
+        <process:complexCondition>
+          <process:code>&quot;OrgPosition&quot;.equals(dragNodeType) &amp;&amp; &#xD;
+&quot;OrgPosition&quot;.equals(dropNodeType)</process:code>
+        </process:complexCondition>
+      </process:transitionCondition>
+    </sourceConnections>
+    <sourceConnections xsi:type="process:tLink" description="" id="link6" name="link6" displayName="连接线" isDefault="true" type="transition">
+      <sourceNode>start0</sourceNode>
+      <targetNode>end2</targetNode>
+      <process:transitionCondition>
+        <process:simpleCondition operator="EQ">
+          <process:leftOperand type="query"/>
+          <process:rightOperand type="literal">1</process:rightOperand>
+        </process:simpleCondition>
+      </process:transitionCondition>
+    </sourceConnections>
+    <location x="100" y="150"/>
+    <size height="28" width="28"/>
+    <nodeLabel>start0label</nodeLabel>
+  </nodes>
+  <nodes xsi:type="process:tEnd" id="end0" name="结束" displayName="结束" type="end">
+    <targetConnections>link3</targetConnections>
+    <targetConnections>link9</targetConnections>
+    <targetConnections>link11</targetConnections>
+    <targetConnections>link7</targetConnections>
+    <targetConnections>link12</targetConnections>
+    <location x="509" y="150"/>
+    <size height="28" width="28"/>
+    <nodeLabel>end0label</nodeLabel>
+    <process:returns>
+      <process:return id="0" language="Int" name="result" type="query" valueType="Primitive">result</process:return>
+      <process:return id="1" language="String" name="message" type="query" valueType="Primitive">message</process:return>
+    </process:returns>
+  </nodes>
+  <nodes xsi:type="model:NodeElementLabel" id="start0label" name="label" displayName="label" nodeType="label">
+    <location x="102" y="186"/>
+    <figSize height="12" width="25"/>
+    <node>start0</node>
+  </nodes>
+  <nodes xsi:type="model:NodeElementLabel" id="end0label" name="label" displayName="label" nodeType="label">
+    <location x="511" y="186"/>
+    <figSize height="12" width="25"/>
+    <node>end0</node>
+  </nodes>
+  <nodes xsi:type="process:tInvoke" description="" id="invokeSpring0" name="copyOrgToOrg" displayName="copyOrgToOrg" type="invoke" index="0" invokeType="invoke_spring" varArgs="false">
+    <sourceConnections xsi:type="process:tLink" id="link3" name="link3" displayName="连接线" isDefault="true" type="transition">
+      <sourceNode>invokeSpring0</sourceNode>
+      <targetNode>end0</targetNode>
+    </sourceConnections>
+    <targetConnections>link2</targetConnections>
+    <location x="285" y="75"/>
+    <size height="28" width="28"/>
+    <nodeLabel>invokeSpring0label</nodeLabel>
+    <process:spring methodType="beanID" synchronization="true" transactionType="join">
+      <process:partner type="literal">org.gocom.components.coframe.org.OrgTreeService.copyOrgToOrg</process:partner>
+      <process:instance instanceName="OrgTreeService"/>
+    </process:spring>
+    <process:inputVariables>
+      <process:inputVariable id="0" name="orgid" type="query" value="java.lang.String" valueType="Java" pattern="reference">dragNodeId</process:inputVariable>
+      <process:inputVariable id="1" name="targetOrgid" type="query" value="java.lang.String" valueType="Java" pattern="reference">dropNodeId</process:inputVariable>
+    </process:inputVariables>
+    <process:outputVariables/>
+  </nodes>
+  <nodes xsi:type="model:NodeElementLabel" id="invokeSpring0label" name="label" nodeType="label">
+    <location x="263" y="111"/>
+    <figSize height="12" width="73"/>
+    <node>invokeSpring0</node>
+  </nodes>
+  <nodes xsi:type="process:tInvoke" description="" id="invokeSpring1" name="copyEmpToOrg" displayName="copyEmpToOrg" type="invoke" index="0" invokeType="invoke_spring" varArgs="false">
+    <sourceConnections xsi:type="process:tLink" id="link5" name="link5" displayName="连接线" isDefault="true" type="transition">
+      <sourceNode>invokeSpring1</sourceNode>
+      <targetNode>assign0</targetNode>
+      <process:transitionCondition/>
+    </sourceConnections>
+    <targetConnections>link0</targetConnections>
+    <location x="286" y="135"/>
+    <size height="28" width="28"/>
+    <nodeLabel>invokeSpring1label</nodeLabel>
+    <process:spring methodType="beanID" synchronization="true" transactionType="join">
+      <process:partner type="literal">org.gocom.components.coframe.org.OrgTreeService.copyEmpToOrg</process:partner>
+      <process:instance instanceName="OrgTreeService"/>
+    </process:spring>
+    <process:inputVariables>
+      <process:inputVariable id="0" name="empid" type="query" value="java.lang.String" valueType="Java" pattern="reference">dragNodeId</process:inputVariable>
+      <process:inputVariable id="1" name="targetOrgid" type="query" value="java.lang.String" valueType="Java" pattern="reference">dropNodeId</process:inputVariable>
+    </process:inputVariables>
+    <process:outputVariables>
+      <process:outputVariable id="0" name="out0" type="query" value="int" valueType="Java">result</process:outputVariable>
+    </process:outputVariables>
+  </nodes>
+  <nodes xsi:type="model:NodeElementLabel" id="invokeSpring1label" name="label" nodeType="label">
+    <location x="264" y="171"/>
+    <figSize height="12" width="73"/>
+    <node>invokeSpring1</node>
+  </nodes>
+  <nodes xsi:type="process:tInvoke" description="" id="invokeSpring2" name="copyEmpToPosition" displayName="copyEmpToPosition" type="invoke" index="0" invokeType="invoke_spring" varArgs="false">
+    <sourceConnections xsi:type="process:tLink" id="link4" name="link4" displayName="连接线" isDefault="true" type="transition">
+      <sourceNode>invokeSpring2</sourceNode>
+      <targetNode>assign1</targetNode>
+    </sourceConnections>
+    <targetConnections>link1</targetConnections>
+    <location x="287" y="202"/>
+    <size height="28" width="28"/>
+    <nodeLabel>invokeSpring2label</nodeLabel>
+    <process:spring methodType="beanID" synchronization="true" transactionType="join">
+      <process:partner type="literal">org.gocom.components.coframe.org.OrgTreeService.copyEmpToPosition</process:partner>
+      <process:instance instanceName="OrgTreeService"/>
+    </process:spring>
+    <process:inputVariables>
+      <process:inputVariable id="0" name="empid" type="query" value="java.lang.String" valueType="Java" pattern="reference">dragNodeId</process:inputVariable>
+      <process:inputVariable id="1" name="targetPositionid" type="query" value="java.lang.String" valueType="Java" pattern="reference">dropNodeId</process:inputVariable>
+    </process:inputVariables>
+    <process:outputVariables>
+      <process:outputVariable id="0" name="out0" type="query" value="int" valueType="Java">result</process:outputVariable>
+    </process:outputVariables>
+  </nodes>
+  <nodes xsi:type="model:NodeElementLabel" id="invokeSpring2label" name="label" nodeType="label">
+    <location x="250" y="238"/>
+    <figSize height="12" width="103"/>
+    <node>invokeSpring2</node>
+  </nodes>
+  <nodes xsi:type="process:tInvoke" description="" id="invokeSpring3" name="copyPositionToOrg" displayName="copyPositionToOrg" type="invoke" index="0" invokeType="invoke_spring" varArgs="false">
+    <sourceConnections xsi:type="process:tLink" id="link9" name="link9" displayName="连接线" isDefault="true" type="transition">
+      <sourceNode>invokeSpring3</sourceNode>
+      <targetNode>end0</targetNode>
+    </sourceConnections>
+    <targetConnections>link8</targetConnections>
+    <location x="285" y="270"/>
+    <size height="28" width="28"/>
+    <nodeLabel>invokeSpring3label</nodeLabel>
+    <process:spring methodType="beanID" synchronization="true" transactionType="join">
+      <process:partner type="literal">org.gocom.components.coframe.org.OrgTreeService.copyPositionToOrg</process:partner>
+      <process:instance instanceName="OrgTreeService"/>
+    </process:spring>
+    <process:inputVariables>
+      <process:inputVariable id="0" name="positionid" type="query" value="java.lang.String" valueType="Java" pattern="reference">dragNodeId</process:inputVariable>
+      <process:inputVariable id="1" name="targetOrgid" type="query" value="java.lang.String" valueType="Java" pattern="reference">dropNodeId</process:inputVariable>
+    </process:inputVariables>
+    <process:outputVariables/>
+  </nodes>
+  <nodes xsi:type="model:NodeElementLabel" id="invokeSpring3label" name="label" nodeType="label">
+    <location x="248" y="306"/>
+    <figSize height="12" width="103"/>
+    <node>invokeSpring3</node>
+  </nodes>
+  <nodes xsi:type="process:tInvoke" description="" id="invokeSpring4" name="copyPositionToPosition" displayName="copyPositionToPosition" type="invoke" index="0" invokeType="invoke_spring" varArgs="false">
+    <sourceConnections xsi:type="process:tLink" id="link11" name="link11" displayName="连接线" isDefault="true" type="transition">
+      <sourceNode>invokeSpring4</sourceNode>
+      <targetNode>end0</targetNode>
+    </sourceConnections>
+    <targetConnections>link10</targetConnections>
+    <location x="288" y="345"/>
+    <size height="28" width="28"/>
+    <nodeLabel>invokeSpring4label</nodeLabel>
+    <process:spring methodType="beanID" synchronization="true" transactionType="join">
+      <process:partner type="literal">org.gocom.components.coframe.org.OrgTreeService.copyPositionToPosition</process:partner>
+      <process:instance instanceName="OrgTreeService"/>
+    </process:spring>
+    <process:inputVariables>
+      <process:inputVariable id="0" name="positionid" type="query" value="java.lang.String" valueType="Java" pattern="reference">dragNodeId</process:inputVariable>
+      <process:inputVariable id="1" name="targetPositionid" type="query" value="java.lang.String" valueType="Java" pattern="reference">dropNodeId</process:inputVariable>
+    </process:inputVariables>
+    <process:outputVariables/>
+  </nodes>
+  <nodes xsi:type="model:NodeElementLabel" id="invokeSpring4label" name="label" nodeType="label">
+    <location x="236" y="381"/>
+    <figSize height="12" width="133"/>
+    <node>invokeSpring4</node>
+  </nodes>
+  <nodes xsi:type="process:tAssign" description="" id="assign0" name="赋值" displayName="赋值" type="assign">
+    <sourceConnections xsi:type="process:tLink" id="link7" name="link7" displayName="连接线" isDefault="true" type="transition">
+      <sourceNode>assign0</sourceNode>
+      <targetNode>end0</targetNode>
+    </sourceConnections>
+    <targetConnections>link5</targetConnections>
+    <location x="352" y="135"/>
+    <size height="28" width="28"/>
+    <nodeLabel>assign0label</nodeLabel>
+    <process:copy>
+      <process:from type="expression" pattern="reference">(result==-1)?&quot;目标机构或机构直属岗位下已存在该员工信息&quot;:&quot;&quot;</process:from>
+      <process:to type="query">message</process:to>
+    </process:copy>
+  </nodes>
+  <nodes xsi:type="model:NodeElementLabel" id="assign0label" name="label" nodeType="label">
+    <location x="354" y="171"/>
+    <figSize height="12" width="25"/>
+    <node>assign0</node>
+  </nodes>
+  <nodes xsi:type="process:tAssign" description="" id="assign1" name="赋值1" displayName="赋值" collapsed="false" type="assign">
+    <sourceConnections xsi:type="process:tLink" id="link12" name="link12" displayName="连接线" isDefault="true" type="transition">
+      <sourceNode>assign1</sourceNode>
+      <targetNode>end0</targetNode>
+    </sourceConnections>
+    <targetConnections>link4</targetConnections>
+    <location x="353" y="202"/>
+    <size height="28" width="28"/>
+    <nodeLabel>assign1label</nodeLabel>
+    <process:copy>
+      <process:from type="expression" pattern="reference">(result==-1)?&quot;目标岗位已存在该员工信息&quot;:message</process:from>
+      <process:to type="query">message</process:to>
+    </process:copy>
+  </nodes>
+  <nodes xsi:type="model:NodeElementLabel" id="assign1label" name="label" nodeType="label">
+    <location x="352" y="238"/>
+    <figSize height="12" width="31"/>
+    <node>assign1</node>
+  </nodes>
+  <nodes xsi:type="process:tEnd" id="end2" name="结束2" displayName="结束" type="end">
+    <targetConnections>link6</targetConnections>
+    <location x="101" y="306"/>
+    <size height="28" width="28"/>
+    <nodeLabel>end2label</nodeLabel>
+    <process:returns>
+      <process:return id="0" language="Int" name="result" type="query" valueType="Primitive">result</process:return>
+      <process:return id="1" language="String" name="message" type="query" valueType="Primitive">message</process:return>
+    </process:returns>
+  </nodes>
+  <nodes xsi:type="model:NodeElementLabel" id="end2label" name="label" nodeType="label">
+    <location x="100" y="342"/>
+    <figSize height="12" width="31"/>
+    <node>end2</node>
+  </nodes>
+  <topRuler/>
+  <leftRuler/>
+  <process:info author="YANGZHOU" createTime="2013-03-09 10:36:03" date="2013-03-09Z" description="" name="moveEmpToOrg" version="6.3"/>
+  <process:variables/>
+  <process:inputs varArgs="false">
+    <process:input description="" isArray="false" name="dragNodeId" primitiveType="String"/>
+    <process:input description="" isArray="false" name="dragNodeType" primitiveType="String"/>
+    <process:input description="" isArray="false" name="dropNodeId" primitiveType="String"/>
+    <process:input description="" isArray="false" name="dropNodeType" primitiveType="String"/>
+  </process:inputs>
+  <process:outputs>
+    <process:output description="" isArray="false" name="result" primitiveType="Int"/>
+    <process:output description="" isArray="false" name="message" primitiveType="String"/>
+  </process:outputs>
+  <process:extAttribute1>public</process:extAttribute1>
+  <process:transactionType>true</process:transactionType>
+</process:tBusinessLogic>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="FuncGroupManager.eosComponentType" implementationType="file" modifier="public" name="FuncGroupManager.eosComponentType" order="32" version=""/>
+    <model description="" displayName="getFuncGroup" implementationType="file" modifier="public" name="getFuncGroup.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java"/>
+        <method description="" displayName="getFuncGroup" implementationType="file" modifier="public" name="getFuncGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="template" implementationType="Java" modifier="public" name="template" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup"/>
+            <result description="" displayName="appfuncgroup" implementationType="Java" modifier="public" name="appfuncgroup" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appfuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appfuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appfuncgroup.java"/>
+    </model>
+    <model description="" displayName="queryFunctionGroup" implementationType="file" modifier="public" name="queryFuncGroup.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.PageCond.java" order="4096" typeName="java:com.eos.foundation.PageCond.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appfuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appfuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appfuncgroup.java"/>
+        <importReference description="" displayName="com.eos.foundation.pagecond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.pagecond.java" order="4096" typeName="java:com.eos.foundation.pagecond.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+        <method description="" displayName="queryFunctionGroup" implementationType="file" modifier="public" name="queryFuncGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="appid" implementationType="Primitive" modifier="public" name="appid" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+    </model>
+    <model description="" displayName="querySubFuncGroup" implementationType="file" modifier="public" name="querySubFuncGroup.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.PageCond.java" order="4096" typeName="java:com.eos.foundation.PageCond.java"/>
+        <method description="" displayName="querySubFuncGroup" implementationType="file" modifier="public" name="querySubFuncGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <parameter description="" displayName="criteria" implementationType="DataObject" modifier="public" name="criteria" order="2048" typeName="file:com.primeton.das.criteria.criteriaType"/>
+            <parameter description="" displayName="parentgroupid" implementationType="Primitive" modifier="public" name="parentgroupid" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appfuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appfuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appfuncgroup.java"/>
+        <importReference description="" displayName="com.eos.foundation.pagecond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.pagecond.java" order="4096" typeName="java:com.eos.foundation.pagecond.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+    </model>
+    <model description="" displayName="saveFuncGroup" implementationType="file" modifier="public" name="saveFuncGroup.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java"/>
+        <method description="" displayName="saveFuncGroup" implementationType="file" modifier="public" name="saveFuncGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appfuncgroup" implementationType="Java" modifier="public" name="appfuncgroup" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appfuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appfuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appfuncgroup.java"/>
+    </model>
+    <model description="" displayName="saveFuncGroup" implementationType="file" modifier="public" name="saveSubFuncGroup.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="saveFuncGroup" implementationType="file" modifier="public" name="saveSubFuncGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appfuncgroup" implementationType="Java" modifier="public" name="appfuncgroup" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appfuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appfuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appfuncgroup.java"/>
+    </model>
+    <model description="" displayName="updateFuncGroup" implementationType="file" modifier="public" name="updateFuncGroup.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java"/>
+        <method description="" displayName="updateFuncGroup" implementationType="file" modifier="public" name="updateFuncGroup" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appfuncgroup" implementationType="Java" modifier="public" name="appfuncgroup" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppFuncgroup"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appfuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appfuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appfuncgroup.java"/>
+    </model>
+    <model description="" displayName="updateFuncGroupRelation" implementationType="file" modifier="public" name="updateFuncGroupRelation.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppFuncgroup.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFunction.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppFunction.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppFunction.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appfuncgroup.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appfuncgroup.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appfuncgroup.java"/>
+        <method description="" displayName="updateFuncGroupRelation" implementationType="file" modifier="public" name="updateFuncGroupRelation" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodeId" implementationType="Primitive" modifier="public" name="nodeId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="nodeType" implementationType="Primitive" modifier="public" name="nodeType" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="targetNodeId" implementationType="Primitive" modifier="public" name="targetNodeId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="targetNodeType" implementationType="Primitive" modifier="public" name="targetNodeType" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Primitive" modifier="public" name="data" order="1024" typeName="file:Boolean"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appfunction.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appfunction.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appfunction.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+</metadata>

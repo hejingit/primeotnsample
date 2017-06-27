@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="CapRoleService" implementationType="file" modifier="public" name="CapRoleService.class" order="32" version=""/>
+    <model description="" displayName="ICapRoleService" implementationType="file" modifier="public" name="ICapRoleService.class" order="32" version=""/>
+</metadata>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="PartyGraphService" implementationType="file" modifier="public" name="PartyGraphService.class" order="32" version=""/>
+    <model description="" displayName="PartyGraphServiceBean" implementationType="file" modifier="public" name="PartyGraphServiceBean.class" order="32" version=""/>
+    <model description="" displayName="图形化展示参与者服务" implementationType="file" modifier="public" name="service.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="获取功能菜单图形" implementationType="file" modifier="public" name="getFunctionMenuGraph" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="partyId" implementationType="Primitive" modifier="public" name="partyId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="partyType" implementationType="Primitive" modifier="public" name="partyType" order="2048" typeName="file:String"/>
+            <result description="" displayName="nodes" implementationType="Java" modifier="public" name="nodes" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.party.graph.service.getFunctionMenuGraph.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.party.graph.service.getFunctionMenuGraph.bizx" order="4096" typeName="file:org.gocom.components.coframe.auth.party.graph.service.getFunctionMenuGraph.bizx"/>
+        <method description="" displayName="获取参与者授权计算情况" implementationType="file" modifier="public" name="getPartyAuthGraph" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="partyId" implementationType="Primitive" modifier="public" name="partyId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="partyType" implementationType="Primitive" modifier="public" name="partyType" order="2048" typeName="file:String"/>
+            <result description="" displayName="nodes" implementationType="Java" modifier="public" name="nodes" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.auth.party.graph.service.getPartyAuthGraph.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.auth.party.graph.service.getPartyAuthGraph.bizx" order="4096" typeName="file:org.gocom.components.coframe.auth.party.graph.service.getPartyAuthGraph.bizx"/>
+    </model>
+</metadata>

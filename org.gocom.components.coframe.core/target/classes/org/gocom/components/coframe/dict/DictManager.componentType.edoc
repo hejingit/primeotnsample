@@ -1,0 +1,46 @@
+<map>
+  <entry>
+    <string>org.gocom.components.coframe.dict.DictManager.refreshDictCache()</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;refreshDictCache&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;刷新业务字典缓存&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.dict.DictManager.refreshDictCache&lt;dl&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;status(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.dict.DictManager.saveDictType(org.gocom.components.coframe.dict.dict.EosDictType)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;saveDictType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;保存业务字典类型&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.dict.DictManager.saveDictType&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(org.gocom.components.coframe.dict.dict.EosDictType):&lt;/b&gt;业务字典类型&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(org.gocom.components.coframe.dict.dict.EosDictType):&lt;/b&gt;业务字典类型&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;status(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.dict.DictManager.exportDict(String, String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;exportDict&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;导出业务字典&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.dict.DictManager.exportDict&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;dicttypeid(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;dicttypename(String):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(Byte[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>业务字典配置</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;DictManager.componentType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;业务字典配置&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.dict.DictManager&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.dict.DictManager.queryDict(com.primeton.das.criteria.criteriaType, com.eos.foundation.PageCond, String, String, String, String, String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;queryDict&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;查询业务字典项&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.dict.DictManager.queryDict&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;criteria(com.primeton.das.criteria.criteriaType):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;page(com.eos.foundation.PageCond):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;sortField(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;sortOrder(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;dicttypeid(String):&lt;/b&gt;类型代码&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;dictid(String):&lt;/b&gt;父节点ID&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;parenttypeid(String):&lt;/b&gt;父节点类型ID&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(org.gocom.components.coframe.dict.dict.EosDictEntry[]):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;total(Int):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.dict.DictManager.removeDictType(org.gocom.components.coframe.dict.dict.EosDictType[])</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;removeDictType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;删除业务字典类型&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.dict.DictManager.removeDictType&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(org.gocom.components.coframe.dict.dict.EosDictType[]):&lt;/b&gt;业务字典类型&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(org.gocom.components.coframe.dict.dict.EosDictType[]):&lt;/b&gt;业务字典类型&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;status(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.dict.DictManager.saveDict(org.gocom.components.coframe.dict.dict.EosDictEntry)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;saveDict&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;保存业务字典项&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.dict.DictManager.saveDict&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(org.gocom.components.coframe.dict.dict.EosDictEntry):&lt;/b&gt;业务字典项&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(org.gocom.components.coframe.dict.dict.EosDictEntry):&lt;/b&gt;业务字典项&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;status(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.dict.DictManager.removeDict(org.gocom.components.coframe.dict.dict.EosDictEntry[])</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;removeDict&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;删除业务字典项&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.dict.DictManager.removeDict&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(org.gocom.components.coframe.dict.dict.EosDictEntry[]):&lt;/b&gt;业务字典项&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(org.gocom.components.coframe.dict.dict.EosDictEntry[]):&lt;/b&gt;业务字典项&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;status(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.dict.DictManager.importDict(String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;importDict&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;导入业务字典&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.dict.DictManager.importDict&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;excelFile(String):&lt;/b&gt;上传后的Excel文件名&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;reCode(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.dict.DictManager.queryDictType(com.primeton.das.criteria.criteriaType, com.eos.foundation.PageCond, String, String, String, String, String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;queryDictType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;查询业务字典类型&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.dict.DictManager.queryDictType&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;criteria(com.primeton.das.criteria.criteriaType):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;page(com.eos.foundation.PageCond):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;sortField(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;sortOrder(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;id(String):&lt;/b&gt;类型代码&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;name(String):&lt;/b&gt;类型名称&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;dicttypeid(String):&lt;/b&gt;父节点ID&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(org.gocom.components.coframe.dict.dict.EosDictType[]):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;total(Int):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.dict.DictManager.removeDictTypeCascade(org.gocom.components.coframe.dict.dict.EosDictType[])</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;removeDictTypeCascade&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;级联删除字典类型&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.dict.DictManager.removeDictTypeCascade&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(org.gocom.components.coframe.dict.dict.EosDictType[]):&lt;/b&gt;业务字典类型&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+</map>

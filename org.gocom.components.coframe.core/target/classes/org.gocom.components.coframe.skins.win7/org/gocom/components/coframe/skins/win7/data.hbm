@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class dynamic-insert="true" dynamic-update="true" entity-name="org.gocom.components.coframe.skins.win7.data.Win7Config" table="COMP_WIN7_CONFIG">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id name="configId" type="string">
+            <column name="CONFIG_ID"/>
+            <generator class="uuid"/>
+        </id>
+        <property name="bgPicturePath" type="string">
+            <column name="BG_PICTURE_PATH"/>
+        </property>
+        <property name="userId" type="string">
+            <column name="USER_ID"/>
+        </property>
+        <property lazy="false" name="configData" type="com.primeton.das.entity.impl.lob.type.ClobStringType">
+            <column name="CONFIG_DATA"/>
+        </property>
+        <property name="openType" type="string">
+            <column name="OPEN_TYPE"/>
+        </property>
+        <property name="defaultMax" type="boolean">
+            <column name="DEFAULT_MAX"/>
+        </property>
+        <property name="defaultWidth" type="int">
+            <column name="DEFAULT_WIDTH"/>
+        </property>
+        <property name="defaultHeight" type="int">
+            <column name="DEFAULT_HEIGHT"/>
+        </property>
+        <property name="deskStyle" type="string">
+            <column name="DESK_STYLE"/>
+        </property>
+        <property name="ext1" type="string">
+            <column name="EXT1"/>
+        </property>
+        <property name="ext2" type="string">
+            <column name="EXT2"/>
+        </property>
+        <property name="ext3" type="string">
+            <column name="EXT3"/>
+        </property>
+    </class>
+    <class dynamic-insert="true" dynamic-update="true" entity-name="org.gocom.components.coframe.skins.win7.data.Win7Icons" table="COMP_WIN7_ICONS">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id name="iconId" type="string">
+            <column name="ICON_ID"/>
+            <generator class="uuid"/>
+        </id>
+        <property name="iconName" type="string">
+            <column name="ICON_NAME"/>
+        </property>
+        <property name="iconText" type="string">
+            <column name="ICON_TEXT"/>
+        </property>
+        <property name="iconPath" type="string">
+            <column name="ICON_PATH"/>
+        </property>
+        <property name="iconTitle" type="string">
+            <column name="ICON_TITLE"/>
+        </property>
+        <property name="menuId" type="string">
+            <column name="MENU_ID"/>
+        </property>
+        <property name="iconOrder" type="string">
+            <column name="ICON_INDEX"/>
+        </property>
+        <property name="iconDesc" type="string">
+            <column name="ICON_DESC"/>
+        </property>
+        <property name="userId" type="string">
+            <column name="USER_ID"/>
+        </property>
+    </class>
+    <class dynamic-insert="true" dynamic-update="true" entity-name="org.gocom.components.coframe.skins.win7.data.Win7AutoStart" table="COMP_WIN7_AUTO_START">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id name="startId" type="string">
+            <column name="START_ID"/>
+            <generator class="uuid"/>
+        </id>
+        <property name="menuId" type="string">
+            <column name="MENU_ID"/>
+        </property>
+        <property name="startDesc" type="string">
+            <column name="START_DESC"/>
+        </property>
+        <property name="userId" type="string">
+            <column name="USER_ID"/>
+        </property>
+    </class>
+    <class dynamic-insert="true" dynamic-update="true" entity-name="org.gocom.components.coframe.skins.win7.data.Win7CustomPictures" table="COMP_WIN7_CUSTOM_PICTURES">
+        <tuplizer class="com.primeton.server.das.tuplizer.SDOEntityTuplizer" entity-mode="sdo"/>
+        <id name="customId" type="string">
+            <column name="CUSTOM_ID"/>
+            <generator class="uuid"/>
+        </id>
+        <property name="fileName" type="string">
+            <column name="FILE_NAME"/>
+        </property>
+        <property name="userId" type="string">
+            <column name="USER_ID"/>
+        </property>
+        <property name="uploadTime" type="string">
+            <column name="UPLOAD_TIME"/>
+        </property>
+    </class>
+</hibernate-mapping>

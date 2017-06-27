@@ -1,0 +1,46 @@
+<map>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetUserOrgPartyList(java.lang.String)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;ArrayList org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetUserOrgPartyList(String childPartyID)&lt;/b&gt;&lt;br/&gt;&lt;p&gt; 获取全局机构根对象列表&#x0D; &#x0D; &lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.PartyManagerHelper.getOrgLevelByUserPartList(commonj.sdo.DataObject[], commonj.sdo.DataObject[])</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;ArrayList org.gocom.components.coframe.participantselect.PartyManagerHelper.getOrgLevelByUserPartList(DataObject[] selOrgs, DataObject[] userOrgs)&lt;/b&gt;&lt;br/&gt;&lt;p&gt; 获取全局机构根对象列表&#x0D; &#x0D; &lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetGroupRootPartyList()</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;ArrayList org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetGroupRootPartyList()&lt;/b&gt;&lt;br/&gt;&lt;p&gt; 获取全局组根对象列表&#x0D; &#x0D; &lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgRootPartyList()</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;ArrayList org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgRootPartyList()&lt;/b&gt;&lt;br/&gt;&lt;p&gt; 获取全局机构根对象列表&#x0D; &#x0D; &lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetChildOrgByUserIdPartyList(java.lang.String)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;ArrayList org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetChildOrgByUserIdPartyList(String childPartyID)&lt;/b&gt;&lt;br/&gt;&lt;p&gt; 获取某一个用户所机构的上级机构&#x0D; &#x0D; &lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetParentOrgByUserIdPartyList(java.lang.String)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;ArrayList org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetParentOrgByUserIdPartyList(String childPartyID)&lt;/b&gt;&lt;br/&gt;&lt;p&gt; 获取某一个用户所机构的上级机构&#x0D; &#x0D; &lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>PartyManagerHelper</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;org.gocom.components.coframe.participantselect.PartyManagerHelper&lt;/b&gt;&lt;br/&gt;&lt;p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetGroupChlidPartyList(java.lang.String)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;ArrayList org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetGroupChlidPartyList(String partyId)&lt;/b&gt;&lt;br/&gt;&lt;p&gt; 获取指定组下属组对象列表&#x0D; &#x0D; &lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetParentOrgPartyList(java.lang.String)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;ArrayList org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetParentOrgPartyList(String childPartyID)&lt;/b&gt;&lt;br/&gt;&lt;p&gt; 获取某一个机构的上级机构&#x0D; &#x0D; &lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgsPartyList(org.gocom.components.coframe.org.dataset.OrgOrganization[])</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;ArrayList org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgsPartyList(OrgOrganization[] orgs)&lt;/b&gt;&lt;br/&gt;&lt;p&gt; 获取某一个用户所机构的上级机构&#x0D; &#x0D; &lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgChlidPartyList(java.lang.String)</string>
+    <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;b&gt;ArrayList org.gocom.components.coframe.participantselect.PartyManagerHelper.doGetOrgChlidPartyList(String partyId)&lt;/b&gt;&lt;br/&gt;&lt;p&gt; 获取指定机构下属机构根对象列表&#x0D; &#x0D; &lt;/body&gt;&lt;/html&gt;</string>
+  </entry>
+</map>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<viewModelSet author="guwei" displayName="querymgr" id="org.gocom.components.coframe.auth.queryentity">
+    <viewModel author="guwei" displayName="Entity" entityName="org.gocom.components.coframe.auth.queryentity.QueryUserByEmp" id="QueryUserByEmp">
+        <field dataType="Decimal" dict="false" entityField="empid" id="empid" label="empid">
+            <view type="write"/>
+            <edit name="empid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="tenantId" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="tenantId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userId" id="userId" label="userId">
+            <view type="write"/>
+            <edit name="userId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userName" id="userName" label="userName">
+            <view type="write"/>
+            <edit name="userName" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="email" id="email" label="email">
+            <view type="write"/>
+            <edit name="email" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="operatorId" id="operatorId" label="operatorId">
+            <view type="write"/>
+            <edit name="operatorId" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="guwei" displayName="Entity" entityName="org.gocom.components.coframe.auth.queryentity.QueryUserByRole" id="QueryUserByRole">
+        <field dataType="String" dict="false" entityField="roleId" id="roleId" label="roleId">
+            <view type="write"/>
+            <edit name="roleId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="partyType" id="partyType" label="partyType">
+            <view type="write"/>
+            <edit name="partyType" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userId" id="userId" label="userId">
+            <view type="write"/>
+            <edit name="userId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userName" id="userName" label="userName">
+            <view type="write"/>
+            <edit name="userName" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="tenantId" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="tenantId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="operatorId" id="operatorId" label="operatorId">
+            <view type="write"/>
+            <edit name="operatorId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="email" id="email" label="email">
+            <view type="write"/>
+            <edit name="email" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="guwei" displayName="Entity" entityName="org.gocom.components.coframe.auth.queryentity.QueryEmpByRole" id="QueryEmpByRole">
+        <field dataType="String" dict="false" entityField="roleId" id="roleId" label="roleId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="partyType" id="partyType" label="partyType">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="empid" id="empid" label="empid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="empcode" id="empcode" label="empcode">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="empname" id="empname" label="empname">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="sortno" id="sortno" label="sortno">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="tenantId" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="guwei" displayName="Entity" entityName="org.gocom.components.coframe.auth.queryentity.QueryEmpByOrgRole" id="QueryEmpByOrgRole">
+        <field dataType="String" dict="false" entityField="roleId" id="roleId" label="roleId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="partyType" id="partyType" label="partyType">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgid" id="orgid" label="orgid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="empid" id="empid" label="empid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="empcode" id="empcode" label="empcode">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="empname" id="empname" label="empname">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="tenantId" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="guwei" displayName="Entity" entityName="org.gocom.components.coframe.auth.queryentity.QueryEmpAndUserByUser" id="QueryEmpAndUserByUser">
+        <field dataType="String" dict="false" entityField="userid" id="userid" label="userid">
+            <view type="write"/>
+            <edit name="userid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userName" id="userName" label="userName">
+            <view type="write"/>
+            <edit name="userName" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="empid" id="empid" label="empid">
+            <view type="write"/>
+            <edit name="empid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="empcode" id="empcode" label="empcode">
+            <view type="write"/>
+            <edit name="empcode" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="empname" id="empname" label="empname">
+            <view type="write"/>
+            <edit name="empname" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="tenantId" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="tenantId" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="YANGZHOU" displayName="Entity" entityName="org.gocom.components.coframe.auth.queryentity.QueryOrgByRole" id="QueryOrgByRole">
+        <field dataType="String" dict="false" entityField="roleId" id="roleId" label="roleId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="partyType" id="partyType" label="partyType">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgid" id="orgid" label="orgid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgcode" id="orgcode" label="orgcode">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgname" id="orgname" label="orgname">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="tenantId" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="YANGZHOU" displayName="Entity" entityName="org.gocom.components.coframe.auth.queryentity.QueryPositionByRole" id="QueryPositionByRole">
+        <field dataType="String" dict="false" entityField="roleId" id="roleId" label="roleId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="partyType" id="partyType" label="partyType">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="positionid" id="positionid" label="positionid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="posicode" id="posicode" label="posicode">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="posiname" id="posiname" label="posiname">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="tenantId" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="YANGZHOU" displayName="Entity" entityName="org.gocom.components.coframe.auth.queryentity.PartyDataObject" id="PartyDataObject">
+        <field dataType="String" dict="false" entityField="id" id="id" label="id">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="code" id="code" label="code">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="name" id="name" label="name">
+            <view type="write"/>
+            <edit name="property1" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="partyTypeID" id="partyTypeID" label="partyTypeID">
+            <view type="write"/>
+            <edit name="property1" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="tenantID" id="tenantID" label="tenantID">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="YANGZHOU" displayName="Entity" entityName="org.gocom.components.coframe.auth.queryentity.QueryGroupByRole" id="QueryGroupByRole">
+        <field dataType="String" dict="false" entityField="roleId" id="roleId" label="roleId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="partyType" id="partyType" label="partyType">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="groupid" id="groupid" label="groupid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="groupname" id="groupname" label="groupname">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="tenantId" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+</viewModelSet>

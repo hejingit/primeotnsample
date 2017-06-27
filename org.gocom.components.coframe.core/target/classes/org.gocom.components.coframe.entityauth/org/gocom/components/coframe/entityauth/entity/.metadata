@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="entity.eosComponentType" implementationType="file" modifier="public" name="entity.eosComponentType" order="32" version=""/>
+    <model description="" displayName="getEntityProperties" implementationType="file" modifier="public" name="getEntityInfoPropertie.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.primeton.cap.spi.dataset.service.propertyinfo.java" implementationType="java" modifier="public" name="java:com.primeton.cap.spi.dataset.service.propertyinfo.java" order="4096" typeName="java:com.primeton.cap.spi.dataset.service.propertyinfo.java"/>
+        <method description="" displayName="getEntityProperties" implementationType="file" modifier="public" name="getEntityInfoPropertie" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="namespace" implementationType="Primitive" modifier="public" name="namespace" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="entityName" implementationType="Primitive" modifier="public" name="entityName" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="propertyName" implementationType="Primitive" modifier="public" name="propertyName" order="2048" typeName="file:String"/>
+            <result description="" displayName="propertyInfo" implementationType="Java" modifier="public" name="propertyInfo" order="1024" typeName="file:com.primeton.cap.spi.dataset.service.PropertyInfo"/>
+        </method>
+        <importReference description="" displayName="com.primeton.cap.spi.dataset.service.PropertyInfo.java" implementationType="java" modifier="public" name="java:com.primeton.cap.spi.dataset.service.PropertyInfo.java" order="4096" typeName="java:com.primeton.cap.spi.dataset.service.PropertyInfo.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="getEntityProperties" implementationType="file" modifier="public" name="getEntityInfoProperties.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.primeton.cap.spi.dataset.service.propertyinfo.java" implementationType="java" modifier="public" name="java:com.primeton.cap.spi.dataset.service.propertyinfo.java" order="4096" typeName="java:com.primeton.cap.spi.dataset.service.propertyinfo.java"/>
+        <importReference description="" displayName="com.primeton.cap.spi.dataset.service.PropertyInfo.java" implementationType="java" modifier="public" name="java:com.primeton.cap.spi.dataset.service.PropertyInfo.java" order="4096" typeName="java:com.primeton.cap.spi.dataset.service.PropertyInfo.java"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <method description="" displayName="getEntityProperties" implementationType="file" modifier="public" name="getEntityInfoProperties" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="namespace" implementationType="Primitive" modifier="public" name="namespace" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="entityName" implementationType="Primitive" modifier="public" name="entityName" order="2048" typeName="file:String"/>
+            <result description="" displayName="propertyInfos" implementationType="Java" modifier="public" name="propertyInfos" order="1024" typeName="file:com.primeton.cap.spi.dataset.service.PropertyInfo[]"/>
+        </method>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="getEntities" implementationType="file" modifier="public" name="getEntityInfos.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <method description="" displayName="getEntities" implementationType="file" modifier="public" name="getEntityInfos" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="entityInfos" implementationType="Java" modifier="public" name="entityInfos" order="1024" typeName="file:com.primeton.cap.spi.dataset.service.EntityInfo[]"/>
+        </method>
+        <importReference description="" displayName="com.primeton.cap.spi.dataset.service.EntityInfo.java" implementationType="java" modifier="public" name="java:com.primeton.cap.spi.dataset.service.EntityInfo.java" order="4096" typeName="java:com.primeton.cap.spi.dataset.service.EntityInfo.java"/>
+        <importReference description="" displayName="com.primeton.cap.spi.dataset.service.entityinfo.java" implementationType="java" modifier="public" name="java:com.primeton.cap.spi.dataset.service.entityinfo.java" order="4096" typeName="java:com.primeton.cap.spi.dataset.service.entityinfo.java"/>
+    </model>
+</metadata>

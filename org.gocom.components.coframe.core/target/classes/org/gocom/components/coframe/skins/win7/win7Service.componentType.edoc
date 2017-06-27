@@ -1,0 +1,38 @@
+<map>
+  <entry>
+    <string>org.gocom.components.coframe.skins.win7.win7Service.setUserBg(org.gocom.components.coframe.skins.win7.data.Win7Config)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;setUserBg&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;setUserBg&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.skins.win7.win7Service.setUserBg&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;custompic(org.gocom.components.coframe.skins.win7.data.Win7Config):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.skins.win7.win7Service.getUserBg()</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;getUserBg&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;getSysBgPicture&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.skins.win7.win7Service.getUserBg&lt;dl&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;userbgs(org.gocom.components.coframe.skins.win7.data.Win7CustomPictures[]):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;userconfig(org.gocom.components.coframe.skins.win7.data.Win7Config):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.skins.win7.win7Service.updateIconsConfig(org.gocom.components.coframe.skins.win7.data.Win7Icons[])</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;updateIconsConfig&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;更新桌面图标配置&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.skins.win7.win7Service.updateIconsConfig&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;icons(org.gocom.components.coframe.skins.win7.data.Win7Icons[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.skins.win7.win7Service.updateDesktopConfig(org.gocom.components.coframe.skins.win7.data.Win7Config)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;updateDesktopConfig&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;更新桌面配置&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.skins.win7.win7Service.updateDesktopConfig&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;config(org.gocom.components.coframe.skins.win7.data.Win7Config):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.skins.win7.win7Service.getMyConfig()</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;getMyConfig&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;获取我的配置&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.skins.win7.win7Service.getMyConfig&lt;dl&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;config(org.gocom.components.coframe.skins.win7.data.Win7Config):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;icons(org.gocom.components.coframe.skins.win7.data.Win7Icons[]):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;autoStarts(org.gocom.components.coframe.skins.win7.data.Win7AutoStart[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.skins.win7.win7Service.delUserBg(String)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;delUserBg&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;delUserBg&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.skins.win7.win7Service.delUserBg&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;selectedPic(String):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.skins.win7.win7Service.addUserBg(String[])</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;addUserBg&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;addUserBg&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.skins.win7.win7Service.addUserBg&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;files(String[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.skins.win7.win7Service.updateAutoStartConfig(org.gocom.components.coframe.skins.win7.data.Win7AutoStart[])</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;updateAutoStartConfig&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;更新自动启动配置&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.skins.win7.win7Service.updateAutoStartConfig&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;autoStarts(org.gocom.components.coframe.skins.win7.data.Win7AutoStart[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>win7桌面服务</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;win7Service.componentType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;win7桌面服务&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.skins.win7.win7Service&lt;/html&gt;</string>
+  </entry>
+</map>

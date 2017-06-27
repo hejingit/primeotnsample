@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace="org.gocom.components.coframe.auth.coframeUserInit">
+    <resultMap class="commonj.sdo.DataObject" id="userbaseinfo">
+        <result column="USER_ID" javaType="string" property="userId"/>
+        <result column="USER_NAME" javaType="string" property="userName"/>
+        <result column="EMAIL" javaType="string" property="email"/>
+        <result column="MENUTYPE" javaType="string" property="menutype"/>
+        <result column="EMPID" javaType="string" property="empId"/>
+        <result column="EMPNAME" javaType="string" property="empName"/>
+        <result column="PEMAIL" javaType="string" property="pEmail"/>
+        <result column="ORGID" javaType="string" property="orgId"/>
+        <result column="ORGNAME" javaType="string" property="orgName"/>
+        <result column="ORGSEQ" javaType="string" property="orgSeq"/>
+        <result column="ORGANIZATION_ID" javaType="string" property="organizationId"/>
+    </resultMap>
+    <select id="select_userbaseinfo" parameterClass="String" resultMap="userbaseinfo">SELECT U.USER_ID,
+		       U.USER_NAME,
+		       U.EMAIL,
+		       U.MENUTYPE,
+		       E.EMPID,
+		       E.EMPNAME,
+		       E.PEMAIL,
+		       E.ORGID,
+		       R.ORGNAME,
+		       R.ORGSEQ,
+		       O.ORGID as ORGANIZATION_ID
+		  FROM CAP_USER U
+		  LEFT OUTER JOIN ORG_EMPLOYEE E     ON E.USERID = U.USER_ID
+		  LEFT OUTER JOIN ORG_EMPORG O       ON E.EMPID = O.EMPID
+		  LEFT OUTER JOIN ORG_ORGANIZATION R ON E.ORGID = R.ORGID 
+		where U.USER_ID =#userId#</select>
+    <select id="select_partyauth" parameterClass="java.util.HashMap" resultClass="commonj.sdo.DataObject">SELECT ROLE_ID FROM CAP_PARTYAUTH P WHERE P.PARTY_ID = #userid# AND P.PARTY_TYPE = 'user' 
+			UNION 
+		SELECT ROLE_ID FROM CAP_PARTYAUTH P WHERE P.PARTY_ID = #empid# AND P.PARTY_TYPE = 'emp' 
+			UNION 
+		SELECT ROLE_ID FROM cap_partyauth P WHERE P.PARTY_ID IN (SELECT ORGID FROM ORG_EMPORG WHERE EMPID=#empid#) AND P.PARTY_TYPE = 'org'
+			UNION 
+		SELECT ROLE_ID FROM CAP_PARTYAUTH P WHERE P.PARTY_ID IN (SELECT POSITIONID FROM ORG_EMPPOSITION WHERE EMPID=#empid#) AND P.PARTY_TYPE = 'position' 
+			UNION 
+		SELECT ROLE_ID FROM cap_partyauth P WHERE P.PARTY_ID IN (SELECT GROUPID FROM ORG_EMPGROUP WHERE EMPID=#empid#) AND P.PARTY_TYPE = 'group'</select>
+    <select id="select_partyauth_db2" parameterClass="java.util.HashMap" resultClass="commonj.sdo.DataObject">SELECT ROLE_ID FROM CAP_PARTYAUTH P WHERE P.PARTY_ID = #userid# AND P.PARTY_TYPE = 'user' 
+			UNION 
+		SELECT ROLE_ID FROM CAP_PARTYAUTH P WHERE P.PARTY_ID = #empid# AND P.PARTY_TYPE = 'emp' 
+			UNION 
+		SELECT ROLE_ID FROM cap_partyauth P WHERE P.PARTY_ID IN (SELECT CHAR(ORGID) FROM ORG_EMPORG WHERE EMPID=#empid#) AND P.PARTY_TYPE = 'org'
+			UNION 
+		SELECT ROLE_ID FROM CAP_PARTYAUTH P WHERE P.PARTY_ID IN (SELECT CHAR(POSITIONID) FROM ORG_EMPPOSITION WHERE EMPID=#empid#) AND P.PARTY_TYPE = 'position' 
+			UNION 
+		SELECT ROLE_ID FROM cap_partyauth P WHERE P.PARTY_ID IN (SELECT CHAR(GROUPID) FROM ORG_EMPGROUP WHERE EMPID=#empid#) AND P.PARTY_TYPE = 'group'</select>
+</sqlMap>

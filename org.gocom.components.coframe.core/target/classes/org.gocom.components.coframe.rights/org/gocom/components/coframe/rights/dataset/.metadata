@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="CapPartyauth" implementationType="file" modifier="public" name="CapPartyauth.class" order="32" version=""/>
+    <model description="" displayName="CapResauth" implementationType="file" modifier="public" name="CapResauth.class" order="32" version=""/>
+    <model description="" displayName="CapRole" implementationType="file" modifier="public" name="CapRole.class" order="32" version=""/>
+    <model description="" displayName="CapSsouser" implementationType="file" modifier="public" name="CapSsouser.class" order="32" version=""/>
+    <model description="" displayName="CapUser" implementationType="file" modifier="public" name="CapUser.class" order="32" version=""/>
+</metadata>

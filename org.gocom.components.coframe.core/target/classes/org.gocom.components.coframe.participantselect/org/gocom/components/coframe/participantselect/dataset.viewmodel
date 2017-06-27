@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<viewModelSet author="朱惠" displayName="dataset" id="org.gocom.components.coframe.participantselect.dataset">
+    <viewModel author="朱惠" displayName="最近访问" entityName="org.gocom.components.coframe.participantselect.dataset.RecentVisit" id="RecentVisit">
+        <field dataType="String" dict="false" entityField="id" id="id" label="唯一编号">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="targetId" id="targetId" label="目标ID">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userid" id="userid" label="创建用户">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="frequency" id="frequency" label="频率">
+            <view type="write"/>
+            <edit name="property1" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="lasttime" id="lasttime" label="最近使用时间">
+            <view type="write"/>
+            <edit name="property0" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="targetType" id="targetType" label="目标类型">
+            <view type="write"/>
+            <edit name="property1" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="朱惠" displayName="查询最近访问用户" entityName="org.gocom.components.coframe.participantselect.dataset.QRecentUserSelect" id="QRecentUserSelect">
+        <field dataType="String" dict="false" entityField="targetId" id="targetId" label="targetId">
+            <view type="write"/>
+            <edit name="targetId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgname" id="orgname" label="orgname">
+            <view type="write"/>
+            <edit name="orgname" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgid" id="orgid" label="orgid">
+            <view type="write"/>
+            <edit name="orgid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="targetName" id="targetName" label="targetName">
+            <view type="write"/>
+            <edit name="targetName" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="lasttime" id="lasttime" label="lasttime">
+            <view type="write"/>
+            <edit name="lasttime" type="date"/>
+        </field>
+        <field dataType="String" dict="false" entityField="mobileno" id="mobileno" label="mobileno">
+            <view type="write"/>
+            <edit name="mobileno" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="pemail" id="pemail" label="pemail">
+            <view type="write"/>
+            <edit name="pemail" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="targetType" id="targetType" label="targetType">
+            <view type="write"/>
+            <edit name="targetType" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="empid" id="empid" label="empid">
+            <view type="write"/>
+            <edit name="empid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="createUserid" id="createUserid" label="createuserid">
+            <view type="write"/>
+            <edit name="createuserid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userid" id="userid" label="userid">
+            <view type="write"/>
+            <edit name="userid" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="朱惠" displayName="查询最近访问角色" entityName="org.gocom.components.coframe.participantselect.dataset.QRecentRoleSelect" id="QRecentRoleSelect">
+        <field dataType="String" dict="false" entityField="targetId" id="targetId" label="targetId">
+            <view type="write"/>
+            <edit name="targetId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgname" id="orgname" label="orgname">
+            <view type="write"/>
+            <edit name="orgname" type="text"/>
+        </field>
+        <field dataType="Long" dict="false" entityField="orgid" id="orgid" label="orgid">
+            <view type="write"/>
+            <edit name="orgid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userid" id="userid" label="userid">
+            <view type="write"/>
+            <edit name="userid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="targetName" id="targetName" label="targetName">
+            <view type="write"/>
+            <edit name="targetName" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="targetType" id="targetType" label="targetType">
+            <view type="write"/>
+            <edit name="targetType" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="lasttime" id="lasttime" label="lasttime">
+            <view type="write"/>
+            <edit name="lasttime" type="date"/>
+        </field>
+    </viewModel>
+    <viewModel author="朱惠" displayName="查询最近访问机构" entityName="org.gocom.components.coframe.participantselect.dataset.QRecentDeptSelect" id="QRecentDeptSelect">
+        <field dataType="String" dict="false" entityField="targetId" id="targetId" label="targetId">
+            <view type="write"/>
+            <edit name="targetId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgname" id="orgname" label="orgname">
+            <view type="write"/>
+            <edit name="orgname" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgid" id="orgid" label="orgid">
+            <view type="write"/>
+            <edit name="orgid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userid" id="userid" label="userid">
+            <view type="write"/>
+            <edit name="userid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="targetName" id="targetName" label="targetName">
+            <view type="write"/>
+            <edit name="targetName" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="lasttime" id="lasttime" label="lasttime">
+            <view type="write"/>
+            <edit name="lasttime" type="date"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgcode" id="orgcode" label="orgcode">
+            <view type="write"/>
+            <edit name="orgcode" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="targetType" id="targetType" label="targetType">
+            <view type="write"/>
+            <edit name="targetType" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="朱惠" displayName="通过授权查询用户" entityName="org.gocom.components.coframe.participantselect.dataset.QueryUserByParty" id="QueryUserByParty">
+        <field dataType="String" dict="false" entityField="roleId" id="roleId" label="roleId">
+            <view type="write"/>
+            <edit name="roleId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="partyId" id="partyId" label="partyId">
+            <view type="write"/>
+            <edit name="partyId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="partyType" id="partyType" label="partyType">
+            <view type="write"/>
+            <edit name="partyType" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="empid" id="empid" label="empid">
+            <view type="write"/>
+            <edit name="empid" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="targetId" id="targetId" label="targetId">
+            <view type="write"/>
+            <edit name="targetId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="targetName" id="targetName" label="targetName">
+            <view type="write"/>
+            <edit name="targetName" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="tenantId" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="tenantId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgname" id="orgname" label="orgname">
+            <view type="write"/>
+            <edit name="orgname" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgid" id="orgid" label="orgid">
+            <view type="write"/>
+            <edit name="orgid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="roleType" id="roleType" label="roleType">
+            <view type="write"/>
+            <edit name="roleType" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="mobileno" id="mobileno" label="mobileno">
+            <view type="write"/>
+            <edit name="mobileno" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="pemail" id="pemail" label="pemail">
+            <view type="write"/>
+            <edit name="pemail" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userid" id="userid" label="userid">
+            <view type="write"/>
+            <edit name="userid" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="朱惠" displayName="查询用户机构" entityName="org.gocom.components.coframe.participantselect.dataset.QUserOrg" id="QUserOrg">
+        <field dataType="Decimal" dict="false" entityField="orgid" id="orgid" label="orgid">
+            <view type="write"/>
+            <edit name="orgid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgcode" id="orgcode" label="orgcode">
+            <view type="write"/>
+            <edit name="orgcode" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgname" id="orgname" label="orgname">
+            <view type="write"/>
+            <edit name="orgname" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orglevel" id="orglevel" label="orglevel">
+            <view type="write"/>
+            <edit name="orglevel" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgdegree" id="orgdegree" label="orgdegree">
+            <view type="write"/>
+            <edit name="orgdegree" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgseq" id="orgseq" label="orgseq">
+            <view type="write"/>
+            <edit name="orgseq" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgtype" id="orgtype" label="orgtype">
+            <view type="write"/>
+            <edit name="orgtype" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgaddr" id="orgaddr" label="orgaddr">
+            <view type="write"/>
+            <edit name="orgaddr" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="zipcode" id="zipcode" label="zipcode">
+            <view type="write"/>
+            <edit name="zipcode" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="manaposition" id="manaposition" label="manaposition">
+            <view type="write"/>
+            <edit name="manaposition" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="managerid" id="managerid" label="managerid">
+            <view type="write"/>
+            <edit name="managerid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgmanager" id="orgmanager" label="orgmanager">
+            <view type="write"/>
+            <edit name="orgmanager" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="linkman" id="linkman" label="linkman">
+            <view type="write"/>
+            <edit name="linkman" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="linktel" id="linktel" label="linktel">
+            <view type="write"/>
+            <edit name="linktel" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="email" id="email" label="email">
+            <view type="write"/>
+            <edit name="email" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="weburl" id="weburl" label="weburl">
+            <view type="write"/>
+            <edit name="weburl" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="startdate" id="startdate" label="startdate">
+            <view type="write"/>
+            <edit name="startdate" type="date"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="enddate" id="enddate" label="enddate">
+            <view type="write"/>
+            <edit name="enddate" type="date"/>
+        </field>
+        <field dataType="String" dict="false" entityField="status" id="status" label="status">
+            <view type="write"/>
+            <edit name="status" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="area" id="area" label="area">
+            <view type="write"/>
+            <edit name="area" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="createtime" id="createtime" label="createtime">
+            <view type="write"/>
+            <edit name="createtime" type="date"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="lastupdate" id="lastupdate" label="lastupdate">
+            <view type="write"/>
+            <edit name="lastupdate" type="date"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="updator" id="updator" label="updator">
+            <view type="write"/>
+            <edit name="updator" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="sortno" id="sortno" label="sortno">
+            <view type="write"/>
+            <edit name="sortno" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="isleaf" id="isleaf" label="isleaf">
+            <view type="write"/>
+            <edit name="isleaf" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="subcount" id="subcount" label="subcount">
+            <view type="write"/>
+            <edit name="subcount" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="remark" id="remark" label="remark">
+            <view type="write"/>
+            <edit name="remark" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="tenantId" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="tenantId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="appId" id="appId" label="appId">
+            <view type="write"/>
+            <edit name="appId" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="parentorgid" id="parentorgid" label="parentorgid">
+            <view type="write"/>
+            <edit name="parentorgid" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="empid" id="empid" label="empid">
+            <view type="write"/>
+            <edit name="empid" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="朱惠" displayName="查询机构内用户列表" entityName="org.gocom.components.coframe.participantselect.dataset.QOrgUsers" id="QOrgUsers">
+        <field dataType="String" dict="false" entityField="orgname" id="orgname" label="orgname">
+            <view type="write"/>
+            <edit name="orgname" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgcode" id="orgcode" label="orgcode">
+            <view type="write"/>
+            <edit name="orgcode" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="pemail" id="pemail" label="pemail">
+            <view type="write"/>
+            <edit name="pemail" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="mobileno" id="mobileno" label="mobileno">
+            <view type="write"/>
+            <edit name="mobileno" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgid" id="orgid" label="orgid">
+            <view type="write"/>
+            <edit name="orgid" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="empid" id="empid" label="empid">
+            <view type="write"/>
+            <edit name="empid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="targetName" id="targetName" label="targetName">
+            <view type="write"/>
+            <edit name="targetName" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="targetId" id="targetId" label="targetId">
+            <view type="write"/>
+            <edit name="targetId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userid" id="userid" label="userid">
+            <view type="write"/>
+            <edit name="userid" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="朱惠" displayName="查询工作组内用户" entityName="org.gocom.components.coframe.participantselect.dataset.QUserByGroup" id="QUserByGroup">
+        <field dataType="String" dict="false" entityField="pemail" id="pemail" label="pemail">
+            <view type="write"/>
+            <edit name="pemail" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="mobileno" id="mobileno" label="mobileno">
+            <view type="write"/>
+            <edit name="mobileno" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="targetId" id="targetId" label="targetId">
+            <view type="write"/>
+            <edit name="targetId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="targetName" id="targetName" label="targetName">
+            <view type="write"/>
+            <edit name="targetName" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgid" id="orgid" label="orgid">
+            <view type="write"/>
+            <edit name="orgid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgname" id="orgname" label="orgname">
+            <view type="write"/>
+            <edit name="orgname" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgcode" id="orgcode" label="orgcode">
+            <view type="write"/>
+            <edit name="orgcode" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="groupid" id="groupid" label="groupid">
+            <view type="write"/>
+            <edit name="groupid" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="empid" id="empid" label="empid">
+            <view type="write"/>
+            <edit name="empid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="userid" id="userid" label="userid">
+            <view type="write"/>
+            <edit name="userid" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="朱惠" displayName="机构查询" entityName="org.gocom.components.coframe.participantselect.dataset.QOrgSelect" id="QOrgSelect">
+        <field dataType="Decimal" dict="false" entityField="orgid" id="orgid" label="orgid">
+            <view type="write"/>
+            <edit name="orgid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgname" id="orgname" label="orgname">
+            <view type="write"/>
+            <edit name="orgname" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgcode" id="orgcode" label="orgcode">
+            <view type="write"/>
+            <edit name="orgcode" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="targetId" id="targetId" label="targetId">
+            <view type="write"/>
+            <edit name="targetId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="targetName" id="targetName" label="targetName">
+            <view type="write"/>
+            <edit name="targetName" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="parentorgid" id="parentorgid" label="parentorgid">
+            <view type="write"/>
+            <edit name="parentorgid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgseq" id="orgseq" label="orgseq">
+            <view type="write"/>
+            <edit name="orgseq" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="朱惠" displayName="全局查询用户" entityName="org.gocom.components.coframe.participantselect.dataset.QueryUsers" id="QueryUsers">
+        <field dataType="String" dict="false" entityField="userid" id="userid" label="userid">
+            <view type="write"/>
+            <edit name="userid" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="targetId" id="targetId" label="targetId">
+            <view type="write"/>
+            <edit name="targetId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="targetName" id="targetName" label="targetName">
+            <view type="write"/>
+            <edit name="targetName" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="empname" id="empname" label="empname">
+            <view type="write"/>
+            <edit name="empname" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgid" id="orgid" label="orgid">
+            <view type="write"/>
+            <edit name="orgid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgname" id="orgname" label="orgname">
+            <view type="write"/>
+            <edit name="orgname" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgcode" id="orgcode" label="orgcode">
+            <view type="write"/>
+            <edit name="orgcode" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="empid" id="empid" label="empid">
+            <view type="write"/>
+            <edit name="empid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="pemail" id="pemail" label="pemail">
+            <view type="write"/>
+            <edit name="pemail" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="mobileno" id="mobileno" label="mobileno">
+            <view type="write"/>
+            <edit name="mobileno" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="朱惠" displayName="角色" entityName="org.gocom.components.coframe.participantselect.dataset.Role" id="Role">
+        <field dataType="String" dict="false" entityField="roleId" id="roleId" label="roleId">
+            <view type="write"/>
+            <edit name="roleId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="tenantId" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="tenantId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="roleCode" id="roleCode" label="roleCode">
+            <view type="write"/>
+            <edit name="roleCode" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="roleName" id="roleName" label="roleName">
+            <view type="write"/>
+            <edit name="roleName" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="roleDesc" id="roleDesc" label="roleDesc">
+            <view type="write"/>
+            <edit name="roleDesc" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="createuser" id="createuser" label="createuser">
+            <view type="write"/>
+            <edit name="createuser" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="createtime" id="createtime" label="createtime">
+            <view type="write"/>
+            <edit name="createtime" type="date"/>
+        </field>
+    </viewModel>
+</viewModelSet>

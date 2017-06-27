@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="entity" implementationType="file" modifier="public" name="entity.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="getEntityProperties" implementationType="file" modifier="public" name="getEntityInfoPropertie" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="namespace" implementationType="Primitive" modifier="public" name="namespace" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="entityName" implementationType="Primitive" modifier="public" name="entityName" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="propertyName" implementationType="Primitive" modifier="public" name="propertyName" order="2048" typeName="file:String"/>
+            <result description="" displayName="propertyInfo" implementationType="Java" modifier="public" name="propertyInfo" order="1024" typeName="file:com.primeton.cap.spi.dataset.service.PropertyInfo"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.entity.getEntityInfoPropertie.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.entityauth.entity.getEntityInfoPropertie.bizx" order="4096" typeName="file:org.gocom.components.coframe.entityauth.entity.getEntityInfoPropertie.bizx"/>
+        <method description="" displayName="getEntityProperties" implementationType="file" modifier="public" name="getEntityInfoProperties" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="namespace" implementationType="Primitive" modifier="public" name="namespace" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="entityName" implementationType="Primitive" modifier="public" name="entityName" order="2048" typeName="file:String"/>
+            <result description="" displayName="propertyInfos" implementationType="Java" modifier="public" name="propertyInfos" order="1024" typeName="file:com.primeton.cap.spi.dataset.service.PropertyInfo[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.entity.getEntityInfoProperties.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.entityauth.entity.getEntityInfoProperties.bizx" order="4096" typeName="file:org.gocom.components.coframe.entityauth.entity.getEntityInfoProperties.bizx"/>
+        <method description="" displayName="getEntities" implementationType="file" modifier="public" name="getEntityInfos" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <result description="" displayName="entityInfos" implementationType="Java" modifier="public" name="entityInfos" order="1024" typeName="file:com.primeton.cap.spi.dataset.service.EntityInfo[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.entity.getEntityInfos.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.entityauth.entity.getEntityInfos.bizx" order="4096" typeName="file:org.gocom.components.coframe.entityauth.entity.getEntityInfos.bizx"/>
+    </model>
+    <model description="" displayName="EntityAuthService" implementationType="file" modifier="public" name="EntityAuthService.class" order="32" version=""/>
+    <model description="" displayName="EntityCapRuleService" implementationType="file" modifier="public" name="EntityCapRuleService.class" order="32" version=""/>
+    <model description="" displayName="EntityService" implementationType="file" modifier="public" name="EntityService.class" order="32" version=""/>
+    <model description="" displayName="IEntityAuthService" implementationType="file" modifier="public" name="IEntityAuthService.class" order="32" version=""/>
+    <model description="" displayName="IEntityCapRuleService" implementationType="file" modifier="public" name="IEntityCapRuleService.class" order="32" version=""/>
+    <model description="" displayName="IEntityService" implementationType="file" modifier="public" name="IEntityService.class" order="32" version=""/>
+    <model description="" displayName="entityRule" implementationType="file" modifier="public" name="rule.componentType" order="32" version="">
+        <properties>
+            <property name="componentType" value="eosComponentType"/>
+            <property name="COMPONENTTYPE_TYPE" value="eosComponentType"/>
+        </properties>
+        <method description="" displayName="delRules" implementationType="file" modifier="public" name="delRules" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="rules" implementationType="Java" modifier="public" name="rules" order="2048" typeName="file:com.primeton.cap.spi.auth.rule.Rule[]"/>
+            <result description="" displayName="flag" implementationType="Primitive" modifier="public" name="flag" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.rule.delRules.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.entityauth.rule.delRules.bizx" order="4096" typeName="file:org.gocom.components.coframe.entityauth.rule.delRules.bizx"/>
+        <method description="" displayName="getConValues" implementationType="file" modifier="public" name="getConValues" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="namespace" implementationType="Primitive" modifier="public" name="namespace" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="entityName" implementationType="Primitive" modifier="public" name="entityName" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="propertyName" implementationType="Primitive" modifier="public" name="propertyName" order="2048" typeName="file:String"/>
+            <result description="" displayName="conValues" implementationType="Java" modifier="public" name="conValues" order="1024" typeName="file:org.gocom.components.coframe.entityauth.pojo.ConValue[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.rule.getConValues.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.entityauth.rule.getConValues.bizx" order="4096" typeName="file:org.gocom.components.coframe.entityauth.rule.getConValues.bizx"/>
+        <method description="" displayName="queryCapRules" implementationType="file" modifier="public" name="getEntityCapRules" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="namespace" implementationType="Primitive" modifier="public" name="namespace" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="searchType" implementationType="Primitive" modifier="public" name="searchType" order="2048" typeName="file:Int"/>
+            <parameter description="" displayName="ruleName" implementationType="Primitive" modifier="public" name="ruleName" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="party" implementationType="Java" modifier="public" name="party" order="2048" typeName="file:com.primeton.cap.party.Party"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.entityauth.pojo.RuleAndAuth[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.rule.getEntityCapRules.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.entityauth.rule.getEntityCapRules.bizx" order="4096" typeName="file:org.gocom.components.coframe.entityauth.rule.getEntityCapRules.bizx"/>
+        <method description="" displayName="getRightValues" implementationType="file" modifier="public" name="getRightValues" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="namespace" implementationType="Primitive" modifier="public" name="namespace" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="entityName" implementationType="Primitive" modifier="public" name="entityName" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="propertyName" implementationType="Primitive" modifier="public" name="propertyName" order="2048" typeName="file:String"/>
+            <result description="" displayName="rightValues" implementationType="Java" modifier="public" name="rightValues" order="1024" typeName="file:org.gocom.components.coframe.entityauth.pojo.RightValue[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.rule.getRightValues.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.entityauth.rule.getRightValues.bizx" order="4096" typeName="file:org.gocom.components.coframe.entityauth.rule.getRightValues.bizx"/>
+        <method description="" displayName="getRuleCondition" implementationType="file" modifier="public" name="getRuleCondition" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="ruleId" implementationType="Primitive" modifier="public" name="ruleId" order="2048" typeName="file:String"/>
+            <result description="" displayName="conditions" implementationType="Java" modifier="public" name="conditions" order="1024" typeName="file:org.gocom.components.coframe.entityauth.pojo.Condition[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.rule.getRuleCondition.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.entityauth.rule.getRuleCondition.bizx" order="4096" typeName="file:org.gocom.components.coframe.entityauth.rule.getRuleCondition.bizx"/>
+        <method description="" displayName="saveRule" implementationType="file" modifier="public" name="saveRule" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="ruleName" implementationType="Primitive" modifier="public" name="ruleName" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="namespace" implementationType="Primitive" modifier="public" name="namespace" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="ruleExpression" implementationType="Java" modifier="public" name="ruleExpression" order="2048" typeName="file:org.gocom.components.coframe.entityauth.pojo.Condition[]"/>
+            <parameter description="" displayName="party" implementationType="Java" modifier="public" name="party" order="2048" typeName="file:com.primeton.cap.party.Party"/>
+            <result description="" displayName="flag" implementationType="Primitive" modifier="public" name="flag" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.rule.saveRule.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.entityauth.rule.saveRule.bizx" order="4096" typeName="file:org.gocom.components.coframe.entityauth.rule.saveRule.bizx"/>
+        <method description="保存Party授权信息" displayName="保存Party授权信息" implementationType="file" modifier="public" name="storePartyAuth" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="party" implementationType="Java" modifier="public" name="party" order="2048" typeName="file:com.primeton.cap.party.Party"/>
+            <parameter description="" displayName="partyWithAuth" implementationType="Primitive" modifier="public" name="partyWithAuth" order="2048" typeName="file:String[]"/>
+            <parameter description="" displayName="partyNoAuth" implementationType="Primitive" modifier="public" name="partyNoAuth" order="2048" typeName="file:String[]"/>
+            <result description="" displayName="saveResult" implementationType="Primitive" modifier="public" name="saveResult" order="1024" typeName="file:Boolean"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.rule.storePartyAuth.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.entityauth.rule.storePartyAuth.bizx" order="4096" typeName="file:org.gocom.components.coframe.entityauth.rule.storePartyAuth.bizx"/>
+        <method description="" displayName="saveRule" implementationType="file" modifier="public" name="updateRule" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="ruleId" implementationType="Primitive" modifier="public" name="ruleId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="ruleName" implementationType="Primitive" modifier="public" name="ruleName" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="ruleExpression" implementationType="Java" modifier="public" name="ruleExpression" order="2048" typeName="file:org.gocom.components.coframe.entityauth.pojo.Condition[]"/>
+            <parameter description="" displayName="party" implementationType="Java" modifier="public" name="party" order="2048" typeName="file:com.primeton.cap.party.Party"/>
+            <result description="" displayName="flag" implementationType="Primitive" modifier="public" name="flag" order="1024" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.entityauth.rule.updateRule.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.entityauth.rule.updateRule.bizx" order="4096" typeName="file:org.gocom.components.coframe.entityauth.rule.updateRule.bizx"/>
+    </model>
+    <model description="" displayName="ValuePoolService" implementationType="file" modifier="public" name="ValuePoolService.class" order="32" version=""/>
+</metadata>

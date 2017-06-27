@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="DefaultMenuAuthService" implementationType="file" modifier="public" name="DefaultMenuAuthService.class" order="32" version=""/>
+    <model description="" displayName="FunctionMenuResourceManager" implementationType="file" modifier="public" name="FunctionMenuResourceManager.class" order="32" version=""/>
+    <model description="" displayName="LevelMenuTreeNode" implementationType="file" modifier="public" name="LevelMenuTreeNode.class" order="32" version=""/>
+</metadata>

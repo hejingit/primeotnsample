@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="deleteFuncGroup" implementationType="file" modifier="public" name="deleteMenu.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.queryMenuTreeNode.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.queryMenuTreeNode.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.queryMenuTreeNode.bizx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.deleteMenuNodes.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.deleteMenuNodes.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.deleteMenuNodes.bizx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.componentType"/>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+        <method description="" displayName="deleteFuncGroup" implementationType="file" modifier="public" name="deleteMenu" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="menuid" implementationType="Primitive" modifier="public" name="menuid" order="2048" typeName="file:String"/>
+        </method>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+    </model>
+    <model description="" displayName="deleteNodes" implementationType="file" modifier="public" name="deleteMenuNodes.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="java.util.map.java" implementationType="java" modifier="public" name="java:java.util.map.java" order="4096" typeName="java:java.util.map.java"/>
+        <importReference description="" displayName="java.util.Map.java" implementationType="java" modifier="public" name="java:java.util.Map.java" order="4096" typeName="java:java.util.Map.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.componentType"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.deleteMenu.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.deleteMenu.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.deleteMenu.bizx"/>
+        <method description="" displayName="deleteNodes" implementationType="file" modifier="public" name="deleteMenuNodes" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodeList" implementationType="Java" modifier="public" name="nodeList" order="2048" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+    </model>
+    <model description="" displayName="deleteMenus" implementationType="file" modifier="public" name="deleteMenus.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.componentType" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.componentType" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.componentType"/>
+        <method description="" displayName="deleteMenus" implementationType="file" modifier="public" name="deleteMenus" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodes" implementationType="Java" modifier="public" name="nodes" order="2048" typeName="file:commonj.sdo.DataObject[]"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.MenuManager.deleteMenu.bizx" implementationType="file" modifier="public" name="file:org.gocom.components.coframe.framework.MenuManager.deleteMenu.bizx" order="4096" typeName="file:org.gocom.components.coframe.framework.MenuManager.deleteMenu.bizx"/>
+    </model>
+    <model description="" displayName="getFuncGroup" implementationType="file" modifier="public" name="getMenu.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appmenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appmenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appmenu.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppMenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppMenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppMenu.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppFunction.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppFunction.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppFunction.java"/>
+        <method description="" displayName="getFuncGroup" implementationType="file" modifier="public" name="getMenu" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="template" implementationType="Java" modifier="public" name="template" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppMenu"/>
+            <result description="" displayName="appmenu" implementationType="Java" modifier="public" name="appmenu" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppMenu"/>
+        </method>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appfunction.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appfunction.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appfunction.java"/>
+    </model>
+    <model description="" displayName="MenuManager.eosComponentType" implementationType="file" modifier="public" name="MenuManager.eosComponentType" order="32" version=""/>
+    <model description="" displayName="queryMenu" implementationType="file" modifier="public" name="queryMenu.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <method description="" displayName="queryMenu" implementationType="file" modifier="public" name="queryMenu" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="parentmenuid" implementationType="Primitive" modifier="public" name="parentmenuid" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="page" implementationType="DataObject" modifier="public" name="page" order="2048" typeName="file:com.eos.foundation.PageCond"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:org.gocom.components.coframe.framework.application.AppMenu[]"/>
+            <result description="" displayName="total" implementationType="Primitive" modifier="public" name="total" order="1024" typeName="file:Int"/>
+        </method>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appmenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appmenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appmenu.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppMenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppMenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppMenu.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.PageCond.java" order="4096" typeName="java:com.eos.foundation.PageCond.java"/>
+        <importReference description="" displayName="com.eos.foundation.PageCond.node_entity" implementationType="file" modifier="public" name="file:com.eos.foundation.PageCond.node_entity" order="4096" typeName="file:com.eos.foundation.PageCond.node_entity"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+        <importReference description="" displayName="com.eos.foundation.pagecond.java" implementationType="java" modifier="public" name="java:com.eos.foundation.pagecond.java" order="4096" typeName="java:com.eos.foundation.pagecond.java"/>
+        <importReference description="" displayName="com.eos.foundation.datasetx" implementationType="file" modifier="public" name="file:com.eos.foundation.datasetx" order="4096" typeName="file:com.eos.foundation.datasetx"/>
+    </model>
+    <model description="" displayName="queryMenuTreeNode" implementationType="file" modifier="public" name="queryMenuTreeNode.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <method description="" displayName="queryMenuTreeNode" implementationType="file" modifier="public" name="queryMenuTreeNode" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodeId" implementationType="Primitive" modifier="public" name="nodeId" order="2048" typeName="file:String"/>
+            <result description="" displayName="data" implementationType="Java" modifier="public" name="data" order="1024" typeName="file:java.util.List"/>
+        </method>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="commonj.sdo.dataobject.java" implementationType="java" modifier="public" name="java:commonj.sdo.dataobject.java" order="4096" typeName="java:commonj.sdo.dataobject.java"/>
+        <importReference description="" displayName="commonj.sdo.DataObject.java" implementationType="java" modifier="public" name="java:commonj.sdo.DataObject.java" order="4096" typeName="java:commonj.sdo.DataObject.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appmenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appmenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appmenu.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppMenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppMenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppMenu.java"/>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+        <importReference description="" displayName="java.util.list.java" implementationType="java" modifier="public" name="java:java.util.list.java" order="4096" typeName="java:java.util.list.java"/>
+        <importReference description="" displayName="java.util.List.java" implementationType="java" modifier="public" name="java:java.util.List.java" order="4096" typeName="java:java.util.List.java"/>
+    </model>
+    <model description="" displayName="saveFuncGroup" implementationType="file" modifier="public" name="saveMenu.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="com.eos.das.entity.criteria.criteriatype.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.criteriatype.java" order="4096" typeName="java:com.eos.das.entity.criteria.criteriatype.java"/>
+        <importReference description="" displayName="com.primeton.das.criteria.criteriaType.node_entity" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.criteriaType.node_entity" order="4096" typeName="file:com.primeton.das.criteria.criteriaType.node_entity"/>
+        <importReference description="" displayName="com.primeton.das.criteria.datasetx" implementationType="file" modifier="public" name="file:com.primeton.das.criteria.datasetx" order="4096" typeName="file:com.primeton.das.criteria.datasetx"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appmenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appmenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appmenu.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppMenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppMenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppMenu.java"/>
+        <method description="" displayName="saveFuncGroup" implementationType="file" modifier="public" name="saveMenu" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appmenu" implementationType="Java" modifier="public" name="appmenu" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppMenu"/>
+        </method>
+        <importReference description="" displayName="com.eos.das.entity.criteria.CriteriaType.java" implementationType="java" modifier="public" name="java:com.eos.das.entity.criteria.CriteriaType.java" order="4096" typeName="java:com.eos.das.entity.criteria.CriteriaType.java"/>
+    </model>
+    <model description="" displayName="updateMenu" implementationType="file" modifier="public" name="updateMenu.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appmenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appmenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appmenu.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppMenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppMenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppMenu.java"/>
+        <method description="" displayName="updateMenu" implementationType="file" modifier="public" name="updateMenu" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="appmenu" implementationType="Java" modifier="public" name="appmenu" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppMenu"/>
+        </method>
+    </model>
+    <model description="" displayName="modifyMenuRelation" implementationType="file" modifier="public" name="updateMenuRelation.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="java.lang.string.java" implementationType="java" modifier="public" name="java:java.lang.string.java" order="4096" typeName="java:java.lang.string.java"/>
+        <importReference description="" displayName="java.lang.String.java" implementationType="java" modifier="public" name="java:java.lang.String.java" order="4096" typeName="java:java.lang.String.java"/>
+        <method description="" displayName="modifyMenuRelation" implementationType="file" modifier="public" name="updateMenuRelation" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="nodeId" implementationType="Primitive" modifier="public" name="nodeId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="nodeType" implementationType="Primitive" modifier="public" name="nodeType" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="targetNodeId" implementationType="Primitive" modifier="public" name="targetNodeId" order="2048" typeName="file:String"/>
+            <parameter description="" displayName="targetNodeType" implementationType="Primitive" modifier="public" name="targetNodeType" order="2048" typeName="file:String"/>
+        </method>
+    </model>
+    <model description="" displayName="validateMenu" implementationType="file" modifier="public" name="validateMenu.biz" order="32" version="">
+        <properties>
+            <property name="transactionType" value="true"/>
+        </properties>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.appmenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.appmenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.appmenu.java"/>
+        <importReference description="" displayName="org.gocom.components.coframe.framework.application.AppMenu.java" implementationType="java" modifier="public" name="java:org.gocom.components.coframe.framework.application.AppMenu.java" order="4096" typeName="java:org.gocom.components.coframe.framework.application.AppMenu.java"/>
+        <importReference description="" displayName="int.java" implementationType="java" modifier="public" name="java:int.java" order="4096" typeName="java:int.java"/>
+        <method description="" displayName="validateMenu" implementationType="file" modifier="public" name="validateMenu" order="512" variable="false">
+            <properties>
+                <property name="isVarargKey" value="false"/>
+                <property name="transactionType" value="true"/>
+            </properties>
+            <parameter description="" displayName="template" implementationType="Java" modifier="public" name="template" order="2048" typeName="file:org.gocom.components.coframe.framework.application.AppMenu"/>
+            <result description="" displayName="data" implementationType="Primitive" modifier="public" name="data" order="1024" typeName="file:Int"/>
+        </method>
+    </model>
+</metadata>

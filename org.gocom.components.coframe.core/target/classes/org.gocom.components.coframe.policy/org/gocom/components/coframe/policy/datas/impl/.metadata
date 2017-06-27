@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="IPAccessRulesImpl" implementationType="file" modifier="public" name="IPAccessRulesImpl.class" order="32" version=""/>
+    <model description="" displayName="RulesIpCacheHandle" implementationType="file" modifier="public" name="RulesIpCacheHandle.class" order="32" version="">
+        <type description="" displayName="RulesIpCacheHandle [Ip规则缓存处理]" implementationType="bizlet" modifier="public" name="RulesIpCacheHandle" order="128" variable="false">
+            <properties>
+                <property name="displayName" value="Ip规则缓存处理"/>
+                <property name="className" value="org.gocom.components.coframe.policy.datas.impl.RulesIpCacheHandle"/>
+            </properties>
+            <method description="更新缓存" displayName="更新缓存" implementationType="bizlet" modifier="public" name="updateCache" order="512" variable="false">
+                <properties>
+                    <property name="isVarArgs" value="false"/>
+                    <property name="displayName" value="更新缓存"/>
+                    <property name="isStatic" value="false"/>
+                    <property name="methodName" value="updateCache"/>
+                    <property name="returnType" value="void"/>
+                </properties>
+                <parameter description="" displayName="rules" implementationType="java" modifier="public" name="rules" order="2048" typeName="file:commonj.sdo.DataObject[]">
+                    <properties>
+                        <property name="paramCategory" value="JavaObject"/>
+                        <property name="paramAlias" value="rules"/>
+                        <property name="paramEosType" value="query"/>
+                        <property name="paramName" value="rules"/>
+                        <property name="paramType" value="commonj.sdo.DataObject[]"/>
+                    </properties>
+                </parameter>
+                <result description="void" displayName="void" implementationType="java" modifier="public" name="void" order="1024" typeName="file:void">
+                    <properties>
+                        <property name="full_type_name_string" value="void"/>
+                    </properties>
+                </result>
+            </method>
+        </type>
+    </model>
+</metadata>

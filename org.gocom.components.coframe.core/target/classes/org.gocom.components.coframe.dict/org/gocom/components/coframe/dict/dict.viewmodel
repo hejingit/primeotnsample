@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<viewModelSet author="陈鹏" displayName="dict" id="org.gocom.components.coframe.dict.dict">
+    <viewModel author="陈鹏" displayName="EosDictEntry" entityName="org.gocom.components.coframe.dict.dict.EosDictEntry" id="EosDictEntry">
+        <field dataType="String" dict="false" entityField="dicttypeid" id="dicttypeid" label="dicttypeid">
+            <view type="write"/>
+            <edit name="dicttypeid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="dictid" id="dictid" label="dictid">
+            <view type="write"/>
+            <edit name="dictid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="dictname" id="dictname" label="dictname">
+            <view type="write"/>
+            <edit name="dictname" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="status" id="status" label="status">
+            <view type="write"/>
+            <edit name="status" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="sortno" id="sortno" label="sortno">
+            <view type="write"/>
+            <edit name="sortno" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="rank" id="rank" label="rank">
+            <view type="write"/>
+            <edit name="rank" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="parentid" id="parentid" label="parentid">
+            <view type="write"/>
+            <edit name="parentid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="seqno" id="seqno" label="seqno">
+            <view type="write"/>
+            <edit name="seqno" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="filter1" id="filter1" label="filter1">
+            <view type="write"/>
+            <edit name="filter1" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="filter2" id="filter2" label="filter2">
+            <view type="write"/>
+            <edit name="filter2" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="eosDictType.rank" id="eosDictType.rank" label="rank">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="eosDictType.parentid" id="eosDictType.parentid" label="parentid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="eosDictType.dicttypeid" id="eosDictType.dicttypeid" label="dicttypeid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="eosDictType.dicttypename" id="eosDictType.dicttypename" label="dicttypename">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="eosDictType.seqno" id="eosDictType.seqno" label="seqno">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="陈鹏" displayName="EosDictEntryI18n" entityName="org.gocom.components.coframe.dict.dict.EosDictEntryI18n" id="EosDictEntryI18n">
+        <field dataType="String" dict="false" entityField="dicttypeid" id="dicttypeid" label="dicttypeid">
+            <view type="write"/>
+            <edit name="dicttypeid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="dictid" id="dictid" label="dictid">
+            <view type="write"/>
+            <edit name="dictid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="dictname" id="dictname" label="dictname">
+            <view type="write"/>
+            <edit name="dictname" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="locale" id="locale" label="locale">
+            <view type="write"/>
+            <edit name="locale" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="陈鹏" displayName="EosDictType" entityName="org.gocom.components.coframe.dict.dict.EosDictType" id="EosDictType">
+        <field dataType="String" dict="false" entityField="dicttypeid" id="dicttypeid" label="dicttypeid">
+            <view type="write"/>
+            <edit name="dicttypeid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="dicttypename" id="dicttypename" label="dicttypename">
+            <view type="write"/>
+            <edit name="dicttypename" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="rank" id="rank" label="rank">
+            <view type="write"/>
+            <edit name="rank" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="parentid" id="parentid" label="parentid">
+            <view type="write"/>
+            <edit name="parentid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="seqno" id="seqno" label="seqno">
+            <view type="write"/>
+            <edit name="seqno" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="陈鹏" displayName="EosDictTypeI18n" entityName="org.gocom.components.coframe.dict.dict.EosDictTypeI18n" id="EosDictTypeI18n">
+        <field dataType="String" dict="false" entityField="dicttypeid" id="dicttypeid" label="dicttypeid">
+            <view type="write"/>
+            <edit name="dicttypeid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="dicttypename" id="dicttypename" label="dicttypename">
+            <view type="write"/>
+            <edit name="dicttypename" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="locale" id="locale" label="locale">
+            <view type="write"/>
+            <edit name="locale" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel displayName="DictExport" entityName="org.gocom.components.coframe.dict.dict.DictExport" id="DictExport">
+        <field dataType="String" dict="false" entityField="dicttypeid" id="dicttypeid" label="dicttypeid">
+            <view type="write"/>
+            <edit name="dicttypeid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="dicttypename" id="dicttypename" label="dicttypename">
+            <view type="write"/>
+            <edit name="dicttypename" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="typeParentid" id="typeParentid" label="typeParentid">
+            <view type="write"/>
+            <edit name="typeParentid" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="typeRank" id="typeRank" label="typeRank">
+            <view type="write"/>
+            <edit name="typeRank" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="typeSeqno" id="typeSeqno" label="typeSeqno">
+            <view type="write"/>
+            <edit name="typeSeqno" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="dictid" id="dictid" label="dictid">
+            <view type="write"/>
+            <edit name="dictid" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="dictname" id="dictname" label="dictname">
+            <view type="write"/>
+            <edit name="dictname" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="entryParentid" id="entryParentid" label="entryParentid">
+            <view type="write"/>
+            <edit name="entryParentid" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="status" id="status" label="status">
+            <view type="write"/>
+            <edit name="status" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="sortno" id="sortno" label="sortno">
+            <view type="write"/>
+            <edit name="sortno" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="entryRank" id="entryRank" label="entryRank">
+            <view type="write"/>
+            <edit name="entryRank" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="entrySeqno" id="entrySeqno" label="entrySeqno">
+            <view type="write"/>
+            <edit name="entrySeqno" type="text"/>
+        </field>
+    </viewModel>
+</viewModelSet>

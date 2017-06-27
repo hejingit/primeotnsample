@@ -1,0 +1,14 @@
+<map>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.roleselect.roleListWithPage(String, com.eos.foundation.PageCond)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;roleListWithPage&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;roleList&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.participantselect.roleselect.roleListWithPage&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;name(String):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;page(com.eos.foundation.PageCond):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(commonj.sdo.DataObject[]):&lt;/b&gt;&lt;/dd&gt;&lt;dd&gt;&lt;b&gt;page(com.eos.foundation.PageCond):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>org.gocom.components.coframe.participantselect.roleselect.roleList()</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;roleList&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;roleList&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.participantselect.roleselect.roleList&lt;dl&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;data(commonj.sdo.DataObject[]):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>roleselect</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;roleselect.componentType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;roleselect&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;org.gocom.components.coframe.participantselect.roleselect&lt;/html&gt;</string>
+  </entry>
+</map>

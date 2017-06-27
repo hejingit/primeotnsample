@@ -1,0 +1,7 @@
+-- ----------------------------
+-- Records 
+-- ----------------------------
+INSERT INTO APP_FUNCGROUP(FUNCGROUPID,FUNCGROUPNAME,GROUPLEVEL,FUNCGROUPSEQ,ISLEAF,SUBCOUNT,APP_ID,TENANT_ID,PARENTGROUP,APPID) VALUES ('41', '工作组管理', '1', '.41.', 'n', '0', null, 'default', null, '1');
+INSERT INTO APP_FUNCTION(FUNCCODE,FUNCNAME,FUNCDESC,FUNCACTION,PARAINFO,ISCHECK,FUNCTYPE,ISMENU,APP_ID,TENANT_ID,FUNCGROUPID) VALUES ('工作组管理', '工作组管理', null, '/coframe/org/group/group_tree.jsp', null, '1', 'page', '1', null, 'default', '41');
+INSERT INTO APP_MENU(MENUID,MENUNAME,MENULABEL,MENUCODE,ISLEAF,PARAMETER,UIENTRY,MENULEVEL,ROOTID,DISPLAYORDER,IMAGEPATH,EXPANDPATH,MENUSEQ,OPENMODE,SUBCOUNT,APPID,FUNCCODE,APP_ID,TENANT_ID,PARENTSID) VALUES ('61', '工作组', '工作组', '工作组', '1', null, null, '2', null, null, null, null, '.2.61.', null, '0', null, '工作组管理', null, 'default', '2');
+INSERT INTO CAP_RESAUTH(PARTY_ID,PARTY_TYPE,RES_ID,RES_TYPE,TENANT_ID,RES_STATE,PARTY_SCOPE,CREATEUSER,CREATETIME) VALUES ('1', 'role', '工作组管理', 'function', 'default', '1', '0', 'sysadmin', null);

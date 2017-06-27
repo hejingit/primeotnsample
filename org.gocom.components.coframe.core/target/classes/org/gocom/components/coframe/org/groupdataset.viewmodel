@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<viewModelSet author="Administrator" displayName="newdataset" id="org.gocom.components.coframe.org.groupdataset">
+    <viewModel author="Administrator" displayName="OrgEmpgroup" entityName="org.gocom.components.coframe.org.groupdataset.OrgEmpgroup" id="OrgEmpgroup">
+        <field dataType="Decimal" dict="false" id="groupid" label="groupid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" id="empid" label="empid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="ismain" label="ismain">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="appId" label="appId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.cardtype" id="orgEmployee.cardtype" label="cardtype">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgEmployee.position" id="orgEmployee.position" label="position">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.otel" id="orgEmployee.otel" label="otel">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.ozipcode" id="orgEmployee.ozipcode" label="ozipcode">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.remark" id="orgEmployee.remark" label="remark">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.empname" id="orgEmployee.empname" label="empname">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.userid" id="orgEmployee.userid" label="userid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.appid" id="orgEmployee.appid" label="appid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.workexp" id="orgEmployee.workexp" label="workexp">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.party" id="orgEmployee.party" label="party">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgEmployee.outdate" id="orgEmployee.outdate" label="outdate">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.empstatus" id="orgEmployee.empstatus" label="empstatus">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgEmployee.createtime" id="orgEmployee.createtime" label="createtime">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgEmployee.indate" id="orgEmployee.indate" label="indate">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgEmployee.empid" id="orgEmployee.empid" label="empid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.faxno" id="orgEmployee.faxno" label="faxno">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgEmployee.orgid" id="orgEmployee.orgid" label="orgid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgEmployee.regdate" id="orgEmployee.regdate" label="regdate">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.oemail" id="orgEmployee.oemail" label="oemail">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgEmployee.birthdate" id="orgEmployee.birthdate" label="birthdate">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.gender" id="orgEmployee.gender" label="gender">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.tenantid" id="orgEmployee.tenantid" label="tenantid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgEmployee.major" id="orgEmployee.major" label="major">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.qq" id="orgEmployee.qq" label="qq">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.orgidlist" id="orgEmployee.orgidlist" label="orgidlist">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.pemail" id="orgEmployee.pemail" label="pemail">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.haddress" id="orgEmployee.haddress" label="haddress">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.empcode" id="orgEmployee.empcode" label="empcode">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgEmployee.operatorid" id="orgEmployee.operatorid" label="operatorid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.oaddress" id="orgEmployee.oaddress" label="oaddress">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.mobileno" id="orgEmployee.mobileno" label="mobileno">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.htel" id="orgEmployee.htel" label="htel">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.degree" id="orgEmployee.degree" label="degree">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgEmployee.lastmodytime" id="orgEmployee.lastmodytime" label="lastmodytime">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.cardno" id="orgEmployee.cardno" label="cardno">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.realname" id="orgEmployee.realname" label="realname">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.hzipcode" id="orgEmployee.hzipcode" label="hzipcode">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.specialty" id="orgEmployee.specialty" label="specialty">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgEmployee.weibo" id="orgEmployee.weibo" label="weibo">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="Administrator" displayName="OrgGroup" entityName="org.gocom.components.coframe.org.groupdataset.OrgGroup" id="OrgGroup">
+        <field dataType="Decimal" dict="false" id="groupid" label="groupid">
+            <view type="write"/>
+            <edit name="groupid" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" id="orgid" label="orgid">
+            <view type="write"/>
+            <edit name="orgid" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" id="parentgroupid" label="parentgroupid">
+            <view type="write"/>
+            <edit name="parentgroupid" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" id="grouplevel" label="grouplevel">
+            <view type="write"/>
+            <edit name="grouplevel" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="groupname" label="groupname">
+            <view type="write"/>
+            <edit name="groupname" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="groupdesc" label="groupdesc">
+            <view type="write"/>
+            <edit name="groupdesc" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="grouptype" label="grouptype">
+            <view type="write"/>
+            <edit name="grouptype" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="groupseq" label="groupseq">
+            <view type="write"/>
+            <edit name="groupseq" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" id="startdate" label="startdate">
+            <view type="write"/>
+            <edit name="startdate" type="date"/>
+        </field>
+        <field dataType="Date" dict="false" id="enddate" label="enddate">
+            <view type="write"/>
+            <edit name="enddate" type="date"/>
+        </field>
+        <field dataType="String" dict="false" id="groupstatus" label="groupstatus">
+            <view type="write"/>
+            <edit name="groupstatus" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="manager" label="manager">
+            <view type="write"/>
+            <edit name="manager" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" id="createtime" label="createtime">
+            <view type="write"/>
+            <edit name="createtime" type="date"/>
+        </field>
+        <field dataType="Date" dict="false" id="lastupdate" label="lastupdate">
+            <view type="write"/>
+            <edit name="lastupdate" type="date"/>
+        </field>
+        <field dataType="Decimal" dict="false" id="updator" label="updator">
+            <view type="write"/>
+            <edit name="updator" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="isleaf" label="isleaf">
+            <view type="write"/>
+            <edit name="isleaf" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" id="subcount" label="subcount">
+            <view type="write"/>
+            <edit name="subcount" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="tenantId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="appId" label="appId">
+            <view type="write"/>
+            <edit name="appId" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.tenantId" id="orgGroup.tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.appId" id="orgGroup.appId" label="appId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.groupseq" id="orgGroup.groupseq" label="groupseq">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.manager" id="orgGroup.manager" label="manager">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.groupdesc" id="orgGroup.groupdesc" label="groupdesc">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgGroup.updator" id="orgGroup.updator" label="updator">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.isleaf" id="orgGroup.isleaf" label="isleaf">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.groupname" id="orgGroup.groupname" label="groupname">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgGroup.subcount" id="orgGroup.subcount" label="subcount">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgGroup.createtime" id="orgGroup.createtime" label="createtime">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgGroup.lastupdate" id="orgGroup.lastupdate" label="lastupdate">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.grouptype" id="orgGroup.grouptype" label="grouptype">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgGroup.parentgroupid" id="orgGroup.parentgroupid" label="parentgroupid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgGroup.startdate" id="orgGroup.startdate" label="startdate">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.groupstatus" id="orgGroup.groupstatus" label="groupstatus">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgGroup.orgid" id="orgGroup.orgid" label="orgid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="orgGroup.grouplevel" id="orgGroup.grouplevel" label="grouplevel">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgGroup.groupid" id="orgGroup.groupid" label="groupid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgGroup.enddate" id="orgGroup.enddate" label="enddate">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+    </viewModel>
+    <viewModel author="Administrator" displayName="OrgGroupposi" entityName="org.gocom.components.coframe.org.groupdataset.OrgGroupposi" id="OrgGroupposi">
+        <field dataType="Decimal" dict="false" id="groupid" label="groupid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" id="positionid" label="positionid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="ismain" label="ismain">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" id="appId" label="appId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.tenantId" id="orgGroup.tenantId" label="tenantId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.appId" id="orgGroup.appId" label="appId">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.groupseq" id="orgGroup.groupseq" label="groupseq">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.manager" id="orgGroup.manager" label="manager">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.groupdesc" id="orgGroup.groupdesc" label="groupdesc">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgGroup.updator" id="orgGroup.updator" label="updator">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.isleaf" id="orgGroup.isleaf" label="isleaf">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.groupname" id="orgGroup.groupname" label="groupname">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgGroup.subcount" id="orgGroup.subcount" label="subcount">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgGroup.createtime" id="orgGroup.createtime" label="createtime">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgGroup.lastupdate" id="orgGroup.lastupdate" label="lastupdate">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.grouptype" id="orgGroup.grouptype" label="grouptype">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgGroup.parentgroupid" id="orgGroup.parentgroupid" label="parentgroupid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgGroup.startdate" id="orgGroup.startdate" label="startdate">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgGroup.groupstatus" id="orgGroup.groupstatus" label="groupstatus">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgGroup.orgid" id="orgGroup.orgid" label="orgid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="orgGroup.grouplevel" id="orgGroup.grouplevel" label="grouplevel">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgGroup.groupid" id="orgGroup.groupid" label="groupid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgGroup.enddate" id="orgGroup.enddate" label="enddate">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgPosition.positionseq" id="orgPosition.positionseq" label="positionseq">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgPosition.posilevel" id="orgPosition.posilevel" label="posilevel">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgPosition.status" id="orgPosition.status" label="status">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgPosition.updator" id="orgPosition.updator" label="updator">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgPosition.posiname" id="orgPosition.posiname" label="posiname">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgPosition.isleaf" id="orgPosition.isleaf" label="isleaf">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgPosition.appid" id="orgPosition.appid" label="appid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgPosition.subcount" id="orgPosition.subcount" label="subcount">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgPosition.dutyid" id="orgPosition.dutyid" label="dutyid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgPosition.createtime" id="orgPosition.createtime" label="createtime">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgPosition.lastupdate" id="orgPosition.lastupdate" label="lastupdate">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgPosition.positionid" id="orgPosition.positionid" label="positionid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgPosition.startdate" id="orgPosition.startdate" label="startdate">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgPosition.orgid" id="orgPosition.orgid" label="orgid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Decimal" dict="false" entityField="orgPosition.manaposi" id="orgPosition.manaposi" label="manaposi">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgPosition.tenantid" id="orgPosition.tenantid" label="tenantid">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgPosition.positype" id="orgPosition.positype" label="positype">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Date" dict="false" entityField="orgPosition.enddate" id="orgPosition.enddate" label="enddate">
+            <view type="write"/>
+            <edit name="" type="date"/>
+        </field>
+        <field dataType="String" dict="false" entityField="orgPosition.posicode" id="orgPosition.posicode" label="posicode">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+</viewModelSet>

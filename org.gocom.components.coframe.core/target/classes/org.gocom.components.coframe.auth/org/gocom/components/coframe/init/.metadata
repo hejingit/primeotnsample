@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata>
+    <model description="" displayName="CapInitContenxtAdapter" implementationType="file" modifier="public" name="CapInitContenxtAdapter.class" order="32" version=""/>
+    <model description="" displayName="CoframePartyUserInitService" implementationType="file" modifier="public" name="CoframePartyUserInitService.class" order="32" version=""/>
+    <model description="" displayName="InitUserObjectService" implementationType="file" modifier="public" name="InitUserObjectService.class" order="32" version=""/>
+    <model description="" displayName="UserObjectInit" implementationType="file" modifier="public" name="UserObjectInit.class" order="32" version=""/>
+</metadata>

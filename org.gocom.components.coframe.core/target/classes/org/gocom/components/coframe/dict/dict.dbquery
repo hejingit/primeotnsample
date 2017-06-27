@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<QueryEntityList>
+    <QueryEntity name="org.gocom.components.coframe.dict.dict.DictExport">
+        <config db="default" type="sql"><![CDATA[SELECT B.DICTTYPEID AS DICTTYPEID,
+       B.DICTTYPENAME AS DICTTYPENAME,
+       B.PARENTID AS TYPE_PARENTID,
+       B.RANK AS TYPE_RANK,
+       B.SEQNO AS TYPE_SEQNO,
+       A.DICTID AS DICTID,
+       A.DICTNAME AS DICTNAME,
+       A.PARENTID AS ENTRY_PARENTID,
+       A.STATUS AS STATUS,
+       A.SORTNO AS SORTNO,
+       A.RANK AS ENTRY_RANK,
+       A.SEQNO AS ENTRY_SEQNO
+  FROM EOS_DICT_ENTRY A, EOS_DICT_TYPE B
+ WHERE A.DICTTYPEID = B.DICTTYPEID]]></config>
+    </QueryEntity>
+</QueryEntityList>

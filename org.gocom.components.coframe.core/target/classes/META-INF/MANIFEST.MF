@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Require-Bundle: com.primeton.eos.richweb,com.eos.foundation,com.eos.wo
+ rkflow,com.primeton.workflow.core
+Bundle-Vendor: lijuntao
+eos-webCtxPath: entityauth
+Build-Number: 
+Implementation-Version: 3.2.2
+Bundle-Version: 3.2.2
+Bundle-Name: 数据权限
+Bundle-Description: 
+Bundle-SymbolicName: org.gocom.components.coframe.entityauth
+Build-Date: 
+Build-By: Primeton RD Team
+

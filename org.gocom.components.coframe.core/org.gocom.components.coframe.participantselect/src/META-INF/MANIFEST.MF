@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Require-Bundle: org.gocom.components.coframe.auth,org.gocom.components
+ .coframe.org,org.gocom.components.coframe.tools
+Bundle-Vendor: 朱惠
+eos-webCtxPath: participantselect
+Bundle-Version: 3.0.1
+Bundle-Name: 选择参与者
+Bundle-Description: 参与者选择
+Bundle-SymbolicName: org.gocom.components.coframe.participantselect
+

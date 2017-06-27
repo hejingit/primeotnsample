@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<core:sysDesignDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://studio.primeton.com/sysdesign/core" gridVisibility="false" rulerVisibility="true" snapToGeometry="true" author="" date="">
+  <nodes xsi:type="core:ContributionNodeElement" id="com.primeton.studio.sysdesign.ui.paletteEntry1" name="org.gocom.components.coframe.auth" displayName="认证授权" nodeType="child" symbolicName="org.gocom.components.coframe.auth">
+    <sourceConnections xsi:type="core:DependencyLine" id="link0" name="link0" displayName="连线">
+      <sourceNode>com.primeton.studio.sysdesign.ui.paletteEntry1</sourceNode>
+      <targetNode>com.primeton.studio.sysdesign.ui.paletteEntry2</targetNode>
+    </sourceConnections>
+    <sourceConnections xsi:type="core:DependencyLine" id="link2" name="link2" displayName="连线">
+      <sourceNode>com.primeton.studio.sysdesign.ui.paletteEntry1</sourceNode>
+      <targetNode>com.primeton.studio.sysdesign.ui.paletteEntry6</targetNode>
+    </sourceConnections>
+    <sourceConnections xsi:type="core:DependencyLine" id="link4" name="link4" displayName="连线">
+      <sourceNode>com.primeton.studio.sysdesign.ui.paletteEntry1</sourceNode>
+      <targetNode>com.primeton.studio.sysdesign.ui.paletteEntry8</targetNode>
+    </sourceConnections>
+    <targetConnections>link9</targetConnections>
+    <location x="60" y="360"/>
+    <size height="70" width="150"/>
+  </nodes>
+  <nodes xsi:type="core:ContributionNodeElement" id="com.primeton.studio.sysdesign.ui.paletteEntry2" name="org.gocom.components.coframe.framework" displayName="应用框架" nodeType="child" symbolicName="org.gocom.components.coframe.framework">
+    <sourceConnections xsi:type="core:DependencyLine" id="link3" name="link3" displayName="连线">
+      <sourceNode>com.primeton.studio.sysdesign.ui.paletteEntry2</sourceNode>
+      <targetNode>com.primeton.studio.sysdesign.ui.paletteEntry6</targetNode>
+    </sourceConnections>
+    <sourceConnections xsi:type="core:DependencyLine" id="link5" name="link5" displayName="连线">
+      <sourceNode>com.primeton.studio.sysdesign.ui.paletteEntry2</sourceNode>
+      <targetNode>com.primeton.studio.sysdesign.ui.paletteEntry8</targetNode>
+    </sourceConnections>
+    <targetConnections>link0</targetConnections>
+    <location x="330" y="360"/>
+    <size height="70" width="150"/>
+  </nodes>
+  <nodes xsi:type="core:ContributionNodeElement" id="com.primeton.studio.sysdesign.ui.paletteEntry3" name="org.gocom.components.coframe.org" displayName="机构管理" nodeType="child" symbolicName="org.gocom.components.coframe.org">
+    <sourceConnections xsi:type="core:DependencyLine" id="link6" name="link6" displayName="连线">
+      <sourceNode>com.primeton.studio.sysdesign.ui.paletteEntry3</sourceNode>
+      <targetNode>com.primeton.studio.sysdesign.ui.paletteEntry8</targetNode>
+    </sourceConnections>
+    <sourceConnections xsi:type="core:DependencyLine" id="link8" name="link8" displayName="连线">
+      <sourceNode>com.primeton.studio.sysdesign.ui.paletteEntry3</sourceNode>
+      <targetNode>com.primeton.studio.sysdesign.ui.paletteEntry6</targetNode>
+    </sourceConnections>
+    <targetConnections>link1</targetConnections>
+    <location x="599" y="360"/>
+    <size height="70" width="150"/>
+  </nodes>
+  <nodes xsi:type="core:ContributionNodeElement" id="com.primeton.studio.sysdesign.ui.paletteEntry4" name="org.gocom.components.coframe.participantselect" displayName="选择参与者" nodeType="child" symbolicName="org.gocom.components.coframe.participantselect">
+    <sourceConnections xsi:type="core:DependencyLine" id="link1" name="link1" displayName="连线">
+      <sourceNode>com.primeton.studio.sysdesign.ui.paletteEntry4</sourceNode>
+      <targetNode>com.primeton.studio.sysdesign.ui.paletteEntry3</targetNode>
+    </sourceConnections>
+    <sourceConnections xsi:type="core:DependencyLine" id="link9" name="link9" displayName="连线">
+      <sourceNode>com.primeton.studio.sysdesign.ui.paletteEntry4</sourceNode>
+      <targetNode>com.primeton.studio.sysdesign.ui.paletteEntry1</targetNode>
+    </sourceConnections>
+    <location x="345" y="510"/>
+    <size height="70" width="150"/>
+  </nodes>
+  <nodes xsi:type="core:ContributionNodeElement" id="com.primeton.studio.sysdesign.ui.paletteEntry5" name="org.gocom.components.coframe.policy" displayName="安全策略" nodeType="child" symbolicName="org.gocom.components.coframe.policy">
+    <location x="824" y="330"/>
+    <size height="70" width="150"/>
+  </nodes>
+  <nodes xsi:type="core:ContributionNodeElement" id="com.primeton.studio.sysdesign.ui.paletteEntry6" name="org.gocom.components.coframe.rights" displayName="权限管理" nodeType="child" symbolicName="org.gocom.components.coframe.rights">
+    <sourceConnections xsi:type="core:DependencyLine" id="link7" name="link7" displayName="连线">
+      <sourceNode>com.primeton.studio.sysdesign.ui.paletteEntry6</sourceNode>
+      <targetNode>com.primeton.studio.sysdesign.ui.paletteEntry8</targetNode>
+    </sourceConnections>
+    <targetConnections>link2</targetConnections>
+    <targetConnections>link3</targetConnections>
+    <targetConnections>link8</targetConnections>
+    <location x="60" y="120"/>
+    <size height="70" width="150"/>
+  </nodes>
+  <nodes xsi:type="core:ContributionNodeElement" id="com.primeton.studio.sysdesign.ui.paletteEntry7" name="org.gocom.components.coframe.skins.win7" displayName="win7桌面风格" nodeType="child" symbolicName="org.gocom.components.coframe.skins.win7">
+    <location x="824" y="210"/>
+    <size height="70" width="150"/>
+  </nodes>
+  <nodes xsi:type="core:ContributionNodeElement" id="com.primeton.studio.sysdesign.ui.paletteEntry8" name="org.gocom.components.coframe.tools" displayName="基础工具" nodeType="child" symbolicName="org.gocom.components.coframe.tools">
+    <targetConnections>link4</targetConnections>
+    <targetConnections>link5</targetConnections>
+    <targetConnections>link6</targetConnections>
+    <targetConnections>link7</targetConnections>
+    <location x="330" y="120"/>
+    <size height="70" width="150"/>
+  </nodes>
+  <topRuler/>
+  <leftRuler/>
+</core:sysDesignDiagram>

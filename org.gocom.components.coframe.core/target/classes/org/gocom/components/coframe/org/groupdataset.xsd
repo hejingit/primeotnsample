@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="org.gocom.components.coframe.org.groupdataset" xmlns:dataset="org.gocom.components.coframe.org.dataset" xmlns:sdo="commonj.sdo" xmlns:sdoJava="commonj.sdo/java" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="org.gocom.components.coframe.org.groupdataset">
+    <xs:complexType name="OrgEmpgroup" sdoJava:instanceClass="org.gocom.components.coframe.org.groupdataset.impl.OrgEmpgroupImpl">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="groupid" nillable="true" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ismain" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="tenantId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="appId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="orgEmployee" nillable="true" type="dataset:OrgEmployee"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OrgGroup" sdoJava:instanceClass="org.gocom.components.coframe.org.groupdataset.impl.OrgGroupImpl">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="groupid" nillable="true" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="orgid" nillable="true" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="grouplevel" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="groupname" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="groupdesc" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="grouptype" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="groupseq" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="startdate" nillable="true" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="enddate" nillable="true" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="groupstatus" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="manager" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="createtime" nillable="true" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="lastupdate" nillable="true" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="updator" nillable="true" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="isleaf" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="subcount" nillable="true" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="tenantId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="appId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="orgGroup" nillable="true" type="OrgGroup"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OrgGroupposi" sdoJava:instanceClass="org.gocom.components.coframe.org.groupdataset.impl.OrgGroupposiImpl">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="ismain" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="tenantId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="appId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="orgGroup" nillable="true" type="OrgGroup"/>
+            <xs:element minOccurs="0" name="orgPosition" nillable="true" type="dataset:OrgPosition"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
