@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-Description: 
+Bundle-SymbolicName: com.primeton.eos.example.ws
+Bundle-Name: com.primeton.eos.example.ws
+Bundle-Version: 1.0.0
+Require-Bundle: com.primeton.eos.richweb,com.eos.foundation,com.eos.wo
+ rkflow
+Bundle-Vendor: Jin.He
+eos-webCtxPath: ws
+

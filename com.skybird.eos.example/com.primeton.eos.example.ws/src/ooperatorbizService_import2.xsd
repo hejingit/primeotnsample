@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="com.eos.foundation" xmlns:sdo="commonj.sdo" xmlns:sdoJava="commonj.sdo/java" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="com.eos.foundation">
+    <xs:complexType name="PageCond" sdoJava:instanceClass="com.eos.foundation.impl.PageCondImpl">
+        <xs:sequence>
+            
+            <xs:element minOccurs="0" name="begin" nillable="true" type="xs:int"/>
+            <xs:element default="10" minOccurs="0" name="length" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="count" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="totalPage" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="currentPage" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="isCount" nillable="true" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="isFirst" nillable="true" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="isLast" nillable="true" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="size" nillable="true" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DictEntry" sdoJava:instanceClass="com.eos.foundation.impl.DictEntryImpl">
+        <xs:sequence>
+            
+            <xs:element minOccurs="0" name="dictID" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="dictName" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="level" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="filter1" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="filter2" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="rank" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="seqNo" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="sortNo" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="status" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="parent" nillable="true" type="DictEntry"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="children" nillable="true" type="DictEntry"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DictType" sdoJava:instanceClass="com.eos.foundation.impl.DictTypeImpl">
+        <xs:sequence>
+            
+            <xs:element minOccurs="0" name="dictTypeId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="dictTypeName" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="level" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="parent" nillable="true" type="DictType"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="child" nillable="true" type="DictType"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="dictEntries" nillable="true" type="DictEntry"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MailInfo" sdoJava:instanceClass="com.eos.foundation.impl.MailInfoImpl">
+        <xs:sequence>
+            
+            <xs:element minOccurs="0" name="from" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="to" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="replyTo" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="cc" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="bcc" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="subject" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="message" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="inclineFilePaths" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="attachFilePaths" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="smtpHost" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="smtpPort" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="messageFormat" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="charset" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ScheduleInfo" sdoJava:instanceClass="com.eos.foundation.impl.ScheduleInfoImpl">
+        <xs:sequence>
+            
+            <xs:element minOccurs="0" name="schedulerName" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="taskName" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="taskType" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="targetQName" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="targetOperation" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="isStateful" nillable="true" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="cronExpression" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="startTime" nillable="true" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="endTime" nillable="true" type="xs:dateTime"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="args" nillable="true" type="xs:anySimpleType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="JmsInfo" sdoJava:instanceClass="com.eos.foundation.impl.JmsInfoImpl">
+        <xs:sequence>
+            
+            <xs:element minOccurs="0" name="connectionFactoryJndiName" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="destinationJndiName" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="jndiEnvInfo" nillable="true" type="JndiEnvInfo"/>
+            <xs:element minOccurs="0" name="message" nillable="true" type="xs:anySimpleType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="JndiEnvInfo" sdoJava:instanceClass="com.eos.foundation.impl.JndiEnvInfoImpl">
+        <xs:sequence>
+            
+            <xs:element minOccurs="0" name="initialContextFactory" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="providerUrl" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

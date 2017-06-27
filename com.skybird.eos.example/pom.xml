@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.primeton.build</groupId>
+		<artifactId>eos-bps-coframe</artifactId>
+		<version>1.0.0.0</version>
+	</parent>
+	
+	<groupId>com.skybird.eos</groupId>
+	<artifactId>com.skybird.eos.example</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<ptp.version>5.1.4.0</ptp.version>
+		<eos.version>7.1.4.0</eos.version>
+		<bps.version>7.0.1.0</bps.version>
+		<coframe.version>4.0.1</coframe.version>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.primeton.ptp.build</groupId>
+				<artifactId>maven-eos-compile-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>compile</phase>
+						<goals>
+							<goal>eoscompile</goal>
+						</goals>
+						<configuration>
+							<otherProjects>
+								<otherProject>
+								
+								</otherProject>
+							</otherProjects>
+							<contributions>
+							com.primeton.eos
+							</contributions>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

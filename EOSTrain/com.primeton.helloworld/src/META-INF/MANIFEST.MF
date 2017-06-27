@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
-Require-Bundle: com.primeton.eos.richweb,com.eos.foundation,com.eos.wo
- rkflow
-eos-webCtxPath: helloworld
-Bundle-Vendor: train
-Bundle-Version: 1.0.0
-Bundle-Name: helloworld案例
 Bundle-Description: 
 Bundle-SymbolicName: com.primeton.helloworld
+Bundle-Version: 1.0.0
+Bundle-Name: helloworld案例
+Require-Bundle: com.primeton.train.expense,com.eos.workflow,com.eos.fo
+ undation,com.primeton.eos.richweb
+Bundle-Vendor: train
+eos-webCtxPath: helloworld
 

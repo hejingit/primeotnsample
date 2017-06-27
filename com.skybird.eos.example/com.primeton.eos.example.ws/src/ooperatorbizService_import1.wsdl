@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:nns="http://www.primeton.com/ooperatorbizService" xmlns:ns0="com.primeton.das.criteria" xmlns:ns1="com.eos.foundation" xmlns:ns2="com.primeton.nuisample.data" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="ooperatorbizServiceService" targetNamespace="http://www.primeton.com/ooperatorbizService">
+  <wsdl:types>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.primeton.com/ooperatorbizService">
+      <xsd:import namespace="com.primeton.das.criteria" schemaLocation="ooperatorbizService_import1.xsd"/>
+      <xsd:import namespace="com.eos.foundation" schemaLocation="ooperatorbizService_import2.xsd"/>
+      <xsd:import namespace="com.primeton.nuisample.data" schemaLocation="ooperatorbizService_import3.xsd"/>
+      <xsd:element name="queryOOperators">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="criteria" nillable="true" type="ns0:criteriaType"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="page" nillable="true" type="ns1:PageCond"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="pageIndex" type="xsd:int"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="pageSize" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="queryOOperatorsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="ooperators" nillable="true" type="ns2:OOperator"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="total" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateOOperator">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ooperator" nillable="true" type="ns2:OOperator"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateOOperatorResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ooperator" nillable="true" type="ns2:OOperator"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="addOOperator">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ooperator" nillable="true" type="ns2:OOperator"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="addOOperatorResponse">
+        <xsd:complexType>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getOOperator">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ooperator" nillable="true" type="ns2:OOperator"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getOOperatorResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ooperator" nillable="true" type="ns2:OOperator"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="deleteOOperators">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="ooperators" nillable="true" type="ns2:OOperator"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="deleteOOperatorsResponse">
+        <xsd:complexType>
+        </xsd:complexType>
+      </xsd:element>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getOOperator">
+    <wsdl:part element="nns:getOOperator" name="getOOperator">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateOOperatorResponse">
+    <wsdl:part element="nns:updateOOperatorResponse" name="updateOOperatorResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteOOperatorsResponse">
+    <wsdl:part element="nns:deleteOOperatorsResponse" name="deleteOOperatorsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryOOperators">
+    <wsdl:part element="nns:queryOOperators" name="queryOOperators">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryOOperatorsResponse">
+    <wsdl:part element="nns:queryOOperatorsResponse" name="queryOOperatorsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addOOperator">
+    <wsdl:part element="nns:addOOperator" name="addOOperator">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addOOperatorResponse">
+    <wsdl:part element="nns:addOOperatorResponse" name="addOOperatorResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateOOperator">
+    <wsdl:part element="nns:updateOOperator" name="updateOOperator">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getOOperatorResponse">
+    <wsdl:part element="nns:getOOperatorResponse" name="getOOperatorResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteOOperators">
+    <wsdl:part element="nns:deleteOOperators" name="deleteOOperators">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ooperatorbizService">
+    <wsdl:operation name="queryOOperators">
+      <wsdl:input message="nns:queryOOperators" name="queryOOperators">
+    </wsdl:input>
+      <wsdl:output message="nns:queryOOperatorsResponse" name="queryOOperatorsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateOOperator">
+      <wsdl:input message="nns:updateOOperator" name="updateOOperator">
+    </wsdl:input>
+      <wsdl:output message="nns:updateOOperatorResponse" name="updateOOperatorResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addOOperator">
+      <wsdl:input message="nns:addOOperator" name="addOOperator">
+    </wsdl:input>
+      <wsdl:output message="nns:addOOperatorResponse" name="addOOperatorResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOOperator">
+      <wsdl:input message="nns:getOOperator" name="getOOperator">
+    </wsdl:input>
+      <wsdl:output message="nns:getOOperatorResponse" name="getOOperatorResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteOOperators">
+      <wsdl:input message="nns:deleteOOperators" name="deleteOOperators">
+    </wsdl:input>
+      <wsdl:output message="nns:deleteOOperatorsResponse" name="deleteOOperatorsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

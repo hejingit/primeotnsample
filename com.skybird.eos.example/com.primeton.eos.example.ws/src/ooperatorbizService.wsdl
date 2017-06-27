@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:ns0="http://www.primeton.com/ooperatorbizService" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.primeton.com/ooperatorbizService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="com.primeton.nuisample.ooperatorbizComposite.ooperatorbizComponent.ooperatorbizService" targetNamespace="http://www.primeton.com/ooperatorbizService">
+  <wsdl:import location="ooperatorbizService_import1.wsdl" namespace="http://www.primeton.com/ooperatorbizService">
+    </wsdl:import>
+  <wsdl:binding name="ooperatorbizServiceBinding" type="tns:ooperatorbizService">
+    <soap11:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="queryOOperators">
+      <soap11:operation soapAction=""/>
+      <wsdl:input name="queryOOperators">
+        <soap11:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="queryOOperatorsResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateOOperator">
+      <soap11:operation soapAction=""/>
+      <wsdl:input name="updateOOperator">
+        <soap11:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateOOperatorResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addOOperator">
+      <soap11:operation soapAction=""/>
+      <wsdl:input name="addOOperator">
+        <soap11:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addOOperatorResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOOperator">
+      <soap11:operation soapAction=""/>
+      <wsdl:input name="getOOperator">
+        <soap11:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getOOperatorResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteOOperators">
+      <soap11:operation soapAction=""/>
+      <wsdl:input name="deleteOOperators">
+        <soap11:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteOOperatorsResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ooperatorbizServiceService">
+    <wsdl:port binding="tns:ooperatorbizServiceBinding" name="ooperatorbizServicePort">
+      <soap11:address location="http://localhost:8080/default/ooperatorbizService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:ns0="http://www.primeton.com/WorkItemQueryManagerServiceService" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.primeton.com/WorkItemQueryManagerServiceService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="com.bjbus.flowplatform.bpmservice.service.WorkItemQueryManagerServiceComposite.WorkItemQueryManagerServiceComponent.WorkItemQueryManagerServiceService" targetNamespace="http://www.primeton.com/WorkItemQueryManagerServiceService">
+  <wsdl:import location="WorkItemQueryManagerServiceService_import1.wsdl" namespace="http://www.primeton.com/WorkItemQueryManagerServiceService">
+    </wsdl:import>
+  <wsdl:binding name="WorkItemQueryManagerServiceServiceBinding" type="tns:WorkItemQueryManagerServiceService">
+    <soap11:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="queryPersonFinishedWorkItems">
+      <soap11:operation soapAction=""/>
+      <wsdl:input name="queryPersonFinishedWorkItems">
+        <soap11:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="queryPersonFinishedWorkItemsResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryPersonWorkItems">
+      <soap11:operation soapAction=""/>
+      <wsdl:input name="queryPersonWorkItems">
+        <soap11:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="queryPersonWorkItemsResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WorkItemQueryManagerServiceServiceService">
+    <wsdl:port binding="tns:WorkItemQueryManagerServiceServiceBinding" name="WorkItemQueryManagerServiceServicePort">
+      <soap11:address location="http://192.168.1.32:8080/default/WorkItemQueryManagerServiceService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

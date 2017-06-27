@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-Description: 
+Bundle-SymbolicName: com.primeton.example
+Bundle-Name: com.primeton.example
+Bundle-Version: 1.0.0
+Require-Bundle: com.primeton.helloworld,com.eos.foundation
+Bundle-Vendor: Jin.He
+eos-webCtxPath: example
+

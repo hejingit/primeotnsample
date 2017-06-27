@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="com.primeton.das.criteria" xmlns:sdoJava="commonj.sdo/java" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="com.primeton.das.criteria">
+    <xsd:element name="_criteria" type="criteriaType"/>
+    <xsd:complexType name="criteriaType" sdoJava:instanceClass="com.eos.das.entity.criteria.impl.CriteriaTypeImpl">
+        <xsd:sequence>
+            <xsd:element name="_entity" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="_select" type="selectType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_expr" type="exprType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_and" type="logicType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_or" type="logicType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_not" type="logicType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_order" type="orderType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_orderby" type="orderbyType"/>
+            <xsd:element minOccurs="0" name="_group" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="_distinct" type="xsd:boolean"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_association" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_ref" type="refType"/>
+            <xsd:element minOccurs="0" name="_lock" type="lockType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="refType" sdoJava:instanceClass="com.eos.das.entity.criteria.impl.RefTypeImpl">
+        <xsd:sequence>
+            <xsd:element name="_id" type="xsd:string"/>
+            <xsd:element name="_entity" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="_select" type="selectType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_expr" type="exprType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_and" type="logicType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_or" type="logicType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_not" type="logicType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="selectType" sdoJava:instanceClass="com.eos.das.entity.criteria.impl.SelectTypeImpl">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_field" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_count" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_avg" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_sum" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_min" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_max" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="logicType" sdoJava:instanceClass="com.eos.das.entity.criteria.impl.LogicTypeImpl">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_and" type="logicType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_or" type="logicType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_not" type="logicType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="_expr" type="exprType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="exprType" sdoJava:instanceClass="com.eos.das.entity.criteria.impl.ExprTypeImpl">
+        <xsd:sequence>
+            
+            <xsd:element minOccurs="0" name="_op" type="opType"/>
+            <xsd:element minOccurs="0" name="_min" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="_max" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="_likeRule" type="likeRuleType"/>
+            <xsd:element minOccurs="0" name="_dateRule" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="_pattern" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="_year" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="_quarter" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="_month" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="_opProperty" type="opType"/>
+            <xsd:element minOccurs="0" name="_ref" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="_processNullValue" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="_property" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="_value" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="orderType">
+        <xsd:choice>
+            <xsd:element name="_asc" type="xsd:string"/>
+            <xsd:element name="_desc" type="xsd:string"/>
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="orderbyType" sdoJava:instanceClass="com.eos.das.entity.criteria.impl.OrderbyTypeImpl">
+        <xsd:sequence>
+            <xsd:element name="_property" type="xsd:string"/>
+            <xsd:element name="_sort" type="sortType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="likeRuleType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="start"/>
+            <xsd:enumeration value="end"/>
+            <xsd:enumeration value="all"/>
+            <xsd:enumeration value="none"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="opType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="like"/>
+            <xsd:enumeration value="="/>
+            <xsd:enumeration value="&lt;&gt;"/>
+            <xsd:enumeration value="&gt;"/>
+            <xsd:enumeration value="&lt;"/>
+            <xsd:enumeration value="&gt;="/>
+            <xsd:enumeration value="&lt;="/>
+            <xsd:enumeration value="null"/>
+            <xsd:enumeration value="notnull"/>
+            <xsd:enumeration value="between"/>
+            <xsd:enumeration value="in"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="sortType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="desc"/>
+            <xsd:enumeration value="asc"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="lockType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="NONE"/>
+            <xsd:enumeration value="UPGRADE"/>
+            <xsd:enumeration value="UPGRADE_NOWAIT"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

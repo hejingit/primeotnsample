@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:ns0="com.eos.foundation" xmlns:ns1="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://model.bpmservice.flowplatform.bjbus.com" xmlns:ns3="http://www.primeton.com/WorkItemQueryManagerServiceService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="WorkItemQueryManagerServiceServiceService" targetNamespace="http://www.primeton.com/WorkItemQueryManagerServiceService">
+  <wsdl:types>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://model.bpmservice.flowplatform.bjbus.com">
+      <xsd:complexType name="WFParticipant">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="id" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="name" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="typeCode" nillable="true" type="ns1:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfWFParticipant">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="WFParticipant" nillable="true" type="ns2:WFParticipant"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="WFWorkItem">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="actionMask" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="actionURL" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="activityDefID" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="activityInstID" type="ns1:long"/>
+          <xsd:element minOccurs="0" name="activityInstName" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="allowAgent" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="assistant" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="assistantName" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="bizObject" nillable="true" type="ns3:string2anyTypeMap"/>
+          <xsd:element minOccurs="0" name="bizState" type="ns1:int"/>
+          <xsd:element minOccurs="0" name="catalogName" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="catalogUUID" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="createTime" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="currentState" type="ns1:int"/>
+          <xsd:element minOccurs="0" name="dealOpinion" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="dealResult" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="endTime" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="finalTime" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="isTimeOut" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="limitNum" type="ns1:long"/>
+          <xsd:element minOccurs="0" name="limitNumDesc" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="partiName" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="participant" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="participants" nillable="true" type="ns2:ArrayOfWFParticipant"/>
+          <xsd:element minOccurs="0" name="pressNum" type="ns1:int"/>
+          <xsd:element minOccurs="0" name="priority" type="ns1:int"/>
+          <xsd:element minOccurs="0" name="processChName" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="processDefID" type="ns1:long"/>
+          <xsd:element minOccurs="0" name="processDefName" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="processInstID" type="ns1:long"/>
+          <xsd:element minOccurs="0" name="processInstName" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="remindTime" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="rootProcInstID" type="ns1:long"/>
+          <xsd:element minOccurs="0" name="startTime" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="statesList" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="systemCode" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="systemDesc" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="systemId" type="ns1:int"/>
+          <xsd:element minOccurs="0" name="systemName" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="systemType" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="timeOutNum" type="ns1:int"/>
+          <xsd:element minOccurs="0" name="timeOutNumDesc" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="urlType" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="workItemDesc" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="workItemID" type="ns1:long"/>
+          <xsd:element minOccurs="0" name="workItemName" nillable="true" type="ns1:string"/>
+          <xsd:element minOccurs="0" name="workItemType" nillable="true" type="ns1:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfWFWorkItem">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="WFWorkItem" nillable="true" type="ns2:WFWorkItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.primeton.com/WorkItemQueryManagerServiceService">
+      <xsd:import namespace="com.eos.foundation" schemaLocation="WorkItemQueryManagerServiceService_import1.xsd"/>
+      <xsd:element name="queryPersonFinishedWorkItems">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="sysCode" nillable="true" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="userId" nillable="true" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="page" nillable="true" type="ns0:PageCond"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="queryPersonFinishedWorkItemsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="workItemList" nillable="true" type="ns2:ArrayOfWFWorkItem"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="queryPersonWorkItems">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="sysCode" nillable="true" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="userId" nillable="true" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="page" nillable="true" type="ns0:PageCond"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="queryPersonWorkItemsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="workItemList" nillable="true" type="ns2:ArrayOfWFWorkItem"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:complexType name="string2anyTypeMap">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="entry">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element maxOccurs="1" minOccurs="0" name="key" type="ns1:string"/>
+                <xsd:element maxOccurs="1" minOccurs="0" name="value" type="ns1:anyType"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="queryPersonFinishedWorkItemsResponse">
+    <wsdl:part element="ns3:queryPersonFinishedWorkItemsResponse" name="queryPersonFinishedWorkItemsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryPersonWorkItemsResponse">
+    <wsdl:part element="ns3:queryPersonWorkItemsResponse" name="queryPersonWorkItemsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryPersonFinishedWorkItems">
+    <wsdl:part element="ns3:queryPersonFinishedWorkItems" name="queryPersonFinishedWorkItems">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryPersonWorkItems">
+    <wsdl:part element="ns3:queryPersonWorkItems" name="queryPersonWorkItems">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="WorkItemQueryManagerServiceService">
+    <wsdl:operation name="queryPersonFinishedWorkItems">
+      <wsdl:input message="ns3:queryPersonFinishedWorkItems" name="queryPersonFinishedWorkItems">
+    </wsdl:input>
+      <wsdl:output message="ns3:queryPersonFinishedWorkItemsResponse" name="queryPersonFinishedWorkItemsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryPersonWorkItems">
+      <wsdl:input message="ns3:queryPersonWorkItems" name="queryPersonWorkItems">
+    </wsdl:input>
+      <wsdl:output message="ns3:queryPersonWorkItemsResponse" name="queryPersonWorkItemsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

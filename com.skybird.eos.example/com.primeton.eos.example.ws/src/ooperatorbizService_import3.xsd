@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="com.primeton.nuisample.data" xmlns:sdo="commonj.sdo" xmlns:sdoJava="commonj.sdo/java" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="com.primeton.nuisample.data">
+    <xs:complexType name="OContacts">
+        <xs:sequence>
+            
+            <xs:element minOccurs="0" name="contactId" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="operatorId" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="contactName" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="relation" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="phone" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="postcode" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="address" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="email" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OOperator">
+        <xs:sequence>
+            
+            <xs:element minOccurs="0" name="operatorId" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="birthday" nillable="true" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="gender" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="postcode" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="address" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="phone" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="email" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="memo" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="oOrg" nillable="true" type="OOrg"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="oContacts" nillable="true" type="OContacts"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OOrg">
+        <xs:sequence>
+            
+            <xs:element minOccurs="0" name="orgId" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="orgName" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="orgCode" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="orgAddress" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="orgSeq" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="oOrg" nillable="true" type="OOrg"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
